@@ -1,0 +1,438 @@
+{
+  "Thebes,_Greece": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg/3840px-Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg",
+    "name": "Thebes, Greece"
+  },
+  "Acropolis_of_Athens": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/3840px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
+    "name": "Acropolis of Athens"
+  },
+  "Peloponnese": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Location_map_of_Peloponnese_%28Greece%29.svg/3840px-Location_map_of_Peloponnese_%28Greece%29.svg.png",
+    "name": "Peloponnese"
+  },
+  "Piraeus": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/2011_Dimos_Pireos.png",
+    "name": "Piraeus"
+  },
+  "Milan": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Milan_-_Scala_-_Facade.jpg/3840px-Milan_-_Scala_-_Facade.jpg",
+    "name": "Milan"
+  },
+  "Athens": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg/3840px-Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg",
+    "name": "Athens"
+  },
+  "Shiraz": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Darvaze_Ghoran11.jpg",
+    "name": "Shiraz"
+  },
+  "Canterbury": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Canterbury-cathedral-wyrdlight.jpg",
+    "name": "Canterbury"
+  },
+  "Florence": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FirenzeDec092023_01.jpg/3840px-FirenzeDec092023_01.jpg",
+    "name": "Florence"
+  },
+  "Kyoto": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg",
+    "name": "Kyoto"
+  },
+  "Verona": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tramonto_a_Verona.jpg/3840px-Tramonto_a_Verona.jpg",
+    "name": "Verona"
+  },
+  "La_Mancha": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Campo_de_Criptana_Molinos_de_Viento_1.jpg",
+    "name": "La Mancha"
+  },
+  "Venice": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/3840px-Venezia_aerial_view.jpg",
+    "name": "Venice"
+  },
+  "London": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg",
+    "name": "London"
+  },
+  "Paris": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+    "name": "Paris"
+  },
+  "Lake_District": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Derwent_Water%2C_Lake_District%2C_Cumbria_-_June_2009.jpg/3840px-Derwent_Water%2C_Lake_District%2C_Cumbria_-_June_2009.jpg",
+    "name": "Lake District"
+  },
+  "Bordeaux": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bordeaux_Place_de_la_Bourse_de_nuit.jpg/3840px-Bordeaux_Place_de_la_Bourse_de_nuit.jpg",
+    "name": "Bordeaux"
+  },
+  "Loire_Valley": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Azay_le_rideau.jpg",
+    "name": "Loire Valley"
+  },
+  "Suzhou": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E4%B8%9C%E6%96%B9%E4%B9%8B%E9%97%A81.jpg",
+    "name": "Suzhou"
+  },
+  "Edinburgh": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Skyline_of_Edinburgh.jpg/3840px-Skyline_of_Edinburgh.jpg",
+    "name": "Edinburgh"
+  },
+  "Nanjing": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Nanjing_CBD_from_City_Wall.jpg",
+    "name": "Nanjing"
+  },
+  "Moscow": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
+    "name": "Moscow"
+  },
+  "Normandy": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Normandie.svg/960px-Flag_of_Normandie.svg.png",
+    "name": "Normandy"
+  },
+  "New_York_City": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
+    "name": "New York City"
+  },
+  "Hamburg": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg/3840px-Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg",
+    "name": "Hamburg"
+  },
+  "Copenhagen": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/3840px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg",
+    "name": "Copenhagen"
+  },
+  "Boston": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg",
+    "name": "Boston"
+  },
+  "York": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/York_Minster_%282797690%29.jpg",
+    "name": "York"
+  },
+  "Marseille": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Notre-Dame_de_la_Garde_aerial_view_2020.jpeg",
+    "name": "Marseille"
+  },
+  "Tokyo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg",
+    "name": "Tokyo"
+  },
+  "Seville": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sevilla_Cathedral_-_Southeast.jpg/3840px-Sevilla_Cathedral_-_Southeast.jpg",
+    "name": "Seville"
+  },
+  "Coventry": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Coventry_Cathedral_2018.jpg/3840px-Coventry_Cathedral_2018.jpg",
+    "name": "Coventry"
+  },
+  "Warsaw": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg",
+    "name": "Warsaw"
+  },
+  "Osaka": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg",
+    "name": "Osaka"
+  },
+  "Siberia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png",
+    "name": "Siberia"
+  },
+  "Oslo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/3840px-Nationaltheatret_evening.jpg",
+    "name": "Oslo"
+  },
+  "Saint_Petersburg": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg/3840px-Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg",
+    "name": "Saint Petersburg"
+  },
+  "Shaoxing": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg",
+    "name": "Shaoxing"
+  },
+  "Amsterdam": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png",
+    "name": "Amsterdam"
+  },
+  "Xi'an": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg",
+    "name": "Xi'an"
+  },
+  "Palermo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Sicilia_Palermo5_tango7174.jpg",
+    "name": "Palermo"
+  },
+  "Greater_Khingan": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gegengol_in_Greater_Khingan_forest2017.jpg/3840px-Gegengol_in_Greater_Khingan_forest2017.jpg",
+    "name": "Greater Khingan"
+  },
+  "Rome": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg",
+    "name": "Rome"
+  },
+  "Prague": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg",
+    "name": "Prague"
+  },
+  "Beijing": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg",
+    "name": "Beijing"
+  },
+  "Shanghai": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg",
+    "name": "Shanghai"
+  },
+  "Nara_(city)": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
+    "name": "Nara (city)"
+  },
+  "Black_Forest": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Blick_vom_Hohfelsen.jpg/3840px-Blick_vom_Hohfelsen.jpg",
+    "name": "Black Forest"
+  },
+  "Berlin": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/3840px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg",
+    "name": "Berlin"
+  },
+  "Nagoya": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg",
+    "name": "Nagoya"
+  },
+  "Fukuoka": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg",
+    "name": "Fukuoka"
+  },
+  "Hong_Kong": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png",
+    "name": "Hong Kong"
+  },
+  "Turin": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Torino_Piazza_Castello_11.jpg/3840px-Torino_Piazza_Castello_11.jpg",
+    "name": "Turin"
+  },
+  "Wuhan": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%E6%AD%A6%E6%B1%89%E9%BB%84%E9%B9%A4%E6%A5%BC%E4%BF%AF%E7%9E%B0.jpg",
+    "name": "Wuhan"
+  },
+  "Vienna": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg",
+    "name": "Vienna"
+  },
+  "Chongqing": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Chongqing_Nightscape.jpg",
+    "name": "Chongqing"
+  },
+  "Munich": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/3840px-Stadtbild_M%C3%BCnchen.jpg",
+    "name": "Munich"
+  },
+  "Lisbon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg",
+    "name": "Lisbon"
+  },
+  "Hangzhou": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/%E6%9D%AD%E5%B7%9E%E9%92%B1%E6%B1%9F%E6%96%B0%E5%9F%8E_4_%28cropped%29.jpg",
+    "name": "Hangzhou"
+  },
+  "Kolkata": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Kolkata_maidan.jpg",
+    "name": "Kolkata"
+  },
+  "Chengdu": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E9%9B%AA%E5%B1%B1%E4%B8%8B%E7%9A%84%E6%88%90%E9%83%BD%E5%B8%82%E5%A4%A9%E9%99%85%E7%BA%BF_Chengdu_skyline_with_snow_capped_mountains.jpg",
+    "name": "Chengdu"
+  },
+  "Lyon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lyon-part-dieu-2023.jpg/3840px-Lyon-part-dieu-2023.jpg",
+    "name": "Lyon"
+  },
+  "Kunming": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/%E4%BA%94%E5%8D%8E%E5%8C%BA%E4%B8%8E%E7%9B%98%E9%BE%99%E5%8C%BA%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2025-05-16_03.jpg/3840px-%E4%BA%94%E5%8D%8E%E5%8C%BA%E4%B8%8E%E7%9B%98%E9%BE%99%E5%8C%BA%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2025-05-16_03.jpg",
+    "name": "Kunming"
+  },
+  "Wuzhen": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/1_wuzhen_aerial_2023.jpg/3840px-1_wuzhen_aerial_2023.jpg",
+    "name": "Wuzhen"
+  },
+  "Seoul": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg",
+    "name": "Seoul"
+  },
+  "San_Francisco": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/San_Francisco_Downtown_Aerial%2C_August_2025.jpg",
+    "name": "San Francisco"
+  },
+  "Los_Angeles": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/3840px-Hollywood_Sign_%28Zuschnitt%29.jpg",
+    "name": "Los Angeles"
+  },
+  "Stockholm": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg/3840px-Royal_Dramatic_Theatre_Stockholm.jpg",
+    "name": "Stockholm"
+  },
+  "Hokkaido": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png",
+    "name": "Hokkaido"
+  },
+  "Kyiv": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg/3840px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg",
+    "name": "Kyiv"
+  },
+  "Frankfurt": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Frankfurt_Main_August_2020_1.jpg/3840px-Frankfurt_Main_August_2020_1.jpg",
+    "name": "Frankfurt"
+  },
+  "Minsk": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/View_of_Minsk_%28180819%29_09.jpg/3840px-View_of_Minsk_%28180819%29_09.jpg",
+    "name": "Minsk"
+  },
+  "Ghent": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg/3840px-Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg",
+    "name": "Ghent"
+  },
+  "Havana": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/DJI_0197_crp_wiki.jpg",
+    "name": "Havana"
+  },
+  "Sydney": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/3840px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg",
+    "name": "Sydney"
+  },
+  "Guangzhou": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Canton_Tower_20241027.jpg/3840px-Canton_Tower_20241027.jpg",
+    "name": "Guangzhou"
+  },
+  "Madrid": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Plaza_Mayor_De_Madrid_%28215862629%29_edited.jpeg",
+    "name": "Madrid"
+  },
+  "Tianjin": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Tianjin_Eye_and_Tianjin.jpg",
+    "name": "Tianjin"
+  },
+  "Taipei": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Taipei_Skyline_2022.06.29.jpg/3840px-Taipei_Skyline_2022.06.29.jpg",
+    "name": "Taipei"
+  },
+  "Pamplona": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Monumento_a_los_Fueros_%28Pamplona%29.jpg",
+    "name": "Pamplona"
+  },
+  "Mogao_Caves": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mogao_Caves_%2854376969262%29.jpg",
+    "name": "Mogao Caves"
+  },
+  "Barcelona": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg/3840px-Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg",
+    "name": "Barcelona"
+  },
+  "Buenos_Aires": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg/3840px-Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg",
+    "name": "Buenos Aires"
+  },
+  "Andalusia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Andaluc%C3%ADa.svg/960px-Flag_of_Andaluc%C3%ADa.svg.png",
+    "name": "Andalusia"
+  },
+  "Oxford": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg",
+    "name": "Oxford"
+  },
+  "Alaska": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Alaska.svg/1920px-Flag_of_Alaska.svg.png",
+    "name": "Alaska"
+  },
+  "Dublin": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/3840px-Dublin_-_aerial_-_2025-07-07_01.jpg",
+    "name": "Dublin"
+  },
+  "Yangon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/ShwedagonPagoda.jpg",
+    "name": "Yangon"
+  },
+  "Cambridge": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cambridge_-_Kings_College_vue_des_backs.jpg/3840px-Cambridge_-_Kings_College_vue_des_backs.jpg",
+    "name": "Cambridge"
+  },
+  "Hanoi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Hanoi_skyline_with_Ba_Vi_Mountain.jpg",
+    "name": "Hanoi"
+  },
+  "Nice": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Promenade_des_Anglais_Nice_IMG_1255.jpg/3840px-Promenade_des_Anglais_Nice_IMG_1255.jpg",
+    "name": "Nice"
+  },
+  "Istanbul": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg",
+    "name": "Istanbul"
+  },
+  "Tehran": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/North_of_Tehran_Skyline_view.jpg",
+    "name": "Tehran"
+  },
+  "Scottish_Highlands": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Scottish_Highlands_and_Lowlands.png",
+    "name": "Scottish Highlands"
+  },
+  "Sarajevo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Sarajevo_City_Panorama.JPG",
+    "name": "Sarajevo"
+  },
+  "Naples": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg/3840px-Napoli_-_Maschio_Angioino_-_202209302342_3.jpg",
+    "name": "Naples"
+  },
+  "Kuala_Lumpur": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bukit_Bintang_junction_in_2024_2.jpg/3840px-Bukit_Bintang_junction_in_2024_2.jpg",
+    "name": "Kuala Lumpur"
+  },
+  "Mount_Liang": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Shuipo_Liangshan_%282910779405%29.jpg",
+    "name": "Mount Liang"
+  },
+  "Yueyang_Tower": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
+    "name": "Yueyang Tower"
+  },
+  "Dordogne": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/P%C3%A9rigueux_pr%C3%A9fecture_%282%29.JPG",
+    "name": "Dordogne"
+  },
+  "West_Lake": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/West_Lake%2C_Hangzhou_2025.jpg/3840px-West_Lake%2C_Hangzhou_2025.jpg",
+    "name": "West Lake"
+  },
+  "Qinhuai_River": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/2024Apr_-_Nanjing_City_Wall_--_south_section_-_img_04.jpg/3840px-2024Apr_-_Nanjing_City_Wall_--_south_section_-_img_04.jpg",
+    "name": "Qinhuai River"
+  },
+  "221B_Baker_Street": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg",
+    "name": "221B Baker Street"
+  },
+  "Rive_Gauche": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Par_Arr.svg/960px-Par_Arr.svg.png",
+    "name": "Rive Gauche"
+  },
+  "Katha Upanishad": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Katha_Upanishad_1.1.1_to_1.1.3_verses%2C_Krishna_Yajurveda.jpg",
+    "name": "Katha Upanishad"
+  },
+  "Katha 缅甸": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Katha_Upanishad_1.1.1_to_1.1.3_verses%2C_Krishna_Yajurveda.jpg",
+    "name": "Katha Upanishad"
+  },
+  "北海道日本ハムファイターズ": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hokkaido_Nippon-Ham_Fighters_Logo_Vector.svg/250px-Hokkaido_Nippon-Ham_Fighters_Logo_Vector.svg.png",
+    "name": "Hokkaido Nippon-Ham Fighters"
+  },
+  "北海道小樽 日本": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hokkaido_Nippon-Ham_Fighters_Logo_Vector.svg/250px-Hokkaido_Nippon-Ham_Fighters_Logo_Vector.svg.png",
+    "name": "Hokkaido Nippon-Ham Fighters"
+  },
+  "Sendai": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/SendaiCity_Skylines_from_Mukaiyama2018.jpg",
+    "name": "Sendai"
+  }
+}

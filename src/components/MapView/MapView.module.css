@@ -1,0 +1,62 @@
+/* MapView — map container and route popups */
+
+.mapWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-map);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* NOTE: Do NOT apply transform/transition on .coverMarker or .routeDot.
+   Leaflet uses transform: translate(x,y) to position markers on the map.
+   A CSS :hover { transform: scale(...) } would overwrite Leaflet's translate
+   and make the marker jump. Hover scale is handled via inline onmouseenter/
+   onmouseleave on the inner div inside createBookIcon(). */
+
+.coverMarker {
+  background: none !important;
+  border: none !important;
+}
+
+.coverMarker:hover {
+  z-index: 999 !important;
+}
+
+.routeDot {
+  background: none !important;
+  border: none !important;
+}
+
+.routePopup {
+  font-family: var(--font-sans);
+  max-width: 180px;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.routePopup strong {
+  font-size: var(--text-base);
+  display: block;
+  margin-bottom: 2px;
+  color: var(--color-text-primary);
+}
+
+.routeYear {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.routePopup p {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+  margin-top: 2px;
+}

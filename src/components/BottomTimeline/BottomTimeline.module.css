@@ -1,0 +1,238 @@
+/* BottomTimeline — refined editorial time slider */
+
+.timeline {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-timeline);
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 15px 28px 14px;
+  border-radius: 20px;
+  max-width: calc(100vw - 36px);
+  transition: max-width 0.3s ease, padding 0.3s ease;
+}
+
+/* ---- All Eras button ---- */
+.allBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 17px;
+  border-radius: 18px;
+  border: 1px solid rgba(91, 140, 133, 0.1);
+  background: rgba(91, 140, 133, 0.03);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  flex-shrink: 0;
+}
+
+.allBtn:hover {
+  background: rgba(91, 140, 133, 0.06);
+  border-color: rgba(91, 140, 133, 0.2);
+  transform: translateY(-1px);
+}
+
+.allActive {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 14px rgba(91, 140, 133, 0.28);
+}
+
+.allActive:hover {
+  background: #4d7d76;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.allCount {
+  font-size: 10px;
+  background: rgba(91, 140, 133, 0.08);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.allActive .allCount {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* ---- Slider group ---- */
+.sliderGroup {
+  flex: 1;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  transition: min-width 0.3s ease;
+}
+
+.sliderGroupExpanded {
+  min-width: 620px;
+}
+
+/* ---- Range track ---- */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(91, 140, 133, 0.08) 0%,
+    rgba(91, 140, 133, 0.12) 50%,
+    rgba(91, 140, 133, 0.22) 70%,
+    rgba(91, 140, 133, 0.35) 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+.rangeInactive {
+  opacity: 0.4;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 3px solid white;
+  box-shadow: 0 2px 12px rgba(91, 140, 133, 0.35);
+  cursor: pointer;
+  transition: transform var(--transition-spring);
+}
+
+.range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 3px solid white;
+  box-shadow: 0 2px 12px rgba(91, 140, 133, 0.35);
+  cursor: pointer;
+}
+
+/* ---- Tick marks ---- */
+.ticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+  flex: 1;
+  min-width: 0;
+}
+
+.tick:hover {
+  background: rgba(91, 140, 133, 0.04);
+  transform: translateY(-2px);
+}
+
+.tickCompressed {
+  flex: 0.4;
+  opacity: 0.55;
+}
+
+.tickCompressed .tickLabel {
+  font-size: 9px;
+}
+
+.tickSub {
+  flex: 1;
+}
+
+.tickSub .tickLabel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: -0.2px;
+}
+
+.tickLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+.tick:hover .tickLabel {
+  color: var(--color-text-secondary);
+}
+
+.tickActive .tickLabel {
+  color: var(--color-accent);
+}
+
+.tickCount {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  background: rgba(91, 140, 133, 0.05);
+  padding: 1px 7px;
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+}
+
+.tick:hover .tickCount {
+  background: rgba(91, 140, 133, 0.1);
+}
+
+.tickActive .tickCount {
+  background: var(--color-accent);
+  color: white;
+  box-shadow: 0 1px 6px rgba(91, 140, 133, 0.35);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    bottom: 10px;
+  }
+
+  .sliderGroup {
+    min-width: 260px;
+  }
+
+  .sliderGroupExpanded {
+    min-width: 390px;
+  }
+
+  .tickLabel {
+    font-size: 9px;
+  }
+
+  .tickSub .tickLabel {
+    font-size: 8px;
+  }
+
+  .tickCompressed .tickLabel {
+    font-size: 7px;
+  }
+}

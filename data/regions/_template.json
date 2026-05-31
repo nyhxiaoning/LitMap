@@ -1,0 +1,57 @@
+{
+  "region": "示例地区",
+  "description": "这是地区文件模板，请复制并修改。文件名建议用英文，如 china-east.json, europe-west.json",
+  "bounds": {
+    "minLat": 18,
+    "maxLat": 54,
+    "minLng": 73,
+    "maxLng": 135
+  },
+  "books": [
+    {
+      "title": "书名（必填）",
+      "author": "作者（可选，豆瓣获取后覆盖）",
+      "doubanId": "豆瓣数字ID（可选，填写后自动获取元数据）",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "city": "城市名",
+      "country": "国家（可选，默认使用 region 字段）",
+      "century": "20世纪",
+      "tags": ["标签1", "标签2"],
+      "quote": "书摘/引文（可选）",
+      "desc": "描述文本（可选，豆瓣获取后覆盖）",
+      "isTrajectory": false,
+      "realViewName": "实景地名（可选）",
+      "realViewUrl": "实景图URL（可选）"
+    },
+    {
+      "title": "带轨迹的书（示例）",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "city": "起点城市",
+      "century": "20世纪",
+      "isTrajectory": true,
+      "path": [
+        {
+          "name": "第一站地名",
+          "coord": [39.9042, 116.4074],
+          "year": "1920年",
+          "info": "这一站发生的事"
+        },
+        {
+          "name": "第二站地名",
+          "coord": [31.2304, 121.4737],
+          "year": "1925年",
+          "info": "旅途中的事件"
+        },
+        {
+          "name": "终点地名",
+          "coord": [30.5728, 104.0668],
+          "year": "1930年",
+          "info": "终点站描述"
+        }
+      ],
+      "tags": ["旅行文学", "公路小说"]
+    }
+  ]
+}

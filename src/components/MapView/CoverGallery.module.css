@@ -1,0 +1,154 @@
+/* CoverGallery — refined cover browser with hover dynamics */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-gallery);
+  background: rgba(16, 28, 25, 0.45);
+  backdrop-filter: blur(28px) saturate(120%);
+  -webkit-backdrop-filter: blur(28px) saturate(120%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: galleryFadeIn 0.3s ease-out;
+}
+
+@keyframes galleryFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.gallery {
+  position: relative;
+  max-width: 88vw;
+  max-height: 82vh;
+  border-radius: 20px;
+  padding: 44px 36px 36px;
+  overflow-y: auto;
+  animation: gallerySlideUp 0.4s cubic-bezier(0.25, 1.1, 0.5, 1.1);
+}
+
+@keyframes gallerySlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: var(--glass-border);
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-spring);
+}
+
+.closeBtn:hover {
+  background: var(--color-accent-glow);
+  color: var(--color-accent);
+  border-color: rgba(91, 140, 133, 0.18);
+  transform: rotate(90deg);
+}
+
+.title {
+  text-align: center;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: 32px;
+  font-family: var(--font-serif);
+  letter-spacing: 0.03em;
+  color: var(--color-text-primary);
+}
+
+.coverRow {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- Cover item with scale-up hover ---- */
+.coverItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  transition: transform var(--transition-spring);
+  will-change: transform;
+}
+
+.coverItem:hover {
+  transform: translateY(-8px) scale(1.06);
+}
+
+.coverItem:active {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.coverItem:hover .coverWrapper {
+  box-shadow: 0 14px 44px rgba(91, 140, 133, 0.2), 0 0 0 1px rgba(91, 140, 133, 0.06);
+}
+
+.coverItem:hover .bookTitle {
+  color: var(--color-accent);
+}
+
+.coverItem:hover .bookAuthor {
+  color: var(--color-text-secondary);
+}
+
+.coverWrapper {
+  width: 135px;
+  height: 202px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 6px 26px rgba(91, 140, 133, 0.13);
+  transition: box-shadow var(--transition-spring), transform var(--transition-spring);
+}
+
+.coverWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-spring);
+}
+
+.coverItem:hover .coverWrapper img {
+  transform: scale(1.04);
+}
+
+.bookTitle {
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-align: center;
+  max-width: 135px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.bookAuthor {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  text-align: center;
+  transition: color var(--transition-fast);
+}
