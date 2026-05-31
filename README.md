@@ -5,7 +5,7 @@
 <h1 align="center">LitMap · 文学世界时空地图</h1>
 
 <p align="center">
-  <em>以地理空间与历史时间双轴联动，重构世界文学名著的浏览与探索体验。</em>
+  <em>"语言的边界就是世界的边界"——维特根斯坦</em>
 </p>
 
 <p align="center">

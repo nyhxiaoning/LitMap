@@ -10,7 +10,7 @@ export default function TopBar() {
       <div className={styles.brand}>
         <h1 className={styles.logo}>LitMap</h1>
         <span className={styles.slogan}>
-          "语言的边界是思想的边界" <span className={styles.sloganAuthor}>— 维特根斯坦</span>
+          "语言的边界就是世界的边界" <span className={styles.sloganAuthor}>— 维特根斯坦</span>
         </span>
       </div>
 
