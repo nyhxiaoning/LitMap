@@ -388,3 +388,105 @@
   opacity: 0.9;
   transform: translateX(3px);
 }
+
+/* ---- RealView quote (原著描写) ---- */
+.realViewQuote {
+  padding: 10px 16px 14px;
+  background: var(--color-surface);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--color-text-secondary, #6b7f7a);
+  font-style: italic;
+  border-top: 1px dashed rgba(91, 140, 133, 0.08);
+}
+
+.quoteMark {
+  color: var(--color-accent);
+  opacity: 0.5;
+}
+
+/* ---- Area books list (region/cluster view in right drawer) ---- */
+
+.areaTitle {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  font-family: var(--font-serif);
+  margin-bottom: 4px;
+  letter-spacing: 0.03em;
+  color: var(--color-text-primary);
+  padding-top: 10px;
+}
+
+.areaCount {
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.areaBookList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 12px 20px;
+}
+
+.areaBookItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.18s ease;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.areaBookItem:hover {
+  background: rgba(91, 140, 133, 0.06);
+}
+
+.areaBookCover {
+  width: 40px;
+  height: 56px;
+  border-radius: 3px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(91, 140, 133, 0.12);
+  flex-shrink: 0;
+}
+
+.areaBookInfo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 1px;
+}
+
+.areaBookTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a2624;
+  font-family: var(--font-serif);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+.areaBookAuthor {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.areaBookCity {
+  font-size: 10px;
+  color: var(--color-accent);
+  font-weight: 500;
+  line-height: 1.3;
+}

@@ -25,6 +25,7 @@ export interface BookData {
   isTrajectory?: boolean;
   realViewName: string;
   realViewUrl: string;
+  realViewQuote: string;
   path?: PathNode[];
 }
 
@@ -48,6 +49,8 @@ export interface AppState {
   regionFilter: RegionFilter | null;
   flyToRegion: string | null; // trigger map fly-to by country/region name
   searchQuery: string;
+  areaBooks: BookData[] | null; // books in currently selected cluster/area
+  areaLabel: string | null; // display label for the area
 }
 
 export type AppAction =
@@ -59,4 +62,5 @@ export type AppAction =
   | { type: "SET_LIGHTBOX_IMAGE"; payload: { url: string; name: string } | null }
   | { type: "SET_REGION_FILTER"; payload: RegionFilter | null }
   | { type: "FLY_TO_REGION"; payload: string | null }
-  | { type: "SET_SEARCH_QUERY"; payload: string };
+  | { type: "SET_SEARCH_QUERY"; payload: string }
+  | { type: "SET_AREA_BOOKS"; payload: { books: BookData[]; label: string } | null };

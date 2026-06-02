@@ -166,6 +166,45 @@ function BrowseMode({ books }: { books: BookData[] }) {
   );
 }
 
+// ---- Area books mode (when a cluster is clicked on the map) ----
+function AreaMode({ books, label }: { books: BookData[]; label: string }) {
+  const { state, dispatch } = useAppContext();
+
+  const filtered = useMemo(() => {
+    let result = books;
+    if (state.timeFilter !== null) {
+      result = result.filter((b) => matchesTimeFilter(b.sliderVal, b.tags, state.timeFilter));
+    }
+    return result.sort((a, b) => a.rank - b.rank);
+  }, [books, state.timeFilter]);
+
+  return (
+    <>
+      <div>
+        <div className={styles.header}>
+          <h2>{label}</h2>
+          <span className={styles.count}>
+            <button
+              onClick={() => dispatch({ type: "SET_AREA_BOOKS", payload: null })}
+              className={styles.clearBtn}
+            >
+              ← 全部
+            </button>
+            {filtered.length} 部
+          </span>
+        </div>
+      </div>
+      <div className={styles.list}>
+        {filtered.length === 0 ? (
+          <div className={styles.emptyResult}>该区域在当前时间筛选下没有匹配的书籍</div>
+        ) : (
+          filtered.map((b) => <BookCard key={b.id} book={b} />)
+        )}
+      </div>
+    </>
+  );
+}
+
 // ---- Literary guide overview mode ----
 function OverviewMode({ onRegionClick }: { onRegionClick: (rf: RegionFilter) => void }) {
   const [expanded, setExpanded] = useState<Set<string>>(new Set(["欧洲"]));
@@ -224,9 +263,13 @@ function OverviewMode({ onRegionClick }: { onRegionClick: (rf: RegionFilter) => 
 }
 
 // ---- Main ----
-interface LeftPanelProps { books: BookData[]; }
+interface LeftPanelProps {
+  books: BookData[];
+  areaBooks: BookData[] | null;
+  areaLabel: string | null;
+}
 
-export default function LeftPanel({ books }: LeftPanelProps) {
+export default function LeftPanel({ books, areaBooks, areaLabel }: LeftPanelProps) {
   const { state, dispatch } = useAppContext();
 
   const handleRegionClick = (rf: RegionFilter) => {
@@ -246,6 +289,8 @@ export default function LeftPanel({ books }: LeftPanelProps) {
         style={{ transform: state.isLeftPanelOpen ? "translateX(0)" : "translateX(-420px)" }}>
         {state.searchQuery ? (
           <SearchMode books={books} />
+        ) : areaBooks && areaBooks.length > 0 ? (
+          <AreaMode books={areaBooks} label={areaLabel || "该地区作品"} />
         ) : state.regionFilter ? (
           <BrowseMode books={books} />
         ) : (

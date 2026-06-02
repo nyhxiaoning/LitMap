@@ -87,10 +87,6 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
     "name": "Moscow"
   },
-  "Normandy": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Normandie.svg/960px-Flag_of_Normandie.svg.png",
-    "name": "Normandy"
-  },
   "New_York_City": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
     "name": "New York City"
@@ -202,10 +198,6 @@
   "Fukuoka": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg",
     "name": "Fukuoka"
-  },
-  "Hong_Kong": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png",
-    "name": "Hong Kong"
   },
   "Turin": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Torino_Piazza_Castello_11.jpg/3840px-Torino_Piazza_Castello_11.jpg",
@@ -331,17 +323,9 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg/3840px-Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg",
     "name": "Buenos Aires"
   },
-  "Andalusia": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Andaluc%C3%ADa.svg/960px-Flag_of_Andaluc%C3%ADa.svg.png",
-    "name": "Andalusia"
-  },
   "Oxford": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg",
     "name": "Oxford"
-  },
-  "Alaska": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Alaska.svg/1920px-Flag_of_Alaska.svg.png",
-    "name": "Alaska"
   },
   "Dublin": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/3840px-Dublin_-_aerial_-_2025-07-07_01.jpg",
@@ -434,5 +418,441 @@
   "Sendai": {
     "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/SendaiCity_Skylines_from_Mukaiyama2018.jpg",
     "name": "Sendai"
+  },
+  "commons:悉尼近郊": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Waratah_Series_1_%28A_Set%29_at_Sydney_Central_Station.jpg/1280px-Waratah_Series_1_%28A_Set%29_at_Sydney_Central_Station.jpg",
+    "name": "Waratah Series 1 (A Set) at Sydney Central Station.jpg"
+  },
+  "commons:南澳": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/University_of_South_Australia%2C_School_of_Mines%2C_North_Terrace%2C_Adelaide%2C_South_Australia.jpg/1280px-University_of_South_Australia%2C_School_of_Mines%2C_North_Terrace%2C_Adelaide%2C_South_Australia.jpg",
+    "name": "University of South Australia, School of Mines, North Terrace, Adelaide, South Australia.jpg"
+  },
+  "悉尼近郊": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Waratah_Series_1_%28A_Set%29_at_Sydney_Central_Station.jpg/1280px-Waratah_Series_1_%28A_Set%29_at_Sydney_Central_Station.jpg",
+    "name": "Waratah Series 1 (A Set) at Sydney Central Station.jpg"
+  },
+  "南澳": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/University_of_South_Australia%2C_School_of_Mines%2C_North_Terrace%2C_Adelaide%2C_South_Australia.jpg/1280px-University_of_South_Australia%2C_School_of_Mines%2C_North_Terrace%2C_Adelaide%2C_South_Australia.jpg",
+    "name": "University of South Australia, School of Mines, North Terrace, Adelaide, South Australia.jpg"
+  },
+  "克恩滕州": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/K%C3%A4rnten_in_Austria.svg/langzh-1280px-K%C3%A4rnten_in_Austria.svg.png",
+    "name": "克恩顿州"
+  },
+  "巴尔干地区": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Balkan_Peninsula.svg/langzh-1920px-Balkan_Peninsula.svg.png",
+    "name": "巴尔干半岛"
+  },
+  "加拿大": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/1000_Islands_Tower_view_July_2015_panorama_5.jpg/1280px-1000_Islands_Tower_view_July_2015_panorama_5.jpg",
+    "name": "1000 Islands Tower view July 2015 panorama 5.jpg"
+  },
+  "新斯科舍省布雷顿角岛 加拿大": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/CADAL11105811_%E6%AF%94%E8%BC%83%E6%96%87%E5%8C%96%E7%A0%94%E7%A9%B6%E6%89%80%E8%AD%AF%E5%8F%A2%E4%B9%8B%E5%9B%9B%C2%B7%E7%BE%8E%E5%9C%8B%E5%90%8D%E4%BA%BA%E5%B0%8F%E5%82%B3.djvu/page1-1280px-CADAL11105811_%E6%AF%94%E8%BC%83%E6%96%87%E5%8C%96%E7%A0%94%E7%A9%B6%E6%89%80%E8%AD%AF%E5%8F%A2%E4%B9%8B%E5%9B%9B%C2%B7%E7%BE%8E%E5%9C%8B%E5%90%8D%E4%BA%BA%E5%B0%8F%E5%82%B3.djvu.jpg",
+    "name": "CADAL11105811 比較文化研究所譯叢之四·美國名人小傳.djvu"
+  },
+  "云南省迪庆州香格里拉 中国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/View_from_Shangri-La_City%2C_Diqing_Tibetan_Autonomous_Prefecture%2C_Yunnan%2C_China.jpg/1280px-View_from_Shangri-La_City%2C_Diqing_Tibetan_Autonomous_Prefecture%2C_Yunnan%2C_China.jpg",
+    "name": "View from Shangri-La City, Diqing Tibetan Autonomous Prefecture, Yunnan, China.jpg"
+  },
+  "山东省潍坊市高密市大栏乡 中国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/%E5%B1%B1%E4%B8%9C%E7%9C%81%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%85%B3%E4%BA%8E%E5%85%AC%E5%B8%83%E7%AC%AC%E4%BA%94%E6%89%B9%E7%9C%81%E7%BA%A7%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%8D%95%E4%BD%8D%E7%9A%84%E9%80%9A%E7%9F%A5%EF%BC%88%E9%B2%81%E6%94%BF%E5%AD%97%E3%80%942015%E3%80%95142%E5%8F%B7%EF%BC%89.pdf/page1-960px-%E5%B1%B1%E4%B8%9C%E7%9C%81%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%85%B3%E4%BA%8E%E5%85%AC%E5%B8%83%E7%AC%AC%E4%BA%94%E6%89%B9%E7%9C%81%E7%BA%A7%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%8D%95%E4%BD%8D%E7%9A%84%E9%80%9A%E7%9F%A5%EF%BC%88%E9%B2%81%E6%94%BF%E5%AD%97%E3%80%942015%E3%80%95142%E5%8F%B7%EF%BC%89.pdf.jpg",
+    "name": "山东省人民政府关于公布第五批省级文物保护单位的通知（鲁政字〔2015〕142号）.pdf"
+  },
+  "南特 法国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nantes_-_Hotel_de_ville_05.jpg/1280px-Nantes_-_Hotel_de_ville_05.jpg",
+    "name": "Nantes - Hotel de ville 05.jpg"
+  },
+  "格勒诺布尔 法国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tour_Vercors%2C_Grenoble%2C_2026.jpg/1280px-Tour_Vercors%2C_Grenoble%2C_2026.jpg",
+    "name": "Tour Vercors, Grenoble, 2026.jpg"
+  },
+  "里尔 法国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Lille_vue_gd_place.JPG/1280px-Lille_vue_gd_place.JPG",
+    "name": "Lille vue gd place.JPG"
+  },
+  "Alsace": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Colmar_%2832350846618%29.jpg/3840px-Colmar_%2832350846618%29.jpg",
+    "name": "Alsace"
+  },
+  "阿尔及尔 法国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Harbor_and_Admiralty%2C_Algiers%2C_Algeria_WDL2452.png/1280px-The_Harbor_and_Admiralty%2C_Algiers%2C_Algeria_WDL2452.png",
+    "name": "The Harbor and Admiralty, Algiers, Algeria WDL2452.png"
+  },
+  "德国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Germany_Name_European_Languages.png",
+    "name": "Names of Germany"
+  },
+  "Delphi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Delphi%2C_Greece_-_panoramio.jpg",
+    "name": "Delphi"
+  },
+  "底比斯 希腊": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Thebes-1.jpg",
+    "name": "Thebes-1.jpg"
+  },
+  "色萨利大区 希腊": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/GreeceThessaly.png",
+    "name": "GreeceThessaly.png"
+  },
+  "莱斯沃斯岛 希腊": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mithymna-Lesbos.JPG/1280px-Mithymna-Lesbos.JPG",
+    "name": "Mithymna-Lesbos.JPG"
+  },
+  "科斯岛 希腊": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sunset_of_Mykonos.jpg/1280px-Sunset_of_Mykonos.jpg",
+    "name": "Sunset of Mykonos.jpg"
+  },
+  "的里雅斯特 意大利": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ayuntamiento%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_10.jpg/1280px-Ayuntamiento%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_10.jpg",
+    "name": "Ayuntamiento, Trieste, Italia, 2017-04-15, DD 10.jpg"
+  },
+  "仁川 韩国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Incheon_Cityscape.jpg/1280px-Incheon_Cityscape.jpg",
+    "name": "Incheon Cityscape.jpg"
+  },
+  "江原道 韩国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Town_at_the_Foot_of_the_Mountain.jpg/1280px-Town_at_the_Foot_of_the_Mountain.jpg",
+    "name": "Town at the Foot of the Mountain.jpg"
+  },
+  "光州 韩国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Gwangju_montage.png",
+    "name": "Gwangju montage.png"
+  },
+  "智利黑岛太平洋海岸 拉丁美洲下篇": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CADAL11105972_%E5%8D%97%E7%BE%8E%E4%B8%89%E5%BC%B7%E5%88%A9%E7%94%A8%E5%A4%96%E8%B3%87%E8%88%88%E5%9C%8B%E4%BA%8B%E4%BE%8B.djvu/page1-1280px-CADAL11105972_%E5%8D%97%E7%BE%8E%E4%B8%89%E5%BC%B7%E5%88%A9%E7%94%A8%E5%A4%96%E8%B3%87%E8%88%88%E5%9C%8B%E4%BA%8B%E4%BE%8B.djvu.jpg",
+    "name": "CADAL11105972 南美三強利用外資興國事例.djvu"
+  },
+  "拉丁美洲下篇": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/CADAL11103347_%E6%8B%89%E4%B8%81%E7%BE%8E%E6%B4%B2%E5%85%A7%E5%B9%95%C2%B7%E4%B8%8B%E5%8D%B7.djvu/page1-1280px-CADAL11103347_%E6%8B%89%E4%B8%81%E7%BE%8E%E6%B4%B2%E5%85%A7%E5%B9%95%C2%B7%E4%B8%8B%E5%8D%B7.djvu.jpg",
+    "name": "CADAL11103347 拉丁美洲內幕·下卷.djvu"
+  },
+  "低地三国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Benelux_Low_Countries_Terra_MODIS_Satellite_Image_2005.jpg/1280px-Benelux_Low_Countries_Terra_MODIS_Satellite_Image_2005.jpg",
+    "name": "Benelux Low Countries Terra MODIS Satellite Image 2005.jpg"
+  },
+  "Baltic_Sea": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/The_Baltic_Sea.png",
+    "name": "Baltic Sea"
+  },
+  "马夫拉 葡萄牙": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mafra_May_2013-2.jpg/1280px-Mafra_May_2013-2.jpg",
+    "name": "Mafra May 2013-2.jpg"
+  },
+  "奥廖尔省 俄罗斯": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/1856._Card_from_set_of_geographical_cards_of_the_Russian_Empire_096.jpg/1280px-1856._Card_from_set_of_geographical_cards_of_the_Russian_Empire_096.jpg",
+    "name": "1856. Card from set of geographical cards of the Russian Empire 096.jpg"
+  },
+  "萨哈林岛 俄罗斯": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Coat_of_Arms_of_Alexandrovsk-Sakhalinsky_%28Sakhalin_oblast%29.png",
+    "name": "Coat of Arms of Alexandrovsk-Sakhalinsky (Sakhalin oblast).png"
+  },
+  "旧鲁萨 俄罗斯": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/N2226096.pdf/page1-960px-N2226096.pdf.jpg",
+    "name": "N2226096.pdf"
+  },
+  "多塞特郡 英国与爱尔兰": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Chinese_wikipedia_2004.pdf/page1-960px-Chinese_wikipedia_2004.pdf.jpg",
+    "name": "Chinese wikipedia 2004.pdf"
+  },
+  "英国与爱尔兰": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Destroying_Chinese_war_junks%2C_by_E._Duncan_%281843%29.jpg",
+    "name": "Destroying Chinese war junks, by E. Duncan (1843).jpg"
+  },
+  "斯莱戈郡 英国与爱尔兰": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Chinese_wikipedia_2004.pdf/page1-960px-Chinese_wikipedia_2004.pdf.jpg",
+    "name": "Chinese wikipedia 2004.pdf"
+  },
+  "美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/American_Flag_Waving_on_a_Flag_Pole.jpg/3840px-American_Flag_Waving_on_a_Flag_Pole.jpg",
+    "name": "Names of the United States"
+  },
+  "马萨诸塞州康科德 美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Concord%2C_Mass_2012-0072.jpg/1280px-Concord%2C_Mass_2012-0072.jpg",
+    "name": "Concord, Mass 2012-0072.jpg"
+  },
+  "密苏里州汉尼拔 美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Main_Street_Hannibal_Missouri_southwards.jpg/1280px-Main_Street_Hannibal_Missouri_southwards.jpg",
+    "name": "Main Street Hannibal Missouri southwards.jpg"
+  },
+  "南达科他州 美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dust_Bowl_-_Dallas%2C_South_Dakota_1936.jpg/1280px-Dust_Bowl_-_Dallas%2C_South_Dakota_1936.jpg",
+    "name": "Dust Bowl - Dallas, South Dakota 1936.jpg"
+  },
+  "乔治亚州亚特兰大 美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Georgia_State_University_College_of_Law_Building.jpeg/1280px-Georgia_State_University_College_of_Law_Building.jpeg",
+    "name": "Georgia State University College of Law Building.jpeg"
+  },
+  "俄克拉荷马州 美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Greetings_from_Oklahoma%2C_the_Sooner_State_-_Large_Letter_Postcard_%2814444360595%29.jpg",
+    "name": "Greetings from Oklahoma, the Sooner State - Large Letter Postcard (14444360595).jpg"
+  },
+  "科罗拉多州丹佛 美国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/University_of_Denver_campus_pics_015.jpg/1280px-University_of_Denver_campus_pics_015.jpg",
+    "name": "University of Denver campus pics 015.jpg"
+  },
+  "Albanian_Alps": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Jezerski_Vrh_%282694%29_sa_Karanfila_%282480%29.jpg",
+    "name": "Accursed Mountains"
+  },
+  "Comala,_Colima": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Comala.JPG",
+    "name": "Comala"
+  },
+  "Issyk-Kul": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Issykkul_plyag.jpg",
+    "name": "Issyk-Kul"
+  },
+  "Semey": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/2-minaret_mosque_in_Semey.jpg",
+    "name": "Semey"
+  },
+  "Huai'an": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/%E9%95%87%E6%B7%AE%E6%A5%BC.JPG",
+    "name": "Huai'an"
+  },
+  "Xiangxi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg",
+    "name": "Xiangxi Tujia and Miao Autonomous Prefecture"
+  },
+  "Altay_City": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/%E6%96%B0%E7%96%86%E9%98%BF%E5%8B%92%E6%B3%B0%E5%B8%82._-_panoramio.jpg",
+    "name": "Altay City"
+  },
+  "Yanjin County": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/ChinaXinxiangYanjin.png",
+    "name": "ChinaXinxiangYanjin.png"
+  },
+  "Mount Langya": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/A_rolling_vista_of_Mount_Langya_in_Hebei%2C_picture4.jpg/1280px-A_rolling_vista_of_Mount_Langya_in_Hebei%2C_picture4.jpg",
+    "name": "A rolling vista of Mount Langya in Hebei, picture4.jpg"
+  },
+  "Qingjian_County": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Snowfall_on_Yaodong%2C_Qingjian_County.jpg",
+    "name": "Qingjian County"
+  },
+  "New_South_Wales": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_New_South_Wales.svg/1280px-Flag_of_New_South_Wales.svg.png",
+    "name": "New South Wales"
+  },
+  "Ontario": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Ontario.svg/3840px-Flag_of_Ontario.svg.png",
+    "name": "Ontario"
+  },
+  "Prince_Edward_Island": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_Prince_Edward_Island.svg/1920px-Flag_of_Prince_Edward_Island.svg.png",
+    "name": "Prince Edward Island"
+  },
+  "Jalisco": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Flag_of_Jalisco.svg/1920px-Flag_of_Jalisco.svg.png",
+    "name": "Jalisco"
+  },
+  "中国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/960px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "name": "China"
+  },
+  "Hong_Kong": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png",
+    "name": "Hong Kong"
+  },
+  "Qingjian County": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/%E8%B7%AF%E9%81%A5%E6%95%85%E9%87%8C%E8%A1%8C_-_panoramio_%283%29.jpg/1280px-%E8%B7%AF%E9%81%A5%E6%95%85%E9%87%8C%E8%A1%8C_-_panoramio_%283%29.jpg",
+    "name": "路遥故里行 - panoramio (3).jpg"
+  },
+  "Normandy": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Normandie.svg/960px-Flag_of_Normandie.svg.png",
+    "name": "Normandy"
+  },
+  "Loire Valley": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Val-de-loire-montsoreau-lever-de-soleil.jpg/1280px-Val-de-loire-montsoreau-lever-de-soleil.jpg",
+    "name": "Val-de-loire-montsoreau-lever-de-soleil.jpg"
+  },
+  "Stuttgart": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Neues_Schloss_Schlossplatzspringbrunnen_Schlossplatz_Stuttgart_2015_01.jpg/3840px-Neues_Schloss_Schlossplatzspringbrunnen_Schlossplatz_Stuttgart_2015_01.jpg",
+    "name": "Stuttgart"
+  },
+  "Hölderlinturm": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/H%C3%B6lderlinturmT%C3%BCbingen.jpg",
+    "name": "Hölderlinturm"
+  },
+  "Wetzlar": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Wetzlarskyline.jpg",
+    "name": "Wetzlar"
+  },
+  "Kassel": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/18-09-26-Kassel-RalfR-DJI_0369.jpg/3840px-18-09-26-Kassel-RalfR-DJI_0369.jpg",
+    "name": "Kassel"
+  },
+  "Osnabrück": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Osnabr%C3%BCck_aerial.jpg",
+    "name": "Osnabrück"
+  },
+  "Düsseldorf": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Rheinkniebr%C3%BCcke_at_night.jpg",
+    "name": "Düsseldorf"
+  },
+  "Karl_Marx_House": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Marx_birthplace_Trier.jpg",
+    "name": "Karl Marx House"
+  },
+  "Erfurt": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kr%C3%A4merbr%C3%BCcke%2C_Erfurt_6.jpg/3840px-Kr%C3%A4merbr%C3%BCcke%2C_Erfurt_6.jpg",
+    "name": "Erfurt"
+  },
+  "Mount Helicon": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Helikonmountainascent.JPG/1280px-Helikonmountainascent.JPG",
+    "name": "Helikonmountainascent.JPG"
+  },
+  "Lahore": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Lahore_Fort_view_from_Baradari.jpg",
+    "name": "Lahore"
+  },
+  "Surabaya": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Central_Surabaya_view_taken_from_JW_Marriott_Surabaya.jpg/3840px-Central_Surabaya_view_taken_from_JW_Marriott_Surabaya.jpg",
+    "name": "Surabaya"
+  },
+  "Liguria": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Liguria_in_Italy.svg/1280px-Liguria_in_Italy.svg.png",
+    "name": "Liguria"
+  },
+  "Yuzawa,_Niigata": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Yuzawa_town_hall.JPG/3840px-Yuzawa_town_hall.JPG",
+    "name": "Yuzawa, Niigata"
+  },
+  "South_Gyeongsang_Province": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerial_View_of_Daewoo_Shipbuilding_%26_Marine_Engineering.jpg/3840px-Aerial_View_of_Daewoo_Shipbuilding_%26_Marine_Engineering.jpg",
+    "name": "South Gyeongsang Province"
+  },
+  "North_Jeolla_Province": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Korea-Buan_County-Naesosa-Daungbojeon-02.jpg/3840px-Korea-Buan_County-Naesosa-Daungbojeon-02.jpg",
+    "name": "North Jeolla Province"
+  },
+  "大邱 韩国": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/DGIST_campus_spring_%283%29.jpg/1280px-DGIST_campus_spring_%283%29.jpg",
+    "name": "DGIST campus spring (3).jpg"
+  },
+  "Cartagena,_Colombia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Museo_Naval_del_Caribe.JPG",
+    "name": "Cartagena, Colombia"
+  },
+  "Aracataca": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Aracataca%27s_church_where_Garcia_Marquez_was_baptized.JPG",
+    "name": "Aracataca"
+  },
+  "Kortrijk": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Kortrijk_Grote_Markt_54_-_11083_-_onroerenderfgoed.jpg",
+    "name": "Kortrijk"
+  },
+  "Sarawak": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flag_of_Sarawak.svg/1280px-Flag_of_Sarawak.svg.png",
+    "name": "Sarawak"
+  },
+  "Kuching": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Kuching_Skyline.jpg",
+    "name": "Kuching"
+  },
+  "Ipoh": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ipoh_skyline_24-2.jpg/3840px-Ipoh_skyline_24-2.jpg",
+    "name": "Ipoh"
+  },
+  "Johor": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Johor.svg/1280px-Flag_of_Johor.svg.png",
+    "name": "Johor"
+  },
+  "Gibran_Museum": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Gibran_Museum.JPG",
+    "name": "Gibran Museum"
+  },
+  "Mandalay": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Mandalay_-_The_worship_of_Buddha.jpg",
+    "name": "Mandalay"
+  },
+  "Hokitika": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Hokitika_Township.jpg",
+    "name": "Hokitika"
+  },
+  "Norway": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/960px-Flag_of_Norway.svg.png",
+    "name": "Norway"
+  },
+  "Karelia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Many_Karelias.png",
+    "name": "Karelia"
+  },
+  "Iceland": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/1280px-Flag_of_Iceland.svg.png",
+    "name": "Iceland"
+  },
+  "Poland": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1280px-Flag_of_Poland.svg.png",
+    "name": "Poland"
+  },
+  "Chernobyl_Exclusion_Zone": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Checkpoint_ditkatky_chernobyl_zone.JPG",
+    "name": "Chernobyl exclusion zone"
+  },
+  "Lithuania": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Vilnius_Modern_Skyline_At_Dusk%2C_Lithuania_-_Diliff.jpg/1280px-Vilnius_Modern_Skyline_At_Dusk%2C_Lithuania_-_Diliff.jpg",
+    "name": "Vilnius Modern Skyline At Dusk, Lithuania - Diliff.jpg"
+  },
+  "Rostov-on-Don": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rostov_City_Hall_2021.jpg",
+    "name": "Rostov-on-Don"
+  },
+  "Andalusia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Simple_ruin%2C_almond_trees_plantation%2C_Andalusia%2C_Spain.jpg/1280px-Simple_ruin%2C_almond_trees_plantation%2C_Andalusia%2C_Spain.jpg",
+    "name": "Simple ruin, almond trees plantation, Andalusia, Spain.jpg"
+  },
+  "Soria": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Iglesia_de_San_Juan_Bautista%2C_%C3%81greda%2C_Soria%2C_Espa%C3%B1a%2C_2018-03-29%2C_DD_40-42_HDR.jpg/1280px-Iglesia_de_San_Juan_Bautista%2C_%C3%81greda%2C_Soria%2C_Espa%C3%B1a%2C_2018-03-29%2C_DD_40-42_HDR.jpg",
+    "name": "Iglesia de San Juan Bautista, Ágreda, Soria, España, 2018-03-29, DD 40-42 HDR.jpg"
+  },
+  "Davos": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/RhB_ABe_4-16_Capricorn_Davos_Wolfgang_-_Davos_Laret.jpg/1280px-RhB_ABe_4-16_Capricorn_Davos_Wolfgang_-_Davos_Laret.jpg",
+    "name": "RhB ABe 4-16 Capricorn Davos Wolfgang - Davos Laret.jpg"
+  },
+  "沃州外省小镇 瑞士": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/CADAL11102553_%E6%84%9B%E8%88%87%E6%AD%BB%E7%9A%84%E6%90%8F%E9%AC%A5.djvu/page1-1280px-CADAL11102553_%E6%84%9B%E8%88%87%E6%AD%BB%E7%9A%84%E6%90%8F%E9%AC%A5.djvu.jpg",
+    "name": "CADAL11102553 愛與死的搏鬥.djvu"
+  },
+  "Scotland": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1280px-Flag_of_Scotland.svg.png",
+    "name": "Scotland"
+  },
+  "Wales": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/960px-Flag_of_Wales.svg.png",
+    "name": "Wales"
+  },
+  "Swansea": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/P.3._Swansea_City_Centre_2012.jpg",
+    "name": "Swansea"
+  },
+  "County Sligo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Sligo_creek_trail_bridge_20200913_133931_1.jpg/1280px-Sligo_creek_trail_bridge_20200913_133931_1.jpg",
+    "name": "Sligo creek trail bridge 20200913 133931 1.jpg"
+  },
+  "Massachusetts": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/1920px-Flag_of_Massachusetts.svg.png",
+    "name": "Massachusetts"
+  },
+  "Central_Park": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg/3840px-Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg",
+    "name": "Central Park"
+  },
+  "Alabama": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Alabama.svg/960px-Flag_of_Alabama.svg.png",
+    "name": "Alabama"
+  },
+  "Alaska": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Alaska.svg/1920px-Flag_of_Alaska.svg.png",
+    "name": "Alaska"
+  },
+  "California": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/960px-Flag_of_California.svg.png",
+    "name": "California"
+  },
+  "Nigeria": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/1280px-Flag_of_Nigeria.svg.png",
+    "name": "Nigeria"
   }
 }

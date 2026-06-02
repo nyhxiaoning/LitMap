@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, memo } from "react";
+import { useEffect, useMemo, useRef, useState, memo, useCallback } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -23,9 +23,9 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
   searchQuery: string;
 }) {
   const map = useMap();
-  const prevId = useRef<string | null>(null);
+  const prevId = useRef<string | null | undefined>(undefined);
   const prevRegion = useRef<string | null>(null);
-  const prevSearchQuery = useRef<string>("");
+  const searchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     map.setMinZoom(2);
@@ -45,10 +45,14 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
       });
     }
     if (!selectedBook) {
+      // Skip fly on initial mount — map already starts at [30,15] zoom 3.
+      // prevId starts as undefined; only fly back if a book was previously selected.
+      if (prevId.current !== undefined) {
+        map.flyTo([30, 15], 3, {
+          duration: 0.8, easeLinearity: 0.25,
+        });
+      }
       prevId.current = null;
-      map.flyTo([30, 15], 3, {
-        duration: 0.8, easeLinearity: 0.25,
-      });
     }
   }, [selectedBook, map]);
 
@@ -83,10 +87,13 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
     }
   }, [flyToRegion, map]);
 
-  // Fly to search results when query changes
+  // Fly to search results when query changes (debounced 300ms)
   useEffect(() => {
-    if (searchQuery && searchQuery !== prevSearchQuery.current) {
-      prevSearchQuery.current = searchQuery;
+    if (searchTimerRef.current) clearTimeout(searchTimerRef.current);
+
+    if (!searchQuery) return;
+
+    searchTimerRef.current = setTimeout(() => {
       const results = books.filter((b) => matchesSearch(b, searchQuery));
       if (results.length > 0) {
         const lats = results.map(b => b.lat);
@@ -97,10 +104,11 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
         );
         map.flyToBounds(bounds.pad(0.15), { duration: 0.6, easeLinearity: 0.25 });
       }
-    }
-    if (!searchQuery) {
-      prevSearchQuery.current = "";
-    }
+    }, 300);
+
+    return () => {
+      if (searchTimerRef.current) clearTimeout(searchTimerRef.current);
+    };
   }, [searchQuery, map]);
 
   return null;
@@ -176,8 +184,21 @@ function groupLabel(bookList: BookData[], zoom: number, cityIndex: Map<string, s
 }
 
 // ---- Book cover icon ----
-function createBookIcon(books: BookData[], label: string): L.DivIcon {
+/** Sort books so the selected book appears first, rest by rank */
+function sortWithSelectedFirst(books: BookData[], selectedBookId: string | null): BookData[] {
   const sorted = [...books].sort((a, b) => a.rank - b.rank);
+  if (selectedBookId) {
+    const idx = sorted.findIndex((b) => b.id === selectedBookId);
+    if (idx > 0) {
+      const [selected] = sorted.splice(idx, 1);
+      sorted.unshift(selected);
+    }
+  }
+  return sorted;
+}
+
+function createBookIcon(books: BookData[], label: string, selectedBookId: string | null): L.DivIcon {
+  const sorted = sortWithSelectedFirst(books, selectedBookId);
   const topBook = sorted[0];
   const count = sorted.length;
 
@@ -189,13 +210,13 @@ function createBookIcon(books: BookData[], label: string): L.DivIcon {
     const displayLabel = topBook.title.length > 10 ? topBook.title.slice(0, 9) + "…" : topBook.title;
     const ariaLabel = `${topBook.title} — ${topBook.author}`;
     const html = `
-      <div style="position:relative;width:${size}px;height:${size+16}px;cursor:pointer;transition:transform 0.25s cubic-bezier(0.25,1.1,0.5,1.1);"
+      <div style="position:relative;width:${size}px;height:${size+16}px;cursor:pointer;"
         tabindex="0" role="button" aria-label="${ariaLabel}"
-        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform='scale(1)'">
+        onmouseenter="this.style.filter='brightness(1.08) drop-shadow(0 4px 12px rgba(91,140,133,0.3))'" onmouseleave="this.style.filter=''">
         <div style="width:${imgW}px;height:${imgH}px;border-radius:4px;overflow:hidden;
           box-shadow:0 3px 14px rgba(91,140,133,0.2),0 0 0 1px rgba(91,140,133,0.06);
           border:2px solid #fafcfb;
-          transition:transform 0.25s cubic-bezier(0.25,1.1,0.5,1.1);">
+          transition:filter 0.25s ease, box-shadow 0.25s ease;">
           <img src="${topBook.coverUrl}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
             onerror="this.style.display='none'" />
         </div>
@@ -220,9 +241,9 @@ function createBookIcon(books: BookData[], label: string): L.DivIcon {
   const displayLabel = label.length > 12 ? label.slice(0, 11) + "…" : label;
   const ariaLabel = `${label} — ${count} 部作品`;
   const html = `
-    <div style="position:relative;width:${size}px;height:${size+44}px;cursor:pointer;transition:transform 0.25s cubic-bezier(0.25,1.1,0.5,1.1);"
+    <div style="position:relative;width:${size}px;height:${size+44}px;cursor:pointer;"
       tabindex="0" role="button" aria-label="${ariaLabel}"
-      onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform='scale(1)'">
+      onmouseenter="this.style.filter='brightness(1.08) drop-shadow(0 4px 12px rgba(91,140,133,0.3))'" onmouseleave="this.style.filter=''">
       <div style="position:absolute;top:0;left:4px;width:${imgW}px;height:${imgH}px;
         border-radius:4px;overflow:hidden;box-shadow:0 2px 10px rgba(91,140,133,0.2);
         border:2px solid #fafcfb;transform:rotate(-3deg);">
@@ -254,28 +275,31 @@ function createBookIcon(books: BookData[], label: string): L.DivIcon {
   });
 }
 
-// ---- Book Marker (with drill-down) ----
-const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabel, zoom }: {
-  lat: number; lng: number; locationBooks: BookData[]; groupLabel: string; zoom: number;
+// ---- Book Marker (with drill-down + area books in left panel + right drawer) ----
+const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabel, zoom, selectedBookId }: {
+  lat: number; lng: number; locationBooks: BookData[]; groupLabel: string; zoom: number; selectedBookId: string | null;
 }) {
   const { dispatch } = useAppContext();
   const map = useMap();
-  const sorted = useMemo(
-    () => [...locationBooks].sort((a, b) => a.rank - b.rank),
-    [locationBooks]
-  );
-  const icon = useMemo(() => createBookIcon(sorted, groupLabel), [sorted, groupLabel]);
 
-  const handleClick = () => {
+  const sorted = useMemo(
+    () => sortWithSelectedFirst(locationBooks, selectedBookId),
+    [locationBooks, selectedBookId]
+  );
+  const icon = useMemo(() => createBookIcon(sorted, groupLabel, selectedBookId), [sorted, groupLabel, selectedBookId]);
+
+  // ---- Click: select / drill-down / show area books ----
+  const handleClick = useCallback(() => {
     if (zoom >= ZOOM.DISTRICT) {
-      // L6 (finest): select single book or show gallery for small exact-location clusters
+      // L6 (finest): select single book or show gallery for exact-location clusters
       if (sorted.length === 1) {
         dispatch({ type: "SELECT_BOOK", payload: sorted[0].id });
       } else {
         dispatch({ type: "SET_GALLERY_BOOKS", payload: sorted });
+        dispatch({ type: "SET_AREA_BOOKS", payload: { books: sorted, label: groupLabel } });
       }
     } else {
-      // L1-L5 (cluster): drill down — fly to bounds of this group
+      // L1-L5 (cluster): drill down — fly to bounds of this group + show area books
       const lats = sorted.map(b => b.lat);
       const lngs = sorted.map(b => b.lng);
       const bounds = L.latLngBounds(
@@ -300,15 +324,18 @@ const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabe
       } else {
         dispatch({ type: "SET_REGION_FILTER", payload: { country, provinceKey: pk, cityBase: cb, district: sorted[0].city } });
       }
-    }
-  };
 
-  const handleKeyDown = (e: L.LeafletKeyboardEvent) => {
+      // Also show the area's books in the left panel and right drawer
+      dispatch({ type: "SET_AREA_BOOKS", payload: { books: sorted, label: groupLabel } });
+    }
+  }, [zoom, sorted, dispatch, map, groupLabel]);
+
+  const handleKeyDown = useCallback((e: L.LeafletKeyboardEvent) => {
     if (e.originalEvent.key === "Enter" || e.originalEvent.key === " ") {
       e.originalEvent.preventDefault();
       handleClick();
     }
-  };
+  }, [handleClick]);
 
   return (
     <Marker
@@ -319,6 +346,7 @@ const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabe
     />
   );
 });
+
 
 // ---- Trajectory route (only for selected book) ----
 const TrajectoryRoute = memo(function TrajectoryRoute({ book }: {
@@ -447,6 +475,7 @@ export default function MapView() {
                 locationBooks={locationBooks}
                 groupLabel={label}
                 zoom={mapZoom}
+                selectedBookId={state.selectedBookId}
               />
             );
           });

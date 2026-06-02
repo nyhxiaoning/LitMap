@@ -25,8 +25,9 @@ const books: BookData[] = [
     quote: `一个普通的雅典农民因为厌恶战争，私自与敌方斯巴达签订了个人和平条约。`,
     desc: `伯罗奔尼撒战争的阴影笼罩着雅典，公民大会上的政客们狂热地鼓噪着更多的战争。一个名叫狄开俄波利斯的农民受够了——他派了一个不死之神去斯巴达，为自己和家人单独签了一份三十年和平条约。在雅典卫城下的普尼克斯广场上，赞颂酒神的行列与反战的辛辣讽刺交织成了一出狂野的喜剧。`,
     isTrajectory: false,
-    realViewName: `雅典卫城`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/3840px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg`
+    realViewName: `雅典卫城普尼克斯广场`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/3840px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg`,
+    realViewQuote: `普尼克斯广场——一个农民受够了战争，独自与斯巴达签订了和平条约。`
   },
 
   {
@@ -46,8 +47,9 @@ const books: BookData[] = [
     quote: `我服从的是比你的法律更古老、更不可动摇的神圣法律。`,
     desc: `底比斯悲剧矩阵的高潮。俄狄浦斯的女儿安提戈涅面对国王克瑞翁的禁令——叛国者波吕涅刻斯的尸体不得下葬。在底比斯王宫前的乱石地上，她选择遵从神圣的天条而非城邦的法律，独自为兄长的尸体洒下了葬礼的尘土。最终被活埋在石墓中——她成为了西方文学中公民不服从的最早殉道者。`,
     isTrajectory: false,
-    realViewName: `底比斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg/3840px-Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg`
+    realViewName: `底比斯遗址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg/3840px-Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg`,
+    realViewQuote: `底比斯——我服从的是比你的法律更古老、更不可动摇的神圣法律。`
   },
 
   {
@@ -68,7 +70,8 @@ const books: BookData[] = [
     desc: `历史学不朽丰碑。修昔底德以冷峻、唯物的笔触记录了以雅典为首的提洛同盟与以斯巴达为首的伯罗奔尼撒同盟之间撕裂整个希腊世界三十年的旷日血战。从西西里远征的灾难到雅典瘟疫的恐怖——没有人比他更冷酷地揭示过：在战争中，正义不过是强者的修辞。`,
     isTrajectory: false,
     realViewName: `爱琴海与伯罗奔尼撒`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Location_map_of_Peloponnese_%28Greece%29.svg/3840px-Location_map_of_Peloponnese_%28Greece%29.svg.png`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Location_map_of_Peloponnese_%28Greece%29.svg/3840px-Location_map_of_Peloponnese_%28Greece%29.svg.png`,
+    realViewQuote: `爱琴海——强者做他们能做的事，弱者忍受他们必须忍受的事。`
   },
 
   {
@@ -88,8 +91,9 @@ const books: BookData[] = [
     quote: `在瘟疫肆虐的底比斯王宫前，俄狄浦斯发誓要找到凶手——他不知道自己寻找的就是自己。`,
     desc: `底比斯悲剧矩阵。德尔斐神庙降下神谕：底比斯的瘟疫是因为杀害老国王的凶手仍在这座城中。俄狄浦斯王追查真相——从先知忒瑞西阿斯的沉默、到牧羊人带来的真相、再到三岔路口那个决定性的瞬间——他一步步走向了自己就是弑父娶母的凶手的真相。最终在王后的尸体旁刺瞎了自己的双眼。`,
     isTrajectory: true,
-    realViewName: `中希腊底比斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg/3840px-Vue_Nord_Ville_-_Th%C3%A8bes_%28GR03%29_-_2022-03-21_-_3.jpg`,
+    realViewName: `底比斯遗址→德尔斐神庙`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d5/Delphi%2C_Greece_-_panoramio.jpg`,
+    realViewQuote: `德尔斐神庙——神谕降下：底比斯的瘟疫源于弑君者未被惩罚。`,
     path: [
       {
         name: `德尔斐神庙（神谕）`,
@@ -129,8 +133,9 @@ const books: BookData[] = [
     quote: `只有在正义的城邦中，正义的人才能找到幸福。`,
     desc: `西方政治哲学奠基之作。对话始于雅典外港比雷埃夫斯——苏格拉底参加完女神祭典后，在回城途中被拦住，与众人在私宅里就'什么是正义'展开了长达十卷的辩证推演。从洞穴寓言到哲学王，从灵魂三分到理想政体——雅典港口的晚风吹拂着人类理性史上最宏大的一场思想实验。`,
     isTrajectory: false,
-    realViewName: `比雷埃夫斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/0/05/2011_Dimos_Pireos.png`
+    realViewName: `雅典比雷埃夫斯港`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/0/05/2011_Dimos_Pireos.png`,
+    realViewQuote: `比雷埃夫斯——苏格拉底：'我昨天下到比雷埃夫斯港，去参加女神祭典，同时看看他们如何举行这个节日的游行。'`
   },
 
   {
@@ -150,8 +155,9 @@ const books: BookData[] = [
     quote: `波河平原的牧人在失去土地后，用诗歌重建了心中的阿卡迪亚。`,
     desc: `维吉尔的古典诗集，地理背景植根于北意伦巴第大区肥沃的波河平原。曼托瓦周边的牧场上，失去土地的牧人在橄榄树荫下歌唱他们的哀伤与田园牧歌——蜜蜂在苜蓿花间飞舞、羊群在波河支流边饮水、以及那些被战乱和土地兼并夺去家园的农民——构成了西方文学中最纯粹的田园声音。`,
     isTrajectory: false,
-    realViewName: `曼托瓦/波河平原`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Milan_-_Scala_-_Facade.jpg/3840px-Milan_-_Scala_-_Facade.jpg`
+    realViewName: `曼托瓦波河平原`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Milan_-_Scala_-_Facade.jpg/3840px-Milan_-_Scala_-_Facade.jpg`,
+    realViewQuote: `波河平原——蜜蜂在苜蓿花间飞舞，羊群在波河支流边饮水，这就是阿卡迪亚。`
   },
 
   {
@@ -171,8 +177,9 @@ const books: BookData[] = [
     quote: `一只燕子不能带来春天，一个美好的行为也不能带来幸福——幸福需要完满的一生。`,
     desc: `亚里士多德在雅典吕克昂学园的林荫道上漫步教学时沉淀出的伦理学巨著。他追问人类的至善——不是柏拉图的抽象理念，而是通过理性实践可以达到的'幸福'（Eudaimonia）。雅典学园廊柱间的日影与橄榄树下的辩论，构成了西方伦理学最坚实的理性基础。`,
     isTrajectory: false,
-    realViewName: `雅典吕克昂学园`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg/3840px-Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg`
+    realViewName: `雅典吕克昂学园遗址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg/3840px-Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg`,
+    realViewQuote: `吕克昂学园——亚里士多德走在林荫道上，身后跟着一群年轻人：'一只燕子不能带来春天。'`
   },
 
   {
@@ -192,8 +199,9 @@ const books: BookData[] = [
     quote: `在我看来，他的享受好似天神——无论是任何人，坐在你的面前，听你娓娓细语。`,
     desc: `爱琴海北部的浪漫诗意。萨福在美丽的莱斯沃斯岛上建立了女性学院，用极其细腻、炽热的诗句赞美女性之爱、海岛的月光与玫瑰花瓣。莱斯沃斯岛的紫色暮光中，少女们在阿佛洛狄忒的神庙前歌唱——这片土地从此彻底成为了女性主义与浪漫抒情的永久精神圣地。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `莱斯沃斯岛`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mithymna-Lesbos.JPG/1280px-Mithymna-Lesbos.JPG`,
+    realViewQuote: `莱斯沃斯岛——在我看来，他的享受好似天神，无论是任何人，坐在你的面前，听你娓娓细语。`
   },
 
   {
@@ -213,8 +221,9 @@ const books: BookData[] = [
     quote: `缪斯女神在赫利孔山的紫色泉水旁赐予了我歌唱的能力。`,
     desc: `赫西俄德在赫利孔山下放羊时——在紫色的泉水旁，缪斯女神将月桂枝塞入他手中，向他吹入了神圣的气息。从此他写下了古希腊众神最完整的谱系——从混沌卡俄斯到宙斯登上奥林波斯山的王座。而他另一部作品《工作与时日》则转向了土地上弯腰耕作的农民——'没有什么比拥有一块自己的土地更甜美。'`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `赫利孔山`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Helikonmountainascent.JPG/1280px-Helikonmountainascent.JPG`,
+    realViewQuote: `赫利孔山——缪斯女神在紫色的泉水旁，将月桂枝塞入我手中。`
   },
 
   {
@@ -234,8 +243,9 @@ const books: BookData[] = [
     quote: `首先，不要伤害。`,
     desc: `西方医学的发祥地。希波克拉底在科斯岛的梧桐树下讲学——他拒绝将疾病归因于神的惩罚，坚持通过观察、记录和理性分析来寻找病因。爱琴海的海风拂过梧桐叶，科斯岛的杏林园中诞生了医学脱离巫术的最早宣言——'生命短暂，艺术长久，机会稍纵即逝，经验多变，判断困难。'`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `科斯岛`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sunset_of_Mykonos.jpg/1280px-Sunset_of_Mykonos.jpg`,
+    realViewQuote: `科斯岛——首先，不要伤害。梧桐树下的杏林园中，医学脱离了巫术。`
   },
 
   {
@@ -255,12 +265,13 @@ const books: BookData[] = [
     quote: `歌唱吧，女神！歌唱佩琉斯之子阿喀琉斯的愤怒——那给阿开奥斯人带来无数苦难的愤怒。`,
     desc: `阿喀琉斯统帅的迈尔米东人就来自色萨利大区——北希腊那片盛产骏马、民风剽悍的粗粝大地。当阿伽门农夺走他的女俘布里塞伊斯时，阿喀琉斯坐在海岸边望着灰色的海水愤怒地拒绝出战——帕特罗克洛斯代他出战战死——阿喀琉斯的复仇之怒化为特洛伊城墙下最暴烈的杀戮。色萨利草原的铁蹄声贯穿了人类最古老的史诗。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `色萨利大区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/0/02/GreeceThessaly.png`,
+    realViewQuote: `歌唱吧，女神！歌唱佩琉斯之子阿喀琉斯的愤怒——色萨利的骏马嘶鸣着冲向特洛伊的城墙。`
   },
 
   {
-    rank: 13,
+    rank: 12,
     id: `book-114`,
     sliderVal: 1,
     century: `中世纪`,
@@ -276,18 +287,19 @@ const books: BookData[] = [
     quote: `在设拉子的玫瑰花香与夜莺的啼鸣中——哈菲兹将神性的渴望与世俗的美酒一饮而尽。`,
     desc: `波斯文明的抒情灵魂。设拉子——莫萨拉花园的清泉在柏树下流淌，玫瑰花瓣在夜风中飘落。哈菲兹用双关的诗句同时赞美真主与美酒——他的墓地至今仍是全伊朗人前来占卜、哭泣、求爱的精神中枢。'拿走吧，用你的一缕头发换走我全部的信仰。'`,
     isTrajectory: false,
-    realViewName: `设拉子莫萨拉花园`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/14/Darvaze_Ghoran11.jpg`
+    realViewName: `设拉子哈菲兹墓`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/14/Darvaze_Ghoran11.jpg`,
+    realViewQuote: `设拉子——'在你的小巷里，我迷失了心。设拉子的玫瑰，为谁开放？'`
   },
 
   {
-    rank: 14,
+    rank: 13,
     id: `book-259`,
     sliderVal: 1,
     century: `中世纪`,
     lat: 51.28,
     lng: 1.08,
-    country: `英国`,
+    country: `英国与爱尔兰`,
     city: `坎特伯雷`,
     title: `坎特伯雷故事集`,
     author: `杰弗里·乔叟`,
@@ -297,12 +309,13 @@ const books: BookData[] = [
     quote: `当四月带来它那甘美的骤雨，让三月干旱的根茎得以滋润。`,
     desc: `英国文学的开篇巨著。一群来自各阶层的朝圣者从伦敦前往坎特伯雷大教堂，每人讲一个故事。骑士、磨坊主、巴斯妇、敕罪僧……中世纪的英国众生在故事中复活。`,
     isTrajectory: false,
-    realViewName: `坎特伯雷`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Canterbury-cathedral-wyrdlight.jpg`
+    realViewName: `坎特伯雷大教堂`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/1f/Canterbury-cathedral-wyrdlight.jpg`,
+    realViewQuote: `当四月带来它那甘美的骤雨，让三月干旱的根茎得以滋润——人们渴望着去朝圣。`
   },
 
   {
-    rank: 15,
+    rank: 14,
     id: `book-122`,
     sliderVal: 1,
     century: `中世纪`,
@@ -314,16 +327,17 @@ const books: BookData[] = [
     author: `但丁`,
     color: `#B22222`,
     coverUrl: `/covers/1055234.jpg`,
-    tags: [`约1321年`, `意大利文学`, `史诗`, `中世纪文学巅峰`, `2004年`, `豆瓣 8.6`],
+    tags: [`约1321年`, `意大利文学`, `史诗`, `中世纪文学巅峰`, `2004年`],
     quote: `在地狱、炼狱与天堂的旅途中，佛罗伦萨的政客、死敌与市民们各归其位。`,
     desc: `但丁在流放中完成的中世纪文学巅峰之作。无论是《地狱篇》还是《炼狱篇》，里面受苦的灵魂大量充斥着当时佛罗伦萨的政客、死敌与市民——教皇、贵族、银行家们在阿诺河畔城市中的血泪恩怨，被但丁一一打入地狱各层。佛罗伦萨的政治纷争与经院哲学，构成了这部旷世史诗最具体的人间底色。`,
     isTrajectory: false,
-    realViewName: `佛罗伦萨`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FirenzeDec092023_01.jpg/3840px-FirenzeDec092023_01.jpg`
+    realViewName: `佛罗伦萨但丁故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FirenzeDec092023_01.jpg/3840px-FirenzeDec092023_01.jpg`,
+    realViewQuote: `在人生旅程的中途，我发现自己置身于一座黑暗的森林——佛罗伦萨的政客与教皇们，你们各归其位。`
   },
 
   {
-    rank: 16,
+    rank: 15,
     id: `book-121`,
     sliderVal: 1,
     century: `中世纪`,
@@ -335,12 +349,13 @@ const books: BookData[] = [
     author: `[意大利] 卜伽丘`,
     color: `#8B4513`,
     coverUrl: `/covers/23858369.jpg`,
-    tags: [`约1353年`, `意大利文学`, `短篇小说集`, `文艺复兴先驱`, `2013年`, `豆瓣 7.7`],
+    tags: [`约1353年`, `意大利文学`, `短篇小说集`, `文艺复兴先驱`, `2013年`],
     quote: `七女三男逃离黑死病肆虐的佛罗伦萨，在郊外庄园的十天里讲述了100个解放人性的故事。`,
     desc: `欧洲文学史上第一部现实主义巨著。故事的引子是黑死病肆虐的佛罗伦萨——圣母百花大教堂周边的街道上尸横遍地。七女三男为了躲避灾难，逃往菲埃索莱山间绿树成荫的庄园，在十天里讲述了100个充满反封建、解放人性色彩的世俗故事。托斯卡纳的橄榄林、庄园的喷泉与树荫，构成了中世纪最自由的人文舞台。`,
     isTrajectory: true,
-    realViewName: `佛罗伦萨`,
+    realViewName: `佛罗伦萨菲埃索莱山庄`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/FirenzeDec092023_01.jpg/3840px-FirenzeDec092023_01.jpg`,
+    realViewQuote: `菲埃索莱的山庄——橄榄林在晨光中泛着银色的光，十位青年在喷泉边开始讲述一百个故事。`,
     path: [
       {
         name: `黑死病肆虐的佛罗伦萨`,
@@ -358,8 +373,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 17,
-    id: `book-57`,
+    rank: 16,
+    id: `book-56`,
     sliderVal: 1,
     century: `中世纪`,
     lat: 35.78,
@@ -368,18 +383,19 @@ const books: BookData[] = [
     city: `山东省济宁市梁山县水泊梁山`,
     title: `水浒传`,
     author: `施耐庵`,
-    color: `#4169E1`,
+    color: `#BC8F8F`,
     coverUrl: `/covers/wr-29855986.jpg`,
     tags: [`14世纪`, `四大名著`, `英雄传奇`, `水泊梁山`, `官逼民反`],
     quote: `路见不平一声吼，该出手时就出手。`,
     desc: `其英雄神话的地理轴心精准依托于鲁西南的八百里水泊、芦苇荡与险峻山寨，是北中国稻作平民阶层反抗体制最雄浑的古典江湖风土。`,
     isTrajectory: false,
-    realViewName: `水泊梁山`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/2/2a/Shuipo_Liangshan_%282910779405%29.jpg`
+    realViewName: `济宁梁山县水泊梁山`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/2/2a/Shuipo_Liangshan_%282910779405%29.jpg`,
+    realViewQuote: `八方共域，异姓一家。天地显罡煞之精，人境合杰灵之美。`
   },
 
   {
-    rank: 18,
+    rank: 17,
     id: `book-141`,
     sliderVal: 1,
     century: `中世纪`,
@@ -391,16 +407,17 @@ const books: BookData[] = [
     author: `紫式部`,
     color: `#8B4513`,
     coverUrl: `/covers/1000771.jpg`,
-    tags: [`约1008年`, `日本古典文学`, `物语文学`, `平安时代`, `2002年`, `豆瓣 8.1`],
+    tags: [`约1008年`, `日本古典文学`, `物语文学`, `平安时代`, `2002年`],
     quote: `不知是梦是真，只觉世事无常。`,
     desc: `世界上最早的长篇小说之一，由平安时代宫廷女官紫式部创作。全书以平安京（京都）的贵族社会为舞台，描写主人公光源氏及其后代的政治沉浮与情爱纠葛。京都御所、嵯峨野、宇治等地的四季风物与宫廷建筑被细腻地织入叙事——春之樱花、秋之红叶、冬之落雪，平安京的优雅与哀愁渗透在每一个场景中。`,
     isTrajectory: false,
-    realViewName: `京都`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`
+    realViewName: `京都宇治市源氏物语博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`,
+    realViewQuote: `不知是梦是真，只觉世事无常——平安京的樱花在春风中飘落，光源氏的笛声从嵯峨野的竹林深处传来。`
   },
 
   {
-    rank: 19,
+    rank: 18,
     id: `book-37`,
     sliderVal: 1,
     century: `中世纪`,
@@ -417,12 +434,13 @@ const books: BookData[] = [
     desc: `虽未亲临，但其凭图构思出的'衔远山，吞长江，浩浩汤汤'的洞庭宏大空间，化为了中国文人忧乐天下的至高精神地理坐标。`,
     isTrajectory: false,
     realViewName: `岳阳楼`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg`,
+    realViewQuote: `予观夫巴陵胜状，在洞庭一湖。衔远山，吞长江，浩浩汤汤，横无际涯。`
   },
 
   {
-    rank: 20,
-    id: `book-59`,
+    rank: 19,
+    id: `book-58`,
     sliderVal: 1,
     century: `中世纪`,
     lat: 32.28,
@@ -431,18 +449,19 @@ const books: BookData[] = [
     city: `安徽省滁州市琅琊山`,
     title: `醉翁亭记`,
     author: `欧阳修`,
-    color: `#8B0000`,
+    color: `#228B22`,
     coverUrl: `/covers/wr-3300142780.jpg`,
     tags: [`1046年`, `散文名篇`, `山水之乐`, `与民同乐`, `江淮`],
     quote: `醉翁之意不在酒，在乎山水之间也。`,
     desc: `精准定位在琅琊山深处的蔚然深秀间。欧阳修用21个也字，将山水之乐、滁州市民的太平烟火与贬官文人的与民同乐完美缝合，构筑了江淮大地上最豁达的精神地理坐标。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `滁州琅琊山醉翁亭`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/A_rolling_vista_of_Mount_Langya_in_Hebei%2C_picture4.jpg/1280px-A_rolling_vista_of_Mount_Langya_in_Hebei%2C_picture4.jpg`,
+    realViewQuote: `环滁皆山也。其西南诸峰，林壑尤美。望之蔚然而深秀者，琅琊也。`
   },
 
   {
-    rank: 21,
+    rank: 20,
     id: `book-134`,
     sliderVal: 2,
     century: `16世纪`,
@@ -458,12 +477,13 @@ const books: BookData[] = [
     quote: `凯普莱特与蒙太古两大家族的世仇，在维罗纳燥热的夏季街头爆裂开来。`,
     desc: `空间坐标精准锁定在威尼托大区的古城维罗纳。凯普莱特与蒙太古两大家族的世仇在维罗纳燥热的夏季街头爆裂开来——卡佩罗路（Via Cappello）上朱丽叶的阳台、埃尔贝广场上的械斗、以及最终在维罗纳古老墓穴中走向凄美终结的年轻恋人。莎士比亚将这座中世纪意大利古城永远定格为世界文学中爱情的至高象征。`,
     isTrajectory: false,
-    realViewName: `维罗纳`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tramonto_a_Verona.jpg/3840px-Tramonto_a_Verona.jpg`
+    realViewName: `维罗纳朱丽叶故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tramonto_a_Verona.jpg/3840px-Tramonto_a_Verona.jpg`,
+    realViewQuote: `维罗纳——凯普莱特与蒙太古两大家族的世仇，在燥热的夏季街头爆裂开来。`
   },
 
   {
-    rank: 22,
+    rank: 21,
     id: `book-75`,
     sliderVal: 2,
     century: `16世纪`,
@@ -479,12 +499,13 @@ const books: BookData[] = [
     quote: `我知道什么？——在城堡的塔楼中，蒙田用极其散淡的笔触审视了人类的一切。`,
     desc: `蒙田隐居在多尔多涅与普罗旺斯交界地带的城堡塔楼中。他在塔楼的拱顶下，用极其散淡、智慧、诚实的笔触，写下了对人类理性的审视——关于友谊、死亡、教育、以及美洲新大陆的食人族。塔楼的静谧与乡村的从容，孕育了西方文学中随笔文体的诞生。`,
     isTrajectory: false,
-    realViewName: `蒙田城堡塔楼`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/86/P%C3%A9rigueux_pr%C3%A9fecture_%282%29.JPG`
+    realViewName: `多尔多涅蒙田城堡塔楼`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/86/P%C3%A9rigueux_pr%C3%A9fecture_%282%29.JPG`,
+    realViewQuote: `我在塔楼的拱顶下，远离尘嚣——'我知道什么？'`
   },
 
   {
-    rank: 23,
+    rank: 22,
     id: `book-227`,
     sliderVal: 2,
     century: `16世纪`,
@@ -500,8 +521,9 @@ const books: BookData[] = [
     quote: `在拉曼查的一个无名村庄里，住着一位绅士。他读骑士小说入了迷，决定去做一名游侠骑士。`,
     desc: `西班牙文学的永恒图腾。那片辽阔、干旱、被烈日暴晒的拉曼查高原上，堂吉诃德披着生锈的铠甲、骑着一匹瘦马罗西南多、带着忠实的仆人桑丘·潘沙踏上了游侠之旅。在帕拉西奥斯平原上他大战风车——'那不是风车，而是巨人！'。从莫雷纳山脉的流浪到巴塞罗那海滩上被'白月骑士'击倒——他的疯癫中包裹着人类最高贵的理想。`,
     isTrajectory: true,
-    realViewName: `卡斯蒂利亚-拉曼查`,
+    realViewName: `卡斯蒂利亚-拉曼查风车群`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/13/Campo_de_Criptana_Molinos_de_Viento_1.jpg`,
+    realViewQuote: `拉曼查平原——那不是风车，而是巨人！堂吉诃德策马冲向旋转的白色巨臂，被挑上了半空。`,
     path: [
       {
         name: `拉曼查无名村落`,
@@ -531,7 +553,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 24,
+    rank: 23,
     id: `book-118`,
     sliderVal: 2,
     century: `16世纪`,
@@ -547,12 +569,13 @@ const books: BookData[] = [
     quote: `一磅肉的契约——在里亚托桥下，金钱与法律比海水更冷酷。`,
     desc: `莎士比亚精准聚焦于文艺复兴时期威尼斯的里亚托桥商业区与水上法庭。通过一磅肉的契约，写尽了水上威尼斯作为金钱帝国的繁荣与残酷——里亚托桥上商人的讨价还价、犹太区中夏洛克的孤独、以及法庭上那场著名的法律辩论。`,
     isTrajectory: false,
-    realViewName: `威尼斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/3840px-Venezia_aerial_view.jpg`
+    realViewName: `威尼斯里亚托桥`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/3840px-Venezia_aerial_view.jpg`,
+    realViewQuote: `里亚托桥——威尼斯的商人们在这里讨价还价，而一磅肉的契约比海水更冷酷。`
   },
 
   {
-    rank: 25,
+    rank: 24,
     id: `book-31`,
     sliderVal: 2,
     century: `16世纪`,
@@ -568,12 +591,13 @@ const books: BookData[] = [
     quote: `山高自有客行路，水深自有渡船人。`,
     desc: `吴承恩在淮安旧居构思了这部神魔巨著，书中的水网神话、方言土语以及地方官场百态深深打着明代淮安府的地域烙印。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `淮安吴承恩故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d8/%E9%95%87%E6%B7%AE%E6%A5%BC.JPG`,
+    realViewQuote: `淮安府地灵人杰，上有运河通南北，下有鱼米养四方。`
   },
 
   {
-    rank: 26,
+    rank: 25,
     id: `book-239`,
     sliderVal: 3,
     century: `17世纪`,
@@ -590,12 +614,13 @@ const books: BookData[] = [
     desc: `清教徒革命失败后，失明的弥尔顿在伦敦的黑暗中口述了这部史诗。撒旦从地狱的硫磺火湖中崛起，穿越混沌直抵伊甸园——他用弥尔顿在伦敦政治斗争失败后沉淀出的全部悲愤与信念，将宏大的天国大战化为对人类自由意志与原罪最深邃的探索。`,
     isTrajectory: false,
     realViewName: `伦敦`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`,
+    realViewQuote: `宁在地狱为王，不在天堂为仆——失明的弥尔顿在伦敦的黑暗中口述着天堂的战争。`
   },
 
   {
-    rank: 27,
-    id: `book-68`,
+    rank: 26,
+    id: `book-67`,
     sliderVal: 3,
     century: `17世纪`,
     lat: 48.8566,
@@ -604,18 +629,19 @@ const books: BookData[] = [
     city: `巴黎`,
     title: `伪君子`,
     author: `莫里哀`,
-    color: `#A0522D`,
+    color: `#4682B4`,
     coverUrl: `/covers/ol-OL9600836W.jpg`,
     tags: [`1664年`, `法国文学`, `古典主义`, `喜剧`],
     quote: `伪君子答尔丢夫在巴黎中产家庭的客厅里，用虔诚的面具攫取一切。`,
     desc: `精确定位在巴黎一个富裕市民奥尔恭的客厅里。答尔丢夫——这个假借宗教虔诚之名行骗的伪君子——用花言巧语骗取了主人的全部信任与家产。莫里哀以巴黎中产家庭的客厅为舞台，辛辣讽刺了当时巴黎社会的宗教伪善与盲目信仰。`,
     isTrajectory: false,
     realViewName: `巴黎`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `巴黎的客厅里，华丽的烛台照着的不是人的脸，而是人的面具。`
   },
 
   {
-    rank: 28,
+    rank: 27,
     id: `book-50`,
     sliderVal: 3,
     century: `17世纪`,
@@ -631,13 +657,14 @@ const books: BookData[] = [
     quote: `因想余生平，繁华靡丽，过眼皆空，五十年来，总成一梦。`,
     desc: `明清易代之后的灵魂绝唱。张岱在国家破碎后，用极具巴洛克式繁华与哀伤的文字，梦回当年的西湖断桥、苏堤与茶熟香温，写活了江南文人最深沉的故国之思。`,
     isTrajectory: false,
-    realViewName: `西湖`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/West_Lake%2C_Hangzhou_2025.jpg/3840px-West_Lake%2C_Hangzhou_2025.jpg`
+    realViewName: `杭州西湖`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/West_Lake%2C_Hangzhou_2025.jpg/3840px-West_Lake%2C_Hangzhou_2025.jpg`,
+    realViewQuote: `西湖之胜，晴湖不如雨湖，雨湖不如月湖，月湖不如雪湖。`
   },
 
   {
-    rank: 29,
-    id: `book-74`,
+    rank: 28,
+    id: `book-73`,
     sliderVal: 4,
     century: `18世纪`,
     lat: 44.8378,
@@ -646,18 +673,19 @@ const books: BookData[] = [
     city: `波尔多`,
     title: `波斯人信札`,
     author: `孟德斯鸠`,
-    color: `#B8860B`,
+    color: `#3CB371`,
     coverUrl: `/covers/ol-OL24411782W.jpg`,
     tags: [`1721年`, `法国文学`, `启蒙哲学`, `书信体小说`],
     quote: `两位波斯贵族用异乡人的眼睛审视法国的体制与风俗。`,
     desc: `孟德斯鸠在波尔多附近的拉布雷德城堡完成了大量构思。借两位旅居巴黎的波斯贵族之口，以异乡人的陌生化视角反思法国君主制、宗教与风俗——波尔多的独立法治传统与启蒙沙龙为这部大胆的批判之作提供了思想土壤。`,
     isTrajectory: false,
-    realViewName: `波尔多`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bordeaux_Place_de_la_Bourse_de_nuit.jpg/3840px-Bordeaux_Place_de_la_Bourse_de_nuit.jpg`
+    realViewName: `波尔多拉布雷德城堡`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bordeaux_Place_de_la_Bourse_de_nuit.jpg/3840px-Bordeaux_Place_de_la_Bourse_de_nuit.jpg`,
+    realViewQuote: `波尔多的葡萄园在秋日里泛着金色的光泽——这里的人比巴黎更懂得什么是自由。`
   },
 
   {
-    rank: 30,
+    rank: 29,
     id: `book-79`,
     sliderVal: 4,
     century: `18世纪`,
@@ -673,8 +701,9 @@ const books: BookData[] = [
     quote: `这是世界上绝无仅有、也许永远不会再有的一幅完全依照本来面目和全部事实描绘出来的人像。`,
     desc: `卢梭在法国外省庄园与自然荒野中孕育出浪漫主义的自我剖白。从日内瓦的童年到华伦夫人的沙莫特庄园，再到巴黎的万众瞩目——他在安纳西的湖畔、尚贝里的山谷间、以及法国中部森林的漫步中，开创了前所未有的真诚自白。`,
     isTrajectory: true,
-    realViewName: `卢瓦尔河谷`,
+    realViewName: `安纳西→尚贝里→巴黎`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/83/Azay_le_rideau.jpg`,
+    realViewQuote: `安纳西湖的波光中，华伦夫人的身影在花园小径的尽头若隐若现。`,
     path: [
       {
         name: `瑞士日内瓦`,
@@ -698,7 +727,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 31,
+    rank: 30,
     id: `book-248`,
     sliderVal: 4,
     century: `18世纪`,
@@ -714,12 +743,13 @@ const books: BookData[] = [
     quote: `我们能够吃上晚餐，不是因为屠夫、酿酒师或面包师的仁慈，而是因为他们关心自己的利益。`,
     desc: `亚当·斯密在苏格兰东海岸的家乡小镇柯科迪隐居完成了《国富论》。这里是法夫郡——北海的冷风从港口吹来，长老会的钟声在石砌教堂上空回荡。苏格兰独特的新教伦理、重商主义萌芽与爱丁堡的启蒙沙龙，共同催生了'看不见的手'——这一整个现代经济学最奠基性的思想。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `苏格兰法夫郡柯科迪`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1280px-Flag_of_Scotland.svg.png`,
+    realViewQuote: `苏格兰东海岸的小镇柯科迪——北海的冷风从港口吹来，长老会的钟声在石砌教堂上空回荡。`
   },
 
   {
-    rank: 32,
+    rank: 31,
     id: `book-30`,
     sliderVal: 4,
     century: `18世纪`,
@@ -735,13 +765,14 @@ const books: BookData[] = [
     quote: `满纸荒唐言，一把辛酸泪。都云作者痴，谁解其中味？`,
     desc: `开篇即是苏州阊门'最是红尘中一二等富贵温柔乡'，大观园原型、林黛玉的姑苏根脉以及书中的精致江南生活细节深深浸润着苏杭风韵。`,
     isTrajectory: false,
-    realViewName: `江苏省苏州市阊门`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/8f/%E4%B8%9C%E6%96%B9%E4%B9%8B%E9%97%A81.jpg`
+    realViewName: `苏州阊门`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/8f/%E4%B8%9C%E6%96%B9%E4%B9%8B%E9%97%A81.jpg`,
+    realViewQuote: `这东南一隅有处曰姑苏，有城曰阊门者，最是红尘中一二等富贵温柔之乡。`
   },
 
   {
-    rank: 33,
-    id: `book-69`,
+    rank: 32,
+    id: `book-68`,
     sliderVal: 4,
     century: `18世纪`,
     lat: 48.8566,
@@ -750,18 +781,19 @@ const books: BookData[] = [
     city: `巴黎`,
     title: `老实人`,
     author: `伏尔泰`,
-    color: `#483D8B`,
+    color: `#A0522D`,
     coverUrl: `/covers/wr-29859696.jpg`,
     tags: [`1759年`, `法国文学`, `启蒙哲学`, `哲理小说`],
     quote: `还是得耕种我们自己的园地。`,
     desc: `伏尔泰在巴黎与费尔内的沙龙中创作的哲理小说杰作。老实人坎迪德从德国男爵的城堡出发，经历了里斯本地震、宗教裁判所、南美的黄金国等一系列荒诞遭遇后，最终在君士坦丁堡郊外安顿下来，种起了自己的园地。巴黎启蒙沙龙中散发的怀疑主义与乐观主义之争，贯穿了这部辛辣的讽刺之作。`,
     isTrajectory: false,
     realViewName: `巴黎`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `在巴黎的沙龙与费尔内的庄园之间，伏尔泰写道：还是得耕种我们自己的园地。`
   },
 
   {
-    rank: 34,
+    rank: 33,
     id: `book-247`,
     sliderVal: 4,
     century: `18世纪`,
@@ -777,12 +809,13 @@ const books: BookData[] = [
     quote: `理性是，且应当是激情的奴隶。`,
     desc: `苏格兰启蒙运动的至高丰碑。休谟在爱丁堡冷冽、理性的黑石建筑群中，用怀疑论的利刃彻底解构了人类的因果律、自我与上帝存在的证明。爱丁堡皇家一英里的石砌街道上，经验主义的春雷炸响了整个欧洲——'我们从未真正看到原因和结果，我们只看到一件事情跟着另一件事情。'`,
     isTrajectory: false,
-    realViewName: `爱丁堡`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Skyline_of_Edinburgh.jpg/3840px-Skyline_of_Edinburgh.jpg`
+    realViewName: `爱丁堡皇家一英里`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Skyline_of_Edinburgh.jpg/3840px-Skyline_of_Edinburgh.jpg`,
+    realViewQuote: `爱丁堡皇家一英里的石板路上——'理性是，且应当是激情的奴隶。'`
   },
 
   {
-    rank: 35,
+    rank: 34,
     id: `book-29`,
     sliderVal: 4,
     century: `18世纪`,
@@ -798,12 +831,13 @@ const books: BookData[] = [
     quote: `有人辞官归故里，有人星夜赶科场。少年不知愁滋味，老来方知行路难。`,
     desc: `虽写全国士林，但其核心精神高潮在南京。秦淮河畔的灯船、泰伯祠的祭典，写尽了旧式文人在金陵依依风柳下的清高与堕落。`,
     isTrajectory: false,
-    realViewName: `秦淮河`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/2024Apr_-_Nanjing_City_Wall_--_south_section_-_img_04.jpg/3840px-2024Apr_-_Nanjing_City_Wall_--_south_section_-_img_04.jpg`
+    realViewName: `南京秦淮河夫子庙`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/2024Apr_-_Nanjing_City_Wall_--_south_section_-_img_04.jpg/3840px-2024Apr_-_Nanjing_City_Wall_--_south_section_-_img_04.jpg`,
+    realViewQuote: `这南京乃是太祖皇帝建都的所在，里城门十三，外城门十八，穿城四十里，沿城一转足有一百二十里。`
   },
 
   {
-    rank: 36,
+    rank: 35,
     id: `book-92`,
     sliderVal: 4,
     century: `18世纪`,
@@ -815,16 +849,17 @@ const books: BookData[] = [
     author: `歌德`,
     color: `#6A5ACD`,
     coverUrl: `/covers/1397518.jpg`,
-    tags: [`1774年`, `德国文学`, `感伤主义`, `书信体小说`, `1997年`, `豆瓣 8.5`],
+    tags: [`1774年`, `德国文学`, `感伤主义`, `书信体小说`, `1997年`],
     quote: `韦茨拉尔的乡村舞会与椴树林——这里见证了让全欧洲青年为之狂热的爱情与死亡。`,
     desc: `歌德在黑森大区的韦茨拉尔最高法院实习期间遭遇失恋，从而写下了这部感伤主义巨著。乡村舞会上旋转的裙摆、椴树下月光中的漫步、以及最终那声击穿欧洲青年心脏的枪响——韦茨拉尔的每一棵椴树都成为了浪漫主义的朝圣地。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `韦茨拉尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/aa/Wetzlarskyline.jpg`,
+    realViewQuote: `韦茨拉尔——乡村舞会上旋转的裙摆、椴树下月光中的漫步，以及最终那声击穿欧洲青年心脏的枪响。`
   },
 
   {
-    rank: 37,
+    rank: 36,
     id: `book-81`,
     sliderVal: 4,
     century: `18世纪`,
@@ -840,12 +875,13 @@ const books: BookData[] = [
     quote: `如炮兵弹道般精准的诱惑游戏——巴黎贵族阶层在书信中进行着最残酷的性与权力博弈。`,
     desc: `作为炮兵军官的拉克洛在里尔驻军期间构思了这部书信体小说。用精密如几何学、炮兵弹道的逻辑，编织了巴黎贵族阶层残酷、堕落的性与权力的诱惑游戏——梅尔特伊侯爵夫人与瓦尔蒙子爵用一封封信件操纵人心，将纯真与爱情一一碾碎。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `里尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Lille_vue_gd_place.JPG/1280px-Lille_vue_gd_place.JPG`,
+    realViewQuote: `里尔的炮兵营房里，他用几何学的精确编织着巴黎的诱惑。`
   },
 
   {
-    rank: 38,
+    rank: 37,
     id: `book-89`,
     sliderVal: 4,
     century: `18世纪`,
@@ -861,12 +897,13 @@ const books: BookData[] = [
     quote: `在符腾堡公国的专制宫廷阴影下，一段跨越阶级的爱情被碾得粉碎。`,
     desc: `席勒以其在斯图加特经历的符腾堡公爵专制宫廷为原型，控诉了德意志小邦国贵族的腐朽与市民阶层的悲剧。公爵的专横、阴谋家的操纵、以及两个试图跨越阶级鸿沟的恋人——在斯图加特宫廷的金碧辉煌与市民阶级的昏暗陋室之间，上演了一出狂飙突进运动中最震撼的悲剧。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `斯图加特符腾堡宫廷`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Neues_Schloss_Schlossplatzspringbrunnen_Schlossplatz_Stuttgart_2015_01.jpg/3840px-Neues_Schloss_Schlossplatzspringbrunnen_Schlossplatz_Stuttgart_2015_01.jpg`,
+    realViewQuote: `符腾堡宫廷——公爵的专横与阴谋家的操纵，碾碎了跨越阶级的爱情。`
   },
 
   {
-    rank: 39,
+    rank: 38,
     id: `book-210`,
     sliderVal: 5,
     century: `19世纪`,
@@ -882,8 +919,9 @@ const books: BookData[] = [
     quote: `幸福的家庭都是相似的，不幸的家庭各有各的不幸。`,
     desc: `故事悲剧的决定性瞬间完全聚焦于莫斯科的火车站。安娜在莫斯科火车站初遇沃伦斯基时一辆火车压死了人——'不祥之兆'。她在彼得堡社交界的排斥中越陷越深，而列文在外省庄园中在割麦的汗水里找到了救赎。最终安娜在莫斯科奥比洛夫卡火车站的铁轨上，回答了那个最初的预兆。`,
     isTrajectory: true,
-    realViewName: `莫斯科`,
+    realViewName: `莫斯科火车站→圣彼得堡`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg`,
+    realViewQuote: `莫斯科的火车站——安娜第一次见到沃伦斯基时，一个铁路工人被火车压死了。'不祥之兆。'`,
     path: [
       {
         name: `圣彼得堡高级社交界`,
@@ -913,8 +951,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 40,
-    id: `book-64`,
+    rank: 39,
+    id: `book-63`,
     sliderVal: 5,
     century: `19世纪`,
     lat: 48.853,
@@ -923,18 +961,19 @@ const books: BookData[] = [
     city: `巴黎西岱岛`,
     title: `巴黎圣母院`,
     author: `雨果`,
-    color: `#556B2F`,
+    color: `#2F4F4F`,
     coverUrl: `/covers/2253413.jpg`,
-    tags: [`1831年`, `法国文学`, `浪漫主义`, `历史小说`, `2007年`, `豆瓣 9.0`],
+    tags: [`1831年`, `法国文学`, `浪漫主义`, `历史小说`, `2007年`],
     quote: `命运——这几个字刻在圣母院的一座钟楼的阴暗角落里。`,
     desc: `15世纪的中世纪巴黎。完全围绕巴黎市中心的西岱岛与巴黎圣母院大教堂展开——钟楼上的驼背敲钟人卡西莫多、广场上跳舞的吉普赛女郎爱斯梅拉达、以及副主教弗罗洛在石造建筑阴影下的欲望与罪恶。雨果以巴黎圣母院为灵魂，写尽了中世纪石造建筑下的命运悲剧。`,
     isTrajectory: false,
-    realViewName: `巴黎圣母院`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Notre-Dame_de_Paris%2C_4_October_2017.jpg/3840px-Notre-Dame_de_Paris%2C_4_October_2017.jpg`
+    realViewName: `巴黎圣母院大教堂`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `圣母院的正面是一首石头的交响乐——那三座尖顶拱门、那二十八座列王雕像的廊台、那巨大的玫瑰花窗。`
   },
 
   {
-    rank: 41,
+    rank: 40,
     id: `book-266`,
     sliderVal: 5,
     century: `19世纪`,
@@ -950,8 +989,9 @@ const books: BookData[] = [
     quote: `叫我以实玛利。`,
     desc: `新英格兰捕鲸业的巅峰之作。捕鲸船'裴廓德号'从马萨诸塞州的新贝德福德港启航，经南塔基特岛补给后驶入大西洋。在亚哈船长的疯狂执念下，一路穿越好望角、印度洋，最终在太平洋上与白色巨鲸莫比·迪克同归于尽。新英格兰的冰冷海港与整个海洋的暴烈融为一体。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `马萨诸塞州新贝德福德捕鲸博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/1920px-Flag_of_Massachusetts.svg.png`,
+    realViewQuote: `新贝德福德——捕鲸者的教堂里，墓碑上的铭文讲述着被白鲸拖入深渊的故事。`,
     path: [
       {
         name: `马萨诸塞州新贝德福德港`,
@@ -975,8 +1015,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 42,
-    id: `book-72`,
+    rank: 41,
+    id: `book-71`,
     sliderVal: 5,
     century: `19世纪`,
     lat: 49.4431,
@@ -985,14 +1025,15 @@ const books: BookData[] = [
     city: `诺曼底鲁昂`,
     title: `包法利夫人`,
     author: `福楼拜`,
-    color: `#6A5ACD`,
+    color: `#CD853F`,
     coverUrl: `/covers/35013436.jpg`,
-    tags: [`1856年`, `法国文学`, `现实主义`, `悲剧小说`, `2020年`, `豆瓣 8.8`],
+    tags: [`1856年`, `法国文学`, `现实主义`, `悲剧小说`, `2020年`],
     quote: `爱玛在鲁昂的大教堂前与情人密会，石板路见证了她欲望的幻灭。`,
     desc: `完全是一部诺曼底大区的俗世风情画。爱玛·包法利的悲剧在阴雨绵绵、保守庸俗的诺曼底乡村铺开——她在荣维尔小镇医生的家中沉溺于浪漫小说，在鲁昂的大教堂前与情人罗多尔夫密会，最后在绝望中吞下砒霜。福楼拜以近乎冷酷的精准，解剖了外省中产阶级的虚伪与欲望。`,
     isTrajectory: true,
     realViewName: `诺曼底鲁昂`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Normandie.svg/960px-Flag_of_Normandie.svg.png`,
+    realViewQuote: `诺曼底的雨永无止境地落在石板路上——灰色的天空像锅盖一样扣在外省的屋顶上。`,
     path: [
       {
         name: `诺曼底乡村托斯特`,
@@ -1022,8 +1063,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 43,
-    id: `book-65`,
+    rank: 42,
+    id: `book-64`,
     sliderVal: 5,
     century: `19世纪`,
     lat: 48.8566,
@@ -1032,14 +1073,15 @@ const books: BookData[] = [
     city: `巴黎`,
     title: `悲惨世界`,
     author: `(法)雨果`,
-    color: `#8B008B`,
+    color: `#556B2F`,
     coverUrl: `/covers/1105898.jpg`,
-    tags: [`1862年`, `法国文学`, `浪漫主义`, `社会史诗`, `2003年`, `豆瓣 9.6`],
+    tags: [`1862年`, `法国文学`, `浪漫主义`, `社会史诗`, `2003年`],
     quote: `世间有一种比海洋更宏大的景象，那就是天空；还有一种比天空更宏大的景象，那就是人的内心。`,
     desc: `故事高潮完全发生在巴黎——从丹拿蒂埃的破旧客栈，到1832年共和党人街垒战爆发的巴黎老街，再到错综复杂的巴黎地下下水道系统。雨果将巴黎化为一个宏大的社会战场：冉阿让在下水道中背负着垂死的马吕斯逃出生天，沙威在圣母院桥上投入塞纳河。巴黎的每一块石板都浸透了19世纪苦难与救赎的史诗。`,
     isTrajectory: true,
-    realViewName: `巴黎`,
+    realViewName: `巴黎圣母院→巴黎下水道→蒙特勒伊`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `巴黎的阴沟是罪恶的迷宫，但也是黎明的通道——冉阿让背负着马吕斯在黑暗中走向了光明。`,
     path: [
       {
         name: `迪涅（南部小城）`,
@@ -1063,7 +1105,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 44,
+    rank: 43,
     id: `book-268`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1080,11 +1122,12 @@ const books: BookData[] = [
     desc: `惠特曼用狂放的自由诗赞美纽约曼哈顿的轮渡与街道、密西西比河的浪涛、以及整个蓬勃扩张的新大陆。布鲁克林渡口上的通勤者、长岛海滩上的流浪者、以及所有那些在美国大地上劳作与歌唱的普通人——在惠特曼的诗行中化为了民主本身。`,
     isTrajectory: false,
     realViewName: `纽约曼哈顿`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`,
+    realViewQuote: `我赞美我自己，歌唱我自己——布鲁克林渡口上的每一个人，你们也是我的诗行。`
   },
 
   {
-    rank: 45,
+    rank: 44,
     id: `book-271`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1100,8 +1143,9 @@ const books: BookData[] = [
     quote: `在威斯康星的大森林里，一座灰色的小木屋立在雪中。`,
     desc: `西进运动的拓荒史诗。从威斯康星州的大森林到堪萨斯草原，再到明尼苏达的寒冬和南达科他的荒原——劳拉一家坐着篷车一路向西，在从未被翻耕过的土地上建造木屋、播种小麦、抵御草原大火。大平原四季轮转下的原始美丽与拓荒者的坚韧构成了美国童年最经典的文学记忆。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `南达科他州草原小木屋遗址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Dust_Bowl_-_Dallas%2C_South_Dakota_1936.jpg/1280px-Dust_Bowl_-_Dallas%2C_South_Dakota_1936.jpg`,
+    realViewQuote: `在威斯康星的大森林里，一座灰色的小木屋立在雪中——爸爸猎鹿、妈妈缝衣，木屋里充满了烤面包的香气。`,
     path: [
       {
         name: `威斯康星州大森林`,
@@ -1125,7 +1169,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 46,
+    rank: 45,
     id: `book-254`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1141,12 +1185,13 @@ const books: BookData[] = [
     quote: `当你老了，头发白了，睡意昏沉——在炉火旁打盹时，请取下这部诗歌。`,
     desc: `爱尔兰西部的神话乡愁。叶芝的灵魂永远留在斯莱戈——吉尔湖的涟漪中倒映着诺克纳里山的紫色轮廓，海浪轻拍着罗西斯角的礁石，林间仿佛还有仙女的裙摆掠过蕨叶。这片浸透了凯尔特古老传说的土地，孕育了爱尔兰民族文艺复兴时期最美的'凯尔特薄暮'——充满了朦胧、幽怨的绿色神性。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `爱尔兰斯莱戈郡`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Sligo_creek_trail_bridge_20200913_133931_1.jpg/1280px-Sligo_creek_trail_bridge_20200913_133931_1.jpg`,
+    realViewQuote: `当你老了，头发白了，睡意昏沉——在炉火旁打盹时，请取下这部诗歌。`
   },
 
   {
-    rank: 47,
+    rank: 46,
     id: `book-88`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1164,6 +1209,7 @@ const books: BookData[] = [
     isTrajectory: true,
     realViewName: `汉堡`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg/3840px-Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg`,
+    realViewQuote: `汉堡——在阴冷潮湿的冬雨中，海涅用最辛辣的讽刺痛斥普鲁士的封建倒退。`,
     path: [
       {
         name: `法国巴黎（流亡出发）`,
@@ -1187,7 +1233,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 48,
+    rank: 47,
     id: `book-220`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1203,8 +1249,9 @@ const books: BookData[] = [
     quote: `契诃夫拖着病躯横跨西伯利亚，来到了库页岛的流放地——整个俄国就是一座第六病室。`,
     desc: `契诃夫为了探寻底层苦难的真相，在1890年拖着肺结核的病躯，乘马车历时数月横跨整个西伯利亚来到极东的库页岛流放地，对全岛犯人与农奴进行了人口普查。岛上的严寒、脚镣与犯人们绝望的眼神，直接催生了《第六病室》——在这部小说中，一座外省医院的精神病室化为了对整个沙皇俄国的恐怖隐喻。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `库页岛`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/c1/Coat_of_Arms_of_Alexandrovsk-Sakhalinsky_%28Sakhalin_oblast%29.png`,
+    realViewQuote: `库页岛——严寒、脚镣与绝望：整个俄国就是一座第六病室。`,
     path: [
       {
         name: `莫斯科出发`,
@@ -1228,8 +1275,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 49,
-    id: `book-67`,
+    rank: 48,
+    id: `book-66`,
     sliderVal: 5,
     century: `19世纪`,
     lat: 48.8566,
@@ -1238,18 +1285,19 @@ const books: BookData[] = [
     city: `巴黎`,
     title: `恶之花`,
     author: `夏尔·波德莱尔`,
-    color: `#4682B4`,
+    color: `#DAA520`,
     coverUrl: `/covers/ol-OL1158921W.jpg`,
     tags: [`1857年`, `法国文学`, `象征主义`, `诗歌`],
     quote: `在巴黎大改造的街道上，波德莱尔作为浪荡子捕捉了现代都市的忧郁。`,
     desc: `波德莱尔精准捕捉了巴黎大改造时期的都市灵魂——奥斯曼男爵拆除中世纪街巷后，宽阔林荫道上孤独的漫游者、拱廊街中闪过的妓女、以及笼罩在煤气灯雾气中的现代忧郁。巴黎的每一盏路灯、每一条被翻新的街道，都被波德莱尔化为现代性最初的诗歌意象。`,
     isTrajectory: false,
-    realViewName: `巴黎`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`
+    realViewName: `巴黎拱廊街`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `拥挤的城市！充满梦幻的城市！白昼的幻影在街灯下穿行。`
   },
 
   {
-    rank: 50,
+    rank: 49,
     id: `book-194`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1266,11 +1314,12 @@ const books: BookData[] = [
     desc: `存在主义鼻祖克尔凯郭尔一生极少离开哥本哈根。每天在哥本哈根狭窄的碎石街道、旧运河畔和新港的彩色房屋间漫步——他在日记中写道：'我刚刚从一场聚会中回来，我是整场聚会的生命；然而这一切都发生在我内心深处。'在感性审美与理性信仰的深渊间，他用极其深邃的辩证法拷问了个体的存在与选择。`,
     isTrajectory: false,
     realViewName: `哥本哈根`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/3840px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/3840px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg`,
+    realViewQuote: `哥本哈根——结婚你会后悔，不结婚你也会后悔。在旧运河畔的碎石街道上，克尔凯郭尔找到了存在主义的起点。`
   },
 
   {
-    rank: 51,
+    rank: 50,
     id: `book-237`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1286,12 +1335,13 @@ const books: BookData[] = [
     quote: `当你排除了所有不可能，剩下的，不管多么难以置信，都一定是真相。`,
     desc: `精准定格在伦敦贝克街221B号。维多利亚时代的雾夜伦敦——壁炉中闪烁的火焰、小提琴弦上流淌的忧郁音符、窗外飞驰的双轮马车与大雾弥漫的伦敦桥。苏格兰场警笛的呼啸声与福尔摩斯冷静的推理交织成一幅维多利亚伦敦最令人迷醉的侦探图腾。`,
     isTrajectory: false,
-    realViewName: `贝克街221B`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/89/Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg`
+    realViewName: `伦敦贝克街221B`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/89/Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg`,
+    realViewQuote: `贝克街221B——那是一套舒适的两居室，有两间宽大的卧室和一间宽敞明亮的起居室，壁炉里永远燃着温暖的火焰。`
   },
 
   {
-    rank: 52,
+    rank: 51,
     id: `book-93`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1307,12 +1357,13 @@ const books: BookData[] = [
     quote: `黑森州的古老橡树林与幽暗山谷中，小红帽、白雪公主从德意志的泥土中走了出来。`,
     desc: `格林兄弟在黑森州的卡塞尔、马尔堡一带搜集民间传说。黑森深山的古老橡树林、幽暗的山谷、以及那些在冬夜炉火边口耳相传的古老故事——小红帽走进了黑森林的恐怖、白雪公主咬下了毒苹果、韩塞尔与格蕾特在森林深处迷路。这些童话带着最浓厚的德意志泥土芬芳和森林恐惧。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `卡塞尔格林兄弟博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/18-09-26-Kassel-RalfR-DJI_0369.jpg/3840px-18-09-26-Kassel-RalfR-DJI_0369.jpg`,
+    realViewQuote: `黑森深山的古老橡树林——小红帽走进了黑暗的森林，白雪公主咬下了毒苹果。`
   },
 
   {
-    rank: 53,
+    rank: 52,
     id: `book-270`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1328,8 +1379,9 @@ const books: BookData[] = [
     quote: `好吧，那我就去地狱。`,
     desc: `密西西比河流域的史诗。哈克和逃亡黑奴吉姆从密苏里州汉尼拔小镇出发，乘着竹筏沿密西西比河一路南下——穿过阿肯色州的浓雾、路易斯安那州的沼泽、感受两岸蓄奴制的荒谬与河水的野性。马克·吐温以这条大河为轴，书写了美国文学中最伟大的自由宣言。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `密苏里州汉尼拔→密西西比河`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Main_Street_Hannibal_Missouri_southwards.jpg/1280px-Main_Street_Hannibal_Missouri_southwards.jpg`,
+    realViewQuote: `密西西比河——宽广、孤独、沉默的河，它知道这个国家的每一个秘密。`,
     path: [
       {
         name: `密苏里州汉尼拔小镇`,
@@ -1353,7 +1405,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 54,
+    rank: 53,
     id: `book-195`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1369,13 +1421,14 @@ const books: BookData[] = [
     quote: `小美人鱼每一步都像踩在刀尖上——但她选择在晨曦中化为泡沫，也不愿伤害王子。`,
     desc: `安徒生童话深深浸润着丹麦沿海港口特有的寒冷、潮湿与北海的风啸。小美人鱼从哥本哈根长堤公园的海水中浮起——铜像至今仍坐在海边的岩石上望向海港。卖火柴的小女孩在哥本哈根圣诞夜的街头划亮了最后一根火柴——北欧新教底色的悲悯与救赎贯穿了安徒生每一个童话的底色。`,
     isTrajectory: false,
-    realViewName: `哥本哈根`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/3840px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg`
+    realViewName: `哥本哈根小美人鱼雕像`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/3840px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg`,
+    realViewQuote: `哥本哈根——小美人鱼坐在长堤公园的岩石上望向海港，而卖火柴的小女孩在圣诞夜的街头划亮了最后一根火柴。`
   },
 
   {
-    rank: 55,
-    id: `book-73`,
+    rank: 54,
+    id: `book-72`,
     sliderVal: 5,
     century: `19世纪`,
     lat: 47.2184,
@@ -1384,18 +1437,19 @@ const books: BookData[] = [
     city: `南特`,
     title: `海底两万里`,
     author: `儒勒·凡尔纳`,
-    color: `#3CB371`,
+    color: `#6A5ACD`,
     coverUrl: `/covers/wr-3300179102.jpg`,
     tags: [`1870年`, `法国文学`, `科幻小说`, `海洋文学`],
     quote: `鹦鹉螺号潜入深海，凡尔纳在南特的码头边幻想了人类征服海洋的未来。`,
     desc: `凡尔纳出生并长期生活于卢瓦尔河畔的南特。这里的十九世纪工业码头、机械风帆与大西洋的交汇，直接孕育了他的科幻机械美学。从南特港出发的远洋轮船、卢瓦尔河上的蒸汽机、以及那些在码头上流传的水手故事——构成了凡尔纳走向深海与地心的想象力原点。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `南特凡尔纳博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nantes_-_Hotel_de_ville_05.jpg/1280px-Nantes_-_Hotel_de_ville_05.jpg`,
+    realViewQuote: `南特港的桅杆像一片没有叶子的森林，每一条船都是一次对未知世界的承诺。`
   },
 
   {
-    rank: 56,
+    rank: 55,
     id: `book-77`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1407,12 +1461,13 @@ const books: BookData[] = [
     author: `司汤达`,
     color: `#4169E1`,
     coverUrl: `/covers/30151841.jpg`,
-    tags: [`1830年`, `法国文学`, `现实主义`, `心理小说`, `2013年`, `豆瓣 7.7`],
+    tags: [`1830年`, `法国文学`, `现实主义`, `心理小说`, `2013年`],
     quote: `于连站在维里埃的悬崖上，望着阿尔卑斯山脉的冷冽剪影，阶级上升的野心在他心中燃烧。`,
     desc: `小说前半部分精准刻画了司汤达故乡——格勒诺布尔山区的保守与窒息。于连·索雷尔在维里埃市长家担任家庭教师，窗外是阿尔卑斯山脉的冷冽剪影。他背诵拉丁文圣经、与德·雷纳尔夫人私通、最终走向巴黎——每一步都在攀登那道阶级的陡峭悬崖。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `格勒诺布尔→贝桑松→巴黎`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `维里埃的山区——阿尔卑斯山的冷冽剪影下，于连望着悬崖，阶级上升的野心在他心中燃烧。`,
     path: [
       {
         name: `维里埃小镇（格勒诺布尔山区）`,
@@ -1442,7 +1497,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 57,
+    rank: 56,
     id: `book-263`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1459,11 +1514,12 @@ const books: BookData[] = [
     desc: `聚焦于17世纪清教徒统治下的波士顿。海丝特·白兰——因通奸罪被迫在胸前佩戴红字A的女人——在清教徒社会冰冷、灰暗的道德审判中独自站立。波士顿的刑台、阴暗的牢房、以及那片将罪与赎编织进新英格兰土地每一个角落的清教徒精神——构成了一部关于罪孽、隐忍与反抗的经典。`,
     isTrajectory: false,
     realViewName: `马萨诸塞州波士顿`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/9/96/ISH_WC_Boston4.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/1920px-Flag_of_Massachusetts.svg.png`,
+    realViewQuote: `清教徒的波士顿——灰色的天空下，那座刑台是用新英格兰最坚硬的橡木搭建的。`
   },
 
   {
-    rank: 58,
+    rank: 57,
     id: `book-240`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1480,11 +1536,12 @@ const books: BookData[] = [
     desc: `约克郡风暴肆虐的荒原上，那座孤绝的呼啸山庄与希斯克利夫如野兽般暴烈、黏稠且超越生死的爱与恨融为一体。石楠丛生的荒野在冬季暴风雪中咆哮，画眉庄园的窗户被敲打着永不停止的雨——艾米莉将约克郡最原始的荒凉之美化为了一场超越坟墓的爱情绝唱。`,
     isTrajectory: false,
     realViewName: `西约克郡哈沃斯荒原`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/14/York_Minster_%282797690%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/14/York_Minster_%282797690%29.jpg`,
+    realViewQuote: `这座农舍——呼啸山庄——正如其名，在暴风雨的天气里承受着最猛烈的狂风。`
   },
 
   {
-    rank: 59,
+    rank: 58,
     id: `book-76`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1496,12 +1553,13 @@ const books: BookData[] = [
     author: `大仲马`,
     color: `#BC8F8F`,
     coverUrl: `/covers/1735180.jpg`,
-    tags: [`1844年`, `法国文学`, `复仇史诗`, `冒险小说`, `2005年`, `豆瓣 9.3`],
+    tags: [`1844年`, `法国文学`, `复仇史诗`, `冒险小说`, `2005年`],
     quote: `等待与希望。`,
     desc: `精准锁定马赛。地中海烈日下的老港、加泰罗尼亚人渔村、以及孤悬海上的伊夫堡监狱——年轻水手爱德蒙·邓蒂斯在这里被诬陷入狱十四年，在法利亚神父的教导下完成了精神与知识的重生。逃脱后，他从马赛港湾驶向了无尽的复仇与宽恕之海。`,
     isTrajectory: true,
-    realViewName: `马赛`,
+    realViewName: `马赛伊夫堡监狱`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/a1/Notre-Dame_de_la_Garde_aerial_view_2020.jpeg`,
+    realViewQuote: `伊夫堡——一块被海风啃噬了千年的白色巨石，孤独地浮在马赛港外的碧波之上。`,
     path: [
       {
         name: `马赛港（法老号归航）`,
@@ -1531,7 +1589,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 60,
+    rank: 59,
     id: `book-241`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1547,8 +1605,9 @@ const books: BookData[] = [
     quote: `你以为，因为我穷、低微、不美、矮小，我就没有灵魂，没有心吗？`,
     desc: `英格兰北部的哥特庄园风情。简·爱在盖茨海德府的痛苦童年中成长，在洛伍德义塾的寒冷与饥饿中学会隐忍，最终来到桑菲尔德府担任阿黛勒的家庭教师。阴暗的阁楼上藏着罗切斯特先生疯了的妻子，深夜的纵火将庄园化为灰烬——而在荒原沼泽的流浪之后，简·爱以最平等的姿态回到了失明了的罗切斯特身边。`,
     isTrajectory: true,
-    realViewName: `约克郡桑菲尔德府`,
+    realViewName: `约克郡霍沃斯勃朗特故居`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/14/York_Minster_%282797690%29.jpg`,
+    realViewQuote: `桑菲尔德府——那是一座绅士的庄园，灰色的城垛在树林上方若隐若现。`,
     path: [
       {
         name: `盖茨海德府（痛苦童年）`,
@@ -1578,7 +1637,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 61,
+    rank: 60,
     id: `book-136`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1590,16 +1649,17 @@ const books: BookData[] = [
     author: `(日)尾崎红叶`,
     color: `#BC8F8F`,
     coverUrl: `/covers/22749514.jpg`,
-    tags: [`1897年`, `日本文学`, `恋爱小说`, `明治文学`, `2013年`, `豆瓣 6.9`],
+    tags: [`1897年`, `日本文学`, `恋爱小说`, `明治文学`, `2013年`],
     quote: `金钱能买到爱情吗？`,
     desc: `尾崎红叶未完成的代表作，被誉为明治时代最受欢迎的恋爱小说。故事讲述青年间贯一因恋人阿宫被富豪之子夺走而化身为冷酷无情的高利贷者'金色夜叉'，在东京的金融世界中展开复仇。小说深刻揭露了明治资本主义社会中金钱对人性与爱情的腐蚀。东京银座、热海等地的场景描写，成为当时日本都市文化的缩影。`,
     isTrajectory: false,
-    realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewName: `东京银座`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `银座——煤气灯一盏一盏地亮了，穿西服的绅士和穿和服的妇人交错而过。`
   },
 
   {
-    rank: 62,
+    rank: 61,
     id: `book-221`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1615,12 +1675,13 @@ const books: BookData[] = [
     quote: `如果上帝不存在，一切都被允许了。`,
     desc: `陀思妥耶夫斯基毕生最高杰作。老卡拉马佐夫被谋杀，三个儿子——冲动者德米特里、理性者伊万、圣徒阿辽沙——各自以不同方式面对罪与罚。宗教大法官一章是人类思想史上最锋利的哲学对话之一。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `旧鲁萨陀思妥耶夫斯基故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/N2226096.pdf/page1-960px-N2226096.pdf.jpg`,
+    realViewQuote: `旧鲁萨——那座安静的外省小镇里，卡拉马佐夫家的血液中流淌着巴洛克式的狂躁与神圣。`
   },
 
   {
-    rank: 63,
+    rank: 62,
     id: `book-225`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1636,8 +1697,9 @@ const books: BookData[] = [
     quote: `卡门是自由的——她骗人、偷窃、卖弄风情，但她绝不交出她的自由。`,
     desc: `南部安达卢西亚的热烈与宿命。梅里美极其生动地描绘了塞维利亚皇家烟草厂里吉普赛女工的泼辣、瓜达尔基维尔河畔的夜色以及安达卢西亚大山里阳光暴晒的绝壁。卡门——一个在烟草厂里咬着金合欢花的女工——用刀子划破了另一个女工的脸，从此走上了走私、爱情与背叛的不归路。在塞维利亚斗牛场外被唐·何塞用匕首刺死，'自由了，卡门。'`,
     isTrajectory: true,
-    realViewName: `塞维利亚`,
+    realViewName: `塞维利亚皇家烟草厂`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sevilla_Cathedral_-_Southeast.jpg/3840px-Sevilla_Cathedral_-_Southeast.jpg`,
+    realViewQuote: `塞维利亚的烟草厂——卡门咬着金合欢花走了出来，她是自由的。`,
     path: [
       {
         name: `塞维利亚皇家烟草厂`,
@@ -1661,7 +1723,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 64,
+    rank: 63,
     id: `book-214`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1677,18 +1739,19 @@ const books: BookData[] = [
     quote: `奥廖尔的森林与原野如此之美——美到让人无法忍受这片土地上还有被鞭子抽打的农奴。`,
     desc: `屠格涅夫在其故乡奥廖尔省的森林、原野、溪流间漫游——白桦林在晨雾中苏醒、夜莺在月下的灌木丛中歌唱、猎犬在草原上追逐野兔。他用极其温情、空灵的笔触描绘了俄罗斯中部的自然之美，并用这种极致的美反衬了农奴制下农民遭遇的非人待遇——这部作品直接推动了亚历山大二世废除农奴制。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `奥廖尔省屠格涅夫故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/1856._Card_from_set_of_geographical_cards_of_the_Russian_Empire_096.jpg/1280px-1856._Card_from_set_of_geographical_cards_of_the_Russian_Empire_096.jpg`,
+    realViewQuote: `奥廖尔的森林——白桦林在晨雾中苏醒，夜莺在月下的灌木丛中歌唱。`
   },
 
   {
-    rank: 65,
+    rank: 64,
     id: `book-260`,
     sliderVal: 5,
     century: `19世纪`,
     lat: 52.41,
     lng: -1.51,
-    country: `英国`,
+    country: `英国与爱尔兰`,
     city: `考文垂（米德兰兹）`,
     title: `米德尔马契`,
     author: `乔治·艾略特`,
@@ -1698,12 +1761,13 @@ const books: BookData[] = [
     quote: `世界上没有哪一种失望比幻灭更痛苦，因为它让你既失去了梦想，又无法面对现实。`,
     desc: `弗吉尼亚·伍尔夫誉为英语文学最伟大的小说。以理想主义少女多萝西娅与青年医生利德盖特的两条命运线，织出19世纪英国中部小镇在改革浪潮中的政治、婚姻与精神危机。`,
     isTrajectory: false,
-    realViewName: `米德兰兹`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Coventry_Cathedral_2018.jpg/3840px-Coventry_Cathedral_2018.jpg`
+    realViewName: `考文垂`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Coventry_Cathedral_2018.jpg/3840px-Coventry_Cathedral_2018.jpg`,
+    realViewQuote: `考文垂的米德兰兹——那是一座外省小镇，但每一个客厅里都隐藏着一部伟大的小说。`
   },
 
   {
-    rank: 66,
+    rank: 65,
     id: `book-201`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1720,11 +1784,12 @@ const books: BookData[] = [
     desc: `1905年诺奖得主显克微支借古罗马暴君尼禄迫害早期基督徒的历史史诗，暗暗书写了当时被俄国、德国、奥国三次瓜分后从地图上消失的波兰——那坚贞不屈的民族精神。罗马竞技场上被狮子撕碎的基督徒，就是被列强瓜分的波兰人民。`,
     isTrajectory: false,
     realViewName: `华沙`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/35/Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/35/Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg`,
+    realViewQuote: `华沙——尼禄焚烧了罗马，但焚不掉那些在黑暗中唱着圣歌的人。`
   },
 
   {
-    rank: 67,
+    rank: 66,
     id: `book-137`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1736,16 +1801,17 @@ const books: BookData[] = [
     author: `樋口一叶`,
     color: `#4169E1`,
     coverUrl: `/covers/2969561.jpg`,
-    tags: [`1895年`, `日本文学`, `青春小说`, `明治文学`, `2005年`, `豆瓣 7.8`],
+    tags: [`1895年`, `日本文学`, `青春小说`, `明治文学`, `2005年`],
     quote: `孩童时代的情感，在成年后化为无法言说的哀伤。`,
     desc: `樋口一叶是日本近代第一位职业女作家。故事以东京吉原附近的市井街巷为舞台，描写了一群少男少女在成长过程中经历的朦胧情感与无奈命运。作品以细腻笔触勾勒出明治时期东京底层社会的风貌——大杂院里的庶民生活、吉原游廓周边的喧嚣与哀愁，构成了一幅生动的东京市井画卷。`,
     isTrajectory: false,
-    realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewName: `东京吉原旧址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `吉原的晨雾里，木屐声从石板上踏过——那是大黑屋的信如，在黎明前离开了花街。`
   },
 
   {
-    rank: 68,
+    rank: 67,
     id: `book-148`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1757,16 +1823,17 @@ const books: BookData[] = [
     author: `[日] 福泽谕吉`,
     color: `#A0522D`,
     coverUrl: `/covers/1511983.jpg`,
-    tags: [`1872年`, `日本思想`, `启蒙主义`, `明治维新`, `1984年`, `豆瓣 8.6`],
+    tags: [`1872年`, `日本思想`, `启蒙主义`, `明治维新`, `1984年`],
     quote: `天不造人上之人，亦不造人下之人。`,
     desc: `福泽谕吉是明治时代最重要的启蒙思想家，其肖像印在一万日元纸币上。《劝学篇》（1872年）以'天不造人上之人'开篇，倡导人人平等与独立精神；《文明论概略》（1875年）则系统阐述日本如何从封建国家走向现代文明。福泽谕吉在大阪创办了庆应义塾（今庆应大学的前身之一），这两部著作深刻影响了日本的近代化进程。`,
     isTrajectory: false,
-    realViewName: `大阪`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`
+    realViewName: `大阪福泽谕吉纪念馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`,
+    realViewQuote: `天不造人上之人，亦不造人下之人——福泽谕吉在大阪的讲堂里，向这个国家宣告了启蒙的到来。`
   },
 
   {
-    rank: 69,
+    rank: 68,
     id: `book-80`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1782,12 +1849,13 @@ const books: BookData[] = [
     quote: `卢瓦尔河谷的索米尔小镇上，葛朗台老爹的金路易在黑暗中闪闪发光。`,
     desc: `巴尔扎克出生于图尔。《人间喜剧》中大量核心篇目精准定格在卢瓦尔河谷——索米尔小镇上欧也妮·葛朗台守着她的金路易，《幽谷百合》中安茹的庄园与爱情的隐忍。巴尔扎克将法国外省表面平静、内地里被金钱和欲望撕裂的宗族生活，写成了整个时代的百科全书。`,
     isTrajectory: false,
-    realViewName: `图尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/83/Azay_le_rideau.jpg`
+    realViewName: `卢瓦尔河谷索米尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/83/Azay_le_rideau.jpg`,
+    realViewQuote: `卢瓦尔河谷——城堡的白石墙在夕阳中泛着金黄，但外省客厅里的金币在黑暗中闪闪发光。`
   },
 
   {
-    rank: 70,
+    rank: 69,
     id: `book-236`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1803,8 +1871,9 @@ const books: BookData[] = [
     quote: `这是最好的时代，这是最坏的时代。`,
     desc: `法国大革命的血色双城记。故事在巴黎和伦敦之间往复穿梭——巴士底狱的囚禁、巴黎街头的断头台狂欢、伦敦泰晤士河畔法律界的寂静公寓。西德尼·卡顿——一个在伦敦的酒精与虚无中虚度年华的律师——最终选择了在巴黎断头台上为爱牺牲：'我现在做的，是我一生中最好、最最好的事情。'`,
     isTrajectory: true,
-    realViewName: `伦敦`,
+    realViewName: `伦敦→巴黎`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`,
+    realViewQuote: `这是最好的时代，这是最坏的时代——伦敦的泰晤士河与巴黎的塞纳河在革命的血色中交汇。`,
     path: [
       {
         name: `巴黎巴士底狱/老街`,
@@ -1828,7 +1897,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 71,
+    rank: 70,
     id: `book-216`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1844,12 +1913,13 @@ const books: BookData[] = [
     quote: `在西伯利亚的死屋中，脚镣的碰撞声、皮鞭的呼啸声与囚犯们暗夜中的低语从未停歇。`,
     desc: `陀思妥耶夫斯基因参加彼特拉舍夫斯基小组被判死刑，在行刑前最后一刻改判流放西西伯利亚鄂木斯克。四年苦役——脚镣拖过冻土的声音、澡堂里蒸汽与皮鞭的混合、圣诞节酒后的狂乱——在这座'死屋'中，他在最堕落的囚犯身上依然看到了人性的微光。`,
     isTrajectory: false,
-    realViewName: `西伯利亚鄂木斯克苦役营`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png`
+    realViewName: `西伯利亚鄂木斯克`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png`,
+    realViewQuote: `西伯利亚的死屋——脚镣拖过冻土的声音，澡堂里蒸汽与皮鞭的混合。`
   },
 
   {
-    rank: 72,
+    rank: 71,
     id: `book-91`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1865,12 +1935,13 @@ const books: BookData[] = [
     quote: `在图宾根内卡河畔的塔楼里，一个发疯的诗人在漫漫长夜中咏唱古希腊与南德山川的空灵神性。`,
     desc: `荷尔德林在图宾根内卡河畔的塔楼里度过了后半生36年的疯狂岁月。河水在窗下缓缓流淌，远处的施瓦本阿尔卑斯山脉在落日中泛着金光——他的诗歌充满了对古希腊的怀旧与南德山川的空灵神性，是德国浪漫主义诗歌的巅峰。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `图宾根内卡河畔荷尔德林塔楼`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/14/H%C3%B6lderlinturmT%C3%BCbingen.jpg`,
+    realViewQuote: `内卡河畔的塔楼——河水流淌了三十六年，荷尔德林在疯狂中咏唱古希腊的神性。`
   },
 
   {
-    rank: 73,
+    rank: 72,
     id: `book-242`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1886,8 +1957,9 @@ const books: BookData[] = [
     quote: `在巨石阵的晨光中，苔丝平静地说：我已经准备好了。`,
     desc: `哈代虚构的'威塞克斯'南方农业王国的悲剧。苔丝·德北菲尔德的命运严格随着多塞特郡的季节轮转铺开——马洛特村的五月舞会上她第一次见到安吉尔，纯种麦田里她被迫失身于阿历克，沼泽地的苦役场上她的双手被甜菜磨得鲜血淋漓。最终在索尔兹伯里平原的古老巨石阵前，朝阳升起，警察到来——旧式乡村文明在近代工业的挤压下化为了最后一声叹息。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `多塞特郡巨石阵`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Chinese_wikipedia_2004.pdf/page1-960px-Chinese_wikipedia_2004.pdf.jpg`,
+    realViewQuote: `巨石阵——那些巨大的灰色石块在晨光中静静地矗立着，仿佛在等待什么。`,
     path: [
       {
         name: `多塞特郡马洛特村`,
@@ -1911,7 +1983,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 74,
+    rank: 73,
     id: `book-262`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1923,16 +1995,17 @@ const books: BookData[] = [
     author: `[美] 亨利·戴维·梭罗`,
     color: `#B22222`,
     coverUrl: `/covers/26426917.jpg`,
-    tags: [`1854年`, `美国文学`, `超验主义`, `自然散文`, `2015年`, `豆瓣 8.5`],
+    tags: [`1854年`, `美国文学`, `超验主义`, `自然散文`, `2015年`],
     quote: `我到林中去，因为我希望谨慎地生活，只面对生活的基本事实。`,
     desc: `超验主义圣地。梭罗在康科德的瓦尔登湖畔自建木屋独居两年两个月，用诗意的散文记录了对自然、劳动与人类灵魂的深度省思。马萨诸塞州的枫林、冰封的湖面、以及木屋中简朴到极致的生活——构成了美国文学中最纯粹的自然哲学地标。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `马萨诸塞州瓦尔登湖`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/1920px-Flag_of_Massachusetts.svg.png`,
+    realViewQuote: `我到林中去，因为我希望谨慎地生活，只面对生活的基本事实，看看我是否能学到生活要教给我的东西。`
   },
 
   {
-    rank: 75,
+    rank: 74,
     id: `book-192`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1948,12 +2021,13 @@ const books: BookData[] = [
     quote: `娜拉在挪威刺骨的冬夜里决绝地推门出走——这一声巨响震碎了全欧洲资产阶级家庭的伪善神话。`,
     desc: `北欧中产阶级的窒息囚笼。故事完全锁定在奥斯陆一栋井然有序、温暖却死板的公寓客厅里。娜拉·海尔默——一个被丈夫称为'小云雀'的快乐妻子——在圣诞节的前夜发现自己不过是一个玩偶，在男人的家里扮演着被宠爱的角色。当丈夫海尔默在知道她曾为救他而伪造签名后只顾自己的名誉时，娜拉在深夜脱下舞裙、推门而出——'我要去搞清楚，到底是我错了还是这个世界错了。'`,
     isTrajectory: false,
-    realViewName: `克里斯蒂安尼亚`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/3840px-Nationaltheatret_evening.jpg`
+    realViewName: `奥斯陆易卜生博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/3840px-Nationaltheatret_evening.jpg`,
+    realViewQuote: `奥斯陆——娜拉在圣诞节前夜脱下舞裙，推开公寓的门——那一声巨响震碎了全欧洲的伪善。`
   },
 
   {
-    rank: 76,
+    rank: 75,
     id: `book-235`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1969,12 +2043,13 @@ const books: BookData[] = [
     quote: `奥利弗端着碗走上前去，说：求求您，先生，我还想要一点。`,
     desc: `工业革命时期伦敦东区的冷酷画卷。孤儿奥利弗在济贫院中饿得发抖，逃到伦敦后落入了费金的贼窝——脏乱的巷子、弥漫着煤烟与泰晤士河毒雾的天空、以及那些在街头偷窃与挣扎的贫民窟儿童。伦敦东区的贼窝与西区的奢华形成了令人窒息的对照，资本主义早期的每一块煤烟都浸透了底层儿童的苦难。`,
     isTrajectory: false,
-    realViewName: `伦敦`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`
+    realViewName: `伦敦东区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`,
+    realViewQuote: `伦敦东区的巷子又窄又脏，污水在石板路中间流淌，空气中弥漫着煤烟与腐烂的气味。`
   },
 
   {
-    rank: 77,
+    rank: 76,
     id: `book-267`,
     sliderVal: 5,
     century: `19世纪`,
@@ -1990,12 +2065,13 @@ const books: BookData[] = [
     quote: `圣诞节没有礼物怎么行？`,
     desc: `南北战争时期的后方温情。基于作者在康科德'果园小屋'的真实生活创作——马奇家四姐妹在父亲参战的岁月里，在康科德的雪夜与夏日的果园中长大。新英格兰的四季更替、清教徒的节俭美德、以及女性成长中的独立精神——构成了美国最温暖的家庭叙事。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `马萨诸塞州康科德果园小屋`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Massachusetts.svg/1920px-Flag_of_Massachusetts.svg.png`,
+    realViewQuote: `康科德的果园小屋——圣诞节没有礼物怎么行？`
   },
 
   {
-    rank: 78,
+    rank: 77,
     id: `book-208`,
     sliderVal: 5,
     century: `19世纪`,
@@ -2011,12 +2087,13 @@ const books: BookData[] = [
     quote: `在圣彼得堡的剧院大厅里，一个小公务员因为打了一个喷嚏而活活吓死了自己。`,
     desc: `精准定位在圣彼得堡的剧院大厅。小公务员切尔维亚科夫在看戏时不小心把唾沫星子溅到了一位将军的秃头上——他反复道歉，将军终于不耐烦地咆哮——这位小人物回到家后倒在沙发上死去了。契诃夫用极度荒诞的笔触刺穿了彼得堡官僚体制令人窒息的等级恐怖。`,
     isTrajectory: false,
-    realViewName: `圣彼得堡`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg/3840px-Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg`
+    realViewName: `圣彼得堡剧院`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg/3840px-Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg`,
+    realViewQuote: `圣彼得堡的剧院大厅——切尔维亚科夫打了一个喷嚏。`
   },
 
   {
-    rank: 79,
+    rank: 78,
     id: `book-207`,
     sliderVal: 5,
     century: `19世纪`,
@@ -2032,8 +2109,9 @@ const books: BookData[] = [
     quote: `谁生活过、思想过，谁就不可能不在灵魂深处蔑视人们。`,
     desc: `沙皇时期的双城浮生录。诗体小说的起点与终点皆在圣彼得堡——这里有涅瓦河畔的深夜散步、永无止境的沙龙贵族夜生活，孕育了俄国文学史上第一个'多余人'奥涅金。从彼得堡的奢华舞会到外省乡村的决斗，再到莫斯科的冬日重逢，普希金用诗歌丈量了整个俄罗斯帝国的心灵地图。`,
     isTrajectory: true,
-    realViewName: `圣彼得堡`,
+    realViewName: `圣彼得堡→莫斯科`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg/3840px-Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg`,
+    realViewQuote: `涅瓦河畔的深夜——奥涅金在圣彼得堡的舞会上厌倦了一切，却不知道莫斯科的冬日里有一个等待他的人。`,
     path: [
       {
         name: `圣彼得堡奢华舞会`,
@@ -2057,7 +2135,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 80,
+    rank: 79,
     id: `book-209`,
     sliderVal: 5,
     century: `19世纪`,
@@ -2073,8 +2151,9 @@ const books: BookData[] = [
     quote: `1812年，拿破仑的军队踏入了俄罗斯的千里平原——博罗季诺的焦土与莫斯科的大火改写了整个欧洲的命运。`,
     desc: `19世纪全景式俄罗斯地理史诗。从圣彼得堡安娜·舍雷尔的宫廷沙龙，到童山的庄园中安德烈公爵仰望星空，再到博罗季诺战役中拿破仑与库图佐夫的对决——最终在莫斯科全城大撤退的烈火中达到高潮。托尔斯泰将俄罗斯欧洲部分的千里平原化为了民族灵魂最宏大的战场。`,
     isTrajectory: true,
-    realViewName: `莫斯科`,
+    realViewName: `莫斯科→博罗季诺战场`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg`,
+    realViewQuote: `莫斯科全城大火——火焰照亮了整个夜空，拿破仑站在克里姆林宫的城墙上，第一次感到了恐惧。`,
     path: [
       {
         name: `圣彼得堡宫廷沙龙`,
@@ -2104,7 +2183,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 81,
+    rank: 80,
     id: `book-97`,
     sliderVal: 5,
     century: `19世纪`,
@@ -2120,12 +2199,13 @@ const books: BookData[] = [
     quote: `虽然成书于伦敦，但对商品拜物教的解构，源头要追溯到摩泽尔河谷的葡萄园与农民。`,
     desc: `虽然《资本论》成书于伦敦大英博物馆的阅览室，但马克思对商品拜物教与无产阶级命运的深刻洞察，其思想源头要追溯到他的出生地——拥有古老罗马遗迹与激进启蒙传统的特里尔，以及他对莱茵省摩泽尔河谷区农民林木盗窃案和葡萄酒农贫困化的早期调研。摩泽尔河谷的葡萄藤与特里尔的古罗马城门，构成了马克思主义最初的思想土壤。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `特里尔马克思故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/ce/Marx_birthplace_Trier.jpg`,
+    realViewQuote: `特里尔——摩泽尔河谷的葡萄藤与古罗马城门，构成了马克思主义最初的思想土壤。`
   },
 
   {
-    rank: 82,
+    rank: 81,
     id: `book-82`,
     sliderVal: 5,
     century: `19世纪`,
@@ -2141,12 +2221,13 @@ const books: BookData[] = [
     quote: `韩麦尔先生在黑板上写下——法兰西万岁！`,
     desc: `普法战争后，在阿尔萨斯-洛林小镇的学校里，韩麦尔先生在最后一堂法语课上，在黑板上一笔一划写下'法兰西万岁'。洛林小镇的钟声、普鲁士士兵的军靴声、以及那些从此只能用德语念书的孩子们——构成了整个法兰西民族无可替代的爱国主义文学地标。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `阿尔萨斯-洛林`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Colmar_%2832350846618%29.jpg/3840px-Colmar_%2832350846618%29.jpg`,
+    realViewQuote: `窗外，鸽子在低低的屋檐上咕咕叫着——'这是最后一课了，孩子们。'`
   },
 
   {
-    rank: 83,
+    rank: 82,
     id: `book-215`,
     sliderVal: 5,
     century: `19世纪`,
@@ -2162,8 +2243,9 @@ const books: BookData[] = [
     quote: `在圣彼得堡干渴燠热的草草小巷里犯下的罪，只有在西伯利亚的冰原上才能赎回。`,
     desc: `故事的前九成在圣彼得堡干草市场旁的阴暗阁楼中展开——拉斯柯尔尼科夫在高烧与谵妄中杀死了放高利贷的老太婆，在彼得堡运河边与警察展开猫鼠博弈。而全书高潮的尾声则移至西伯利亚额尔齐斯河畔的苦役营——在浩瀚的冰原上看着远方游牧民的帐篷，在索尼娅与福音书的陪伴中，他的灵魂终于在苦难中复活。`,
     isTrajectory: true,
-    realViewName: `圣彼得堡→西伯利亚`,
+    realViewName: `圣彼得堡干草市场→西伯利亚`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg/3840px-Spb_06-2017_img20_StMichael_Castle_%28cropped%29.jpg`,
+    realViewQuote: `干草市场旁的阁楼——拉斯柯尔尼科夫在高烧与谵妄中举起了斧头，圣彼得堡夏天闷热的空气让他无法呼吸。`,
     path: [
       {
         name: `圣彼得堡干草市场阁楼`,
@@ -2187,7 +2269,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 84,
+    rank: 83,
     id: `book-18`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2203,12 +2285,13 @@ const books: BookData[] = [
     quote: `在哈萨克无垠的草原上，阿拜的冬不拉琴声穿透了从游牧帝国走向近代的痛苦转型。`,
     desc: `哈萨克现代文学的珠穆朗玛峰。全景式复刻了19世纪哈萨克草原——从氏族部落的冬营地迁徙、骑马叼羊的猎鹰风俗，到沙皇法律的强制介入。阿拜骑在马背上弹着冬不拉，在草原风暴中思考民族的命运。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `哈萨克斯坦塞米伊`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/81/2-minaret_mosque_in_Semey.jpg`,
+    realViewQuote: `哈萨克斯坦塞米伊大草原——马蹄踏过无边的草原，阿拜的歌声在风中飘扬。`
   },
 
   {
-    rank: 85,
+    rank: 84,
     id: `book-32`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2224,12 +2307,13 @@ const books: BookData[] = [
     quote: `他以为人生天地之间，大约本来有时要被抓进抓出，有时要在纸上画圆圈的。`,
     desc: `收录于《呐喊》，空间定格在浙东水乡的未庄，通过阿Q的'精神胜利法'，辛辣刺穿了辛亥革命时期中国封建农村的愚昧与麻木。`,
     isTrajectory: false,
-    realViewName: `浙江省绍兴市鲁镇`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg`
+    realViewName: `绍兴鲁迅故里`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg`,
+    realViewQuote: `未庄本不是大村镇，但住户也不少，有一条丁字街，是买卖东西的地方。`
   },
 
   {
-    rank: 86,
+    rank: 85,
     id: `book-179`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2245,8 +2329,9 @@ const books: BookData[] = [
     quote: `尽管如此，我仍然相信人们内心是善良的。`,
     desc: `二战大屠杀最震撼的微观空间。日记的空间几乎完全被禁锢在阿姆斯特丹王子运河263号的秘密'后宅'中——两个犹太家庭在这间狭小的隐蔽阁楼里躲藏了两年。窗外西教堂的钟声与运河畔那棵栗子树的四季轮转，化为了安妮对抗黑暗时代最炽热的生命音符。最终遭告密被捕，死于集中营。`,
     isTrajectory: true,
-    realViewName: `阿姆斯特丹`,
+    realViewName: `阿姆斯特丹安妮之家`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png`,
+    realViewQuote: `阿姆斯特丹——'尽管如此，我仍然相信人们内心是善良的。'——密室里写下这些话的女孩，后来再也没有回来。`,
     path: [
       {
         name: `法兰克福（出生）`,
@@ -2270,7 +2355,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 87,
+    rank: 86,
     id: `book-39`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2286,12 +2371,13 @@ const books: BookData[] = [
     quote: `好饭耐不得三顿吃，好衣架不住半月穿，好书却经得住一辈子读。`,
     desc: `当代文学的丰碑。空间死死定格在关中平原的白鹿原上。白鹿两大家族跨越半个世纪的恩怨、祠堂的族规、土匪的钢刀、与翻天覆地的大革命，写活了渭河平原最厚重的民族灵魂。`,
     isTrajectory: false,
-    realViewName: `陕西省西安市蓝田县白鹿原`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/32/City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg`
+    realViewName: `蓝田县白鹿原`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/32/City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg`,
+    realViewQuote: `白鹿原上最好的时辰是在麦收之后，无边无垠的金黄被收进了粮仓，大地露出了它黑褐的本色。`
   },
 
   {
-    rank: 88,
+    rank: 87,
     id: `book-17`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2307,18 +2393,19 @@ const books: BookData[] = [
     quote: `在伊塞克湖畔——七岁的孤儿相信长角鹿妈妈会来救他，但大人们用猎枪对准了神鹿。`,
     desc: `艾特玛托夫的最高杰作。空间钉死在天山山脉环绕的伊塞克湖林区护林哨所。男孩在孤独中听着关于'长角鹿妈妈'的古老图腾神话——那是吉尔吉斯人最后的布古族祖先。然而现代人的贪婪逼着他们枪杀了神鹿。绝望的孩子跳进了冰冷的湖水——'我要变成一条鱼，游向白轮船'。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `吉尔吉斯斯坦伊塞克湖`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/79/Issykkul_plyag.jpg`,
+    realViewQuote: `伊塞克湖——'你游吧，你游吧，我的小宝贝。你游到湖心去，那里有一条白轮船。'`
   },
 
   {
-    rank: 89,
+    rank: 88,
     id: `book-178`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 10.98,
     lng: -74.8,
-    country: `哥伦比亚`,
+    country: `拉丁美洲下篇`,
     city: `哥伦比亚阿拉卡塔卡（马孔多原型）`,
     title: `百年孤独`,
     author: `加西亚·马尔克斯`,
@@ -2328,12 +2415,13 @@ const books: BookData[] = [
     quote: `多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。`,
     desc: `魔幻现实主义圣经，20世纪最重要的西班牙语小说。布恩迪亚家族七代人在虚构小镇马孔多的兴衰史诗。吉普赛人带来磁铁和冰块，俏姑娘雷梅黛丝乘床单升天，最后一代长着猪尾巴的婴儿被蚂蚁吃掉——羊皮卷上的预言在飓风中化为乌有。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `哥伦比亚阿拉卡塔卡（马孔多原型）`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/79/Aracataca%27s_church_where_Garcia_Marquez_was_baptized.JPG`,
+    realViewQuote: `马孔多——多年以后，面对行刑队，奥雷里亚诺·布恩迪亚上校将会回想起父亲带他去见识冰块的那个遥远的下午。`
   },
 
   {
-    rank: 90,
+    rank: 89,
     id: `book-129`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2350,11 +2438,12 @@ const books: BookData[] = [
     desc: `西西里贵族体制的落日挽歌。空间精准定格在巴勒莫及其郊外庄园——加里波第红衫军登陆后，面对不可逆转的近代统一大潮，萨利纳亲王深知西西里古老贵族如同岛上干渴、灼热的土地一样，在优雅中走向不可避免的没落。巴勒莫宫殿中的舞会、多纳富加塔庄园的烈日、以及那句著名的'为了让一切保持不变，一切都需要改变'——构成了一部关于时代更迭的伟大寓言。`,
     isTrajectory: false,
     realViewName: `西西里岛巴勒莫`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/c7/Sicilia_Palermo5_tango7174.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/c7/Sicilia_Palermo5_tango7174.jpg`,
+    realViewQuote: `巴勒莫的宫殿——为了让一切保持不变，一切都需要改变。`
   },
 
   {
-    rank: 91,
+    rank: 90,
     id: `book-45`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2370,12 +2459,13 @@ const books: BookData[] = [
     quote: `北极村的冬天，冷得能把人的眼泪冻成冰珠。`,
     desc: `空间定格在中国最北端的冰雪边陲村落，用极其纯净的童年视角，描写了中俄边境线上的严寒、冰封的黑龙江与祖孙间的温情。`,
     isTrajectory: false,
-    realViewName: `大兴安岭`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gegengol_in_Greater_Khingan_forest2017.jpg/3840px-Gegengol_in_Greater_Khingan_forest2017.jpg`
+    realViewName: `漠河北极村`,
+    realViewUrl: ``,
+    realViewQuote: `北极村的冬天，冷得能把人的眼泪冻成冰珠。雪一层层地堆在屋顶上，像发酵的面团。`
   },
 
   {
-    rank: 92,
+    rank: 91,
     id: `book-181`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2391,12 +2481,13 @@ const books: BookData[] = [
     quote: `在纳粹占领的佛兰德平原上，一个少年在合作与抵抗之间找不到一条干净的路。`,
     desc: `二战时期在纳粹占领与合作运动夹缝中，一个佛兰德少年的残酷青春。克劳斯用极其黏稠、粗粝的佛兰德方言风土，撕开了比利时双重语区与阶级分裂的百年疮痍——修道院的禁欲、通敌者的狂欢与抵抗者的死亡。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `西佛兰德省科特赖克`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d0/Kortrijk_Grote_Markt_54_-_11083_-_onroerenderfgoed.jpg`,
+    realViewQuote: `西佛兰德省科特赖克——'战争像一块湿透的毯子，盖在弗兰德斯的平原上。'`
   },
 
   {
-    rank: 93,
+    rank: 92,
     id: `book-117`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2412,8 +2503,9 @@ const books: BookData[] = [
     quote: `从罗马的现代公寓到卡普里岛的红色岩石——一段婚姻在阳光刺眼的南方面前走向幻灭。`,
     desc: `从罗马现代文明向南方海岛自然神话的位移。故事始于战后现代、虚荣的罗马影视圈，随着夫妻情感的破裂，动线转向阳光刺眼的南方卡普里岛——在红色的岩石与湛蓝的地中海间，现代人的婚姻走向了不可逆的幻灭。`,
     isTrajectory: true,
-    realViewName: `罗马`,
+    realViewName: `罗马→卡普里岛`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg`,
+    realViewQuote: `卡普里岛的红色岩石在阳光下燃烧——地中海蓝得让人心碎。`,
     path: [
       {
         name: `罗马现代公寓/电影制片厂`,
@@ -2437,7 +2529,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 94,
+    rank: 93,
     id: `book-36`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2453,12 +2545,13 @@ const books: BookData[] = [
     quote: `这个人也许永远不回来了，也许明天回来。`,
     desc: `以湘西茶峒为背景，描绘了清澈的白河、碧绿的山谷、吊脚楼、渡船以及翠翠与傩送之间纯美的爱情。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `湘西花垣县茶峒古镇`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/af/Fenghuang_County%2C_Hunan%2C_China%2C_21_December_2016b.jpg`,
+    realViewQuote: `茶峒地方凭水依山筑城，近山一面，城墙俨然如一条长蛇，缘山爬去。`
   },
 
   {
-    rank: 95,
+    rank: 94,
     id: `book-100`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2474,12 +2567,13 @@ const books: BookData[] = [
     quote: `一天早晨，格里高尔·萨姆沙从不安的睡梦中醒来，发现自己躺在床上变成了一只巨大的甲虫。`,
     desc: `一天早晨，推销员格里高尔·萨姆沙从不安的睡梦中醒来，发现自己变成了一只巨大的甲虫。卡夫卡用最克制、最日常的笔调，写出了人类异化最恐怖的寓言。`,
     isTrajectory: false,
-    realViewName: `布拉格旧城`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg`
+    realViewName: `布拉格旧城卡夫卡博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg`,
+    realViewQuote: `布拉格旧城的公寓——一天早晨，格里高尔从不安的睡梦中醒来，发现自己变成了一只巨大的甲虫。`
   },
 
   {
-    rank: 96,
+    rank: 95,
     id: `book-251`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2495,12 +2589,13 @@ const books: BookData[] = [
     quote: `不要温和地走进那个良夜，老年应当在日暮时燃烧咆哮；怒斥，怒斥光明的消逝。`,
     desc: `凯尔特诗歌的狂暴生命力。狄兰·托马斯在威尔士西南部潮湿、苍茫的悬崖木屋中——拉恩海岸的狂风从大西洋上席卷而来，拍打着峭壁下的礁石。在这片浸透了凯尔特古老神话的荒野上，托马斯写下了对死亡最暴烈的反抗——怒斥光明的消逝。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `斯旺西与南威尔士海岸`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/2/27/P.3._Swansea_City_Centre_2012.jpg`,
+    realViewQuote: `不要温和地走进那个良夜，老年应当在日暮时燃烧咆哮；怒斥，怒斥光明的消逝。`
   },
 
   {
-    rank: 97,
+    rank: 96,
     id: `book-113`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2512,12 +2607,13 @@ const books: BookData[] = [
     author: `[印尼]普拉姆迪亚·阿南达·杜尔`,
     color: `#3CB371`,
     coverUrl: `/covers/35292525.jpg`,
-    tags: [`1980年`, `印尼文学`, `民族史诗`, `反殖民`, `2022年`, `豆瓣 9.0`],
+    tags: [`1980年`, `印尼文学`, `民族史诗`, `反殖民`, `2022年`],
     quote: `从泗水的封建庄园到巴达维亚的现代思潮——一个民族的觉醒之路。`,
     desc: `印尼文学无冕之王普拉姆迪亚在被囚禁的布鲁岛集中营里口述完成的史诗巨著。包含《人世间》《万国之子》《足迹》《玻璃屋》四部。故事跟随主角明克，从盛行爪哇传统封建礼教的泗水，沿着荷属东印度的殖民脉络，最终来到现代民族思潮风起云涌的巴达维亚（今雅加达），全景式展现了万岛之国的民族觉醒史诗。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `印尼泗水`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Central_Surabaya_view_taken_from_JW_Marriott_Surabaya.jpg/3840px-Central_Surabaya_view_taken_from_JW_Marriott_Surabaya.jpg`,
+    realViewQuote: `泗水——印度尼西亚群岛的烈日下，一个民族正在寻找自己的声音。`,
     path: [
       {
         name: `东爪哇泗水`,
@@ -2547,7 +2643,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 98,
+    rank: 97,
     id: `book-269`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2564,11 +2660,12 @@ const books: BookData[] = [
     desc: `极其细腻地复刻了20世纪初布鲁克林贫民窟的市井烟火。爱尔兰和德国移民的后代在水泥台阶上读书、在街角小店中赊账、在周末去公共图书馆借一本新书——那棵在布鲁克林阴暗后院里顽强生长的天堂树，成为了底层移民家庭坚韧生存最完美的地理图腾。`,
     isTrajectory: false,
     realViewName: `纽约布鲁克林`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`,
+    realViewQuote: `布鲁克林的水泥缝隙里，那棵天堂树顽强地向着天空生长——就像弗兰西一样。`
   },
 
   {
-    rank: 99,
+    rank: 98,
     id: `book-244`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2584,12 +2681,13 @@ const books: BookData[] = [
     quote: `在矿区边缘的古老树林中，康妮找到了被工业文明剥夺了的一切。`,
     desc: `工业伤痕与原始胶林的博弈。诺丁汉矿区周边——远方是工业革命留下的冒着黑烟的煤矿与铁道，近处是绿意盎然的原始庄园树林。查泰莱夫人康妮的丈夫从一战战场回来下半身瘫痪，她在猎场看守人梅勒斯的原始触碰中重新发现了生命与欲望。在煤烟的阴影与橡树林的阳光之间，完成了对现代文明最激进的批判。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `诺丁汉郡`,
+    realViewUrl: ``,
+    realViewQuote: `诺丁汉的煤矿在远处冒着黑烟，但树林里的风信子依然在春天盛开。`
   },
 
   {
-    rank: 100,
+    rank: 99,
     id: `book-21`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2605,12 +2703,13 @@ const books: BookData[] = [
     quote: `我爱咱们的国呀，可是谁爱我呢？`,
     desc: `空间定格在老北京西城裕泰茶室的格子间里，借一个茶馆的掌柜与茶客，折射出三个朝代的沧桑巨变。`,
     isTrajectory: false,
-    realViewName: `北京市西城区裕泰茶室`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`
+    realViewName: `北京老舍茶馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`,
+    realViewQuote: `大茶馆，老裕泰，屋里摆着八仙桌，挂着手写的'莫谈国事'。`
   },
 
   {
-    rank: 101,
+    rank: 100,
     id: `book-22`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2626,12 +2725,13 @@ const books: BookData[] = [
     quote: `爸爸的花儿落了，我也不再是小孩子。`,
     desc: `以细腻柔和的儿童视角，怀念并完美还原了民国时期北京城南四合院与胡同里的市井风情。`,
     isTrajectory: false,
-    realViewName: `北京市西城区南城惠安馆`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`
+    realViewName: `北京南城胡同`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`,
+    realViewQuote: `我站在惠安馆的门前，看着那条狭长的胡同，一直通到看不见的深处。`
   },
 
   {
-    rank: 102,
+    rank: 101,
     id: `book-25`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2647,12 +2747,13 @@ const books: BookData[] = [
     quote: `生命是一袭华美的袍，爬满了蚤子。`,
     desc: `极具现代海派文学底色，细腻勾勒了抗战时期上海孤岛时期的旧式家族衰败、公寓生活与世俗欲望。`,
     isTrajectory: false,
-    realViewName: `上海市静安区常德公寓`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`
+    realViewName: `上海常德公寓张爱玲故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`,
+    realViewQuote: `她住在常德公寓，房门对着电梯，一开门就听见电梯嗡嗡地上来下去。`
   },
 
   {
-    rank: 103,
+    rank: 102,
     id: `book-155`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2664,16 +2765,17 @@ const books: BookData[] = [
     author: `（日本）三岛由纪夫`,
     color: `#708090`,
     coverUrl: `/covers/1056673.jpg`,
-    tags: [`1969年`, `日本文学`, `长篇小说`, `轮回`, `1999年`, `豆瓣 8.7`],
+    tags: [`1969年`, `日本文学`, `长篇小说`, `轮回`, `1999年`],
     quote: `最灿烂的美，总是最先凋零。`,
     desc: `三岛由纪夫《丰饶之海》四部曲的第一部。故事以日俄战争后的日本为背景，描写了贵族少年松枝清显与绫仓聪子之间禁忌而炽烈的爱情。奈良的古寺、月修寺（原型为奈良的圆照寺）在小说中是重要的场景——这里既是清显家庭教师的居所，也是故事最终悲剧发生的舞台。三岛以奈良古都的静谧庄严为背景，书写了一场如春雪般纯净又短暂的爱恋。`,
     isTrajectory: false,
-    realViewName: `奈良`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg`
+    realViewName: `奈良圆照寺`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg`,
+    realViewQuote: `奈良圆照寺——积雪覆盖了古寺的飞檐，清显与聪子的爱情如春雪般短暂而绝望的美。`
   },
 
   {
-    rank: 104,
+    rank: 103,
     id: `book-90`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2689,13 +2791,14 @@ const books: BookData[] = [
     quote: `在黑森林深处孤独的木屋中，听着窗外的松涛与风声，思索存在的本真。`,
     desc: `海德格尔远离弗莱堡大学的喧嚣，在黑森林深处的托特瑙堡山间木屋中完成了现代哲学最具标志性的著作。窗外黑森林的松涛、冬日的暴雪、以及被自然完全包围的孤独——这一切并非哲学的背景，而是'此在'在世界之中存在的最高体现。海德格尔的小木屋已成为现代哲学最具标志性的空间符号。`,
     isTrajectory: false,
-    realViewName: `黑森林托特瑙堡山间木屋`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Blick_vom_Hohfelsen.jpg/3840px-Blick_vom_Hohfelsen.jpg`
+    realViewName: `黑森林托特瑙堡海德格尔木屋`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Blick_vom_Hohfelsen.jpg/3840px-Blick_vom_Hohfelsen.jpg`,
+    realViewQuote: `黑森林的木屋——松涛在窗外低语，冬日的暴雪将一切隔绝——'此在'在这里找到了最本真的栖居。`
   },
 
   {
-    rank: 105,
-    id: `book-71`,
+    rank: 104,
+    id: `book-70`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 48.854,
@@ -2704,18 +2807,19 @@ const books: BookData[] = [
     city: `巴黎左岸`,
     title: `存在与虚无`,
     author: `让-保罗·萨特`,
-    color: `#CD853F`,
+    color: `#2E8B57`,
     coverUrl: `/covers/ol-OL2957176W.jpg`,
     tags: [`1943年`, `法国哲学`, `存在主义`, `现象学`],
     quote: `存在先于本质。`,
     desc: `德占时期，萨特在巴黎左岸的咖啡馆与小旅馆中完成了这部存在主义哲学巨著。在被纳粹占领的巴黎，两个烟囱咖啡馆中，萨特以惊人的冷静审视了'虚无'——人的自由、选择与责任。巴黎的灰色天空下，存在主义的种子在被占领的城市中倔强地生根发芽。`,
     isTrajectory: false,
-    realViewName: `左岸`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Par_Arr.svg/960px-Par_Arr.svg.png`
+    realViewName: `巴黎左岸花神咖啡馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Par_Arr.svg/960px-Par_Arr.svg.png`,
+    realViewQuote: `在圣日耳曼德普雷的咖啡馆里，存在主义像咖啡一样浓烈。`
   },
 
   {
-    rank: 106,
+    rank: 105,
     id: `book-234`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2731,12 +2835,13 @@ const books: BookData[] = [
     quote: `达洛卫夫人说她自己去买花。大本钟的钟声在伦敦清晨的空气中回荡。`,
     desc: `一战后伦敦的一天。克拉丽莎·达洛卫夫人的脚步在清晨的伦敦西区展开——邦德街的花店、摄政公园的林荫道、大本钟沉重的报时声在伦敦的空中回荡。伍尔夫用一天的时间，以意识流的笔触编织出战后伦敦上流社会的精致与虚无——晚宴上的蜡烛亮了，而那个从一战归来的年轻人塞普蒂默斯从窗户跳了下去。`,
     isTrajectory: false,
-    realViewName: `伦敦`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`
+    realViewName: `伦敦西区邦德街`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`,
+    realViewQuote: `达洛卫夫人说她自己去买花。大本钟的钟声在伦敦清晨的空气中回荡——先是音乐，然后是报时，不可挽回。`
   },
 
   {
-    rank: 107,
+    rank: 106,
     id: `book-211`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2752,12 +2857,13 @@ const books: BookData[] = [
     quote: `手稿是烧不掉的。`,
     desc: `魔幻现实主义的开山鼻祖。魔王沃兰德带着随从空降30年代苏维埃管辖下的莫斯科——在牧首池塘旁预言了主编别尔利奥兹的头颅将被电车切断，在瓦列特剧院的舞台上降下卢布雨，在深夜公寓里举办撒旦的盛大舞会。布尔加科夫用黑色狂欢撕裂了莫斯科的伪善，为爱、勇气与不朽的文学加冕。`,
     isTrajectory: false,
-    realViewName: `莫斯科`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg`
+    realViewName: `莫斯科牧首池塘`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg`,
+    realViewQuote: `牧首池塘——魔王沃兰德在一个春日傍晚降临了无神论的莫斯科。`
   },
 
   {
-    rank: 108,
+    rank: 107,
     id: `book-85`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2774,11 +2880,12 @@ const books: BookData[] = [
     desc: `魏玛共和国时期的柏林。本雅明以极其敏锐的感官捕捉了现代都市的幻影——柏林的拱廊街、霓虹灯广告牌、以及那些在商品世界中被异化的欲望。这部碎片化的哲学笔记本身就像一条柏林的单行道：不可逆地穿过现代性的迷宫。`,
     isTrajectory: false,
     realViewName: `柏林`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/3840px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/3840px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg`,
+    realViewQuote: `柏林的拱廊街——霓虹灯的广告牌在雨中折射出被异化的欲望。`
   },
 
   {
-    rank: 109,
+    rank: 108,
     id: `book-156`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2790,16 +2897,17 @@ const books: BookData[] = [
     author: `山冈庄八`,
     color: `#BC8F8F`,
     coverUrl: `/covers/11232975.jpg`,
-    tags: [`1950年`, `日本文学`, `历史小说`, `战国时代`, `2011年`, `豆瓣 8.5`],
+    tags: [`1950年`, `日本文学`, `历史小说`, `战国时代`, `2011年`],
     quote: `人的一生，如同负重远行，不可急于求成。`,
     desc: `山冈庄八最宏大的历史小说，全26卷，从德川家康出生一直写到其统一天下。德川家康出生于名古屋附近的三河国冈崎城，童年时期在名古屋一带度过。小说以宏大的篇幅描绘了战国时代东海道地区的政治与军事风云——从名古屋的尾张平原到关东的江户，展现了德川家康如何以隐忍和谋略开创了长达260年的德川幕府时代。`,
     isTrajectory: false,
-    realViewName: `名古屋`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg`
+    realViewName: `名古屋城`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/0/0c/Nagoya_Station_-_View_from_the_Main_Building_in_Nagoya_Campus_of_Aichi_University_2022-6-29.jpg`,
+    realViewQuote: `名古屋城——金鯱在尾张平原的烈日下闪耀，德川家康从这里开始了统一天下的征程。`
   },
 
   {
-    rank: 110,
+    rank: 109,
     id: `book-86`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2815,12 +2923,13 @@ const books: BookData[] = [
     quote: `每个人的生命都是通向自我的征途。`,
     desc: `一战前夕德国北部/中部内陆小镇的苦闷青春与精神觉醒。少年辛克莱在传统压抑的宗教家庭中成长，遇到了神秘的德米安——这个来自异乡的少年引领他走出了善恶二元论的童年世界，走向了通向自我深处的黑暗之路。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `德国北部小镇`,
+    realViewUrl: ``,
+    realViewQuote: `每个人的生命都是通向自我的征途——那座德国北部小镇的钟声，是辛克莱童年最深的回响。`
   },
 
   {
-    rank: 111,
+    rank: 110,
     id: `book-253`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2837,12 +2946,13 @@ const books: BookData[] = [
     desc: `虽然贝克特用法语写成了此书，但两个流浪汉爱斯特拉冈和弗拉基米尔在路边一棵枯树下无尽的荒诞等待，其灵魂根源于爱尔兰西部极为荒凉、多石、没有任何现代生机的贫瘠大地。荒原上只有一棵秃树、一条空无一人的路、以及永远等不到的戈多——'他们什么也没发生，没有人来，没有人去，太可怕了。'`,
     isTrajectory: false,
     realViewName: ``,
-    realViewUrl: ``
+    realViewUrl: ``,
+    realViewQuote: ``
   },
 
   {
-    rank: 112,
-    id: `book-70`,
+    rank: 111,
+    id: `book-69`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 48.854,
@@ -2851,18 +2961,19 @@ const books: BookData[] = [
     city: `巴黎左岸`,
     title: `第二性`,
     author: `西蒙娜·德·波伏瓦`,
-    color: `#2E8B57`,
+    color: `#483D8B`,
     coverUrl: `/covers/ol-OL11674781W.jpg`,
     tags: [`1949年`, `法国哲学`, `女性主义`, `存在主义`],
     quote: `女人不是天生的，而是后天形成的。`,
     desc: `波伏瓦在巴黎左岸的花神咖啡馆与双叟咖啡馆构思了这部女性主义奠基之作。二战后圣日耳曼德普雷的知识氛围——萨特、加缪、毕加索在此聚会——滋养了这部从根本上改变了20世纪思想格局的著作。左岸咖啡馆的烟雾、存在主义的激辩、以及一个女性哲学家对自由的坚定追求，构成了巴黎知识分子黄金时代的底色。`,
     isTrajectory: false,
-    realViewName: `左岸`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Par_Arr.svg/960px-Par_Arr.svg.png`
+    realViewName: `巴黎左岸花神咖啡馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Par_Arr.svg/960px-Par_Arr.svg.png`,
+    realViewQuote: `花神咖啡馆的烟雾里，她写下：女人不是天生的，而是后天形成的。`
   },
 
   {
-    rank: 113,
+    rank: 112,
     id: `book-153`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2874,16 +2985,17 @@ const books: BookData[] = [
     author: `[日本] 松本清张`,
     color: `#3CB371`,
     coverUrl: `/covers/1506970.jpg`,
-    tags: [`1958年`, `日本文学`, `推理小说`, `社会派`, `2006年`, `豆瓣 8.1`],
+    tags: [`1958年`, `日本文学`, `推理小说`, `社会派`, `2006年`],
     quote: `看似毫无关联的两个点，背后总有一条线相连。`,
     desc: `松本清张的推理小说杰作，开创了日本'社会派推理'的先河。一男一女两具尸体在福冈香椎海岸被发现，看似殉情，实则是一场精心策划的谋杀。故事在福冈、东京之间频繁往返——福冈香椎的清晨海风、东京站分秒不差的列车时刻表，时间和空间的精密对应成为破案的关键。这部小说将日本铁路旅行的时空结构巧妙地嵌入推理叙事之中。`,
     isTrajectory: false,
-    realViewName: `福冈`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg`
+    realViewName: `福冈香椎海岸`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg`,
+    realViewQuote: `香椎海岸——两具尸体躺在清晨的沙滩上，海风中带着咸腥的气味。`
   },
 
   {
-    rank: 114,
+    rank: 113,
     id: `book-199`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2899,12 +3011,13 @@ const books: BookData[] = [
     quote: `比雅特斯站在瓦特纳冰川山麓的苔原上——他可以饿死，但他绝不会卖掉他的羊和自己。`,
     desc: `1955年诺奖得主拉克斯内斯的史诗巨著。空间被死死定格在冰岛极度贫瘠、干冷、苔藓覆盖的北部荒原上——这里除了风、雪和火山岩几乎什么都没有。穷苦羊农比雅特斯为了守住自己那片带有萨迦神话诅咒的土地，不惜与饥饿、暴风雪和整个现代社会对抗。冰岛的火山岩在风中变黑，而比雅特斯那颗不可妥协的心比玄武岩更坚硬。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `冰岛北部荒原`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/1280px-Flag_of_Iceland.svg.png`,
+    realViewQuote: `冰岛北部荒原——比雅特斯站在瓦特纳冰川山麓的苔原上——他可以饿死，但他绝不会卖掉他的羊。`
   },
 
   {
-    rank: 115,
+    rank: 114,
     id: `book-49`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2921,11 +3034,12 @@ const books: BookData[] = [
     desc: `王家卫电影《花样年华》的精神母体。通过一个从上海移居香港的落魄中年男子与一个香港本土少女的意识流双线对倒，画出了60年代香港九龙城寨、旺角街头充满霓虹色泽的嘈杂与孤独。`,
     isTrajectory: false,
     realViewName: `香港九龙城寨`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png`,
+    realViewQuote: `旺角的霓虹灯把整条街照得如同白昼，人贴着人，车贴着车。`
   },
 
   {
-    rank: 116,
+    rank: 115,
     id: `book-124`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2942,11 +3056,12 @@ const books: BookData[] = [
     desc: `极具皮埃蒙特大区首府都灵的资产阶级文化气息。通过一家人絮絮叨叨的日常对话——餐桌上关于政治的争论、客厅里对逃亡犹太邻居的回忆、以及那些被战争打断的平凡生活——折射出反法西斯战争时期都灵的动荡与伤痕。金兹伯格以极简的家庭叙事，书写了二十世纪意大利最沉重的历史。`,
     isTrajectory: false,
     realViewName: `都灵`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Torino_Piazza_Castello_11.jpg/3840px-Torino_Piazza_Castello_11.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Torino_Piazza_Castello_11.jpg/3840px-Torino_Piazza_Castello_11.jpg`,
+    realViewQuote: `都灵——资产阶级客厅里絮絮叨叨的日常对话，反法西斯战争时期的动荡就隐藏在每一句'再来一杯咖啡？'之中。`
   },
 
   {
-    rank: 117,
+    rank: 116,
     id: `book-139`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2958,16 +3073,17 @@ const books: BookData[] = [
     author: `[日] 东野圭吾`,
     color: `#8B0000`,
     coverUrl: `/covers/26877752.jpg`,
-    tags: [`1996年`, `日本文学`, `推理小说`, `社会派`, `2016年`, `豆瓣 8.7`],
+    tags: [`1996年`, `日本文学`, `推理小说`, `社会派`, `2016年`],
     quote: `有些人的恨是没有原因的。`,
     desc: `东野圭吾最具深度的推理小说之一。畅销作家日高邦彦在东京的家中遇害，刑警加贺恭一郎在调查过程中发现，凶手野野口修的动机远比案件本身更令人不寒而栗。小说以东京为舞台，通过多重叙述视角层层剥开人性的黑暗面——嫉妒、虚荣，以及那些无法被理解的'恶意'。`,
     isTrajectory: false,
     realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `东京的天空灰蒙蒙的，刑警加贺站在日高邦彦的公寓门外。`
   },
 
   {
-    rank: 118,
+    rank: 117,
     id: `book-177`,
     sliderVal: 6,
     century: `20世纪`,
@@ -2983,12 +3099,13 @@ const books: BookData[] = [
     quote: `我喜欢你是寂静的，仿佛你消失了一样。`,
     desc: `1971年诺奖得主聂鲁达在黑岛的临海木屋里——巨浪拍打着海岸上的礁石、海风穿过落地窗——写下了对拉美土地、海洋与爱情最深沉的赞歌。黑岛是他最珍爱的家：堆满船头雕塑、贝壳与世界各地水手礼物的奇异居所，面朝无边无际的太平洋。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `智利黑岛聂鲁达故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/CADAL11105972_%E5%8D%97%E7%BE%8E%E4%B8%89%E5%BC%B7%E5%88%A9%E7%94%A8%E5%A4%96%E8%B3%87%E8%88%88%E5%9C%8B%E4%BA%8B%E4%BE%8B.djvu/page1-1280px-CADAL11105972_%E5%8D%97%E7%BE%8E%E4%B8%89%E5%BC%B7%E5%88%A9%E7%94%A8%E5%A4%96%E8%B3%87%E8%88%88%E5%9C%8B%E4%BA%8B%E4%BE%8B.djvu.jpg`,
+    realViewQuote: `黑岛——我喜欢你是寂静的，仿佛你消失了一样。太平洋的浪花拍打着聂鲁达木屋下的礁石。`
   },
 
   {
-    rank: 119,
+    rank: 118,
     id: `book-38`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3004,12 +3121,13 @@ const books: BookData[] = [
     quote: `睡在哪里不都是睡在夜里。`,
     desc: `以古城西安为背景，描写了20世纪80年代知识分子的精神困境与都市文化转型，文化底色沉透着秦腔的苍凉。`,
     isTrajectory: false,
-    realViewName: `陕西省西安市古城`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/32/City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg`
+    realViewName: `西安古城`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/32/City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg`,
+    realViewQuote: `西京城里，城墙还是那座城墙，只是城里的风一阵燥过一阵。`
   },
 
   {
-    rank: 120,
+    rank: 119,
     id: `book-276`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3025,8 +3143,9 @@ const books: BookData[] = [
     quote: `哪里有饥饿的人在为食物而战，我就在哪里。`,
     desc: `大萧条时期的西进逃荒血泪史。20世纪30年代全美大旱灾——俄克拉荷马州的沙尘暴将农田化为荒漠。汤姆·乔德一家被迫离开家园，挤在一辆破旧的哈德逊卡车上沿着66号公路横跨整个美国——穿过得克萨斯、新墨西哥和亚利桑那的沙漠，最终抵达加州。但加州中央谷地的果园并非乐园，而是资本剥削的残酷修罗场。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `俄克拉荷马州→66号公路→加州中央谷地`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/31/Greetings_from_Oklahoma%2C_the_Sooner_State_-_Large_Letter_Postcard_%2814444360595%29.jpg`,
+    realViewQuote: `66号公路——一条被太阳晒得发烫的灰色缎带，从俄克拉荷马的尘土一直延伸到加州的果园。`,
     path: [
       {
         name: `俄克拉荷马州大旱灾区`,
@@ -3050,7 +3169,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 121,
+    rank: 120,
     id: `book-35`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3066,12 +3185,13 @@ const books: BookData[] = [
     quote: `河南棚子里，七哥一家十一口人挤在十三平方米的小屋里。`,
     desc: `新写实小说代表作，聚焦武汉汉口底层码头家庭十几口人在几十年间的生存挣扎，充满了粗粝、泼辣的城市汉味。`,
     isTrajectory: false,
-    realViewName: `湖北省武汉市汉口码头`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f0/%E6%AD%A6%E6%B1%89%E9%BB%84%E9%B9%A4%E6%A5%BC%E4%BF%AF%E7%9E%B0.jpg`
+    realViewName: `武汉汉口码头`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f0/%E6%AD%A6%E6%B1%89%E9%BB%84%E9%B9%A4%E6%A5%BC%E4%BF%AF%E7%9E%B0.jpg`,
+    realViewQuote: `河南棚子里，七哥一家十一口人挤在十三平方米的小屋里。`
   },
 
   {
-    rank: 122,
+    rank: 121,
     id: `book-9`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3089,6 +3209,7 @@ const books: BookData[] = [
     isTrajectory: true,
     realViewName: `维也纳`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`,
+    realViewQuote: `维也纳——音乐学院的琴房里，每一个音符都浸透着压抑与欲望。`,
     path: [
       {
         name: `施泰尔马克大区乡村`,
@@ -3112,7 +3233,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 123,
+    rank: 122,
     id: `book-173`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3124,16 +3245,17 @@ const books: BookData[] = [
     author: `高银`,
     color: `#3CB371`,
     coverUrl: `/covers/26686744.jpg`,
-    tags: [`诗歌`, `韩国文学`, `禅宗哲学`, `自然诗`, `2016年`, `豆瓣 8.1`],
+    tags: [`诗歌`, `韩国文学`, `禅宗哲学`, `自然诗`, `2016年`],
     quote: `走下去，走下去，走下去——就是全部。`,
     desc: `高银在群山出家并写下大量带有传统全罗道自然风光、泥土气息和禅宗哲学的诗歌。群山的平原、万顷江的流水、以及禅房中被晨钟唤醒的黎明——这些自然意象成为高银诗歌中最纯净的底色。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `全罗北道群山`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Korea-Buan_County-Naesosa-Daungbojeon-02.jpg/3840px-Korea-Buan_County-Naesosa-Daungbojeon-02.jpg`,
+    realViewQuote: `群山——走下去，走下去，走下去——就是全部。`
   },
 
   {
-    rank: 124,
+    rank: 123,
     id: `book-218`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3150,11 +3272,12 @@ const books: BookData[] = [
     desc: `西伯利亚'村长文学'代表作。由于修建布拉茨克水电站，安加拉河上的古老村落马焦拉岛即将被永久淹没——推土机已经开到了村口，但老妇人达莉娅抱着自家祖屋的木墙、守在与祖先共眠的墓地旁不肯离开。现代工业文明对西伯利亚传统乡村根脉的毁灭，在这座将被水淹没的岛屿上化为了俄罗斯文学中最悲壮的抵抗。`,
     isTrajectory: false,
     realViewName: `西伯利亚安加拉河畔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png`,
+    realViewQuote: `安加拉河上的马焦拉岛——推土机已经开到了村口，老妇人达莉娅抱着祖屋的木墙不肯离开。`
   },
 
   {
-    rank: 125,
+    rank: 124,
     id: `book-144`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3166,16 +3289,17 @@ const books: BookData[] = [
     author: `[日本] 川端康成`,
     color: `#556B2F`,
     coverUrl: `/covers/25788092.jpg`,
-    tags: [`1962年`, `日本文学`, `中篇小说`, `诺贝尔文学奖`, `2014年`, `豆瓣 8.7`],
+    tags: [`1962年`, `日本文学`, `中篇小说`, `诺贝尔文学奖`, `2014年`],
     quote: `也许幸运是短暂的，孤独却是长久的。`,
     desc: `川端康成诺贝尔文学奖获奖后的首部作品。故事围绕京都一对自幼分离的孪生姐妹千重子和苗子展开。小说以京都四季为背景——春之平安神宫的樱花、夏之祇园祭的灯笼、秋之嵯峨野的竹林、冬之北山杉的落雪——每一个季节都对应着主人公的心境变迁。川端以极致的日本美学，将京都这座千年古都的风物与人物的孤寂之美融为一体。`,
     isTrajectory: false,
-    realViewName: `京都`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`
+    realViewName: `京都平安神宫`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`,
+    realViewQuote: `平安神宫的樱花——千重子站在朱红的回廊下，花瓣如雪般落在她的肩头。`
   },
 
   {
-    rank: 126,
+    rank: 125,
     id: `book-217`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3191,8 +3315,9 @@ const books: BookData[] = [
     quote: `整个西伯利亚冰原和北极圈周边，被一个庞大的'群岛'系统覆盖——那不是岛屿，是劳改营。`,
     desc: `二十世纪人类苦难的地理巨著。从莫斯科卢比扬卡地铁站旁的秘密监狱开始，沿着西伯利亚大铁路一路向东——犯人被分流到散布在整个西伯利亚和远东的数以百计的劳改营中。冻土上的伐木场、北极圈内的铀矿、以及那些被遗忘在泰加林深处的无名坟墓——构成了一座在地图上永远找不到的群岛。`,
     isTrajectory: true,
-    realViewName: `古拉格集中营网`,
+    realViewName: `西伯利亚古拉格遗址`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png`,
+    realViewQuote: `整个西伯利亚——群岛不是岛屿，而是散布在冰原上的劳改营，每一座都是地图上找不到的无名坟墓。`,
     path: [
       {
         name: `莫斯科/彼得堡秘密逮捕`,
@@ -3216,7 +3341,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 127,
+    rank: 126,
     id: `book-14`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3232,12 +3357,13 @@ const books: BookData[] = [
     quote: `在布雷顿角岛大西洋的悬崖畔——几代苏格兰移民矿工望着灰绿色的海水，用盖尔语唱着古老的挽歌。`,
     desc: `加拿大最东端的险峻海岛上——腥味的海风、坚硬的花岗岩石壁、没入融雪的黑色伐木场。苏格兰高地大清洗后被放逐到此的移民后代，在煤矿深处与北大西洋的暴风中死去。麦克劳德的文字浸透了海水与血——这片岛上每一个地名都以盖尔语命名，每一种死亡都是一次对古老故乡的回望。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `新斯科舍省布雷顿角岛`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/CADAL11105811_%E6%AF%94%E8%BC%83%E6%96%87%E5%8C%96%E7%A0%94%E7%A9%B6%E6%89%80%E8%AD%AF%E5%8F%A2%E4%B9%8B%E5%9B%9B%C2%B7%E7%BE%8E%E5%9C%8B%E5%90%8D%E4%BA%BA%E5%B0%8F%E5%82%B3.djvu/page1-1280px-CADAL11105811_%E6%AF%94%E8%BC%83%E6%96%87%E5%8C%96%E7%A0%94%E7%A9%B6%E6%89%80%E8%AD%AF%E5%8F%A2%E4%B9%8B%E5%9B%9B%C2%B7%E7%BE%8E%E5%9C%8B%E5%90%8D%E4%BA%BA%E5%B0%8F%E5%82%B3.djvu.jpg`,
+    realViewQuote: `布雷顿角岛——海风从大西洋上呼啸而来，礁石上的苔藓比任何地方都更绿。`
   },
 
   {
-    rank: 128,
+    rank: 127,
     id: `book-23`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3253,13 +3379,14 @@ const books: BookData[] = [
     quote: `月光如流水一般，静静地泻在这一片叶子和花上。薄薄的青雾浮起在荷塘里。`,
     desc: `精准定位在清华大学荒岛那一处静谧的荷塘，写活了夏夜月光下中国文人最细腻的隐逸心境。`,
     isTrajectory: false,
-    realViewName: `北京市海淀区清华园`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`
+    realViewName: `清华大学荷塘月色`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`,
+    realViewQuote: `曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，像亭亭的舞女的裙。`
   },
 
   {
-    rank: 129,
-    id: `book-56`,
+    rank: 128,
+    id: `book-55`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 36.38,
@@ -3268,19 +3395,20 @@ const books: BookData[] = [
     city: `山东省潍坊市高密市大栏乡`,
     title: `红高粱家族`,
     author: `莫言`,
-    color: `#BC8F8F`,
+    color: `#708090`,
     coverUrl: `/covers/wr-26435423.jpg`,
     tags: [`1986年`, `诺贝尔文学奖`, `新历史主义`, `胶东平原`, `野性生命`],
     quote: `高粱红了，像一片燃烧的火焰，烧红了半边天。`,
     desc: `新历史主义代表作。空间坐标被死死钉在胶东半岛那片无边无垠、热烈多汁的红高粱地里。莫言用最原始、暴烈、充满了大土匪大抗日的野性文字，写活了山东大地最纯粹的生命力。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `高密莫言旧居红高粱地`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/%E5%B1%B1%E4%B8%9C%E7%9C%81%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%85%B3%E4%BA%8E%E5%85%AC%E5%B8%83%E7%AC%AC%E4%BA%94%E6%89%B9%E7%9C%81%E7%BA%A7%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%8D%95%E4%BD%8D%E7%9A%84%E9%80%9A%E7%9F%A5%EF%BC%88%E9%B2%81%E6%94%BF%E5%AD%97%E3%80%942015%E3%80%95142%E5%8F%B7%EF%BC%89.pdf/page1-960px-%E5%B1%B1%E4%B8%9C%E7%9C%81%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%85%B3%E4%BA%8E%E5%85%AC%E5%B8%83%E7%AC%AC%E4%BA%94%E6%89%B9%E7%9C%81%E7%BA%A7%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E5%8D%95%E4%BD%8D%E7%9A%84%E9%80%9A%E7%9F%A5%EF%BC%88%E9%B2%81%E6%94%BF%E5%AD%97%E3%80%942015%E3%80%95142%E5%8F%B7%EF%BC%89.pdf.jpg`,
+    realViewQuote: `八月深秋，无边无际的高粱红成汪洋的血海。高粱高密辉煌，高粱凄婉可人，高粱爱情激荡。`
   },
 
   {
-    rank: 130,
-    id: `book-55`,
+    rank: 129,
+    id: `book-54`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 29.57,
@@ -3289,18 +3417,19 @@ const books: BookData[] = [
     city: `重庆市沙坪坝区歌乐山渣滓洞`,
     title: `红岩`,
     author: `罗广斌 / 杨益言`,
-    color: `#708090`,
+    color: `#B8860B`,
     coverUrl: `/covers/wr-3001093628.jpg`,
     tags: [`1961年`, `革命历史`, `红岩精神`, `渣滓洞`, `山城雾都`],
     quote: `死亡，对于一个革命者，是多么无用的威胁。`,
     desc: `全景式复刻了解放前夕重重迷雾、山城地势险峻下的重庆。故事高潮完全禁锢在歌乐山下的秘密监狱高墙内，地下党人在反动派大屠杀前夕的残酷斗争与钢铁意志，是山城最沉重的历史地理坐标。`,
     isTrajectory: false,
-    realViewName: `重庆市沙坪坝区歌乐山渣滓洞`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/Chongqing_Nightscape.jpg`
+    realViewName: `重庆歌乐山渣滓洞`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/Chongqing_Nightscape.jpg`,
+    realViewQuote: `歌乐山在晨雾中露出黑色的轮廓，像一头卧着的巨兽。`
   },
 
   {
-    rank: 131,
+    rank: 130,
     id: `book-87`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3312,16 +3441,17 @@ const books: BookData[] = [
     author: `[德] 赫尔曼·黑塞`,
     color: `#4682B4`,
     coverUrl: `/covers/30139445.jpg`,
-    tags: [`1927年`, `德国文学`, `现代主义`, `诺贝尔文学奖`, `2017年`, `豆瓣 8.3`],
+    tags: [`1927年`, `德国文学`, `现代主义`, `诺贝尔文学奖`, `2017年`],
     quote: `哈里·哈勒尔在慕尼黑的酒馆与魔幻剧场中，解构自我的神性与狼性。`,
     desc: `哈里·哈勒尔游荡在带有南德古老气息与现代酒馆交织的都市——原型接近慕尼黑。他在城市的午夜街道上徘徊，在酒馆中听着爵士乐自我放逐，最终在魔幻剧场中遇到了莫扎特和不朽者。慕尼黑中产阶级客厅的压抑与巴伐利亚啤酒馆的狂欢，构成了一场关于灵魂分裂的现代寓言。`,
     isTrajectory: false,
     realViewName: `慕尼黑`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/3840px-Stadtbild_M%C3%BCnchen.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/3840px-Stadtbild_M%C3%BCnchen.jpg`,
+    realViewQuote: `慕尼黑的午夜街道——哈里·哈勒尔游荡在爵士乐与中产阶级客厅的压抑之间。`
   },
 
   {
-    rank: 132,
+    rank: 131,
     id: `book-204`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3337,12 +3467,13 @@ const books: BookData[] = [
     quote: `我是我众多自我的总和——在里斯本道拉多雷斯大街上的一间办公室里，我比我更浩瀚。`,
     desc: `人类历史上最伟大的都市精神漫游。佩索阿用无数个虚构的'异名'——助理会计贝尔纳多·索阿雷斯在里斯本下城区的旧办公室里，在廉价小餐馆的账本背面，写下了对存在最深沉的惶然。大西洋的海雾从塔霍河口弥漫进黄色有轨电车的轨道间——现代人的灵魂在此碎裂又在此聚合。`,
     isTrajectory: false,
-    realViewName: `里斯本下城区`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg`
+    realViewName: `里斯本下城区佩索阿故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg`,
+    realViewQuote: `里斯本下城区——'我是无数个我。在道拉多雷斯大街的办公室里，佩索阿分裂成了永恒的异名者。'`
   },
 
   {
-    rank: 133,
+    rank: 132,
     id: `book-119`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3354,12 +3485,13 @@ const books: BookData[] = [
     author: `托马斯·曼`,
     color: `#8B0000`,
     coverUrl: `/covers/2125362.jpg`,
-    tags: [`1912年`, `德国文学`, `中篇小说`, `颓废美学`, `1992年`, `豆瓣 8.7`],
+    tags: [`1912年`, `德国文学`, `中篇小说`, `颓废美学`, `1992年`],
     quote: `在漫天飞舞的黄热病疫情与贡多拉的黑色阴影中，对极致之美的追寻以死亡告终。`,
     desc: `德国作家阿申巴赫为寻找灵感从慕尼黑来到威尼斯。故事的核心定格在利多岛海滩——漫天飞舞的黄热病疫情、潮湿的海风、贡多拉的黑色阴影，以及那个在沙滩上如古希腊雕像般完美的少年塔齐奥。在瘟疫弥漫的威尼斯水巷中，主角完成了对极致之美与死亡的追寻。`,
     isTrajectory: true,
-    realViewName: `威尼斯`,
+    realViewName: `威尼斯利多岛海滩`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/3840px-Venezia_aerial_view.jpg`,
+    realViewQuote: `利多岛的海滩——那个金发少年如古希腊雕像般站在海浪边缘，阿申巴赫知道他再也无法离开。`,
     path: [
       {
         name: `德国慕尼黑火车站`,
@@ -3389,8 +3521,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 134,
-    id: `book-60`,
+    rank: 133,
+    id: `book-59`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 30.29,
@@ -3399,18 +3531,19 @@ const books: BookData[] = [
     city: `浙江省杭州市`,
     title: `活着`,
     author: `余华`,
-    color: `#4B0082`,
+    color: `#8B0000`,
     coverUrl: `/covers/wr-834464.jpg`,
     tags: [`1992年`, `当代经典`, `乡土苦难`, `生命韧性`],
     quote: `人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。`,
     desc: `当代中国文学国际影响力最大的作品。福贵从民国到改革开放，经历内战、土改、大跃进、文革，亲人逐一死去，最后只剩一头老牛相伴。余华用极致冷静的笔触写尽了中国人半个世纪的苦难与坚韧。`,
     isTrajectory: false,
-    realViewName: `浙江省杭州市`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/6b/%E6%9D%AD%E5%B7%9E%E9%92%B1%E6%B1%9F%E6%96%B0%E5%9F%8E_4_%28cropped%29.jpg`
+    realViewName: `杭州`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/6b/%E6%9D%AD%E5%B7%9E%E9%92%B1%E6%B1%9F%E6%96%B0%E5%9F%8E_4_%28cropped%29.jpg`,
+    realViewQuote: `福贵牵着那头老牛，慢慢走过田埂。远处炊烟在农舍的屋顶上袅袅升起。`
   },
 
   {
-    rank: 135,
+    rank: 134,
     id: `book-175`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3426,8 +3559,9 @@ const books: BookData[] = [
     quote: `一生一世。`,
     desc: `跨越半个多世纪的爱情长歌。弗洛伦蒂诺·阿里萨在卡塔赫纳的芒果树下等费尔明娜·达萨等了五十一年九个月零四天。最后在马格达莱纳河的老式蒸汽轮船上——挂着代表霍乱的黄旗——他们实现了超越死亡的爱情。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `哥伦比亚卡塔赫纳`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/30/Museo_Naval_del_Caribe.JPG`,
+    realViewQuote: `卡塔赫纳——加勒比海的老城里，弗洛伦蒂诺在芒果树下等了五十一年九个月零四天。`,
     path: [
       {
         name: `卡塔赫纳海港`,
@@ -3445,7 +3579,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 136,
+    rank: 135,
     id: `book-111`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3461,13 +3595,14 @@ const books: BookData[] = [
     quote: `在那里，心是无畏的，头也抬得高昂——在那里，知识是自由的。`,
     desc: `1913年诺奖得主泰戈尔的灵魂绝唱。文字里永远流淌着孟加拉湾季风吹过的稻田、恒河地平线上的曙光、圣尼克坦庄园里落下的芒果花。泰戈尔将古印度奥义书哲学与孟加拉民谣的柔美完美缝合——'这脆弱的杯儿，你不断地把它倒空，又不断地以新生命来充满。'`,
     isTrajectory: false,
-    realViewName: `西孟加拉邦加尔各答`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d7/Kolkata_maidan.jpg`
+    realViewName: `加尔各答泰戈尔故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d7/Kolkata_maidan.jpg`,
+    realViewQuote: `加尔各答——'在那里，心灵是无畏的，头是高高昂起的。'`
   },
 
   {
-    rank: 137,
-    id: `book-54`,
+    rank: 136,
+    id: `book-53`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 30.66,
@@ -3476,18 +3611,19 @@ const books: BookData[] = [
     city: `四川省成都市青羊区祠堂街公馆`,
     title: `家·春·秋（激流三部曲）`,
     author: `巴金`,
-    color: `#B8860B`,
+    color: `#3CB371`,
     coverUrl: `/covers/wr-856816.jpg`,
     tags: [`1933年`, `家族小说`, `封建礼教`, `川西公馆`, `青年觉醒`],
     quote: `春天是我们的。`,
     desc: `空间精准定格在成都一个封建官僚大家庭的深宅大院内。巴金用控诉式的笔触，描写了川西公馆文化下封建礼教对青年一代的残酷迫害与旧体制的必然崩溃。`,
     isTrajectory: false,
-    realViewName: `四川省成都市青羊区祠堂街公馆`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/74/%E9%9B%AA%E5%B1%B1%E4%B8%8B%E7%9A%84%E6%88%90%E9%83%BD%E5%B8%82%E5%A4%A9%E9%99%85%E7%BA%BF_Chengdu_skyline_with_snow_capped_mountains.jpg`
+    realViewName: `成都青羊区巴金故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/74/%E9%9B%AA%E5%B1%B1%E4%B8%8B%E7%9A%84%E6%88%90%E9%83%BD%E5%B8%82%E5%A4%A9%E9%99%85%E7%BA%BF_Chengdu_skyline_with_snow_capped_mountains.jpg`,
+    realViewQuote: `成都的冬天是阴冷的，灰色的云低低地压在青瓦屋顶上。`
   },
 
   {
-    rank: 138,
+    rank: 137,
     id: `book-130`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3499,12 +3635,13 @@ const books: BookData[] = [
     author: `马里奥·普佐`,
     color: `#2E8B57`,
     coverUrl: `/covers/1092335.jpg`,
-    tags: [`1969年`, `美国文学`, `黑帮史诗`, `意大利裔叙事`, `1997年`, `豆瓣 9.0`],
+    tags: [`1969年`, `美国文学`, `黑帮史诗`, `意大利裔叙事`, `1997年`],
     quote: `柯里昂村的橄榄林与山间旧宅——黑手党故土的血亲复仇与缄默法则。`,
     desc: `麦克·柯里昂刺杀毒贩后，流亡回到父亲的出生地——西西里岛的柯里昂村。阳光炽烈、漫山遍野的仙人掌与橄榄树、古老的缄默法则（Omertà），为这部黑帮史诗注入了最正宗的西西里古典血液。柯里昂村的石砌老宅、山间的牧羊小径、以及那些在广场上沉默地注视一切的老人——构成了一部关于血亲、荣誉与复仇的现代神话。`,
     isTrajectory: true,
     realViewName: `西西里岛柯里昂村`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lyon-part-dieu-2023.jpg/3840px-Lyon-part-dieu-2023.jpg`,
+    realViewQuote: `柯里昂村——橄榄林与仙人掌覆盖的山坡上，古老的缄默法则比法律更不可违抗。`,
     path: [
       {
         name: `美国纽约`,
@@ -3528,7 +3665,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 139,
+    rank: 138,
     id: `book-143`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3540,16 +3677,17 @@ const books: BookData[] = [
     author: `[日] 三岛由纪夫`,
     color: `#2F4F4F`,
     coverUrl: `/covers/3391248.jpg`,
-    tags: [`1956年`, `日本文学`, `心理小说`, `战后文学`, `2009年`, `豆瓣 8.6`],
+    tags: [`1956年`, `日本文学`, `心理小说`, `战后文学`, `2009年`],
     quote: `金阁寺太美了。美得让人无法忍受——所以我要烧了它。`,
     desc: `三岛由纪夫基于1950年真实纵火事件创作的心理小说。主人公沟口是一个口吃的青年僧侣，在京都鹿苑寺（金阁寺）修行。金阁寺那极致的美成为他内心的执念与桎梏——美与丑、理想与现实的撕裂最终驱使他走向毁灭。小说以京都金阁寺为核心意象，将这座世界遗产的绝美与人心深处的黑暗并置，成为日本战后文学的里程碑。`,
     isTrajectory: false,
-    realViewName: `金阁寺`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Kinkaku-ji_2015.04.23.jpg/3840px-Kinkaku-ji_2015.04.23.jpg`
+    realViewName: `京都鹿苑寺（金阁寺）`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`,
+    realViewQuote: `金阁寺太美了——美得让人无法忍受。那座金色楼阁倒映在镜湖池的水面上，像另一个世界的建筑。`
   },
 
   {
-    rank: 140,
+    rank: 139,
     id: `book-212`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3566,11 +3704,12 @@ const books: BookData[] = [
     desc: `帕乌斯托夫斯基用莫斯科冬日的炉火、林海间的晨曦、以及外省小镇的寂静，将文学创作比作清洁工用金砂铸成的金蔷薇——每一个字、每一个瞬间，都是以生命为代价的珍贵积累。充满了俄罗斯散文诗特有的纯净与对美最虔诚的信仰。`,
     isTrajectory: false,
     realViewName: `莫斯科`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg`,
+    realViewQuote: `文学创作就像巴黎的清洁工让·沙梅，用一生收集金砂铸成一朵金蔷薇。`
   },
 
   {
-    rank: 141,
+    rank: 140,
     id: `book-1`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3586,8 +3725,9 @@ const books: BookData[] = [
     quote: `有一个传说——有一种鸟一生只歌唱一次，当它把荆棘刺入胸膛放声歌唱时，整个世界都在屏息倾听。`,
     desc: `南半球的克莱德代尔家族史诗。空间核心被死死钉在新南威尔士州无边无垠的德罗海达剪羊毛牧场上——旱季席卷一切的森林大火、成千上万只绵羊与古老天主教神权的阴影。克利里家族三代人如那只把荆棘刺入胸膛的鸟一样，在烈日暴晒的红土地上展开最具原始野性与阵痛的爱恨角逐，是澳洲无可替代的国民文学丰碑。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `新南威尔士州德罗海达牧场`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_New_South_Wales.svg/1280px-Flag_of_New_South_Wales.svg.png`,
+    realViewQuote: `德罗海达牧场——'有一种鸟一生只唱一次歌，从离开巢穴的那一刻起，它就在寻找一棵荆棘树。'`,
     path: [
       {
         name: `德罗海达牧场`,
@@ -3617,7 +3757,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 142,
+    rank: 141,
     id: `book-213`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3633,12 +3773,13 @@ const books: BookData[] = [
     quote: `哥萨克跨着骏马在顿河畔的向日葵地里策马奔腾——红军与白军在这里展开了最惨烈的同胞相残。`,
     desc: `哥萨克粗粝的狂歌史诗。肖洛霍夫将空间死死锁定在蜿蜒的顿河畔鞑靼村。一战、二月革命、十月革命与国内战争接踵而至——红军与白军在顿河两岸的草原、向日葵地里展开了最惨烈的厮杀。格里高利·梅列霍夫骑着马在红与白之间反复摇摆，而顿河的滔滔江水始终无言地见证了哥萨克世界被时代的铁犁彻底碾碎的悲剧。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `顿河流域罗斯托夫州`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/6f/Rostov_City_Hall_2021.jpg`,
+    realViewQuote: `顿河静静地流淌——哥萨克的马蹄踏过向日葵地，红军与白军在这片土地上展开了最惨烈的同胞相残。`
   },
 
   {
-    rank: 143,
+    rank: 142,
     id: `book-84`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3654,12 +3795,13 @@ const books: BookData[] = [
     quote: `今天，妈妈死了。也许是昨天，我不知道。`,
     desc: `存在主义文学奠基之作。今天，妈妈死了。也许是昨天，我不知道。默尔索在阿尔及尔烈日下杀人，却因在母亲葬礼上没有哭泣而被判死刑。加缪用最平静的语调，宣告了人与世界之间无法弥合的荒诞。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `阿尔及尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Harbor_and_Admiralty%2C_Algiers%2C_Algeria_WDL2452.png/1280px-The_Harbor_and_Admiralty%2C_Algiers%2C_Algeria_WDL2452.png`,
+    realViewQuote: `阿尔及尔的阳光像一记重击——海滩上的热气让空气都在颤抖。`
   },
 
   {
-    rank: 144,
+    rank: 143,
     id: `book-229`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3675,12 +3817,13 @@ const books: BookData[] = [
     quote: `在卡斯蒂利亚高原的红土地上，干枯的橡树沉默地守着西班牙帝国的落日。`,
     desc: `九八代诗人马查多来到索里亚——这座卡斯蒂利亚高原上的小城，在杜罗河畔的红土与枯橡树之间担任法语教师。他在这里遇到了莱昂诺尔——她成为他的妻子，然后在三年后死去。马查多用极其质朴、沉静的诗句，将个人的丧妻之痛与西班牙帝国失去最后殖民地的没落挽歌完美缝合——卡斯蒂利亚的每一块红色石头都浸透了他的哀伤。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `索里亚杜罗河畔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Iglesia_de_San_Juan_Bautista%2C_%C3%81greda%2C_Soria%2C_Espa%C3%B1a%2C_2018-03-29%2C_DD_40-42_HDR.jpg/1280px-Iglesia_de_San_Juan_Bautista%2C_%C3%81greda%2C_Soria%2C_Espa%C3%B1a%2C_2018-03-29%2C_DD_40-42_HDR.jpg`,
+    realViewQuote: `杜罗河畔的索里亚——干枯的橡树沉默地守着西班牙帝国的落日。`
   },
 
   {
-    rank: 145,
+    rank: 144,
     id: `book-120`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3689,19 +3832,20 @@ const books: BookData[] = [
     country: `意大利`,
     city: `威尼斯`,
     title: `看不见的城市`,
-    author: `伊塔洛·卡尔维诺`,
+    author: `张密`,
     color: `#4B0082`,
     coverUrl: `/covers/1863930.jpg`,
-    tags: [`1972年`, `意大利文学`, `后现代小说`, `城市哲学`, `2006年`, `豆瓣 8.9`],
+    tags: [`1972年`, `意大利文学`, `后现代小说`, `城市哲学`, `2006年`],
     quote: `马可·波罗向忽必烈汗讲述的55座虚构城市，每一座的灵魂原型都指向威尼斯。`,
     desc: `卡尔维诺以马可·波罗向忽必烈汗讲述55座虚构城市的形式，完成了一部关于城市的哲学寓言。水城、欲望之城、记忆之城、死亡之城——每一座虚构城市的水网根基与幻影，其灵魂原型全部指向卡尔维诺心中的威尼斯。运河的倒影、桥梁的弧线、以及那些在迷雾中若隐若现的穹顶，贯穿了全书。`,
     isTrajectory: false,
     realViewName: `威尼斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/3840px-Venezia_aerial_view.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/3840px-Venezia_aerial_view.jpg`,
+    realViewQuote: `马可·波罗向忽必烈汗讲述的每一座城市——水城、欲望之城、记忆之城——其灵魂都是威尼斯。`
   },
 
   {
-    rank: 146,
+    rank: 145,
     id: `book-42`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3717,12 +3861,13 @@ const books: BookData[] = [
     quote: `昆明的雨季是明亮的、丰满的，使人动情的。`,
     desc: `精准捕捉了抗战时期昆明特有的多雨季候、翠湖的莲花、黄焖鸡与菌子的香气，写活了西南联大知识分子在战火阴影下的淡泊与高雅。`,
     isTrajectory: false,
-    realViewName: `云南省昆明市五华区翠湖`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/%E4%BA%94%E5%8D%8E%E5%8C%BA%E4%B8%8E%E7%9B%98%E9%BE%99%E5%8C%BA%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2025-05-16_03.jpg/3840px-%E4%BA%94%E5%8D%8E%E5%8C%BA%E4%B8%8E%E7%9B%98%E9%BE%99%E5%8C%BA%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2025-05-16_03.jpg`
+    realViewName: `昆明翠湖西南联大旧址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/%E4%BA%94%E5%8D%8E%E5%8C%BA%E4%B8%8E%E7%9B%98%E9%BE%99%E5%8C%BA%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2025-05-16_03.jpg/3840px-%E4%BA%94%E5%8D%8E%E5%8C%BA%E4%B8%8E%E7%9B%98%E9%BE%99%E5%8C%BA%E5%A4%A9%E9%99%85%E7%BA%BF_-_%E8%88%AA%E6%8B%8D_-_2025-05-16_03.jpg`,
+    realViewQuote: `昆明的雨季是明亮的、丰满的，使人动情的。城春草木深，孟夏草木长。`
   },
 
   {
-    rank: 147,
+    rank: 146,
     id: `book-232`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3738,12 +3883,13 @@ const books: BookData[] = [
     quote: `居伦镇的每一个人都有一份价格——当十亿瑞士法郎摆在面前时，正义不过是一句空洞的口号。`,
     desc: `迪伦马特将这座金钱扭曲人性的荒诞剧场精准定格在瑞士沃州一个破败的外省小镇。亿万富婆克莱尔·察哈纳西安回到故乡居伦镇——只要镇上的人杀死她昔日的情人阿尔弗雷德·伊尔，她就捐赠十亿瑞士法郎。起初全镇人义正辞严地拒绝——但免费的啤酒、赊账的新鞋、全票通过的死刑。在金碧辉煌的钟表之国外省，道貌岸然的伪善被一刀划开。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `沃州`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/CADAL11102553_%E6%84%9B%E8%88%87%E6%AD%BB%E7%9A%84%E6%90%8F%E9%AC%A5.djvu/page1-1280px-CADAL11102553_%E6%84%9B%E8%88%87%E6%AD%BB%E7%9A%84%E6%90%8F%E9%AC%A5.djvu.jpg`,
+    realViewQuote: `沃州——'亿万富婆回到了她出生的外省小镇——她不是来怀旧的，她是来复仇的。'`
   },
 
   {
-    rank: 148,
+    rank: 147,
     id: `book-264`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3755,17 +3901,18 @@ const books: BookData[] = [
     author: `（美）弗·司各特·菲茨杰拉德`,
     color: `#556B2F`,
     coverUrl: `/covers/2090578.jpg`,
-    tags: [`1925年`, `美国文学`, `爵士时代`, `美国梦`, `2005年`, `豆瓣 8.3`],
+    tags: [`1925年`, `美国文学`, `爵士时代`, `美国梦`, `2005年`],
     quote: `于是我们继续奋力向前，逆水行舟，被不断推回到过去。`,
     desc: `爵士时代的幻灭。精准定格在纽约长岛的'西卵'与'东卵'——盖茨比在长岛的海湾对面望着黛西家码头的绿灯，曼哈顿广场饭店的闷热午后、灰谷旁那对注视着一切的巨大广告牌眼睛。长岛的奢华庄园与东河的灯火交织出一个关于美国梦最为绚烂也最为碎裂的叙事。`,
     isTrajectory: false,
     realViewName: `纽约长岛`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`,
+    realViewQuote: `盖茨比相信那盏绿灯——那个在我们面前逐年后退、但从未被放弃的极乐未来。`
   },
 
   {
-    rank: 149,
-    id: `book-52`,
+    rank: 148,
+    id: `book-51`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 30.745,
@@ -3774,18 +3921,19 @@ const books: BookData[] = [
     city: `浙江省嘉兴市桐乡市乌镇`,
     title: `林家铺子`,
     author: `茅盾`,
-    color: `#6A5ACD`,
+    color: `#CD853F`,
     coverUrl: `/covers/wr-3300138650.jpg`,
     tags: [`1932年`, `社会剖析`, `小商人悲剧`, `江南水网`],
     quote: `林先生的铺子关了，街上的灯一盏一盏地灭了。`,
     desc: `空间定格在20世纪30年代初嘉兴乌镇的一家小杂货铺里，细腻描绘了江浙大水网小镇在经济危机、兵燹与高利贷挤压下，小商人阶层的挣扎与破产。`,
     isTrajectory: false,
-    realViewName: `乌镇`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/1_wuzhen_aerial_2023.jpg/3840px-1_wuzhen_aerial_2023.jpg`
+    realViewName: `桐乡乌镇`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/1_wuzhen_aerial_2023.jpg/3840px-1_wuzhen_aerial_2023.jpg`,
+    realViewQuote: `乌镇的河是活的，船从桥下过，人在岸上走。`
   },
 
   {
-    rank: 150,
+    rank: 149,
     id: `book-163`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3797,16 +3945,17 @@ const books: BookData[] = [
     author: `李沧东`,
     color: `#2F4F4F`,
     coverUrl: `/covers/35517022.jpg`,
-    tags: [`1992年`, `韩国文学`, `中篇小说`, `现实主义`, `2021年`, `豆瓣 8.9`],
+    tags: [`1992年`, `韩国文学`, `中篇小说`, `现实主义`, `2021年`],
     quote: `鹿川的新公寓拔地而起，可粪水仍然横流。`,
     desc: `李沧东以首尔城市化进程中的底层废墟为舞台。鹿川（今首尔芦原区一带）在急速城市化中新落成的高层公寓，与周边未开垦的荒凉棚户区形成强烈对比。小说书写了那些在现代化浪潮中被遗忘的边缘人——他们在华丽公寓的阴影下，依旧踩着粪水、过着被时代抛弃的生活。`,
     isTrajectory: false,
-    realViewName: `首尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`
+    realViewName: `首尔芦原区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `鹿川——高楼里住着新中产，粪水横流的棚户里住着被时代抛弃的人。`
   },
 
   {
-    rank: 151,
+    rank: 150,
     id: `book-13`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3822,12 +3971,13 @@ const books: BookData[] = [
     quote: `五月盛开的苹果花下，红头发的安妮跑过了爱德华王子岛蜿蜒的红色土地。`,
     desc: `整座海岛就是安妮的精神图腾。蒙哥马利深情复刻了爱德华王子岛——五月盛开的苹果花、闪光的湖泊、蜿蜒的红色土地，以及那座拥有绿色屋顶的古老农舍。安妮·雪莉——一个满脸雀斑、头发火红的孤儿——用她无尽的想象力将这座圣劳伦斯湾中的小岛化为了全世界最温暖的文学故乡。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `爱德华王子岛绿山墙农庄`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_Prince_Edward_Island.svg/1920px-Flag_of_Prince_Edward_Island.svg.png`,
+    realViewQuote: `爱德华王子岛——绿山墙的白色农舍前，安妮站在开满苹果花的树下：'这世界真是太美好了。'`
   },
 
   {
-    rank: 152,
+    rank: 151,
     id: `book-145`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3839,16 +3989,17 @@ const books: BookData[] = [
     author: `与谢野晶子`,
     color: `#8B008B`,
     coverUrl: `/covers/34993171.jpg`,
-    tags: [`1901年`, `日本文学`, `诗集`, `浪漫主义`, `2020年`, `豆瓣 8.3`],
+    tags: [`1901年`, `日本文学`, `诗集`, `浪漫主义`, `2020年`],
     quote: `你不必说爱我，只需让我用柔软的手指触碰你。`,
     desc: `与谢野晶子的处女诗集，被誉为日本近代浪漫主义文学的巅峰之作。出生于大阪堺市的晶子，以大胆直白的女性视角咏唱恋爱与青春。这部诗集在当时的大阪乃至全日本引起了巨大轰动——一位年轻女性公开歌颂肉体之美与灵魂之爱，在明治末期的传统社会中犹如一颗炸弹，推动了日本女性文学的觉醒。`,
     isTrajectory: false,
-    realViewName: `大阪`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`
+    realViewName: `大阪堺市与谢野晶子故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`,
+    realViewQuote: `你不必说爱我——大阪堺市的灯火在海风中摇曳，而晶子写下了这个国家第一首女性之爱的诗。`
   },
 
   {
-    rank: 153,
+    rank: 152,
     id: `book-116`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3864,12 +4015,13 @@ const books: BookData[] = [
     quote: `罗马街头的卡车司机、小偷、妓女和穷苦手工业者——这就是战后罗马的市井百态。`,
     desc: `莫拉维亚用冷峻、白描的现实主义笔触，写活了二战后罗马街头的平民百态。台伯河畔的贫民窟、特拉斯提弗列的小巷、以及那些在废墟中重建生活的普通罗马人——卡车司机、小偷、妓女和穷苦手工业者——极具罗马下町的世俗烟火气。`,
     isTrajectory: false,
-    realViewName: `罗马`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg`
+    realViewName: `罗马台伯河畔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg`,
+    realViewQuote: `台伯河畔的贫民窟里——卡车司机、小偷、妓女和穷苦手工业者，这就是战后罗马的市井百态。`
   },
 
   {
-    rank: 154,
+    rank: 153,
     id: `book-142`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3881,16 +4033,17 @@ const books: BookData[] = [
     author: `[日] 芥川龙之介`,
     color: `#B22222`,
     coverUrl: `/covers/1144782.jpg`,
-    tags: [`1915年`, `日本文学`, `短篇小说`, `新思潮派`, `2004年`, `豆瓣 8.7`],
+    tags: [`1915年`, `日本文学`, `短篇小说`, `新思潮派`, `2004年`],
     quote: `人的心中，自是有两种互相对抗的感情。`,
     desc: `芥川龙之介的成名作，以平安时代末期的京都罗城门为舞台。一个被解雇的下人在破败的城门下避雨，目睹一名老妪拔取死人的头发后，在极短的时间内完成了道德的沦丧。故事虽短，却以京都荒废的罗城门为象征，深刻揭示了人在生死边缘时的伦理抉择。芥川以冷彻的笔触勾勒出京都古都背后的阴暗与人性之恶。`,
     isTrajectory: false,
-    realViewName: `京都`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`
+    realViewName: `京都罗城门旧址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3c/Kiyomizu.jpg`,
+    realViewQuote: `黄昏时分，一个下人在罗生门下避雨——宽大的门楼下，除了他以外，再没有别的人。`
   },
 
   {
-    rank: 155,
+    rank: 154,
     id: `book-6`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3906,12 +4059,13 @@ const books: BookData[] = [
     quote: `对于不可说的东西，必须保持沉默。`,
     desc: `维特根斯坦作为维也纳顶级豪门之子，在世纪末维也纳文化危机的土壤中构思了这部哲学神作。在第一次世界大战的战壕里他完成了手稿——用冰冷的逻辑为语言和思维划定了不可逾越的边界。维也纳环城大道上华丽的建筑与咖啡屋中的哲学辩论，共同构成了这部20世纪最重要哲学著作之一的智识背景。`,
     isTrajectory: false,
-    realViewName: `维也纳`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`
+    realViewName: `维也纳维特根斯坦故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`,
+    realViewQuote: `维也纳——'凡是能够说的事情，都能够说清楚；凡是不能说的事情，就应该沉默。'`
   },
 
   {
-    rank: 156,
+    rank: 155,
     id: `book-170`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3923,16 +4077,17 @@ const books: BookData[] = [
     author: `朴景利`,
     color: `#2E8B57`,
     coverUrl: `/covers/2307390.jpg`,
-    tags: [`1970年`, `韩国文学`, `战争文学`, `自传体小说`, `2007年`, `豆瓣 8.2`],
+    tags: [`1970年`, `韩国文学`, `战争文学`, `自传体小说`, `2007年`],
     quote: `战火烧尽了树叶，但树根还活着。`,
     desc: `以朴婉绪年轻时在江原道、美军基地周边的亲身经历为背景，描写朝鲜战争时期战火肆虐下知识分子与艺术家的精神废墟。江原道的深山、美军基地外围的村落、以及那些在战争阴影中仍试图画画、写诗、活下去的年轻人——共同构成了一部战争后方的心灵史。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `江原道`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Town_at_the_Foot_of_the_Mountain.jpg/1280px-Town_at_the_Foot_of_the_Mountain.jpg`,
+    realViewQuote: `江原道——战火烧尽了树叶，但树根还活着。`
   },
 
   {
-    rank: 157,
+    rank: 156,
     id: `book-222`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3949,11 +4104,12 @@ const books: BookData[] = [
     desc: `20世纪最具争议也最具语言魔力的英语小说。流亡欧洲绅士亨伯特·亨伯特用华丽到令人窒息的英语，讲述了对少女洛丽塔的迷恋与毁灭。纳博科夫用美文包装罪恶，是对读者道德判断力的终极考验。`,
     isTrajectory: false,
     realViewName: ``,
-    realViewUrl: ``
+    realViewUrl: ``,
+    realViewQuote: ``
   },
 
   {
-    rank: 158,
+    rank: 157,
     id: `book-20`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3969,12 +4125,13 @@ const books: BookData[] = [
     quote: `雨下给富人，也下给穷人；下给义人，也下给不义的人。其实，雨并不公道，因为落在一个没有公道的世界上。`,
     desc: `老舍京味文学的最高峰，写尽了旧北京人力车夫祥子在宣武、西城老街一条条胡同里的堕落与绝望。`,
     isTrajectory: false,
-    realViewName: `北京市西城区宣武老街区`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`
+    realViewName: `北京西城区宣武老街区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`,
+    realViewQuote: `这一带没有什么好的房子，全是些个碎砖头砌的墙，土坯房，一到夏天，苍蝇嗡嗡的。`
   },
 
   {
-    rank: 159,
+    rank: 158,
     id: `book-47`,
     sliderVal: 6,
     century: `20世纪`,
@@ -3990,12 +4147,13 @@ const books: BookData[] = [
     quote: `人要做有用的人，不要做只讲体面，而对别人没有好处的人。`,
     desc: `现代散文的教科书经典。在岭南旧式民居的后园里，一家人围坐品尝落花生，用花生'不好看但很有用'的朴实地域物候，寄托了中国文人最核心的立身哲学。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `江门新会区茶坑村`,
+    realViewUrl: ``,
+    realViewQuote: `我们屋后有半亩隙地，母亲说：'让它荒芜着怪可惜，既然你们那么爱吃花生，就辟来做花生园罢。'`
   },
 
   {
-    rank: 160,
+    rank: 159,
     id: `book-280`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4011,12 +4169,13 @@ const books: BookData[] = [
     quote: `在功成名就之后，他在太平洋的蔚蓝海水中决绝自沉。`,
     desc: `海港工人马丁·伊登在旧金山海湾的码头与洗衣房里拼命写作——白天扛麻袋，夜晚在租来的小屋里追求文学的极致。当他终于跻身上流社会时，却发现那一切不过是虚无。旧金山的浓雾、奥克兰的汽笛声中，一个工人阶级的天才在被两个世界同时抛弃后，游向了太平洋深处。`,
     isTrajectory: false,
-    realViewName: `加利福尼亚州旧金山`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f9/San_Francisco_Downtown_Aerial%2C_August_2025.jpg`
+    realViewName: `旧金山`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/960px-Flag_of_California.svg.png`,
+    realViewQuote: `旧金山的浓雾从金门大桥那边涌来——他在码头的苦役中写下了对美的最高渴望。`
   },
 
   {
-    rank: 161,
+    rank: 160,
     id: `book-8`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4032,12 +4191,13 @@ const books: BookData[] = [
     quote: `这不是戏剧。这里不表演。你们不会看到一场戏。你们是主题。你们是焦点。`,
     desc: `汉德克出生在克恩滕州的格里芬。这部彻底打破传统戏剧'第四堵墙'的前卫剧作——没有情节、没有角色、只有四个演员站在舞台上对着观众'骂'了一个小时。充满了奥地利南部边境文学特有的对语言体制的绝对叛逆——'你们本来想要被剧情填充，现在你们被话语填充了。'`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `克恩滕州`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/K%C3%A4rnten_in_Austria.svg/langzh-1280px-K%C3%A4rnten_in_Austria.svg.png`,
+    realViewQuote: `克恩滕州——'你们就是主题。这出戏没有情节。你们就是情节。'`
   },
 
   {
-    rank: 162,
+    rank: 161,
     id: `book-265`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4049,12 +4209,13 @@ const books: BookData[] = [
     author: `孙仲旭`,
     color: `#8B008B`,
     coverUrl: `/covers/2053249.jpg`,
-    tags: [`1951年`, `美国文学`, `成长小说`, `反叛叙事`, `2007年`, `豆瓣 8.1`],
+    tags: [`1951年`, `美国文学`, `成长小说`, `反叛叙事`, `2007年`],
     quote: `我老是想象，有那么一大群小孩子在一大块麦田里做游戏。我就站在那混账的悬崖边守着。`,
     desc: `故事的核心暴走发生在纽约曼哈顿。霍尔顿·考尔菲德在被潘西预备学校开除后流浪于纽约街头——中央车站的储物柜、廉价的埃德蒙旅馆、以及中央公园旋转木马上菲比的微笑。他在曼哈顿的街道上寻找冬天鸭子的去向，写尽了战后美国青少年的迷茫与反叛。`,
     isTrajectory: true,
-    realViewName: `纽约曼哈顿`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`,
+    realViewName: `纽约中央公园`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg/3840px-Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_%2815351915006%29.jpg`,
+    realViewQuote: `中央公园的旋转木马——菲比穿着蓝色的大衣，一圈一圈地转着，霍尔顿终于在雨中笑了。`,
     path: [
       {
         name: `宾夕法尼亚州潘西预备学校`,
@@ -4084,7 +4245,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 163,
+    rank: 162,
     id: `book-277`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4100,12 +4261,13 @@ const books: BookData[] = [
     quote: `告别就是死亡一点点。`,
     desc: `硬汉派侦探的冷硬都市。钱德勒将空间死死锁定在洛杉矶——好莱坞隐秘的豪宅、圣莫尼卡海滩的冷雨、充满尾气与酒精的洛杉矶落日。私家侦探菲利普·马洛在洛杉矶的林荫大道上开着破车寻找失踪的酒精、背叛与真相，在这座阳光灿烂却冰冷刺骨的现代都市中完成了一场最漫长的告别。`,
     isTrajectory: false,
-    realViewName: `加利福尼亚州洛杉矶`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/3840px-Hollywood_Sign_%28Zuschnitt%29.jpg`
+    realViewName: `加州洛杉矶`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/960px-Flag_of_California.svg.png`,
+    realViewQuote: `洛杉矶的落日——棕榈树在热风中摇晃，而马洛开着破车穿过这座阳光灿烂却冰冷刺骨的城市。`
   },
 
   {
-    rank: 164,
+    rank: 163,
     id: `book-7`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4121,8 +4283,9 @@ const books: BookData[] = [
     quote: `卡卡尼亚——一个虽然消失了、却比许多仍然存在的国家都更真实的国家。`,
     desc: `现代主义小说丰碑。穆齐尔生于克拉根福，用极其冰冷、精确如数理方程的散文，全景式剖析了一战前夕维也纳上流社会为庆祝皇帝弗兰茨·约瑟夫登基七十周年而展开的荒诞'平行行动'。维也纳的沙龙、军部与编辑部中，一群没有个性的人在体制巨轮崩塌前进行着永无休止的精神空转。`,
     isTrajectory: true,
-    realViewName: `卡卡尼亚帝国`,
+    realViewName: `维也纳`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`,
+    realViewQuote: `维也纳——卡卡尼亚帝国的首都里，一个没有个性的人在寻找他的人生意义。`,
     path: [
       {
         name: `克拉根福思想发源`,
@@ -4140,7 +4303,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 165,
+    rank: 164,
     id: `book-123`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4152,22 +4315,23 @@ const books: BookData[] = [
     author: `[意] 翁贝托·埃科`,
     color: `#2F4F4F`,
     coverUrl: `/covers/25875828.jpg`,
-    tags: [`1980年`, `意大利文学`, `历史推理`, `符号学`, `2015年`, `豆瓣 8.8`],
+    tags: [`1980年`, `意大利文学`, `历史推理`, `符号学`, `2015年`],
     quote: `皮埃蒙特深山修道院的迷宫图书馆中，神学、符号学与连环谋杀交织成一场知性风暴。`,
     desc: `故事精准发生于1327年皮埃蒙特大区山区一座封闭、险峻的本笃会修道院中。方济各会修士威廉与见习僧阿德索来到这里调查一桩神秘死亡事件，却发现修道院的迷宫图书馆中隐藏着关于知识、禁忌与谋杀的惊人秘密。阴冷的阿尔卑斯山风、羊皮纸手抄本的气息、以及中世纪神学辩论的回响——构成了一部独一无二的知性推理杰作。`,
     isTrajectory: false,
-    realViewName: `皮埃蒙特大区山区`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Torino_Piazza_Castello_11.jpg/3840px-Torino_Piazza_Castello_11.jpg`
+    realViewName: `皮埃蒙特大区山区修道院`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Torino_Piazza_Castello_11.jpg/3840px-Torino_Piazza_Castello_11.jpg`,
+    realViewQuote: `修道院的迷宫图书馆——羊皮纸的气息中，知识与禁忌在阴冷的阿尔卑斯山风中互相纠缠。`
   },
 
   {
-    rank: 166,
+    rank: 165,
     id: `book-258`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 51.5074,
     lng: -0.1278,
-    country: `英国`,
+    country: `英国与爱尔兰`,
     city: `伦敦`,
     title: `美丽新世界`,
     author: `阿道司·赫胥黎`,
@@ -4177,12 +4341,13 @@ const books: BookData[] = [
     quote: `然而，我并不想要舒适。我想要上帝，我想要诗歌，我想要真正的危险，我想要自由，我想要善良，我想要罪恶。`,
     desc: `与《一九八四》并称反乌托邦双璧。在福特纪元632年，人类从试管中出生，被分为五个种姓，用快乐药丸索玛消解一切痛苦——直到野人约翰从保留地闯入这个完美的地狱。`,
     isTrajectory: false,
-    realViewName: `伦敦`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`
+    realViewName: ``,
+    realViewUrl: ``,
+    realViewQuote: ``
   },
 
   {
-    rank: 167,
+    rank: 166,
     id: `book-196`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4199,11 +4364,12 @@ const books: BookData[] = [
     desc: `欧洲表现主义戏剧的开山之作。因陀罗的女儿从天堂降临人间，为了体会'人类真是可怜啊'——故事空间在斯德哥尔摩的剧院、老街、带有腥味的瑞典海港间魔幻穿梭、消融。一切都像在梦里一样——人变成树、军官在等他的爱人等了五十年、幕布上升到了虚无——斯特林堡将北欧的清冷化为了对人类存在最深沉的悲叹。`,
     isTrajectory: false,
     realViewName: `斯德哥尔摩`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg/3840px-Royal_Dramatic_Theatre_Stockholm.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg/3840px-Royal_Dramatic_Theatre_Stockholm.jpg`,
+    realViewQuote: `斯德哥尔摩——因陀罗的女儿降临人间，在剧院的幕布间，她只看到了一样东西：人类真是可怜啊。`
   },
 
   {
-    rank: 168,
+    rank: 167,
     id: `book-188`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4215,16 +4381,17 @@ const books: BookData[] = [
     author: `[英] 乔治·奥威尔`,
     color: `#A0522D`,
     coverUrl: `/covers/27064831.jpg`,
-    tags: [`1934年`, `英国文学`, `殖民地小说`, `自传体`, `2017年`, `豆瓣 8.2`],
+    tags: [`1934年`, `英国文学`, `殖民地小说`, `自传体`, `2017年`],
     quote: `热带丛林阴雨绵绵下，殖民者的沉闷与虚伪无处躲藏。`,
     desc: `以奥威尔在缅甸当殖民警察的经历为蓝本，虚构了上缅甸的'皎塔达'小镇（原型为Katha）。写尽了热带丛林阴雨绵绵下殖民者的沉闷、虚伪与当地社会的没落。伊洛瓦底江上游的密林、殖民俱乐部的威士忌与吊扇、以及缅甸仆从沉默的目光——构成了一幅殖民地末期令人窒息的图景。`,
     isTrajectory: false,
-    realViewName: `Katha`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/81/Katha_Upanishad_1.1.1_to_1.1.3_verses%2C_Krishna_Yajurveda.jpg`
+    realViewName: `上缅甸皎塔达`,
+    realViewUrl: ``,
+    realViewQuote: `皎塔达——'闷热的上缅甸——风扇缓慢地转动，殖民者的神经也随着热带的节奏慢慢磨损。'`
   },
 
   {
-    rank: 169,
+    rank: 168,
     id: `book-231`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4240,13 +4407,14 @@ const books: BookData[] = [
     quote: `时间——在这高山疗养院里，它的单位不再是小时，而是星期、月份、甚至年份。`,
     desc: `欧洲大战前夕知识分子的精神大解剖。年轻的汉斯·卡斯托普从汉堡平原来到达沃斯高山上的疗养院探望表哥，计划只待三周——但他一留就是七年。在达沃斯终年不化的积雪、稀薄的空气与病人永无休止的人文主义思辨中，时间变得粘稠而静止。这座高山疗养院化为了魏玛精神乃至整个欧洲文明走向一战深渊前的魔幻'停滞空间'。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `达沃斯`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/RhB_ABe_4-16_Capricorn_Davos_Wolfgang_-_Davos_Laret.jpg/1280px-RhB_ABe_4-16_Capricorn_Davos_Wolfgang_-_Davos_Laret.jpg`,
+    realViewQuote: `达沃斯——'在阿尔卑斯山的高处，时间是圆的——疗养院里的每一天都在重复，但一切都在变化。'`
   },
 
   {
-    rank: 170,
-    id: `book-61`,
+    rank: 169,
+    id: `book-60`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 30.01,
@@ -4255,18 +4423,19 @@ const books: BookData[] = [
     city: `浙江省绍兴市`,
     title: `呐喊`,
     author: `鲁迅`,
-    color: `#8B4513`,
+    color: `#4B0082`,
     coverUrl: `/covers/wr-40509935.jpg`,
     tags: [`1923年`, `短篇集`, `现代文学奠基`, `启蒙批判`],
     quote: `我在朦胧中，眼前展开一片海边碧绿的沙地来，上面深蓝的天空中挂着一轮金黄的圆月。`,
     desc: `中国现代文学开山之作。收录《狂人日记》《孔乙己》《药》等14篇小说，以锋利的笔触刺穿封建礼教与国民劣根性，是中国文学从文言走向白话的第一声呐喊。`,
     isTrajectory: false,
-    realViewName: `浙江省绍兴市`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg`
+    realViewName: `绍兴鲁迅故里`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg`,
+    realViewQuote: `我在朦胧中，眼前展开一片海边碧绿的沙地来，上面深蓝的天空中挂着一轮金黄的圆月。`
   },
 
   {
-    rank: 171,
+    rank: 170,
     id: `book-146`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4278,16 +4447,17 @@ const books: BookData[] = [
     author: `梶井基次郎`,
     color: `#DAA520`,
     coverUrl: `/covers/35418997.jpg`,
-    tags: [`1925年`, `日本文学`, `短篇小说`, `新感觉派`, `2021年`, `豆瓣 7.8`],
+    tags: [`1925年`, `日本文学`, `短篇小说`, `新感觉派`, `2021年`],
     quote: `将一颗柠檬放在书堆上，仿佛一枚金黄色的炸弹。`,
     desc: `梶井基次郎的代表作短篇。主人公——一个患肺病的青年——在大阪的街上游荡，最终走进一家书店（丸善书店），将一颗柠檬放置于书堆之上，想象它是一枚金黄色的炸弹。这个故事以大阪的街道和书店为具体场景，通过一颗柠檬的意象，表达了青年对世界的厌倦与微小的反抗。大阪的都市气息——拥挤的街道、熙攘的人群——与主人公内心的孤独形成鲜明对照。`,
     isTrajectory: false,
-    realViewName: `大阪`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`
+    realViewName: `大阪丸善书店旧址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`,
+    realViewQuote: `我在大阪的街上游荡，最后走进丸善书店——将一颗柠檬放在书堆上，仿佛一枚金黄色的炸弹。`
   },
 
   {
-    rank: 172,
+    rank: 171,
     id: `book-15`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4303,12 +4473,13 @@ const books: BookData[] = [
     quote: `我到科马拉来——这里所有的街道上、泥墙缝隙里，都塞满了死人的鬼魂与无休止的呢喃。`,
     desc: `马尔克斯曾言能全本背诵此书。胡安来到极度炎热、干燥、风沙肆虐的科马拉寻找父亲佩德罗·巴拉莫——却发现这座村庄里所有的人都已是鬼魂。鲁尔福用天才的生死模糊叙事将墨西哥原住民对死亡的独特崇拜、大庄园主的暴政化为人类文学史上最伟大的魔幻现实主义始祖空间。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `墨西哥哈利斯科州科马拉`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Flag_of_Jalisco.svg/1920px-Flag_of_Jalisco.svg.png`,
+    realViewQuote: `科马拉——'我来到科马拉，因为有人对我说，我父亲住在这里，他名字叫做佩德罗·巴拉莫。'`
   },
 
   {
-    rank: 173,
+    rank: 172,
     id: `book-273`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4324,8 +4495,9 @@ const books: BookData[] = [
     quote: `明天又是新的一天。`,
     desc: `红土、棉花与老南方的落日。郝思嘉的一生与乔治亚州的红土地紧密相连——在塔拉庄园的白色廊柱下她是任性的庄园主女儿，在亚特兰大被北军炮火焚烧的大街上她是倔强的求生者。战后重返塔拉，面对废墟她抓起一把红土发誓：'我绝不会再挨饿！'——亚特兰大的硝烟与重建，写尽了美国南方被战争彻底重塑的命运。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `乔治亚州亚特兰大→塔拉庄园`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Georgia_State_University_College_of_Law_Building.jpeg/1280px-Georgia_State_University_College_of_Law_Building.jpeg`,
+    realViewQuote: `塔拉庄园的红土地——她抓起一把土：'我绝不会再挨饿！明天又是新的一天。'`,
     path: [
       {
         name: `乔治亚州塔拉种植园`,
@@ -4349,8 +4521,8 @@ const books: BookData[] = [
   },
 
   {
-    rank: 174,
-    id: `book-63`,
+    rank: 173,
+    id: `book-62`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 37.45,
@@ -4359,18 +4531,19 @@ const books: BookData[] = [
     city: `陕西省榆林市清涧县`,
     title: `平凡的世界`,
     author: `路遥`,
-    color: `#2F4F4F`,
+    color: `#B22222`,
     coverUrl: `/covers/wr-24965201.jpg`,
     tags: [`1986年`, `茅盾文学奖`, `黄土高原`, `改革开放`],
     quote: `生活不能等待别人来安排，要自己去争取和奋斗。`,
     desc: `改革开放时代的百万册经典。以孙少安、孙少平兄弟为中心，全景式展现了1975至1985年间陕北黄土高原上普通农民在时代巨变中的挣扎、奋斗与尊严。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `榆林清涧县`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d0/Snowfall_on_Yaodong%2C_Qingjian_County.jpg`,
+    realViewQuote: `黄土高原在严寒的冬天里，赤裸着它那广阔的胸膛。`
   },
 
   {
-    rank: 175,
+    rank: 174,
     id: `book-3`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4386,12 +4559,13 @@ const books: BookData[] = [
     quote: `一个电影导演来到澳洲无边无垠、死寂、被烈日烤焦的内陆大平原上——企图拍摄这片土地绝对的空无与永恒。`,
     desc: `澳洲内陆荒原的形而上礼赞。小说近乎没有情节——一个电影导演来到澳洲内陆，企图用镜头捕捉这片红色平原的本质。烈日暴晒的无尽地平线、沉默的袋鼠群、以及那些被热风雕塑了亿万年的岩石——默南将对澳洲内陆大漠最深沉、最震撼的知性哲学思考化为了极简的散文。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `南澳内陆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/University_of_South_Australia%2C_School_of_Mines%2C_North_Terrace%2C_Adelaide%2C_South_Australia.jpg/1280px-University_of_South_Australia%2C_School_of_Mines%2C_North_Terrace%2C_Adelaide%2C_South_Australia.jpg`,
+    realViewQuote: `南澳内陆——'内陆——平坦、空旷、绝对的沉默——在这里，地平线定义了人的存在。'`
   },
 
   {
-    rank: 176,
+    rank: 175,
     id: `book-10`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4407,12 +4581,13 @@ const books: BookData[] = [
     quote: `在阿尔巴尼亚北部的卡努高地上，血亲复仇的法典已经运转了一千年——乔治在四月十七日将结束他的安全期。`,
     desc: `山鹰之国的死亡准则。空间死死定格在北阿尔巴尼亚乱石嶙峋、阴冷死寂的卡努高地上。这里沿袭着千年血亲复仇法典——只要杀了人就必须等待对方家族的枪子。乔治在四月将结束三十天的停战安全期。古老长屋的冷风、黑色的丧带与不可逃遁的宿命，化为了人类对无意义暴力的最深沉控诉。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `阿尔巴尼亚北部卡努高地`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/fb/Jezerski_Vrh_%282694%29_sa_Karanfila_%282480%29.jpg`,
+    realViewQuote: `阿尔巴尼亚北部卡努高地——古老的卡努法典统治着这片山地，血液只能用血液来偿还。`
   },
 
   {
-    rank: 177,
+    rank: 176,
     id: `book-151`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4424,16 +4599,17 @@ const books: BookData[] = [
     author: `[日] 村上春树`,
     color: `#CD853F`,
     coverUrl: `/covers/1212080.jpg`,
-    tags: [`1994年`, `日本文学`, `长篇小说`, `超现实主义`, `2002年`, `豆瓣 8.4`],
+    tags: [`1994年`, `日本文学`, `长篇小说`, `超现实主义`, `2002年`],
     quote: `在这个世界上，有些事发生了，却像是从来没有发生过。`,
     desc: `村上春树最具野心的长篇巨著。故事从东京开始，但主人公冈田亨在追寻失踪妻子久美子的过程中，被引向诺门罕战役的历史阴影和北海道荒原中的神秘存在。北海道在小说中不仅是地理空间，更是连接过去与现在、现实与潜意识的黑暗通道。小说中的北海道场景充满荒凉的诗意——废弃的井、无尽的原野、以及风中传来的遥远回声。`,
     isTrajectory: false,
     realViewName: `北海道`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`,
+    realViewQuote: `北海道的荒原——风从远处吹来，带着一种只有这片土地上才能听到的沉默。`
   },
 
   {
-    rank: 178,
+    rank: 177,
     id: `book-261`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4450,11 +4626,12 @@ const books: BookData[] = [
     desc: `苏联解体后基辅的荒诞黑色幽默。失业作家维克多从动物园收养了一只企鹅米沙——他的工作是提前给名人写好悼词，而那些被他写过的人都会离奇死亡。在黑色横行的基辅街头，维克多和他的企鹅在冰冷的公寓中等待——充满了后苏联时代基辅的失落与虚无。`,
     isTrajectory: false,
     realViewName: `基辅`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg/3840px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg/3840px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D1%81%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D1%8C_2019.jpg`,
+    realViewQuote: `基辅——'维克托收养了一只从动物园来的企鹅，一人一企鹅，走在后苏联时代的灰色街道上。'`
   },
 
   {
-    rank: 179,
+    rank: 178,
     id: `book-94`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4470,12 +4647,13 @@ const books: BookData[] = [
     quote: `为什么启蒙了的文明会退回到新的野蛮？——法兰克福学派的终极之问。`,
     desc: `法兰克福学派的批判大纛。在二战的硝烟中，流亡美国的霍克海默与阿多诺写下了对现代文明的致命诊断——启蒙理性一旦沦为纯粹的工具理性，就必然退化为新的神话与野蛮。这部著作的精神坐标牢牢锁定在法兰克福社会研究所，那座在美因河畔始终保持着批判锋芒的思想堡垒。`,
     isTrajectory: false,
-    realViewName: `法兰克福`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Frankfurt_Main_August_2020_1.jpg/3840px-Frankfurt_Main_August_2020_1.jpg`
+    realViewName: `法兰克福社会研究所`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Frankfurt_Main_August_2020_1.jpg/3840px-Frankfurt_Main_August_2020_1.jpg`,
+    realViewQuote: `法兰克福社会研究所——为什么启蒙了的文明会退回到新的野蛮？`
   },
 
   {
-    rank: 180,
+    rank: 179,
     id: `book-202`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4491,8 +4669,9 @@ const books: BookData[] = [
     quote: `切尔诺贝利不是过去，而是一个永远存在于白俄罗斯大地皮肤上的放射性文身。`,
     desc: `2015年诺奖得主阿列克谢耶维奇用复调访谈的散文体记录了人类历史上最惨烈的核灾难。从切尔诺贝利第四反应堆的废墟——消防员在不知情中捡起石墨块，几分钟后皮肤开始脱落——到白俄罗斯南部被永久疏散的普里皮亚季周边村庄：那些被辐射污染的寂静橡树林、挂着'禁止入内'的铁丝网后曾经的家园。整片白俄罗斯大地化为了无声的眼泪。`,
     isTrajectory: true,
-    realViewName: `明斯克`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/View_of_Minsk_%28180819%29_09.jpg/3840px-View_of_Minsk_%28180819%29_09.jpg`,
+    realViewName: `切尔诺贝利禁区→明斯克`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/7/70/Checkpoint_ditkatky_chernobyl_zone.JPG`,
+    realViewQuote: `切尔诺贝利——消防员捡起石墨块，几分钟后皮肤开始脱落——这不是过去，而是永远刻在白俄罗斯大地上的放射性文身。`,
     path: [
       {
         name: `切尔诺贝利核电站四号反应堆`,
@@ -4516,7 +4695,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 181,
+    rank: 180,
     id: `book-133`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4532,12 +4711,13 @@ const books: BookData[] = [
     quote: `乔伊斯在的里雅斯特的咖啡馆中，完成了这部关于都柏林的意识流巨著。`,
     desc: `虽然小说描写的是都柏林，但乔伊斯在这座意大利边境港口城市流亡、执教期间，最终完成了这部意识流巨著。的里雅斯特的咖啡馆——特别是Caffè San Marco——包容了这位流亡爱尔兰作家的孤独与天才。亚得里亚海边的这座多元文化之城，为现代主义文学的诞生提供了不可或缺的土壤。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `的里雅斯特`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ayuntamiento%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_10.jpg/1280px-Ayuntamiento%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_10.jpg`,
+    realViewQuote: `的里雅斯特的Caffè San Marco——乔伊斯在这里流亡，却用文字重建了整个都柏林。`
   },
 
   {
-    rank: 182,
+    rank: 181,
     id: `book-180`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4554,11 +4734,12 @@ const books: BookData[] = [
     desc: `1911年诺奖得主梅特林克的梦幻牧歌。樵夫的孩子迪迪和米迪在圣诞前夜出发——穿过'思念之国'、'夜之宫'与'未来王国'，寻找代表幸福的青鸟。低地国家魔幻而静谧的童话底色弥漫全书——而那只看不见的青鸟，其实一直就在他们家的鸟笼里。`,
     isTrajectory: false,
     realViewName: `根特`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg/3840px-Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg/3840px-Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg`,
+    realViewQuote: `根特——'青鸟就在我们自己的家里，但我们总是要到远方去寻找。'`
   },
 
   {
-    rank: 183,
+    rank: 182,
     id: `book-152`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4570,16 +4751,17 @@ const books: BookData[] = [
     author: `岩井俊二`,
     color: `#6A5ACD`,
     coverUrl: `/covers/1418952.jpg`,
-    tags: [`1995年`, `日本文学`, `恋爱小说`, `电影原著`, `1997年`, `豆瓣 8.9`],
+    tags: [`1995年`, `日本文学`, `恋爱小说`, `电影原著`, `1997年`],
     quote: `你好吗？我很好。`,
     desc: `岩井俊二的经典恋爱小说，以小樽和神户为双城舞台。博子在未婚夫藤井树去世后，向其旧地址寄出一封不可能有回音的信，却意外收到了同名同姓的'藤井树'的回信。故事在小樽的雪景中展开——运河畔的石造仓库、天狗山的远眺、以及铺天盖地的纯白雪景，为这个关于青春记忆与错过的故事注入了一种纯净到令人心碎的哀伤。`,
     isTrajectory: false,
-    realViewName: `北海道小樽`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hokkaido_Nippon-Ham_Fighters_Logo_Vector.svg/250px-Hokkaido_Nippon-Ham_Fighters_Logo_Vector.svg.png`
+    realViewName: `小樽运河`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`,
+    realViewQuote: `小樽的雪——你好吗？我很好。运河边石造仓库的墙壁上，挂满了冰凌。`
   },
 
   {
-    rank: 184,
+    rank: 183,
     id: `book-138`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4591,16 +4773,17 @@ const books: BookData[] = [
     author: `太宰 治`,
     color: `#228B22`,
     coverUrl: `/covers/2049811.jpg`,
-    tags: [`1948年`, `日本文学`, `私小说`, `无赖派`, `2006年`, `豆瓣 8.8`],
+    tags: [`1948年`, `日本文学`, `私小说`, `无赖派`, `2006年`],
     quote: `生而为人，我很抱歉。`,
     desc: `太宰治的半自传体绝笔之作。主人公大庭叶藏从少年到青年的自我毁灭之路，深刻描绘了一个无法适应社会规范的人如何在东京的繁华与阴暗之间挣扎。从贵族家庭到东京的寄宿生活，从画家梦想到沉溺酒精与药物，叶藏的人生轨迹几乎全部发生在东京——银座的酒吧、三鹰的陋室、以及那些隐藏在都市阴影中的绝望角落。`,
     isTrajectory: false,
-    realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewName: `东京三鹰太宰治文学沙龙`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `三鹰——我在那间陋室里度过了人生最后一个夏天。`
   },
 
   {
-    rank: 185,
+    rank: 184,
     id: `book-16`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4618,6 +4801,7 @@ const books: BookData[] = [
     isTrajectory: true,
     realViewName: `哈瓦那`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/12/DJI_0197_crp_wiki.jpg`,
+    realViewQuote: `哈瓦那——加勒比海的风中，奴隶起义的鼓声从甘蔗田深处传来。`,
     path: [
       {
         name: `海地北部法国殖民种植园`,
@@ -4641,7 +4825,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 186,
+    rank: 185,
     id: `book-5`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4658,11 +4842,12 @@ const books: BookData[] = [
     desc: `茨威格在维也纳及萨尔茨堡隐居期间，用充满激情的传记散文记录了人类历史上14个决定命运的戏剧性瞬间——从君士坦丁堡的陷落到滑铁卢的一分钟，从南极探险的死亡行军到列宁的封闭列车。每一个瞬间都像一颗划过夜空的流星，在维也纳书房温暖的灯光下被茨威格赋予了永恒的光辉。`,
     isTrajectory: false,
     realViewName: `维也纳`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`,
+    realViewQuote: `维也纳——'在一个民族内部，总是需要有几百万人，才能产生一个天才。'`
   },
 
   {
-    rank: 187,
+    rank: 186,
     id: `book-2`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4678,12 +4863,13 @@ const books: BookData[] = [
     quote: `斯坦·帕克带着一头牛、一只狗和一把斧头走进了新南威尔士未开垦的密林——他将像一棵树一样在这片土地上扎根。`,
     desc: `大洋洲唯一诺奖得主怀特的至高杰作。拓荒者斯坦深入新南威尔士未开垦的密林中——用斧头砍倒桉树、在洪水中抢救牲畜、在旱灾中守着枯井。怀特用极其雄浑、带有圣经宗教感的文字描写了拓荒者如何像一棵树一样在澳洲的泥土中扎根、繁衍并最终化为尘土——写活了澳大利亚民族的地理之魂。`,
     isTrajectory: false,
-    realViewName: `悉尼近郊原始森林`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/3840px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg`
+    realViewName: `悉尼近郊`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Waratah_Series_1_%28A_Set%29_at_Sydney_Central_Station.jpg/1280px-Waratah_Series_1_%28A_Set%29_at_Sydney_Central_Station.jpg`,
+    realViewQuote: `悉尼近郊——'他在丛林中砍倒第一棵树，建起了他的家园——这就是澳大利亚拓荒者的创世纪。'`
   },
 
   {
-    rank: 188,
+    rank: 187,
     id: `book-219`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4699,8 +4885,9 @@ const books: BookData[] = [
     quote: `在瓦雷基诺的雪夜，白狼在窗外长嗥——日瓦戈燃着蜡烛写下了冰清玉洁的诗句。`,
     desc: `跨越乌拉尔山的个人史诗。日瓦戈医生为了躲避革命后的战火与饥饿，带着家人从莫斯科出发，坐着闷罐火车穿越乌拉尔山脉逃往西伯利亚的瓦雷基诺庄园。在冰雪封山的荒野中，他与拉拉在烛光下重聚——白狼在夜色里长嗥、雪地里的红莓、以及那些拒绝了暴力的纯洁诗句——构成了20世纪俄罗斯文学最冰清玉洁的精神高地。`,
     isTrajectory: true,
-    realViewName: `莫斯科→西伯利亚`,
+    realViewName: `莫斯科→乌拉尔山→西伯利亚`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Siberia_%28orthographic_projection%29.svg/960px-Siberia_%28orthographic_projection%29.svg.png`,
+    realViewQuote: `瓦雷基诺的雪夜——白狼在窗外长嗥，日瓦戈燃着蜡烛写下了冰清玉洁的诗句。`,
     path: [
       {
         name: `莫斯科一战前线医院`,
@@ -4730,7 +4917,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 189,
+    rank: 188,
     id: `book-46`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4746,12 +4933,13 @@ const books: BookData[] = [
     quote: `三家巷的灯火，照着广州的夜空，也照着大革命的洪流。`,
     desc: `以20世纪20年代的广州为背景，通过陈、周、何三家青年的起伏，展现了沙面租界、省港大罢工等具有浓厚广州老城烙印的历史画卷。`,
     isTrajectory: false,
-    realViewName: `广东省广州市荔湾区沙面`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Canton_Tower_20241027.jpg/3840px-Canton_Tower_20241027.jpg`
+    realViewName: `广州荔湾区沙面`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Canton_Tower_20241027.jpg/3840px-Canton_Tower_20241027.jpg`,
+    realViewQuote: `三家巷是一条青石板铺的小巷，两边的墙根下长满了青苔。`
   },
 
   {
-    rank: 190,
+    rank: 189,
     id: `book-228`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4767,8 +4955,9 @@ const books: BookData[] = [
     quote: `任何人的死亡都使我受到损失，因为我包含在人类之中。所以不要问丧钟为谁而鸣——它为你而鸣。`,
     desc: `海明威的西班牙内战绝唱。美国爆破手罗伯特·乔丹奉命潜入马德里北部的瓜达拉马山区，与反法西斯游击队汇合，在三天内炸毁一座关键的铁桥。松林的清香、山洞里粗粝的红酒、马背上的爱情——在法西斯飞机低空掠过的轰鸣中，他躺在卡斯蒂利亚的松针地上等待敌军的坦克到来——握着机关枪扣动了最后的扳机。`,
     isTrajectory: true,
-    realViewName: `马德里北部瓜达拉马山脉`,
+    realViewName: `马德里瓜达拉马山脉`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/af/Plaza_Mayor_De_Madrid_%28215862629%29_edited.jpeg`,
+    realViewQuote: `瓜达拉马山脉的松林——不要问丧钟为谁而鸣，它为你而鸣。`,
     path: [
       {
         name: `马德里盖洛德饭店`,
@@ -4792,7 +4981,7 @@ const books: BookData[] = [
   },
 
   {
-    rank: 191,
+    rank: 190,
     id: `book-274`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4804,16 +4993,17 @@ const books: BookData[] = [
     author: `[美] 哈珀·李`,
     color: `#B8860B`,
     coverUrl: `/covers/6781808.jpg`,
-    tags: [`1960年`, `美国文学`, `种族正义`, `成长小说`, `2012年`, `豆瓣 9.2`],
+    tags: [`1960年`, `美国文学`, `种族正义`, `成长小说`, `2012年`],
     quote: `你永远不可能真正了解一个人，除非你从他的角度去考虑问题。`,
     desc: `以阿拉巴马州门罗维尔为原型的大萧条时期南方小镇。律师阿提克斯·芬奇为被诬告强奸白人女子的黑人汤姆辩护——在热带燠热的夏夜、慵懒的蝉鸣与保守的南方小镇街区里，斯各特和杰姆透过童年的眼睛，见证了成人世界最深的偏见与父亲对正义最孤独的坚守。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `阿拉巴马州门罗维尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Alabama.svg/960px-Flag_of_Alabama.svg.png`,
+    realViewQuote: `梅科姆县——那座法院广场上的老橡树下，阿提克斯·芬奇独自坐在阴影里，守护着正义。`
   },
 
   {
-    rank: 192,
+    rank: 191,
     id: `book-154`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4825,16 +5015,17 @@ const books: BookData[] = [
     author: `松本清张`,
     color: `#B8860B`,
     coverUrl: `/covers/2119536.jpg`,
-    tags: [`1961年`, `日本文学`, `推理小说`, `社会派`, `2007年`, `豆瓣 7.8`],
+    tags: [`1961年`, `日本文学`, `推理小说`, `社会派`, `2007年`],
     quote: `宿命如同砂上的纹路，你以为可以抹去，风一吹又显露出来。`,
     desc: `松本清张最具影响力的社会派推理小说。东京蒲田站发生一桩凶杀案，刑警今西荣太郎在调查中发现线索指向音乐界，并一路追溯到福冈和东北地区的贫苦历史。小说通过从福冈到东京、再到东北的广阔地理跨幅，深刻揭示了日本战后社会的阶级矛盾——一个人如何试图用艺术和成功掩盖自己的出身，最终却如同砂上的城堡般崩塌。`,
     isTrajectory: false,
     realViewName: `福冈`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg`,
+    realViewQuote: `福冈——宿命如同砂上的纹路，你以为可以抹去，风一吹又显露出来。`
   },
 
   {
-    rank: 193,
+    rank: 192,
     id: `book-174`,
     sliderVal: 6,
     century: `20世纪`,
@@ -4846,12 +5037,13 @@ const books: BookData[] = [
     author: `[韩] 李沧东`,
     color: `#B8860B`,
     coverUrl: `/covers/30441551.jpg`,
-    tags: [`1987年`, `韩国文学`, `短篇小说集`, `现实主义`, `2020年`, `豆瓣 8.5`],
+    tags: [`1987年`, `韩国文学`, `短篇小说集`, `现实主义`, `2020年`],
     quote: `在首尔的高楼缝隙间烧纸祭奠南方故土——这就是我们的现代生活。`,
     desc: `李沧东的小说集具有极强的'城乡体制变迁'和'空间位移感'。从朝鲜战争后的南部农村与庆尚道、大邱的家族伤痕，到底层人民沿着铁路北上首尔的阶级流转——那些寄居在首尔工薪区逼仄公寓里的人们，在端午、中秋等传统节日时，仍保留着在高楼缝隙间'烧纸'祭奠南方故土与逝去亲人的传统。这条动线精准展现了现代韩国城乡断裂间边缘人的精神流浪。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `大邱→首尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `大邱到首尔——在高楼的缝隙间烧纸祭奠故乡，烟雾升向灰色的天空。`,
     path: [
       {
         name: `全罗道/庆尚道农村`,
@@ -4875,6 +5067,28 @@ const books: BookData[] = [
   },
 
   {
+    rank: 193,
+    id: `book-74`,
+    sliderVal: 6,
+    century: `20世纪`,
+    lat: 44.8378,
+    lng: -0.5792,
+    country: `法国`,
+    city: `波尔多`,
+    title: `蛇结`,
+    author: `弗朗索瓦·莫里亚克`,
+    color: `#B8860B`,
+    coverUrl: `/covers/35904798.jpg`,
+    tags: [`1932年`, `法国文学`, `心理小说`, `诺贝尔文学奖`],
+    quote: `我了解我的这颗心，这颗如蛇结一般的心：它被无数蝰蛇压得难以喘息，被其毒液浸透至深。`,
+    desc: `莫里亚克以故乡波尔多为背景创作的心理小说巅峰。垂死的68岁老律师路易在给妻子的长信中，剖开心中那团由怨恨、贪婪与隐秘的爱交织成的「蛇结」——四十年婚姻中的沉默、嫉妒与财产争夺，最终在迟暮之年化为对爱的迟来醒悟。这位诺贝尔文学奖得主以近乎残酷的精准，解剖了人性深处的自卑、猜忌与对爱的渴望。`,
+    isTrajectory: false,
+    realViewName: `波尔多`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bordeaux_Place_de_la_Bourse_de_nuit.jpg/3840px-Bordeaux_Place_de_la_Bourse_de_nuit.jpg`,
+    realViewQuote: `波尔多的雾从加龙河上升起，笼罩了这座外省城市的每一扇窗户。`
+  },
+
+  {
     rank: 194,
     id: `book-99`,
     sliderVal: 6,
@@ -4891,8 +5105,9 @@ const books: BookData[] = [
     quote: `一定有人诬告了约瑟夫·K，因为他在一个晴朗的早晨，什么坏事也没做，就被捕了。`,
     desc: `银行职员约瑟夫·K在三十岁生日早晨被秘密法庭逮捕，却从未被告知罪名。他在迷宫般的法庭阁楼间奔走申诉，最终在采石场像一条狗一样被处死。卡夫卡预见了20世纪所有极权机器的荒诞逻辑。`,
     isTrajectory: false,
-    realViewName: `奥匈帝国波希米亚`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg`
+    realViewName: `布拉格黄金巷卡夫卡故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_%286365119737%29.jpg`,
+    realViewQuote: `布拉格的阁楼法庭——一定有人诬告了约瑟夫·K，因为他在一个晴朗的早晨，什么坏事也没做，就被捕了。`
   },
 
   {
@@ -4913,7 +5128,8 @@ const books: BookData[] = [
     desc: `1998年诺奖得主萨拉马戈虚构了一场席卷全城的白色失明瘟疫。被关进废弃精神病院的失明者们——在粪便、饥饿与暴力中彻底撕开了现代文明的遮羞布。只有一个女人看得见——她看见了人类所能堕落到的最深处，也看见了在黑暗中依旧闪烁的微光。`,
     isTrajectory: false,
     realViewName: `里斯本`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg`,
+    realViewQuote: `里斯本——'如果有一天所有人都失明了，这座城市还会记得自己的样子吗？'`
   },
 
   {
@@ -4929,12 +5145,13 @@ const books: BookData[] = [
     author: `伊塔洛·卡尔维诺`,
     color: `#CD853F`,
     coverUrl: `/covers/6789605.jpg`,
-    tags: [`1957年`, `意大利文学`, `寓言小说`, `启蒙主义`, `2012年`, `豆瓣 9.1`],
+    tags: [`1957年`, `意大利文学`, `寓言小说`, `启蒙主义`, `2012年`],
     quote: `男爵柯西莫因为反抗父亲，爬上了热那亚周边的橡树林，并在树冠之上度过了充满启蒙光辉的一生。`,
     desc: `卡尔维诺'祖先三部曲'中最具想象力的一部。故事发生于18世纪利古里亚海岸一个名为'翁布罗萨'的虚构小镇。男爵柯西莫因拒绝吃一盘蜗牛而爬上了庭院中的圣栎树，从此再也没有踏上地面。他在橡树、橄榄树和无花果树的树冠之间建立了自己的王国——与伏尔泰通信、抵抗海盗、恋爱与革命——在离地数十米的空中度过了其充满启蒙主义光辉的一生。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `利古里亚海岸`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Liguria_in_Italy.svg/1280px-Liguria_in_Italy.svg.png`,
+    realViewQuote: `利古里亚海岸的橡树林——柯西莫爬上了圣栎树，此后再也没有踏上地面。`
   },
 
   {
@@ -4954,8 +5171,9 @@ const books: BookData[] = [
     quote: `手艺人靠手吃饭，手上得有绝活。`,
     desc: `极其生动地刻画了清末民初天津卫各行各业、身怀绝技的奇人异士，充满了爽朗、逗乐的津味风土。`,
     isTrajectory: false,
-    realViewName: `天津市红桥区估衣街海河码头`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/81/Tianjin_Eye_and_Tianjin.jpg`
+    realViewName: `天津估衣街海河码头`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/81/Tianjin_Eye_and_Tianjin.jpg`,
+    realViewQuote: `估衣街是天津卫最热闹的一条街，两边全是铺子，人多得像赶集。`
   },
 
   {
@@ -4975,13 +5193,14 @@ const books: BookData[] = [
     quote: `我是北极光——我是火焰、水和空气——我是从未被碰触过的梦中的花园。`,
     desc: `芬兰乃至整个北欧现代主义诗歌的开启者。长期在芬兰与俄罗斯交界的卡累利阿地峡——一片被森林环绕、被冰雪覆盖的偏僻村庄罗希拉——养病。肺结核正慢慢吞噬她的肺叶，但她在芬兰的冰雪中写出了最炽烈的诗句：'生命，我多么憎恨你——但我更爱你，至死不渝。'那座梦中的花园化为了北欧文学史上最凄美的坐标。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `芬兰卡累利阿地峡`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b4/Many_Karelias.png`,
+    realViewQuote: `卡累利阿地峡——我是北极光——我是火焰、水和空气——肺结核吞噬着她的肺叶，但她的诗句比冰雪更炽烈。`
   },
 
   {
     rank: 199,
-    id: `book-53`,
+    id: `book-52`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 25.03,
@@ -4990,14 +5209,15 @@ const books: BookData[] = [
     city: `台湾省台北市大安区青田街`,
     title: `台北人`,
     author: `白先勇`,
-    color: `#3CB371`,
+    color: `#6A5ACD`,
     coverUrl: `/covers/wr-838779.jpg`,
     tags: [`1971年`, `短篇集`, `离散文学`, `眷村记忆`, `旧梦沧桑`],
     quote: `原来姹紫嫣红开遍，似这般都付与断井颓垣。`,
     desc: `由14个短篇组成。空间精准定格在跟随国民政府迁台后，落脚于台北青田街旧宅、隐秘沙龙与底层酒馆的各阶层人物。白先勇用极其华丽、冷酷而感伤的笔触，写尽了这群台北人骨子里无可依归的落魄与旧大陆旧梦的沧桑。`,
     isTrajectory: false,
-    realViewName: `台湾省台北市大安区青田街`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Taipei_Skyline_2022.06.29.jpg/3840px-Taipei_Skyline_2022.06.29.jpg`
+    realViewName: `台北大安区青田街`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Taipei_Skyline_2022.06.29.jpg/3840px-Taipei_Skyline_2022.06.29.jpg`,
+    realViewQuote: `台北的天空，有一种说不出的灰。那灰不是雾，也不是烟，而是一种沉沉的记忆的颜色。`
   },
 
   {
@@ -5017,8 +5237,9 @@ const books: BookData[] = [
     quote: `太古——一个被四位天使守卫的波兰村庄，麦田、磨坊与椴树下栖息着整个二十世纪东欧的灵魂。`,
     desc: `2018年诺奖得主托卡尔丘克将整部波兰乃至二十世纪东欧的血泪历史浓缩在一个虚构的村落'太古'中。这里的每一块土地、每一棵椴树、每一个在麦田里劳作的人都有属于自己的时间——两界大战的炮火、犹太人被赶进集中营时践踏的麦田、以及战后在废墟上重建的一切——在四位天使永恒的注视下构成了一部极具波兰泥土芬芳的星体神话。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `波兰基尔采大区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1280px-Flag_of_Poland.svg.png`,
+    realViewQuote: `太古——被四位天使守卫的波兰村庄，每一棵椴树、每一片麦田都有属于自己的时间。`
   },
 
   {
@@ -5038,8 +5259,9 @@ const books: BookData[] = [
     quote: `在潘普洛纳的奔牛节上，公牛在狭窄的街道上奔腾——而我们全都已经醉了。`,
     desc: `迷惘的一代精神图腾。故事高潮完全在潘普洛纳的圣费尔明节引爆——狂暴的公牛在鹅卵石街道上横冲直撞、通宵达旦的罗曼尼红酒狂欢、阳光刺眼的斗牛场上布雷特的绿色贝雷帽。杰克·巴恩斯在战争中失去了性能力，他在酒瓶与斗牛之间寻找着无法言说的安慰——'我们全都已经坏了，坏得无法修复。'`,
     isTrajectory: true,
-    realViewName: `纳瓦拉潘普洛纳`,
+    realViewName: `纳瓦拉潘普洛纳奔牛节`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/d/d3/Monumento_a_los_Fueros_%28Pamplona%29.jpg`,
+    realViewQuote: `潘普洛纳——公牛在鹅卵石街道上奔腾，红酒流淌成河。'我们都坏了，坏得无法修复。'`,
     path: [
       {
         name: `巴黎左岸咖啡馆`,
@@ -5079,8 +5301,9 @@ const books: BookData[] = [
     quote: `在没入融雪的黑色柏油路上——北欧森林的沉寂中震动了琴弦。`,
     desc: `2011年诺奖得主特朗斯特罗姆长期在斯德哥尔摩群岛的跑道岛上担任心理学家。他的诗歌抓取了瑞典最地道的地理切片——没入融雪的黑色柏油路、波罗的海的浮冰在春分时碎裂、北欧森林里震动的琴弦、极夜里树林中最后一盏闪烁的灯光。每一首诗都将北欧的清冷与沉默转化为了人类精神所能达到的最高纯净。`,
     isTrajectory: false,
-    realViewName: `斯德哥尔摩群岛跑道岛`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg/3840px-Royal_Dramatic_Theatre_Stockholm.jpg`
+    realViewName: `斯德哥尔摩群岛`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg/3840px-Royal_Dramatic_Theatre_Stockholm.jpg`,
+    realViewQuote: `斯德哥尔摩群岛——在没入融雪的黑色柏油路上，波罗的海的浮冰在春分时碎裂。`
   },
 
   {
@@ -5100,8 +5323,9 @@ const books: BookData[] = [
     quote: `土地不灭，人亦不灭。`,
     desc: `全5卷20册的巨著，被誉为韩国文学的最高峰。故事发源地为庆尚南道河东郡平沙里——智异山脚下的一个村庄。小说时间跨越东学党起义至抗日收复，以朴家五代人的命运展开韩国近代史的浩瀚画卷。河东郡平沙里的稻田、山间的祖坟、以及智异山的四季更替，成为叙事永恒不变的坐标。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `庆尚南道河东郡平沙里`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerial_View_of_Daewoo_Shipbuilding_%26_Marine_Engineering.jpg/3840px-Aerial_View_of_Daewoo_Shipbuilding_%26_Marine_Engineering.jpg`,
+    realViewQuote: `河东郡平沙里——智异山脚下，稻田与祖坟之间，五代人的命运在这片土地上铺开。`
   },
 
   {
@@ -5121,13 +5345,14 @@ const books: BookData[] = [
     quote: `奥孔科沃是乌姆奥菲亚最伟大的摔跤手——他一生都在与失败搏斗，但最终被自己的人民吊死在树上。`,
     desc: `非洲现代文学最稳固的基石。空间锁定在尼日利亚东南部伊博人的原始丛林与茅屋中——奥孔科沃在木薯田与摔跤场上赢得了氏族最高的荣耀。然而白人传教士带着他们的上帝走进了这片土地——'一切都瓦解了，中心再也无法维系。'奥孔科沃选择了在自己的土地上吊死——一个战士最后的反抗。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `尼日利亚阿南布拉州奥吉迪`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/1280px-Flag_of_Nigeria.svg.png`,
+    realViewQuote: `奥吉迪——'奥孔克沃是奥姆奥菲亚最伟大的摔跤手——当白人传教士到来时，一切开始瓦解。'`
   },
 
   {
     rank: 205,
-    id: `book-62`,
+    id: `book-61`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 31.23,
@@ -5136,14 +5361,15 @@ const books: BookData[] = [
     city: `上海市`,
     title: `围城`,
     author: `钱钟书`,
-    color: `#B22222`,
+    color: `#8B4513`,
     coverUrl: `/covers/wr-22946457.jpg`,
     tags: [`1947年`, `讽刺小说`, `知识分子`, `婚姻围城`],
     quote: `婚姻是一座围城，城外的人想进去，城里的人想出来。`,
     desc: `中国现代文学最杰出的讽刺小说。留学归来的方鸿渐在抗战烽火中辗转上海、三闾大学、香港，在爱情与婚姻的围城中进退失据。钱钟书的机锋与博学渗透在每一页对话里。`,
     isTrajectory: false,
-    realViewName: `上海市`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`
+    realViewName: `上海`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`,
+    realViewQuote: `这船，倚仗人的机巧，载满人的扰攘，寄满人的希望，热闹地行着。`
   },
 
   {
@@ -5163,8 +5389,9 @@ const books: BookData[] = [
     quote: `看莫高窟，不是看死了一千年的标本，而是看活了一千年的生命。`,
     desc: `精准定位在敦煌莫高窟。王道士的愚昧、藏经洞的洗劫与河西走廊的历史风沙，化为了关于中国文化史最沉痛的散文证言。`,
     isTrajectory: false,
-    realViewName: `莫高窟`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/9/9e/Mogao_Caves_%2854376969262%29.jpg`
+    realViewName: `敦煌莫高窟`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/9/9e/Mogao_Caves_%2854376969262%29.jpg`,
+    realViewQuote: `莫高窟大门外，有一条河，过河有一溜空地，高高低低建着几座僧人圆寂塔。`
   },
 
   {
@@ -5180,12 +5407,13 @@ const books: BookData[] = [
     author: `[日]夏目漱石`,
     color: `#708090`,
     coverUrl: `/covers/1000856.jpg`,
-    tags: [`1905年`, `日本文学`, `讽刺小说`, `明治文学`, `1994年`, `豆瓣 7.9`],
+    tags: [`1905年`, `日本文学`, `讽刺小说`, `明治文学`, `1994年`],
     quote: `咱家是猫。名字嘛，还没有。`,
     desc: `夏目漱石以一只无名猫的视角，冷眼旁观明治时期东京知识分子的日常生活。故事围绕英语教师苦沙弥及其友人展开，猫的主人苦沙弥家中聚集了一群自命清高、夸夸其谈的知识分子。漱石以猫的冷峻视角讽刺了当时日本社会的虚伪、虚荣与崇洋之风。小说场景几乎全部发生在东京——这只猫在东京的街巷中游荡，观察着明治维新后急速西化的日本都市百态。`,
     isTrajectory: false,
-    realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewName: `东京夏目漱石旧居迹`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `咱家是猫。名字嘛，还没有。夏目先生的书斋里堆满了书，午后的阳光斜斜地照在榻榻米上。`
   },
 
   {
@@ -5201,12 +5429,13 @@ const books: BookData[] = [
     author: `埃里希·玛利亚·雷马克`,
     color: `#708090`,
     coverUrl: `/covers/35690626.jpg`,
-    tags: [`1929年`, `德国文学`, `反战文学`, `20世纪经典`, `2022年`, `豆瓣 8.9`],
+    tags: [`1929年`, `德国文学`, `反战文学`, `20世纪经典`, `2022年`],
     quote: `一群十八岁的青年被从课桌前直接送上了法国战壕——没有人告诉他们战争到底是什么。`,
     desc: `主角保罗·博伊默尔从下萨克森的奥斯纳布吕克中学课堂被征召入伍，经历粗糙的新兵训练后投入了法国西线战壕。在炮弹与毒气中，他的同学们一个接一个死去——小说用冷静到令人窒息的笔触，记录了被战争摧毁的一代人的精神废墟。雷马克以自己在一战中的经历为素材，写下了世界文学中最伟大的反战宣言。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `奥斯纳布吕克→法国西线战壕遗址`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/5/5a/Osnabr%C3%BCck_aerial.jpg`,
+    realViewQuote: `法国西线的战壕——炮弹、毒气、泥泞、老鼠——十八岁的青年在这里一个一个地死去。`,
     path: [
       {
         name: `奥斯纳布吕克（家乡学校）`,
@@ -5248,12 +5477,13 @@ const books: BookData[] = [
     author: `谷崎润一郎`,
     color: `#4682B4`,
     coverUrl: `/covers/1090437.jpg`,
-    tags: [`1943年`, `日本文学`, `长篇小说`, `耽美派`, `2001年`, `豆瓣 8.3`],
+    tags: [`1943年`, `日本文学`, `长篇小说`, `耽美派`, `2001年`],
     quote: `大阪的樱花，开得比东京晚，却更加浓烈。`,
     desc: `谷崎润一郎以大阪船场没落富商家族四姐妹为主角的长篇巨著。故事以三妹雪子的相亲为主线，细腻描绘了昭和初期大阪上层社会的传统生活美学。小说中大阪的町屋、能乐舞台、赏樱名所、以及关西特有的风土人情被赋予了诗意的浓墨重彩。谷崎以其标志性的耽美笔法，将大阪这座城市变成了日本传统美的最后堡垒。`,
     isTrajectory: false,
-    realViewName: `大阪`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`
+    realViewName: `大阪船场`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/3840px-Osaka_Castle_02bs3200.jpg`,
+    realViewQuote: `大阪船场——樱花开了，比东京晚，却更加浓烈。町屋的格子窗外，能乐的三弦琴声时断时续。`
   },
 
   {
@@ -5273,8 +5503,9 @@ const books: BookData[] = [
     quote: `你的孩子不是你的孩子。他们是生命对自身渴望的儿女。`,
     desc: `纪伯伦的精神地理之魂永远留在黎巴嫩北部的圣谷。这里的险峻高山、终年不化的积雪、苍翠的古老雪松以及山泉——为他的散文诗注入了超越宗派、充满东方神秘主义与自然神性的光芒。'爱不占有，也不被占有——因为爱在爱中已经满足了。'`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `黎巴嫩贝沙里纪伯伦故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/3/3b/Gibran_Museum.JPG`,
+    realViewQuote: `贝沙里——'当爱召唤你时，跟随它，纵使它的道路崎岖陡峭。'`
   },
 
   {
@@ -5294,8 +5525,9 @@ const books: BookData[] = [
     quote: `在巴塞罗那革命的日子里，一切都被颠倒了过来——红黑旗在兰布拉大道上飘扬。`,
     desc: `奥威尔作为国际纵队战士的真实纪实。1936-1937年的巴塞罗那——市中心的咖啡馆被工人武装占领，加泰罗尼亚广场上的喇叭放着国际歌，每一个角落都充满了革命的气息。然后内部清洗开始了——奥威尔见证了革命如何吞噬自己的儿女。在阿拉贡前线颈部中弹后逃回巴塞罗那，他发现'革命'已成谎言。`,
     isTrajectory: true,
-    realViewName: `巴塞罗那`,
+    realViewName: `巴塞罗那加泰罗尼亚广场`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg/3840px-Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg`,
+    realViewQuote: `巴塞罗那革命的日子里——红黑旗在兰布拉大道上飘扬，每一扇窗户都挂着公社的横幅。`,
     path: [
       {
         name: `法西边境`,
@@ -5341,8 +5573,9 @@ const books: BookData[] = [
     quote: `在这里，时间仿佛停止了流逝。`,
     desc: `全球'香格里拉'神话的源头。在终年积雪的梅里雪山峡谷、隐秘的喇嘛庙和长生不老的山谷间，构筑了西方文学对东方最完美的乌托邦幻想。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `迪庆香格里拉`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/View_from_Shangri-La_City%2C_Diqing_Tibetan_Autonomous_Prefecture%2C_Yunnan%2C_China.jpg/1280px-View_from_Shangri-La_City%2C_Diqing_Tibetan_Autonomous_Prefecture%2C_Yunnan%2C_China.jpg`,
+    realViewQuote: `在阳光的照射下，雪山的峰顶闪耀着一种近乎超自然的光芒。`
   },
 
   {
@@ -5362,8 +5595,9 @@ const books: BookData[] = [
     quote: `时间永远分叉，通向无数的未来。`,
     desc: `博尔赫斯用他那逐渐失明的双眼将布宜诺斯艾利斯化为了一座由无限镜子、无尽阶梯和无限文本组成的宇宙迷宫。在圣特尔莫区的旧公寓里、在南区的深夜街角——一个为德国从事间谍活动的中国人、一部来自英国的百科全书与一座可以穿越时间分叉的花园，共同编织了文学史上最精巧的形而上学寓言。`,
     isTrajectory: false,
-    realViewName: `布宜诺斯艾利斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg/3840px-Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg`
+    realViewName: `布宜诺斯艾利斯博尔赫斯故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg/3840px-Puerto_Madero_-_Puente_de_la_mujer_%2844673627614%29.jpg`,
+    realViewQuote: `布宜诺斯艾利斯——那座有着无限镜子与无尽阶梯的城市，在博尔赫斯失明的双眼中变成了一座宇宙迷宫。`
   },
 
   {
@@ -5383,8 +5617,9 @@ const books: BookData[] = [
     quote: `普拉特罗——银色的、毛茸茸的、柔软得像一团棉花，摸上去像没有骨头，只有奶汁。`,
     desc: `安达卢西亚的田园牧歌。1956年诺奖得主希梅内斯深情描绘了其故乡莫格尔小镇的银白色小毛驴'普拉特罗'。他们一起走过莫格尔的松林与白墙村落、金黄色的秋天山坡和安达卢西亚温柔的海洋风——希梅内斯为这头驴子写下了世界上最纯净的诗句。莫格尔的每一棵橄榄树都浸透了童话般的诗意与安达卢西亚大地最温柔的乡愁。`,
     isTrajectory: false,
-    realViewName: `安达卢西亚韦尔瓦省莫格尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_Andaluc%C3%ADa.svg/960px-Flag_of_Andaluc%C3%ADa.svg.png`
+    realViewName: `安达卢西亚莫格尔镇`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Simple_ruin%2C_almond_trees_plantation%2C_Andalusia%2C_Spain.jpg/1280px-Simple_ruin%2C_almond_trees_plantation%2C_Andalusia%2C_Spain.jpg`,
+    realViewQuote: `莫格尔——银白色的小毛驴普拉特罗，在安达卢西亚松林的柔软松针上踏过。`
   },
 
   {
@@ -5400,12 +5635,13 @@ const books: BookData[] = [
     author: `[法国] 安东尼·德·圣-埃克苏佩里`,
     color: `#228B22`,
     coverUrl: `/covers/1084336.jpg`,
-    tags: [`1943年`, `法国文学`, `童话`, `哲学寓言`, `2003年`, `豆瓣 9.1`],
+    tags: [`1943年`, `法国文学`, `童话`, `哲学寓言`, `2003年`],
     quote: `真正重要的东西，用眼睛是看不见的。`,
     desc: `圣-埃克苏佩里出生于里昂。这座被罗讷河与索恩河环绕的城市，是这位孤独飞行员童年纯真根脉的所在。小王子的玫瑰、B612小行星、以及那只等待被驯养的狐狸——所有这些关于爱与孤独的最纯粹寓言，都指向里昂的天空下那个永远长不大的飞行员。`,
     isTrajectory: false,
-    realViewName: `里昂`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lyon-part-dieu-2023.jpg/3840px-Lyon-part-dieu-2023.jpg`
+    realViewName: `里昂圣埃克苏佩里纪念碑`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lyon-part-dieu-2023.jpg/3840px-Lyon-part-dieu-2023.jpg`,
+    realViewQuote: `里昂——被罗讷河与索恩河环绕的城市，一个永远长不大的飞行员从这里起飞。`
   },
 
   {
@@ -5421,12 +5657,13 @@ const books: BookData[] = [
     author: `小林多喜二`,
     color: `#483D8B`,
     coverUrl: `/covers/23009713.jpg`,
-    tags: [`1929年`, `日本文学`, `普罗文学`, `现实主义`, `2013年`, `豆瓣 8.1`],
+    tags: [`1929年`, `日本文学`, `普罗文学`, `现实主义`, `2013年`],
     quote: `我们不是蟹，我们是人。`,
     desc: `日本无产阶级文学的代表作。小说以北海道的蟹工船（捕蟹兼加工的渔业工厂船）为舞台，描写了在函馆港出发的渔船上海员们遭受的非人剥削与残酷劳动条件，以及他们最终的觉醒与反抗。北海道的严寒海况——鄂霍次克海的浮冰、函馆港的喧嚣——与劳工们的苦难交织在一起，成为日本近代社会矛盾的缩影。`,
     isTrajectory: false,
-    realViewName: `北海道`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`
+    realViewName: `北海道函馆港`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`,
+    realViewQuote: `函馆港——鄂霍次克海的浮冰在船头碎裂。'我们不是蟹，我们是人。'`
   },
 
   {
@@ -5446,8 +5683,9 @@ const books: BookData[] = [
     quote: `你或许会嘲笑我，但我至今仍然常常梦见那个夏天。`,
     desc: `夏目漱石晚期最高杰作。我与一位神秘的老师相识于镰仓海边。老师在遗书中讲述了年轻时背叛挚友K、导致其自杀的秘密——明治时代知识分子的孤独与罪感，在漱石笔下化作最压抑的精神解剖。`,
     isTrajectory: false,
-    realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewName: `东京镰仓`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `镰仓的海——我在那个夏天遇到了老师。他的影子在海浪声中显得格外孤独。`
   },
 
   {
@@ -5467,8 +5705,9 @@ const books: BookData[] = [
     quote: `埃尔福特——马丁·路德剃发出家的修道院所在，图林根的路德宗禁欲主义为资本主义精神提供了最深层的精神动力。`,
     desc: `韦伯出生于图林根大区的埃尔福特。这里是马丁·路德当年剃发出家的奥古斯丁修道院所在地。图林根浓厚的路德宗禁欲主义宗教氛围中，'天职'观念与世俗劳动的救赎意义在信徒心中深深扎根——韦伯正是在这片宗教土地上，解构了新教伦理与资本主义理性化进程之间隐秘的精神联系。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `埃尔福特奥古斯丁修道院`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kr%C3%A4merbr%C3%BCcke%2C_Erfurt_6.jpg/3840px-Kr%C3%A4merbr%C3%BCcke%2C_Erfurt_6.jpg`,
+    realViewQuote: `埃尔福特的奥古斯丁修道院——马丁·路德在此剃发出家，'天职'的观念在此生根。`
   },
 
   {
@@ -5488,8 +5727,9 @@ const books: BookData[] = [
     quote: `二万民工在马夫拉的石头上流干了血——而巴托洛梅乌神父的大鸟飞行器将飞向天空。`,
     desc: `18世纪葡萄牙宗教审判所时期——国王若昂五世为了还愿修建了宏大如城市的马夫拉修道院。数万民工在乱石堆上流下血汗。而在修道院的阴影下，神父巴托洛梅乌与独臂士兵巴尔塔萨尔正在秘密制造一架能飞的'大鸟'——这是对大地苦难的最高美学复仇。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `马夫拉宫`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mafra_May_2013-2.jpg/1280px-Mafra_May_2013-2.jpg`,
+    realViewQuote: `马夫拉——'国王的意志让巨石从山中升起，但爱比大理石更沉重。'`
   },
 
   {
@@ -5509,8 +5749,9 @@ const books: BookData[] = [
     quote: `曼德勒古城墙上旭日升起，年轻一代不再甘于臣服。`,
     desc: `以缅甸最后的封建古都曼德勒为背景，展现了20世纪初宗族传统与青年一代反殖民主义思想的碰撞。曼德勒皇宫的断壁残垣、伊洛瓦底江畔的晨钟暮鼓、以及那些在殖民统治下开始觉醒的青年——构成了一部古老王国走向现代的民族心灵史。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `曼德勒`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/f/f1/Mandalay_-_The_worship_of_Buddha.jpg`,
+    realViewQuote: `曼德勒——'伊洛瓦底江的日出——阳光首先染红了佛塔的塔尖。'`
   },
 
   {
@@ -5530,8 +5771,9 @@ const books: BookData[] = [
     quote: `他们在苦熬。`,
     desc: `南方哥特文学的巅峰。福克纳在其虚构的'约克纳帕塔法县'（原型为密西西比州牛津市）中，以康普生家三个儿子和一个黑仆的视角，用破碎的时间与意识流，书写了南方种植园贵族在内战后无可挽回的衰败、疯狂与血缘诅咒——密西西比的泥泞河岸、腐烂的栀子花、以及那个永远散发着忍冬气息的高尔夫球场。`,
     isTrajectory: false,
-    realViewName: `密西西比州牛津`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg`
+    realViewName: `密西西比州牛津福克纳故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg`,
+    realViewQuote: `密西西比的泥泞河岸上，腐烂的栀子花散发着忍冬的气息——他们在苦熬。`
   },
 
   {
@@ -5551,8 +5793,9 @@ const books: BookData[] = [
     quote: `穿过县界长长的隧道，便是雪国。夜空下一片白茫茫。`,
     desc: `川端康成获诺贝尔文学奖的代表作。东京文人岛村三次前往雪国温泉旅馆，与艺伎驹子之间展开了一段极致的日式恋情。穿过县界长长的隧道，便是雪国。夜空下一片白茫茫。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `新潟县越后汤泽`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Yuzawa_town_hall.JPG/3840px-Yuzawa_town_hall.JPG`,
+    realViewQuote: `穿过县界长长的隧道，便是雪国。夜空下一片白茫茫。`
   },
 
   {
@@ -5568,12 +5811,13 @@ const books: BookData[] = [
     author: `[日] 村上春树`,
     color: `#2E8B57`,
     coverUrl: `/covers/1031740.jpg`,
-    tags: [`1982年`, `日本文学`, `超现实主义`, `奇幻小说`, `2001年`, `豆瓣 8.2`],
+    tags: [`1982年`, `日本文学`, `超现实主义`, `奇幻小说`, `2001年`],
     quote: `寻找一只特别的羊，其实是在寻找自己。`,
     desc: `村上春树'鼠'三部曲的终章。主人公为寻找一只有星形斑纹的神秘羊而前往北海道，深入大雪覆盖的荒野与深山。小说中北海道的自然景观——札幌的雪夜、旭川的冷风、以及人迹罕至的山间牧场——营造出一种超现实的孤独氛围。北海道的广袤与寒冷成为主人公内心旅程的隐喻。`,
     isTrajectory: false,
-    realViewName: `北海道`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`
+    realViewName: `北海道札幌`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg/1280px-Map_of_Japan_with_highlight_on_02edit_Hokkaido_prefecture.svg.png`,
+    realViewQuote: `札幌的雪夜——我在那家爵士酒吧的角落里，第一次看到了那只羊的照片。`
   },
 
   {
@@ -5593,8 +5837,9 @@ const books: BookData[] = [
     quote: `誓言幻作烟云字，费尽千般心思。`,
     desc: `如万花筒般复刻了香港三十年代石塘嘴的绮丽风月，与八十年代现代资本都市中环、湾仔的冷漠与快节奏，展开了一场跨越半个世纪的港岛生死畸恋。`,
     isTrajectory: false,
-    realViewName: `香港中西区荷李活道石塘嘴`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png`
+    realViewName: `香港石塘嘴`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png`,
+    realViewQuote: `石塘嘴的夜，霓虹灯映在海水里，碎成千万片金鳞。`
   },
 
   {
@@ -5616,6 +5861,7 @@ const books: BookData[] = [
     isTrajectory: true,
     realViewName: `阿拉斯加州克朗代克`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Alaska.svg/1920px-Flag_of_Alaska.svg.png`,
+    realViewQuote: `阿拉斯加的雪原——狼群的呼唤从远方传来：那不是孤独，而是归乡。`,
     path: [
       {
         name: `加州圣克拉拉谷庄园`,
@@ -5656,7 +5902,8 @@ const books: BookData[] = [
     desc: `古典维也纳的深夜公寓。茨威格将小说空间锁死在维也纳市中心一间充满书香与白玫瑰的寓所内——一个濒死的女人在临终前给一位作家写下了一封长信，述说了她从他搬进隔壁那天起就暗恋了他整整一生的故事，而他甚至从未认出过她。茨威格极其细腻地解构了一段近乎病态而纯粹的单恋，充满了旧维也纳资产阶级的感伤。`,
     isTrajectory: false,
     realViewName: `维也纳`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/3840px-Schoenbrunn_philharmoniker_2012.jpg`,
+    realViewQuote: `维也纳——'你，从来没有认识过我的你'。`
   },
 
   {
@@ -5677,7 +5924,8 @@ const books: BookData[] = [
     desc: `达里奥·福的诺贝尔文学奖代表作。故事精准锁定在米兰警察局的审讯室窗口——以1969年米兰丰塔纳广场爆炸案及随后的无政府主义者'意外'坠楼真实事件为蓝本。一个'疯子'闯入警察局，用他荒诞不经的推理和模仿，将权力的谎言层层剥开。米兰的灰色天空下，黑色喜剧变成了一纸对体制暴力的控诉书。`,
     isTrajectory: false,
     realViewName: `米兰`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Milan_-_Scala_-_Facade.jpg/3840px-Milan_-_Scala_-_Facade.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Milan_-_Scala_-_Facade.jpg/3840px-Milan_-_Scala_-_Facade.jpg`,
+    realViewQuote: `米兰警察局的审讯室——窗外是灰色天空下的丰塔纳广场。`
   },
 
   {
@@ -5698,7 +5946,8 @@ const books: BookData[] = [
     desc: `女性主义文学宣言。伍尔夫在伦敦大英博物馆的圆形阅览室里翻阅历史——她想找出关于女性的记载，却发现千百年来浩如烟海的书籍中，女性始终是被描写而不是被倾听的对象。在伦敦这座帝国心脏的石头穹顶下，她提出了让女性拥有经济独立与精神自由的终极命题。`,
     isTrajectory: false,
     realViewName: `伦敦大英博物馆`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`,
+    realViewQuote: `我站在大英博物馆的穹顶下——千百年来浩如烟海的书籍中，女性始终是被描写而不是被倾听的对象。`
   },
 
   {
@@ -5708,7 +5957,7 @@ const books: BookData[] = [
     century: `20世纪`,
     lat: 51.5074,
     lng: -0.1278,
-    country: `英国`,
+    country: `英国与爱尔兰`,
     city: `伦敦`,
     title: `一九八四`,
     author: `乔治·奥威尔`,
@@ -5718,8 +5967,9 @@ const books: BookData[] = [
     quote: `战争即和平。自由即奴役。无知即力量。`,
     desc: `20世纪最重要的政治寓言。温斯顿·史密斯在真理部篡改历史，在电幕的监视下秘密恋爱，最终在101号房间被彻底摧毁。奥威尔预见了监控、篡改语言与思想控制的恐怖。`,
     isTrajectory: false,
-    realViewName: `伦敦`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/6/67/London_Skyline_%28125508655%29.jpeg`
+    realViewName: ``,
+    realViewUrl: ``,
+    realViewQuote: ``
   },
 
   {
@@ -5739,8 +5989,9 @@ const books: BookData[] = [
     quote: `你可以。`,
     desc: `斯坦贝克深情记录了其故乡加州沙利纳斯谷地两代人的家族史诗。汉密尔顿家和特拉斯克家在这片肥沃的谷地中交织着爱与背叛——金色丘陵上的小麦在夏风中翻滚，沙利纳斯河在雨季咆哮。斯坦贝克将《创世纪》中该隐与亚伯的古老叙事移植到了加州的阳光下，用'你可以'这一个词，回答了人类最古老的善恶之问。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `加州沙利纳斯谷`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/960px-Flag_of_California.svg.png`,
+    realViewQuote: `沙利纳斯谷——金色丘陵上的小麦在夏风中翻滚，就像该隐和亚伯的故事在这片土地上重演。`
   },
 
   {
@@ -5760,8 +6011,9 @@ const books: BookData[] = [
     quote: `在伊斯河畔密密麻麻的橡树林中——古老异教的神灵还栖息在每一个树梢上。`,
     desc: `1980年诺奖得主米沃什的出生地——立陶宛中部的伊斯河谷（虚构为Issa）。这部带有强烈自传色彩的小说中，充满了立陶宛古老的异教神话残余、密密麻麻的橡树林、波光粼粼的河水和外祖父的旧庄园。少年托马斯在伊斯河谷中度过了与自然融为一体的童年——而这片立陶宛土地成为了米沃什在一生流亡中对抗二十世纪极权主义和历史虚无时永远的心灵故乡。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `立陶宛伊斯河谷`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Vilnius_Modern_Skyline_At_Dusk%2C_Lithuania_-_Diliff.jpg/1280px-Vilnius_Modern_Skyline_At_Dusk%2C_Lithuania_-_Diliff.jpg`,
+    realViewQuote: `伊斯河谷——立陶宛的橡树林中，古老异教的神灵还栖息在每一个树梢上。`,
     path: [
       {
         name: `立陶宛伊斯河谷童年庄园`,
@@ -5803,6 +6055,7 @@ const books: BookData[] = [
     isTrajectory: true,
     realViewName: `都柏林`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/3840px-Dublin_-_aerial_-_2025-07-07_01.jpg`,
+    realViewQuote: `都柏林——庄严的、肥胖的巴克·穆利根从楼梯口走了上来，手里端着一碗肥皂水。`,
     path: [
       {
         name: `都柏林湾马尔泰洛塔`,
@@ -5848,8 +6101,9 @@ const books: BookData[] = [
     quote: `在这座孤零零的峡湾老房子里，海浪声从未停歇——他们害怕有人将至，而恐惧本身就是那个将至的人。`,
     desc: `峡湾废墟上的存在主义荒诞。一对男女为了躲避世俗搬到了挪威西海岸一座孤零零、破旧的峡湾老房子里——他们只想要彼此，只想在这世界的尽头安静地老去。但福瑟用极具挪威峡湾标志性的风声、海浪与无尽的碎石滩，伴随着极简、不断重复的台词，编织出人类骨子里最原初的焦虑——'有人将至'。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `挪威西部峡湾`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/960px-Flag_of_Norway.svg.png`,
+    realViewQuote: `挪威峡湾——在这座孤零零的老房子里，海浪声从未停歇——他们害怕有人将至。`
   },
 
   {
@@ -5870,7 +6124,8 @@ const books: BookData[] = [
     desc: `极具现场感地刻画了仰光在漫长热带雨季中，普通三轮车夫、小商贩在风雨飘摇中的生存挣扎。仰光街头被雨水浸泡的柏油路、大金塔下避雨的行人、以及那些在季风中勉力维生的底层市民——被貌达雅以湿漉漉的笔触一一捕捉。`,
     isTrajectory: false,
     realViewName: `仰光`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b9/ShwedagonPagoda.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b9/ShwedagonPagoda.jpg`,
+    realViewQuote: `仰光——'大金塔在雨雾中若隐若现，仿佛一座不属于人间的建筑。'`
   },
 
   {
@@ -5890,8 +6145,9 @@ const books: BookData[] = [
     quote: `轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩。`,
     desc: `中国现代诗歌最温柔的异国定格。康河的柔波中倒映着国王学院礼拜堂的尖顶，榆阴下的清泉流过三一学院的石桥，夕阳中的金柳低垂在剑河的水面上——徐志摩将剑桥化为了中国现代文学中最纯粹的诗意精神家园。`,
     isTrajectory: false,
-    realViewName: `剑桥`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cambridge_-_Kings_College_vue_des_backs.jpg/3840px-Cambridge_-_Kings_College_vue_des_backs.jpg`
+    realViewName: `剑桥大学国王学院`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cambridge_-_Kings_College_vue_des_backs.jpg/3840px-Cambridge_-_Kings_College_vue_des_backs.jpg`,
+    realViewQuote: `那河畔的金柳，是夕阳中的新娘；波光里的艳影，在我的心头荡漾。`
   },
 
   {
@@ -5907,12 +6163,13 @@ const books: BookData[] = [
     author: `[美] 杰克·凯鲁亚克`,
     color: `#228B22`,
     coverUrl: `/covers/34908351.jpg`,
-    tags: [`1957年`, `美国文学`, `垮掉的一代`, `公路文学`, `2020年`, `豆瓣 7.6`],
+    tags: [`1957年`, `美国文学`, `垮掉的一代`, `公路文学`, `2020年`],
     quote: `我还年轻，我渴望上路。`,
     desc: `垮掉的一代对北美地理的疯狂丈量。萨尔·帕拉迪斯与迪安·莫里亚蒂开着破旧的哈德逊汽车，在无尽的爵士乐、大麻与便携打字机的敲击声中，沿横跨美国的洲际公路疯狂飞驰——从纽约到芝加哥，翻越丹佛的落基山脉，冲向旧金山海湾的雾气，再折返新奥尔良的法国区，最终一路向南到达墨西哥城。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `纽约→丹佛→旧金山→墨西哥城`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/3840px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg`,
+    realViewQuote: `我还年轻，我渴望上路——丹佛的落基山脉在远方泛着紫色的光芒，爵士乐从敞开的车窗里流淌出来。`,
     path: [
       {
         name: `纽约`,
@@ -5958,8 +6215,9 @@ const books: BookData[] = [
     quote: `在德意志、斯拉夫与意大利文化剧烈交融的港口，一个男人在戒烟与恋爱中无尽地自我分析。`,
     desc: `空间精准定格在意大利东北边境港口的里雅斯特——这里是德意志、斯拉夫与意大利文化剧烈交融的十字路口。商人泽诺在心理医生的建议下开始写自传，却陷入了对戒烟、恋爱、商业决策等日常生活无穷无尽的精神分裂与心理独白。的里雅斯特的咖啡馆、亚得里亚海的海风、以及中欧帝国残留的文化气息渗透全书——成就了现代主义心理小说的开山之作。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `的里雅斯特`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Ayuntamiento%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_10.jpg/1280px-Ayuntamiento%2C_Trieste%2C_Italia%2C_2017-04-15%2C_DD_10.jpg`,
+    realViewQuote: `的里雅斯特——德意志、斯拉夫与意大利文化在这里剧烈交融，就像泽诺混乱的意识。`
   },
 
   {
@@ -5979,8 +6237,9 @@ const books: BookData[] = [
     quote: `进入永生，那门是窄的，路是小的。`,
     desc: `展现了巴黎与诺曼底之间那种清教徒式的克制与压抑。杰罗姆与阿莉莎在诺曼底的乡间别墅中相爱，却因为对神圣爱情的极致追求而彼此疏离——阿莉莎在阅读《圣经》的高脚桌前逐渐消瘦，巴黎的寄宿学校里回荡着对她离去的不解与哀思。`,
     isTrajectory: true,
-    realViewName: `巴黎`,
+    realViewName: `巴黎→诺曼底`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `诺曼底的乡间别墅——紫藤架下的两个灵魂，在神圣与爱欲之间挣扎。`,
     path: [
       {
         name: `巴黎寄宿学校`,
@@ -6016,12 +6275,13 @@ const books: BookData[] = [
     author: `保宁`,
     color: `#8B4513`,
     coverUrl: `/covers/30471280.jpg`,
-    tags: [`1991年`, `越南文学`, `战争文学`, `心理创伤`, `2019年`, `豆瓣 7.7`],
+    tags: [`1991年`, `越南文学`, `战争文学`, `心理创伤`, `2019年`],
     quote: `在河内的灰暗旧居与中部雨林的尖叫之魂之间，一个士兵的灵魂永远分裂了。`,
     desc: `被誉为越南的《西线无战事》。故事在战后河内的灰暗旧居与战争时期中部热带雨林之间反复闪回——广治省的战火废墟、中央高地的'尖叫之魂绿洲'、以及那些永远留在丛林中的年轻生命。保宁以诗意的文字写尽了越战对那代年轻人肉体与心灵的毁灭性创伤。`,
     isTrajectory: true,
     realViewName: `河内`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/8/8e/Hanoi_skyline_with_Ba_Vi_Mountain.jpg`,
+    realViewQuote: `河内——'战争结束了，但那片丛林依然在他每一次闭眼时重新生长。'`,
     path: [
       {
         name: `河内普通街道`,
@@ -6061,8 +6321,9 @@ const books: BookData[] = [
     quote: `上海的弄堂是性感的，有一股肌肤之亲似的。`,
     desc: `从'上海小姐'王琦瑶的一生，细腻复刻了上海这座城市半个世纪的弄堂流言、繁华落尽与闺阁哀歌。`,
     isTrajectory: false,
-    realViewName: `上海市徐汇区弄堂`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`
+    realViewName: `上海徐汇区弄堂`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`,
+    realViewQuote: `上海的弄堂是性感的，有一股肌肤之亲似的。它有着触手的凉和暖，是可感可知的。`
   },
 
   {
@@ -6082,8 +6343,9 @@ const books: BookData[] = [
     quote: `傍晚是一天当中最美好的时光。`,
     desc: `英格兰庄园阶层的落日余晖。老管家史蒂文斯在二战后开着达林顿勋爵的旧车穿越英格兰西南部乡村——窗外是温柔、克制且层峦叠翠的英格兰田园，心中是对错误效忠了一生的贵族主人的无尽怅惘。康沃尔海滨码头的黄昏中，他终于与肯顿小姐重逢，在长日将尽的灯光里承认了压抑一生的情感。`,
     isTrajectory: true,
-    realViewName: `牛津郡达林顿府`,
+    realViewName: `牛津郡布莱尼姆宫`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg`,
+    realViewQuote: `傍晚是一天当中最美好的时光——英国乡村的绿色山丘在暮色中一层层地暗淡下去。`,
     path: [
       {
         name: `牛津郡达林顿府`,
@@ -6123,8 +6385,9 @@ const books: BookData[] = [
     quote: `在夏尔宁静的绿草地上，霍比特人过着与世无争的生活——直到一枚戒指改变了中土世界的命运。`,
     desc: `托尔金作为牛津大学默顿学院的教授，其笔下宁静、绿草如茵的'夏尔'——霍比特人居住的袋底洞、绿龙酒馆与连绵起伏的丘陵——其纯中世纪盎格鲁-撒克逊乡村的地理原型，深深扎根于英格兰中部的牛津郡与西米德兰兹乡村田园。牛津的古老石墙与英国乡村的质朴气息，为整个中土世界的创世神话提供了最初的土壤。`,
     isTrajectory: false,
-    realViewName: `牛津郡`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg`
+    realViewName: `牛津（托尔金创作地）`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/3840px-Museum_of_Oxford_%285652685943%29.jpg`,
+    realViewQuote: `在一个地洞里住着一个霍比特人。不是那种肮脏潮湿、充满虫子的地洞——而是霍比特人的洞，意味着舒适。`
   },
 
   {
@@ -6144,8 +6407,9 @@ const books: BookData[] = [
     quote: `在流逝的时间里，每个人都是过客。`,
     desc: `精准定位在旧北京中轴线上的钟鼓楼周边，用一天的密密麻麻叙事写尽了20世纪80年代老北京居民的平民浮生相。`,
     isTrajectory: false,
-    realViewName: `北京市东城区地安门外大街`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`
+    realViewName: `北京钟鼓楼`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`,
+    realViewQuote: `鼓楼在前，红墙黄瓦。钟楼在后，灰墙绿瓦。鼓楼胖，钟楼瘦。`
   },
 
   {
@@ -6165,13 +6429,14 @@ const books: BookData[] = [
     quote: `她未必知道她的悲哀经大家咀嚼赏鉴了许多天，早已成为渣滓，只值得烦厌和唾弃。`,
     desc: `收录于《彷徨》，精准定位在绍兴鲁镇鲁四老爷家的年终祭祀现场，祥林嫂在漫天大雪中走向毁灭，是浙东旧礼教最具地域重力的一幕。`,
     isTrajectory: false,
-    realViewName: `浙江省绍兴市鲁镇`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg`
+    realViewName: `绍兴鲁镇`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg/3840px-Shaoxing_Bazi_Qiao_2017.12.09_16-16-06.jpg`,
+    realViewQuote: `旧历的年底毕竟最像年底，村镇上不必说，就在天空中也显出将到新年的气象来。`
   },
 
   {
     rank: 245,
-    id: `book-66`,
+    id: `book-65`,
     sliderVal: 6,
     century: `20世纪`,
     lat: 48.8566,
@@ -6180,14 +6445,15 @@ const books: BookData[] = [
     city: `巴黎`,
     title: `追忆似水年华`,
     author: `[法] 马塞尔·普鲁斯特`,
-    color: `#DAA520`,
+    color: `#8B008B`,
     coverUrl: `/covers/3272411.jpg`,
-    tags: [`1913年`, `法国文学`, `意识流`, `现代主义`, `2008年`, `豆瓣 9.2`],
+    tags: [`1913年`, `法国文学`, `意识流`, `现代主义`, `2008年`],
     quote: `当岁月流逝，所有的东西都消失殆尽时，唯有空中飘荡的气味还恋恋不散。`,
     desc: `普鲁斯特用意识流编织了巴黎上流社会的社交生活——盖尔芒特家的沙龙、斯万家的晚宴、以及那些在圣日耳曼区贵族府邸中度过的无尽夜晚。马德莱娜小蛋糕浸入椴花茶的一瞬，整个逝去的巴黎从他的记忆中复活。`,
     isTrajectory: true,
-    realViewName: `巴黎`,
+    realViewName: `巴黎香榭丽舍大街→诺曼底巴尔贝克海滨`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/3840px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg`,
+    realViewQuote: `当岁月流逝，所有的东西都消失殆尽时，唯有空中飘荡的气味还恋恋不散。`,
     path: [
       {
         name: `巴黎香榭丽舍大街（童年）`,
@@ -6227,8 +6493,9 @@ const books: BookData[] = [
     quote: `天亮之前，有一个时候是非常暗的。`,
     desc: `虽然主战场在上海交易所，但故事的资本源头与核心前奏深深扎根在嘉兴乌镇的丝茧作坊和封建大宅中。`,
     isTrajectory: false,
-    realViewName: `乌镇`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/1_wuzhen_aerial_2023.jpg/3840px-1_wuzhen_aerial_2023.jpg`
+    realViewName: `桐乡乌镇茅盾故居`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/1_wuzhen_aerial_2023.jpg/3840px-1_wuzhen_aerial_2023.jpg`,
+    realViewQuote: `这水乡的傍晚，樟树和桂花的香气在湿润的空气里飘散。`
   },
 
   {
@@ -6244,12 +6511,13 @@ const books: BookData[] = [
     author: `尹嘉玄`,
     color: `#8B008B`,
     coverUrl: `/covers/34434309.jpg`,
-    tags: [`2016年`, `韩国文学`, `女性主义`, `社会小说`, `2019年`, `豆瓣 8.1`],
+    tags: [`2016年`, `韩国文学`, `女性主义`, `社会小说`, `2019年`],
     quote: `金智英感觉自己仿佛站在迷宫的中央，一直以来都脚踏实地找寻出口。`,
     desc: `现象级女性主义小说，引发全韩乃至全球共鸣。故事完全发生在首尔普通住宅区、写字楼与育儿场所——从汝矣岛的办公室隔间到江南区的补习班，从出租屋的产假到家庭聚会上婆婆的眼神。金智英的一生被嵌入首尔这座现代都市的每一个普通场景中，成为东亚女性共同命运的隐喻。`,
     isTrajectory: false,
-    realViewName: `首尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`
+    realViewName: `首尔汝矣岛`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `汝矣岛——金智英感觉自己仿佛站在迷宫的中央，一直以来都脚踏实地找寻出口。`
   },
 
   {
@@ -6265,12 +6533,13 @@ const books: BookData[] = [
     author: `金爱烂`,
     color: `#4682B4`,
     coverUrl: `/covers/11609998.jpg`,
-    tags: [`2005年`, `韩国文学`, `短篇小说集`, `港口文学`, `2012年`, `豆瓣 8.3`],
+    tags: [`2005年`, `韩国文学`, `短篇小说集`, `港口文学`, `2012年`],
     quote: `爸爸，快跑——跑到海的那一边去。`,
     desc: `金爱烂的处女作小说集，带有强烈仁川特有的海风潮湿感。中国城、码头、月尾岛的游乐园——小说中缺席的父亲形象与坚强的母女之间的故事，在仁川这座港口城市的咸湿海风中展开。仁川作为韩国通往世界的门户，也成为离散与漂泊的隐喻之地。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `仁川`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Incheon_Cityscape.jpg/1280px-Incheon_Cityscape.jpg`,
+    realViewQuote: `仁川——中国城与码头之间，海风带着咸味吹过月尾岛的游乐园。`
   },
 
   {
@@ -6290,8 +6559,9 @@ const books: BookData[] = [
     quote: `城市被折叠成三个空间，人们在各自的时空里互不相见。`,
     desc: `荣获雨果奖。将现代北京的空间进行魔幻的三层折叠，写尽了当代特大都市技术异化背后的阶级与生存现实。`,
     isTrajectory: false,
-    realViewName: `北京市朝阳区`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/3840px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg`
+    realViewName: ``,
+    realViewUrl: ``,
+    realViewQuote: ``
   },
 
   {
@@ -6311,8 +6581,9 @@ const books: BookData[] = [
     quote: `战后在杜塞尔多夫当石匠学徒、在酒馆吹小号——这段荒诞的底层生活催生了《铁皮鼓》。`,
     desc: `君特·格拉斯的自传体散文。战后他在北莱茵大区的杜塞尔多夫当石匠学徒、在酒馆吹小号、在艺术学院的食堂里打工——这段在莱茵工业区的荒诞、粗粝的底层生活，如同剥洋葱般一层层揭开了他创作《铁皮鼓》的精神母体。莱茵河畔的工厂烟囱与爵士酒吧的烟雾，共同构成了战后德国文学最独特的发酵罐。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `杜塞尔多夫→但泽`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/c4/Rheinkniebr%C3%BCcke_at_night.jpg`,
+    realViewQuote: `杜塞尔多夫的酒馆——石匠学徒在莱茵河畔的工厂烟囱下吹响了小号。`,
     path: [
       {
         name: `但泽自由市（童年）`,
@@ -6354,6 +6625,7 @@ const books: BookData[] = [
     isTrajectory: true,
     realViewName: `韦克斯福德郡恩尼斯科西`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Promenade_des_Anglais_Nice_IMG_1255.jpg/3840px-Promenade_des_Anglais_Nice_IMG_1255.jpg`,
+    realViewQuote: `恩尼斯科西——镇上的每一个人都认识她、监视她、评判她。`,
     path: [
       {
         name: `恩尼斯科西小镇`,
@@ -6393,8 +6665,9 @@ const books: BookData[] = [
     quote: `凯末尔用了数年时间收集了芙颂触碰过的4213个烟头——每一枚烟头上都残留着她的唇印。`,
     desc: `伊斯坦布尔资产阶级的物恋挽歌。凯末尔在几十年里搜集了情人芙颂留下的每一个物件——耳环、发卡，以及4213个烟头。他在伊斯坦布尔的楚库尔朱马街区真实建立了一座'纯真博物馆'来收藏这些记忆的碎片。帕慕克写尽了这座城市的'hüzün'——那是一种集体的、空气般弥漫在伊斯坦布尔所有街道上的忧愁。`,
     isTrajectory: false,
-    realViewName: `伊斯坦布尔贝伊奥卢区`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg`
+    realViewName: `伊斯坦布尔纯真博物馆`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg`,
+    realViewQuote: `伊斯坦布尔——'那是我一生中最幸福的时刻，而我却不知道。'`
   },
 
   {
@@ -6410,12 +6683,13 @@ const books: BookData[] = [
     author: `李永平`,
     color: `#2F4F4F`,
     coverUrl: `/covers/10430611.jpg`,
-    tags: [`2008年`, `马华文学`, `史诗小说`, `雨林叙事`, `2012年`, `豆瓣 7.9`],
+    tags: [`2008年`, `马华文学`, `史诗小说`, `雨林叙事`, `2012年`],
     quote: `沿卡普阿斯河逆流而上，穿越猎头族村落、殖民地废墟，走向婆罗洲最核心的崇山峻岭。`,
     desc: `李永平的史诗巨著。故事跟随少年一行人，沿着卡普阿斯河乘船逆流而上，穿过沿岸的猎头族村落、殖民地废墟、无名沼泽，最终走向婆罗洲最核心、最神秘的崇山峻岭——这是一场对南洋地理与母体文化的壮丽溯源。大河上的晨雾、河岸两旁密不透风的雨林、以及那些隐藏在丛林深处的古老秘密——构成了一部南洋文学中最宏大的地理诗篇。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `古晋`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/9/96/Kuching_Skyline.jpg`,
+    realViewQuote: `古晋——'大河没有尽头，就像离散者的乡愁。'`,
     path: [
       {
         name: `古晋港`,
@@ -6456,7 +6730,8 @@ const books: BookData[] = [
     desc: `1979年革命前夜的德黑兰。少男少女在夏夜的民房屋顶上逃离家族的监视——交换禁忌的爱、偷听来自伦敦的波斯语革命电台。而高墙之下，萨瓦克秘密警察的轿车在狭窄的巷子里无声滑过——青春与铁幕在这座城市的屋顶上交织成了波斯文学中最动人的现代篇章。`,
     isTrajectory: false,
     realViewName: `德黑兰`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/ae/North_of_Tehran_Skyline_view.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/ae/North_of_Tehran_Skyline_view.jpg`,
+    realViewQuote: `德黑兰——'在屋顶上，少年们偷偷分享着禁果和梦想。'`
   },
 
   {
@@ -6472,12 +6747,13 @@ const books: BookData[] = [
     author: `徐丽红`,
     color: `#483D8B`,
     coverUrl: `/covers/36489654.jpg`,
-    tags: [`2018年`, `韩国文学`, `短篇小说集`, `青春文学`, `2023年`, `豆瓣 8.2`],
+    tags: [`2018年`, `韩国文学`, `短篇小说集`, `青春文学`, `2023年`],
     quote: `东海的风，吹过江陵和束草，带走所有不该留的。`,
     desc: `收录多篇发生于江原道东海岸（如江陵、束草）的小说集。文字如江原道的风般温柔、冰冷而干净——束草港的日出、正东津的铁轨、以及那些在海边相遇又别离的年轻人，共同构成了一部关于青春与离别的海岸纪事。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `江原道江陵束草`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Town_at_the_Foot_of_the_Mountain.jpg/1280px-Town_at_the_Foot_of_the_Mountain.jpg`,
+    realViewQuote: `江陵——东海的风，从正东津的铁轨上吹过。`
   },
 
   {
@@ -6497,8 +6773,9 @@ const books: BookData[] = [
     quote: `我这一生见过的河流太多太多了。它们有的狭长，有的宽阔；有的弯曲，有的平直。`,
     desc: `以鄂温克族最后一位酋长女人的自述，空间死死钉在大兴安岭深处的驯鹿树林与桦树皮长屋里，书写了狩猎民族跨越百年的沧桑与自然信仰。`,
     isTrajectory: false,
-    realViewName: `大兴安岭`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gegengol_in_Greater_Khingan_forest2017.jpg/3840px-Gegengol_in_Greater_Khingan_forest2017.jpg`
+    realViewName: `大兴安岭额尔古纳河畔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Gegengol_in_Greater_Khingan_forest2017.jpg/3840px-Gegengol_in_Greater_Khingan_forest2017.jpg`,
+    realViewQuote: `我是雨和雪的老熟人了，我有九十岁了。雨雪看老了我，我也把它们给看老了。`
   },
 
   {
@@ -6518,8 +6795,9 @@ const books: BookData[] = [
     quote: `在南岛西海岸大雨连绵的淘金小镇，十二个男人在一间旅馆里——他们的命运已被星空中十二宫写下。`,
     desc: `布克奖史上最年轻获奖作品。1860年代新西兰南岛西海岸——大雨无休无止地倾泻在泥泞的霍基蒂卡镇。鸦片烟馆的烟雾、英国流犯的阴谋、毛利玉石工匠的沉默——卡顿用宏大的十二星座结构嵌套了黄金谋杀案，充满了南岛西海岸粗粝蛮荒的近代风骨。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `南岛西海岸霍基蒂卡`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/9/92/Hokitika_Township.jpg`,
+    realViewQuote: `霍基蒂卡——'西海岸的淘金镇——暴雨锤打着铁皮屋顶，但每个淘金者心里都有一块闪闪发光的黄金。'`
   },
 
   {
@@ -6539,8 +6817,9 @@ const books: BookData[] = [
     quote: `上帝不响，像一切全由我定。`,
     desc: `用改良上海方言，双线交织地书写了上海阿宝等几代普通市民在20世纪60年代至90年代的声色犬马。`,
     isTrajectory: false,
-    realViewName: `上海市黄浦区老弄堂`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`
+    realViewName: `上海黄浦区老弄堂`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg`,
+    realViewQuote: `独上阁楼，最好是夜里。阿宝十岁，邻居蓓蒂六岁。两个人从假三层爬上屋顶，瓦片温热，眼里是半个卢湾区。`
   },
 
   {
@@ -6560,8 +6839,9 @@ const books: BookData[] = [
     quote: `每一本书都有一个灵魂——遗忘书墓是所有被遗忘的书的最后避难所。`,
     desc: `魔幻与哥特交织的都市奇迹。故事完全发生在二战后的巴塞罗那——从迷雾笼罩的兰布拉大道、哥特区迷宫般的中世纪小巷，到隐藏在拱门下那座神秘的'遗忘书墓'。少年达涅尔在这里发现了一本改变他命运的书《风之影》，从此踏上了追寻被遗忘作家胡利安·卡拉斯的危险旅程。萨丰用极其华丽、潮湿的笔触写活了巴塞罗那的浪漫与阴暗。`,
     isTrajectory: false,
-    realViewName: `巴塞罗那老城区`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg/3840px-Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg`
+    realViewName: `巴塞罗那哥特区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg/3840px-Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg`,
+    realViewQuote: `遗忘书墓——那是一座由被遗忘的书筑成的迷宫，在巴塞罗那哥特区的心脏地带，等待着被记起。`
   },
 
   {
@@ -6581,8 +6861,9 @@ const books: BookData[] = [
     quote: `霍格沃茨将永远在那里，欢迎你回家。`,
     desc: `J.K.罗琳在爱丁堡的'大象咖啡馆'里写下了哈利·波特的第一章——窗外是爱丁堡城堡的灰色剪影。而霍格沃茨魔法学校那怪石嶙峋、黑湖环绕、迷雾锁山的险峻地貌，其地理之魂完全属于苏格兰高地。魔法世界的特快列车横跨高地的高架桥，城堡坐落在格伦科峡谷般的荒野中——苏格兰的迷雾与群山成为了整个魔法世界的灵魂地理。`,
     isTrajectory: true,
-    realViewName: `爱丁堡`,
+    realViewName: `伦敦国王十字车站9¾站台→爱丁堡大象咖啡馆`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Skyline_of_Edinburgh.jpg/3840px-Skyline_of_Edinburgh.jpg`,
+    realViewQuote: `他推着手推车冲向第九和第十站台之间的墙壁——一眨眼，他已经站在了9¾站台上。`,
     path: [
       {
         name: `伦敦国王十字车站9¾站台`,
@@ -6618,12 +6899,13 @@ const books: BookData[] = [
     author: `[日] 伊坂幸太郎`,
     color: `#4169E1`,
     coverUrl: `/covers/5038409.jpg`,
-    tags: [`2007年`, `日本文学`, `推理小说`, `逃亡剧`, `2010年`, `豆瓣 9.0`],
+    tags: [`2007年`, `日本文学`, `推理小说`, `逃亡剧`, `2010年`],
     quote: `活下去，就是最大的反抗。`,
     desc: `伊坂幸太郎的杰作，整个仙台市化为主人公青柳雅春的逃亡舞台。一个平凡的快递员在仙台被诬陷为暗杀首相的凶手，在整座城市的追捕下开始了绝望而温暖的逃亡。小说中仙台的地标一一登场——仙台站的地下通道、勾当台公园的喷泉、定禅寺通的林荫道、以及仙台市民的烟火气，共同构成了一部关于信任与勇气的动人传奇。`,
     isTrajectory: false,
     realViewName: `仙台`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/1d/SendaiCity_Skylines_from_Mukaiyama2018.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/1/1d/SendaiCity_Skylines_from_Mukaiyama2018.jpg`,
+    realViewQuote: `仙台——定禅寺通的林荫道上，青柳雅春正在逃亡，而整座城市都是他的朋友。`
   },
 
   {
@@ -6643,8 +6925,9 @@ const books: BookData[] = [
     quote: `在威尔士漆黑的地下煤矿里，少年矿工比利度过了他的十三岁生日。`,
     desc: `二十世纪世纪三部曲的起点。故事发源于威尔士寒冷、潮湿的煤矿小镇——矿工少年比利在漆黑的矿井深处迎来了他的十三岁生日。威尔士底层矿工在大地深处挥汗如雨，而伦敦的贵族沙龙中政治联姻正在进行——这条从矿井到宫殿的阶级鸿沟，成为了掀动一战前夕整个欧洲地缘政治巨轮的底层火种。`,
     isTrajectory: true,
-    realViewName: ``,
-    realViewUrl: ``,
+    realViewName: `威尔士阿伯洛温矿区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Wales.svg/960px-Flag_of_Wales.svg.png`,
+    realViewQuote: `威尔士的矿井——大地深处的敲击声，是比利对这个世界的第一个印象。`,
     path: [
       {
         name: `威尔士阿伯洛温煤矿`,
@@ -6678,8 +6961,9 @@ const books: BookData[] = [
     quote: `在拉合尔的一间茶馆里，一个巴基斯坦青年向一个沉默的美国人讲述了他的一生——以及是什么让他从普林斯顿回到了这里。`,
     desc: `后911时代南亚知识分子的灵魂独白。成吉思——一个在普林斯顿以全A毕业的巴基斯坦精英——在纽约经历911后一夜之间从天之骄子沦为被怀疑的'恐怖分子'。他回到拉合尔，在莫卧儿古城喧嚣的茶馆里重新审视这条从东方到西方再回到东方的路。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `巴基斯坦拉合尔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/4f/Lahore_Fort_view_from_Baradari.jpg`,
+    realViewQuote: `拉合尔——'在古老的茶馆里，陌生人讲述着一个关于美国梦与身份的故事。'`
   },
 
   {
@@ -6699,8 +6983,9 @@ const books: BookData[] = [
     quote: `盲女银霞的视线穿透了怡保的华埠老街、锡矿废墟，用最世俗的烟火气写活了大马华人的当代生活史。`,
     desc: `近年来马华文学的至高杰作。故事完全以霹雳州怡保为舞台，围绕盲女银霞的视线，极其温情、细腻地穿透了怡保的华埠老街、锡矿废墟、印度人社区——旧街场的白咖啡香、'大树脚'平民楼宇里的日常寒暄、以及那些在多元族群交错中默默生活的普通人——黎紫书以最朴素的笔触，写活了一个时代。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `怡保`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ipoh_skyline_24-2.jpg/3840px-Ipoh_skyline_24-2.jpg`,
+    realViewQuote: `怡保——'锡矿的旧挖斗还立在城镇边缘，而新一代的孩子已经不再知道它的故事。'`
   },
 
   {
@@ -6716,12 +7001,13 @@ const books: BookData[] = [
     author: `[韩]崔恩荣`,
     color: `#A0522D`,
     coverUrl: `/covers/36457094.jpg`,
-    tags: [`2021年`, `韩国文学`, `女性文学`, `历史小说`, `2023年`, `豆瓣 9.0`],
+    tags: [`2021年`, `韩国文学`, `女性文学`, `历史小说`, `2023年`],
     quote: `在酷寒的夜晚，四代女性彼此点亮的光从未熄灭。`,
     desc: `女主角在首尔遭遇婚姻危机后，隐居到江原道酷寒、寂静的小城'熙岭'（虚构，原型为江原道山城），通过外祖母的信件揭开四代女性跨越百年的命运。江原道的冬雪与山风成为叙事的背景音——暴雪围困的木屋、炉火边翻阅泛黄信件的夜晚、以及窗外太白山脉永恒沉默的轮廓。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `江原道`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Town_at_the_Foot_of_the_Mountain.jpg/1280px-Town_at_the_Foot_of_the_Mountain.jpg`,
+    realViewQuote: `江原道——暴雪围困的木屋里，四代女性的信在炉火边被一页页翻开。`
   },
 
   {
@@ -6737,12 +7023,13 @@ const books: BookData[] = [
     author: `金爱烂`,
     color: `#B22222`,
     coverUrl: `/covers/26953294.jpg`,
-    tags: [`2012年`, `韩国文学`, `短篇小说集`, `都市文学`, `2017年`, `豆瓣 8.7`],
+    tags: [`2012年`, `韩国文学`, `短篇小说集`, `都市文学`, `2017年`],
     quote: `夏天过去了，我们却什么都没能成为。`,
     desc: `金爱烂代表散文式小说集，写尽了在首尔这个巨大都市里挣扎的备考族、打工人的夏日辛酸与都市冷漠。半地下室出租屋里潮湿的夏天、便利店里疲惫的夜班、补习班外焦虑的等待——这些首尔边缘青年的生存图景，被金爱烂以精准而温柔的笔触一一捕捉。`,
     isTrajectory: false,
     realViewName: `首尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `首尔——夏天过去了，我们却什么都没能成为。半地下室的出租屋里，吊扇缓慢地切割着潮湿的空气。`
   },
 
   {
@@ -6758,12 +7045,13 @@ const books: BookData[] = [
     author: `[韩] 申京淑`,
     color: `#DAA520`,
     coverUrl: `/covers/35374447.jpg`,
-    tags: [`2008年`, `韩国文学`, `亲情小说`, `曼氏亚洲文学奖`, `2021年`, `豆瓣 8.4`],
+    tags: [`2008年`, `韩国文学`, `亲情小说`, `曼氏亚洲文学奖`, `2021年`],
     quote: `妈妈失踪了。我们这才发现，我们从未真正了解过她。`,
     desc: `患有失智症的母亲从传统的全罗道老家坐车前往首尔探望子女，却在极度繁华、现代且冷漠的'首尔站'地下铁错开闸门而走失。全作随寻人启事在首尔各个冷冰冰的公寓间展开——江南区的高层公寓、弘大的出租屋、以及那些母亲从未被邀请进入的子女们的现代生活空间——引出城乡断裂下子女对母爱的沉痛反思。`,
     isTrajectory: true,
-    realViewName: `首尔`,
+    realViewName: `首尔站`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `首尔站地下铁——妈妈在这个她付出了一生的城市里消失了。`,
     path: [
       {
         name: `全罗道乡下故居`,
@@ -6805,12 +7093,13 @@ const books: BookData[] = [
     author: `[韩] 孔枝泳`,
     color: `#6A5ACD`,
     coverUrl: `/covers/34970373.jpg`,
-    tags: [`2009年`, `韩国文学`, `现实主义`, `社会批判`, `2020年`, `豆瓣 9.3`],
+    tags: [`2009年`, `韩国文学`, `现实主义`, `社会批判`, `2020年`],
     quote: `我们一路奋战，不是为了改变世界，而是为了不让世界改变我们。`,
     desc: `以光州一所听障学校的真实案件为原型，虚构了浓雾弥漫的'雾津市'。从首尔调来的美术教师发现学校中隐藏的骇人真相——对听障学生的系统性性侵与虐待。小说直接推动了韩国《熔炉法》的立法修改，成为文学改变现实的典范。光州的浓雾在小说中不仅是环境描写，更是权力与黑暗遮蔽真相的象征。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `光州`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/4/45/Gwangju_montage.png`,
+    realViewQuote: `光州——浓雾笼罩着这座城市，我们一路奋战，不是为了改变世界，而是为了不让世界改变我们。`
   },
 
   {
@@ -6831,7 +7120,8 @@ const books: BookData[] = [
     desc: `1990年代波黑战争中，萨拉热窝被塞族军队从四面山上的大炮围困了1425天。在面包房废墟前的广场上——迫击炮弹刚刚炸死了22个排队买面包的平民。第二天，一位大提琴手穿上礼服，在同一个弹坑旁架起琴凳，开始演奏阿尔比诺尼的G小调柔板。他连续演奏了22天——每一天都冒着狙击手的子弹。`,
     isTrajectory: false,
     realViewName: `萨拉热窝`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/e/e3/Sarajevo_City_Panorama.JPG`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/e/e3/Sarajevo_City_Panorama.JPG`,
+    realViewQuote: `萨拉热窝——炮火暂停了，一个男人坐在废墟中拉起了大提琴。`
   },
 
   {
@@ -6847,12 +7137,13 @@ const books: BookData[] = [
     author: `[韩] 韩江`,
     color: `#4B0082`,
     coverUrl: `/covers/35534519.jpg`,
-    tags: [`2007年`, `韩国文学`, `布克国际文学奖`, `心理小说`, `2021年`, `豆瓣 8.1`],
+    tags: [`2007年`, `韩国文学`, `布克国际文学奖`, `心理小说`, `2021年`],
     quote: `她只是不想再做人了。`,
     desc: `韩江荣获布克国际文学奖的代表作。描写女主角英惠在首尔都市现代文明的逼仄下突然拒绝吃肉，逐渐走向植物化的过程。小说以首尔中产公寓为舞台——整洁的客厅、压抑的卧室、以及那些被社会规范严格编码的日常生活空间——英惠的素食选择如同在首尔这座高度秩序化的现代都市中投下的一枚炸弹，撕裂了夫妻、家庭与社会之间脆弱的平衡。`,
     isTrajectory: false,
     realViewName: `首尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `首尔——她只是不想再做人了。在那些被社会规范严格编码的公寓里，英惠选择了变成一株植物。`
   },
 
   {
@@ -6872,8 +7163,9 @@ const books: BookData[] = [
     quote: `在安大略省那些被枫树林环绕的普通小镇上——一个女人在厨房里决定了一件改变她一生的事。`,
     desc: `2013年诺奖得主'短篇小说女王'的灵魂圣地。门罗将空间死死锁定在安大略省休伦湖畔外表平静的乡村小镇——漫长的冬季、厨房窗外的积雪、以及那些永远无法被邻居窥见的秘密出走。门罗用极其精密的文字穿透了加拿大中产女性在日常琐碎中经历的命运惊雷。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `安大略省休伦湖畔`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Ontario.svg/3840px-Flag_of_Ontario.svg.png`,
+    realViewQuote: `安大略省休伦湖畔——卡拉站在湖边，望着那艘驶向多伦多的渡轮。`
   },
 
   {
@@ -6889,12 +7181,13 @@ const books: BookData[] = [
     author: `[意] 埃莱娜·费兰特`,
     color: `#8B008B`,
     coverUrl: `/covers/26878124.jpg`,
-    tags: [`2011年`, `意大利文学`, `女性友谊`, `成长小说`, `2017年`, `豆瓣 8.8`],
+    tags: [`2011年`, `意大利文学`, `女性友谊`, `成长小说`, `2017年`],
     quote: `在那不勒斯充满灰尘的走廊和维苏威火山阴影下的贫民窟，两个女孩通过知识逃离，又最终被其引力拉回。`,
     desc: `费兰特的那不勒斯四部曲堪称当代意大利文学的现象级作品。故事的根深深扎在旧那不勒斯的底层社区——充满灰尘的走廊、泼辣的方言骂架、维苏威火山阴影下的贫民窟。埃莱娜与莉拉两个女孩在这座粗粝、暴烈又充满生命力的南方重镇中成长，通过知识逃离阶级泥潭，却一次次被那不勒斯的引力拉回她们试图逃离的宿命。`,
     isTrajectory: true,
     realViewName: `那不勒斯`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg/3840px-Napoli_-_Maschio_Angioino_-_202209302342_3.jpg`,
+    realViewQuote: `那不勒斯的贫民窟——充满灰尘的走廊、泼辣的方言骂架、维苏威火山的阴影永远笼罩着这里。`,
     path: [
       {
         name: `那不勒斯底层城区`,
@@ -6941,7 +7234,8 @@ const books: BookData[] = [
     desc: `赵廷来描写外来务工人员在首尔底层各行各业为了生存而拼搏的坚韧群像。小说以汉江奇迹背后的阶级阵痛为背景——建筑工地的农民工、工厂流水线上的年轻女工、以及那些在首尔站附近等待日结零工的面孔，共同构成了一部被正史忽略的底层生存史诗。`,
     isTrajectory: false,
     realViewName: `首尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `首尔站——日结零工的队伍在黎明前排成了沉默的队列。`
   },
 
   {
@@ -6957,12 +7251,13 @@ const books: BookData[] = [
     author: `东野圭吾`,
     color: `#4B0082`,
     coverUrl: `/covers/1874961.jpg`,
-    tags: [`2005年`, `日本文学`, `推理小说`, `本格推理`, `2006年`, `豆瓣 8.8`],
+    tags: [`2005年`, `日本文学`, `推理小说`, `本格推理`, `2006年`],
     quote: `逻辑的尽头，不是理性与秩序的理想国，而是我用生命奉献的爱情。`,
     desc: `东野圭吾的巅峰之作，史无前例地同时获得直木奖与本格推理大奖。住在东京的数学天才石神哲哉，为保护暗恋的邻居花岗靖子，设下了一个近乎完美的逻辑陷阱。故事完全在东京展开——江户川区的公寓、帝都大学的研究室、隅田川畔的漫步，所有这些日常场景都成为精密推理的棋盘。`,
     isTrajectory: false,
-    realViewName: `东京`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`
+    realViewName: `东京江户川区`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg`,
+    realViewQuote: `江户川区的公寓——石神哲哉在隔壁传来的一声早安中，找到了活下去的理由。`
   },
 
   {
@@ -6983,7 +7278,8 @@ const books: BookData[] = [
     desc: `描写一对那不勒斯夫妇长达数十年的婚姻拉锯战。充满了意大利南方家庭特有的情感粘稠与沉重——孩子们目睹父母的背叛与和解、公寓中累积了数十年的怨恨与习惯、以及那些从未被真正说出口的话。斯塔尔诺内以近乎残酷的诚实，解剖了那不勒斯式家庭的无声崩溃。`,
     isTrajectory: false,
     realViewName: `那不勒斯`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg/3840px-Napoli_-_Maschio_Angioino_-_202209302342_3.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg/3840px-Napoli_-_Maschio_Angioino_-_202209302342_3.jpg`,
+    realViewQuote: `那不勒斯——一双鞋带，系住了长达数十年的婚姻拉锯战。`
   },
 
   {
@@ -7003,8 +7299,9 @@ const books: BookData[] = [
     quote: `太阳未出时，全世界都像一个梦，唯有月亮是真实的；太阳出来后，全世界都真实了，唯有月亮像一个梦。`,
     desc: `极其清澈、充满灵性的文字，跟随哈萨克族牧民深入北疆无人区的冬牧场，记录了逐水草而居、转场赶场的游牧生命史诗。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `新疆阿勒泰牧道`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/a/a2/%E6%96%B0%E7%96%86%E9%98%BF%E5%8B%92%E6%B3%B0%E5%B8%82._-_panoramio.jpg`,
+    realViewQuote: `太阳未出时，全世界都像一个梦，唯有月亮是真实的；太阳出来后，全世界都真实了，唯有月亮像一个梦。`
   },
 
   {
@@ -7020,17 +7317,18 @@ const books: BookData[] = [
     author: `张贵兴`,
     color: `#B22222`,
     coverUrl: `/covers/35197299.jpg`,
-    tags: [`2018年`, `马华文学`, `战争文学`, `魔幻现实主义`, `2021年`, `豆瓣 8.3`],
+    tags: [`2018年`, `马华文学`, `战争文学`, `魔幻现实主义`, `2021年`],
     quote: `大叶婆罗双树林中，鳄鱼、蟒蛇与人类一同在日据的血腥中厮杀。`,
     desc: `张贵兴用极度浓烈、暴烈、多汁的文字，描写二战时期华裔抗日游击队与日本占领军在鳄鱼、蟒蛇出没的原始雨林里的残酷杀戮。故事牢牢扎根于婆罗洲砂拉越的大叶婆罗双树林和拉让江流域——野猪群在月光下渡河的奇观、达雅克人猎头的古老传统、以及日军扫荡中燃烧的长屋——地域色彩极其魔幻且震撼。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `砂拉越拉让江流域`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flag_of_Sarawak.svg/1280px-Flag_of_Sarawak.svg.png`,
+    realViewQuote: `砂拉越拉让江流域——'雨林的每一片叶子都闪烁着绿色的光泽，但河水深处游弋着野猪的影子。'`
   },
 
   {
     rank: 278,
-    id: `book-58`,
+    id: `book-57`,
     sliderVal: 7,
     century: `21世纪`,
     lat: 35.18,
@@ -7039,14 +7337,15 @@ const books: BookData[] = [
     city: `河南省新乡市延津县乡村`,
     title: `一句顶一万句`,
     author: `刘震云`,
-    color: `#228B22`,
+    color: `#4169E1`,
     coverUrl: `/covers/wr-3300024943.jpg`,
     tags: [`2009年`, `茅盾文学奖`, `中原方言`, `孤独奥德赛`, `豫北平原`],
     quote: `一个人的孤独不是孤独，一个人找另一个人，一句话找另一句话，才是真正的孤独。`,
     desc: `前半部写延津，后半部写出延津。刘震云用极其绕弯、却刀刀见血的中原方言白描，描写了豫北平原普通百姓为了寻找一个说得着的人而流转异乡、孤独一生的当代奥德赛。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `河南延津县`,
+    realViewUrl: ``,
+    realViewQuote: `延津这地方，天高皇帝远，人们活着就靠两样东西：面和话。`
   },
 
   {
@@ -7067,7 +7366,8 @@ const books: BookData[] = [
     desc: `以1969年马来西亚五一三种族冲突事件为背景，书写吉隆坡在那段黑暗岁月中的恐惧余震。华人社区紧闭的门窗、街道上巡逻的军车、以及那些在族群冲突中努力保持人性的普通人——构成了一部关于集体创伤与历史反思的沉重叙事。`,
     isTrajectory: false,
     realViewName: `吉隆坡`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bukit_Bintang_junction_in_2024_2.jpg/3840px-Bukit_Bintang_junction_in_2024_2.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bukit_Bintang_junction_in_2024_2.jpg/3840px-Bukit_Bintang_junction_in_2024_2.jpg`,
+    realViewQuote: `吉隆坡——'双子塔的影子下，无数像蚂蚁一样的人在城市的地下通道里穿行。'`
   },
 
   {
@@ -7083,12 +7383,13 @@ const books: BookData[] = [
     author: `[马来西亚] 黄锦树`,
     color: `#8B008B`,
     coverUrl: `/covers/27192538.jpg`,
-    tags: [`2016年`, `马华文学`, `魔幻现实主义`, `胶林叙事`, `2018年`, `豆瓣 8.2`],
+    tags: [`2016年`, `马华文学`, `魔幻现实主义`, `胶林叙事`, `2018年`],
     quote: `没完没了的季候风暴雨中，胶林深处的华人家庭与老虎、游击队和南洋巫术共存。`,
     desc: `黄锦树构造的'南洋胶林'文学迷宫，地理背景多为柔佛州偏远乡村的橡胶林。在没完没了的季候风暴雨中，华裔家庭在胶树缝隙里与老虎、土匪、共产党游击队以及南洋巫术的魅影共存——胶林中的割胶声、暴雨敲打锌板屋顶的轰鸣、以及那些隐藏在雨林深处的家族秘密——文字充满了潮湿与黏稠感。`,
     isTrajectory: false,
-    realViewName: ``,
-    realViewUrl: ``
+    realViewName: `柔佛州`,
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Johor.svg/1280px-Flag_of_Johor.svg.png`,
+    realViewQuote: `柔佛——'雨季来了，橡胶园的泥土散发着腐烂与重生的混合气味。'`
   },
 
   {
@@ -7108,8 +7409,9 @@ const books: BookData[] = [
     quote: `康奈尔和玛丽安——从斯莱戈高中到都柏林三一学院，阶级的天平在他们之间反复翻转。`,
     desc: `新世纪爱尔兰青年的情感坐标。在西部小镇斯莱戈的高中里，康奈尔是穷人家的万人迷，玛丽安是富人家的孤独者。到了都柏林三一学院，一切颠倒了——他成了奖学金生的局外人，她进入了名流派对的核心。从斯莱戈的海滩到都柏林的学生公寓，萨莉·鲁尼精准捕捉了当代爱尔兰在阶级、性与亲密关系中最细微的疼痛。`,
     isTrajectory: true,
-    realViewName: `斯莱戈→都柏林`,
+    realViewName: `斯莱戈→都柏林三一学院`,
     realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/3840px-Dublin_-_aerial_-_2025-07-07_01.jpg`,
+    realViewQuote: `斯莱戈的海滩上空，云层低低地压着——他告诉她他爱她，她假装没有听见。`,
     path: [
       {
         name: `斯莱戈高中`,
@@ -7145,12 +7447,13 @@ const books: BookData[] = [
     author: `[韩] 韩江`,
     color: `#8B4513`,
     coverUrl: `/covers/25816288.jpg`,
-    tags: [`2000年`, `韩国文学`, `魔幻现实主义`, `短篇小说`, `2014年`, `豆瓣 7.8`],
+    tags: [`2000年`, `韩国文学`, `魔幻现实主义`, `短篇小说`, `2014年`],
     quote: `妻子的身体慢慢变成植物，丈夫在阳台为她浇水。`,
     desc: `韩江早期代表作，以首尔冬日小镇为背景的魔幻现实叙事。在首尔都市边缘的钢筋水泥公寓里，一个普通妻子的身体逐渐发生变化——她的皮肤变成树皮，四肢化为藤蔓。丈夫每天在阳台上为这株'植物妻子'浇水，孤独的都市婚姻在一方阳台的微观自然中得到了最奇异的隐喻。`,
     isTrajectory: false,
     realViewName: `首尔`,
-    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`
+    realViewUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/3840px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg`,
+    realViewQuote: `首尔——妻子的身体慢慢变成植物，丈夫每天在阳台为她浇水。`
   }
 
 ];

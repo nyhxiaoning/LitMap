@@ -22,6 +22,8 @@ const initialUIState: UIState = {
   galleryBooks: null,
   lightboxImage: null,
   flyToRegion: null,
+  areaBooks: null,
+  areaLabel: null,
 };
 
 // ---- Combined reducer (single dispatch, split state) ----
@@ -49,6 +51,8 @@ function reduceUI(state: UIState, action: AppAction): UIState {
         selectedBookId: action.payload,
         isRightDrawerOpen: action.payload !== null,
         galleryBooks: null,
+        areaBooks: null,
+        areaLabel: null,
       };
     case "TOGGLE_LEFT_PANEL":
       return { ...state, isLeftPanelOpen: !state.isLeftPanelOpen };
@@ -63,6 +67,12 @@ function reduceUI(state: UIState, action: AppAction): UIState {
     case "SET_REGION_FILTER":
       // Also update flyToRegion when region filter is set
       return { ...state, flyToRegion: action.payload?.country || null };
+    case "SET_AREA_BOOKS":
+      return {
+        ...state,
+        areaBooks: action.payload?.books ?? null,
+        areaLabel: action.payload?.label ?? null,
+      };
     default:
       return state;
   }

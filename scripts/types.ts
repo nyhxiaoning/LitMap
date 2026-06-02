@@ -20,6 +20,7 @@ export interface RegionBook {
   isTrajectory?: boolean;
   realViewName?: string;
   realViewUrl?: string;
+  realViewQuote?: string;
   path?: PathNode[];
 }
 
@@ -78,5 +79,6 @@ export interface OutputBook {
   isTrajectory?: boolean;
   realViewName: string;
   realViewUrl: string;
+  realViewQuote: string;
   path?: PathNode[];
 }

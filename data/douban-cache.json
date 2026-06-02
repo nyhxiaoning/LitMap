@@ -4311,17 +4311,6 @@
     "coverLocalPath": "/covers/wr-29490796.jpg",
     "fetchedAt": "2026-05-31T05:53:10.614Z"
   },
-  "wr-3300094497": {
-    "doubanId": "wr-3300094497",
-    "title": "白蛇传",
-    "author": "民间传说",
-    "publisher": "",
-    "pubYear": "",
-    "rating": "",
-    "summary": "",
-    "coverLocalPath": "/covers/wr-3300094497.jpg",
-    "fetchedAt": "2026-05-31T05:53:11.352Z"
-  },
   "wr-3300138650": {
     "doubanId": "wr-3300138650",
     "title": "林家铺子",
@@ -4695,5 +4684,16 @@
     "summary": "",
     "coverLocalPath": "/covers/wr-43618706.jpg",
     "fetchedAt": "2026-05-31T05:59:29.117Z"
+  },
+  "35904798": {
+    "doubanId": "35904798",
+    "title": "蛇结",
+    "author": "弗朗索瓦·莫里亚克",
+    "publisher": "江苏凤凰文艺出版社",
+    "pubYear": "1932",
+    "rating": "8.8",
+    "summary": "莫里亚克里程碑式作品。68岁的老律师路易在临终前写给妻子的长信中，剖开心中由怨恨、贪婪与隐秘的爱交织成的蛇结。四十年婚姻中的沉默与嫉妒，最终化为对爱的迟来醒悟。",
+    "coverLocalPath": "/covers/35904798.jpg",
+    "fetchedAt": "2026-05-31T15:29:00.000Z"
   }
 }

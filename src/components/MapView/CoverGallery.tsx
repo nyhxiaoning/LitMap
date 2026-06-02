@@ -97,7 +97,7 @@ export default function CoverGallery({ books }: CoverGalleryProps) {
               aria-label={`${book.title} — ${book.author}`}
             >
               <div className={styles.coverWrapper}>
-                <img src={book.coverUrl} alt={book.title} loading="lazy" />
+                <img src={book.coverUrl} alt={book.title} loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
               </div>
               <span className={styles.bookTitle}>{book.title}</span>
               <span className={styles.bookAuthor}>{book.author}</span>

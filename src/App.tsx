@@ -21,7 +21,11 @@ function App() {
 
       <TopBar />
 
-      <LeftPanel books={books} />
+      <LeftPanel
+        books={books}
+        areaBooks={state.areaBooks}
+        areaLabel={state.areaLabel}
+      />
 
       <RightDrawer book={selectedBook} />
 

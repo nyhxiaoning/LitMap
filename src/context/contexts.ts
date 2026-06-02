@@ -18,6 +18,8 @@ export interface UIState {
   galleryBooks: import("../types").BookData[] | null;
   lightboxImage: { url: string; name: string } | null;
   flyToRegion: string | null;
+  areaBooks: import("../types").BookData[] | null;
+  areaLabel: string | null;
 }
 
 export interface FilterContextValue {

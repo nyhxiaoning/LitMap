@@ -16,11 +16,21 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { RegionFile, PathNode, DoubanCache, OutputBook } from "./types.js";
+import { LITERARY_LANDMARKS, CITY_WIKI } from "./realview-maps.js";
+
+// Pre-sort entries by key length (longest first) for substring matching specificity
+const CITY_WIKI_ENTRIES = Object.entries(CITY_WIKI).sort(
+  (a, b) => b[0].length - a[0].length
+);
+const LITERARY_LANDMARKS_ENTRIES = Object.entries(LITERARY_LANDMARKS).sort(
+  (a, b) => b[0].length - a[0].length
+);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const REGIONS_DIR = path.join(ROOT, "data", "regions");
 const CACHE_PATH = path.join(ROOT, "data", "douban-cache.json");
+const REALVIEW_CACHE_PATH = path.join(ROOT, "data", "realview-cache.json");
 const OUTPUT_PATH = path.join(ROOT, "src", "data", "books.ts");
 
 // ---------------------------------------------------------------------------
@@ -115,10 +125,143 @@ function loadCache(): DoubanCache {
   }
 }
 
+// ---- RealView cache (Wikipedia images for pilgrimage locations) ----
+
+interface RealViewCache {
+  [key: string]: { url: string; name: string };
+}
+
+function loadRealViewCache(): RealViewCache {
+  try {
+    const raw = fs.readFileSync(REALVIEW_CACHE_PATH, "utf-8");
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * Look up a cached Wikipedia image URL for a book's pilgrimage location.
+ * Uses the same multi-strategy approach as fetch-realviews.ts:
+ *   1. Match realViewName against known literary landmarks → cache lookup
+ *   2. Match city against known city map → cache lookup
+ *   3. Direct lookup of realViewName in cache
+ *   4. Direct lookup of city in cache
+ *   5. Substring matching of realViewName parts against cache keys
+ */
+/** Look up a cache key, trying both underscore and space variants */
+function cacheGet(cache: RealViewCache, key: string): string | null {
+  if (cache[key]) return cache[key].url;
+  // Try space→underscore and underscore→space
+  const alt = key.includes("_") ? key.replace(/_/g, " ") : key.replace(/ /g, "_");
+  if (cache[alt]) return cache[alt].url;
+  return null;
+}
+
+function lookupRealViewUrl(
+  realViewName: string,
+  city: string,
+  cache: RealViewCache
+): string {
+  if (!realViewName) return "";
+
+  const cleanStr = (s: string) =>
+    s.replace(/[（(][^)）]*[)）]/g, "").replace(/\/.*$/, "").trim();
+
+  const rvClean = cleanStr(realViewName);
+  const cleanCity = cleanStr(city);
+  const cityPart = cleanCity.split(/[→→\s]/)[0].trim();
+  const rvFirst = rvClean.split(/[→→\s]/)[0].trim();
+
+  // Strategy 1: Known literary landmarks (longest key first)
+  if (LITERARY_LANDMARKS[rvClean]) {
+    const url = cacheGet(cache, LITERARY_LANDMARKS[rvClean]);
+    if (url) return url;
+  }
+
+  // Substring match of realViewName against landmark keys (longest first)
+  for (const [chineseName, wikiTitle] of LITERARY_LANDMARKS_ENTRIES) {
+    if (realViewName.includes(chineseName)) {
+      const url = cacheGet(cache, wikiTitle);
+      if (url) return url;
+    }
+  }
+
+  // Strategy 2: Known city map (longest key first for substring matching)
+  for (const c of [cleanCity, cityPart]) {
+    const url = cacheGet(cache, CITY_WIKI[c] || "");
+    if (url) return url;
+    // Substring match - try longer keys first
+    for (const [chCity, enWiki] of CITY_WIKI_ENTRIES) {
+      if (c.includes(chCity) && chCity.length >= 3) {
+        const url2 = cacheGet(cache, enWiki);
+        if (url2) return url2;
+      }
+    }
+  }
+
+  // Strategy 3: Direct cache lookup by realViewName and variants
+  const directKeys = [
+    rvClean,
+    rvFirst,
+    realViewName,
+    `${rvClean} ${cleanCity}`,
+    `${rvFirst} ${cleanCity}`,
+  ].filter((k) => k.length > 1);
+
+  for (const key of directKeys) {
+    const url = cacheGet(cache, key);
+    if (url) return url;
+  }
+
+  // Strategy 4: Direct cache lookup by city name
+  for (const c of [cleanCity, cityPart]) {
+    if (c) {
+      const url = cacheGet(cache, c);
+      if (url) return url;
+    }
+  }
+
+  // Strategy 5: Substring match — check if any cache key includes realViewName or city parts
+  const searchFragments = [
+    rvClean, rvFirst, cleanCity, cityPart,
+    ...realViewName.split(/[→→\-\—、，,\s]+/).filter((p) => p.length > 2),
+    ...cleanCity.split(/[→→\-\—、，,\s]+/).filter((p) => p.length > 2),
+  ].filter((f) => f.length >= 2);
+
+  for (const [cacheKey, entry] of Object.entries(cache)) {
+    if (cacheKey.length < 3) continue;
+
+    // Check CITY_WIKI reverse mapping
+    for (const [chineseCity, enWiki] of Object.entries(CITY_WIKI)) {
+      if (
+        (realViewName.includes(chineseCity) || cleanCity.includes(chineseCity)) &&
+        enWiki === cacheKey
+      ) {
+        return entry.url;
+      }
+    }
+
+    // Check if any search fragment matches the cache key (bidirectional)
+    for (const frag of searchFragments) {
+      if (
+        cacheKey.includes(frag) ||
+        frag.includes(cacheKey)
+      ) {
+        return entry.url;
+      }
+    }
+  }
+
+  return "";
+}
+
 function validateAndBuild(
   regions: { region: RegionFile; filePath: string }[],
-  cache: DoubanCache
+  cache: DoubanCache,
+  realViewCache: RealViewCache
 ): OutputBook[] {
+  let realViewHits = 0;
   const books: OutputBook[] = [];
   const seenTitles = new Map<string, string>(); // title -> filePath
   let colorIndex = 0;
@@ -220,7 +363,6 @@ function validateAndBuild(
 
         // Add derived tags from cache
         if (cached.pubYear) tags.push(`${cached.pubYear}年`);
-        if (cached.rating) tags.push(`豆瓣 ${cached.rating}`);
       }
 
       // Deduplicate tags
@@ -248,9 +390,15 @@ function validateAndBuild(
         desc,
         isTrajectory: book.isTrajectory || false,
         realViewName: book.realViewName || "",
-        realViewUrl: book.realViewUrl || "",
+        realViewUrl: book.realViewUrl || lookupRealViewUrl(book.realViewName || "", book.city || "", realViewCache),
+        realViewQuote: book.realViewQuote || "",
         path: book.path,
       };
+
+      // Track cache hits
+      if (!book.realViewUrl && outputBook.realViewUrl) {
+        realViewHits++;
+      }
 
       books.push(outputBook);
       colorIndex++;
@@ -267,6 +415,8 @@ function validateAndBuild(
   books.forEach((book, i) => {
     book.rank = i + 1;
   });
+
+  console.log(`\n📷 RealView URLs resolved from cache: ${realViewHits}`);
 
   return books;
 }
@@ -323,6 +473,7 @@ function formatBook(book: OutputBook): string {
   lines.push(`    isTrajectory: ${book.isTrajectory || false},`);
   lines.push(`    realViewName: \`${escapeString(book.realViewName)}\`,`);
   lines.push(`    realViewUrl: \`${escapeString(book.realViewUrl)}\`,`);
+  lines.push(`    realViewQuote: \`${escapeString(book.realViewQuote || "")}\`,`);
 
   // Path
   if (book.path && book.path.length > 0) {
@@ -382,7 +533,11 @@ function main(): void {
   const cacheCount = Object.keys(cache).length;
   console.log(`💾 Douban cache: ${cacheCount} entries`);
 
-  const books = validateAndBuild(regions, cache);
+  const realViewCache = loadRealViewCache();
+  const rvCacheCount = Object.keys(realViewCache).length;
+  console.log(`📷 RealView cache: ${rvCacheCount} entries`);
+
+  const books = validateAndBuild(regions, cache, realViewCache);
   console.log(`\n📚 Total books: ${books.length}`);
 
   // Summary by century

@@ -113,12 +113,13 @@ export default function RightDrawer({ book }: RightDrawerProps) {
               )}
 
               {/* Real view pilgrimage card */}
-              {book.realViewUrl && (
+              {book.realViewName && (
                 <div className={styles.section}>
                   <h3>圣地巡礼</h3>
                   <RealViewCard
-                    url={book.realViewUrl}
+                    url={book.realViewUrl || undefined}
                     name={book.realViewName || book.city}
+                    quote={book.realViewQuote || undefined}
                   />
                 </div>
               )}
