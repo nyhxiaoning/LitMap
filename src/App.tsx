@@ -1,6 +1,8 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useUIContext } from "./context/hooks";
 import books from "./data/books";
+import type { BookData } from "./types";
+import { configureBooksApi, fetchBooks } from "./api/booksApi";
 import MapView from "./components/MapView/MapView";
 import TopBar from "./components/TopBar/TopBar";
 import LeftPanel from "./components/LeftPanel/LeftPanel";
@@ -15,7 +17,30 @@ import styles from "./App.module.css";
 
 function App() {
   const { state } = useUIContext();
-  const allBooks = useMemo(() => [...books, ...state.customBooks], [state.customBooks]);
+  const [remoteBooks, setRemoteBooks] = useState<BookData[] | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    fetchBooks().then((result) => {
+      if (active) setRemoteBooks(result);
+    });
+    return () => { active = false; configureBooksApi(false); };
+  }, []);
+
+  const allBooks = useMemo(() => {
+    const localCustomById = new Map(state.customBooks.map((book) => [book.id, book]));
+    const sourceBooks = remoteBooks ?? books;
+    const merged = sourceBooks.map((book) => localCustomById.get(book.id) ?? book);
+    const knownIds = new Set(merged.map((book) => book.id));
+    for (const customBook of state.customBooks) {
+      if (!knownIds.has(customBook.id)) merged.push(customBook);
+    }
+    return merged.map((book) => ({
+      ...book,
+      ...(state.bookOverrides[book.id] || {}),
+      ...(state.bookUrlOverrides[book.id] ? { url: state.bookUrlOverrides[book.id] } : {}),
+    }));
+  }, [remoteBooks, state.customBooks, state.bookOverrides, state.bookUrlOverrides]);
   const selectedBook = state.selectedBookId
     ? allBooks.find((b) => b.id === state.selectedBookId) ?? null
     : null;

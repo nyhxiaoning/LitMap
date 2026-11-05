@@ -9,6 +9,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build-data": "tsx scripts/build-data.ts",
+    "db:seed": "tsx scripts/export-d1-seed.ts",
+    "db:migrate:local": "npx wrangler d1 migrations apply booksql --local",
+    "db:migrate:remote": "npx wrangler d1 migrations apply booksql --remote",
+    "cf:dev": "npm run build && npx wrangler dev",
+    "cf:deploy": "npm run build && npx wrangler deploy",
+    "typecheck:worker": "tsc -p tsconfig.worker.json",
     "enrich": "tsx scripts/fetch-douban-book.ts",
     "cover": "tsx scripts/fetch-cover.ts",
     "batch-covers": "tsx scripts/batch-fetch-covers.ts",
@@ -35,6 +41,7 @@
     "tsx": "^4.22.3",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "wrangler": "^4.157.0"
   }
 }

@@ -5,6 +5,7 @@ import RealViewCard from "./RealViewCard";
 import styles from "./RightDrawer.module.css";
 import BookCover from "../BookCover/BookCover";
 import { getContinent } from "../../utils/regionUtils";
+import { updateBook } from "../../api/booksApi";
 
 interface RightDrawerProps { book: BookData | null; }
 
@@ -22,15 +23,20 @@ export default function RightDrawer({ book }: RightDrawerProps) {
   const updateText = (key: keyof BookData, value: string) => {
     if (!book) return;
     dispatch({ type: "UPDATE_BOOK_OVERRIDE", payload: { bookId: book.id, patch: { [key]: value } } });
+    updateBook(book.id, { [key]: value }).catch((error) => window.alert(error instanceof Error ? error.message : "内容保存失败，请稍后重试"));
   };
   const updateTags = (value: string) => {
     if (!book) return;
-    dispatch({ type: "UPDATE_BOOK_OVERRIDE", payload: { bookId: book.id, patch: { tags: value.split(/[，,]/).map((tag) => tag.trim()).filter(Boolean) } } });
+    const tags = value.split(/[，,]/).map((tag) => tag.trim()).filter(Boolean);
+    dispatch({ type: "UPDATE_BOOK_OVERRIDE", payload: { bookId: book.id, patch: { tags } } });
+    updateBook(book.id, { tags }).catch((error) => window.alert(error instanceof Error ? error.message : "标签保存失败，请稍后重试"));
   };
   const updateUrl = (value: string) => {
     if (!book) return;
     const trimmed = value.trim();
-    dispatch({ type: "SET_BOOK_URL", payload: { bookId: book.id, url: trimmed && !/^https?:\/\//i.test(trimmed) ? `https://${trimmed}` : trimmed } });
+    const url = trimmed && !/^https?:\/\//i.test(trimmed) ? `https://${trimmed}` : trimmed;
+    dispatch({ type: "SET_BOOK_URL", payload: { bookId: book.id, url } });
+    updateBook(book.id, { url: url || undefined }).catch((error) => window.alert(error instanceof Error ? error.message : "链接保存失败，请稍后重试"));
   };
 
   return (

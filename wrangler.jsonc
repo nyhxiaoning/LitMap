@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "litmap",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-05",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "booksql",
+      "database_id": "51fd88ae-cd5e-4df2-9ec4-63fbd9a5a8c4",
+      "migrations_dir": "worker/migrations"
+    }
+  ]
+}

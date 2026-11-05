@@ -4,6 +4,7 @@ import { useUIContext } from "../../context/hooks";
 import BookCover from "../BookCover/BookCover";
 import styles from "./ReadingListManager.module.css";
 import { getContinent } from "../../utils/regionUtils";
+import { createBook, deleteBook, updateBook } from "../../api/booksApi";
 
 interface ReadingListManagerProps { books: BookData[]; }
 interface NewBookForm { title: string; author: string; category: string; country: string; tags: string; year: string; url: string; }
@@ -39,7 +40,7 @@ export default function ReadingListManager({ books }: ReadingListManagerProps) {
     [books],
   );
 
-  const handleAddBook = (event: FormEvent<HTMLFormElement>) => {
+  const handleAddBook = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const title = form.title.trim();
     const author = form.author.trim();
@@ -71,8 +72,16 @@ export default function ReadingListManager({ books }: ReadingListManagerProps) {
       url: form.url.trim() || undefined,
     };
 
-    dispatch({ type: editingCustomId ? "UPDATE_CUSTOM_BOOK" : "ADD_CUSTOM_BOOK", payload: customBook });
-    dispatch({ type: "SET_BOOK_URL", payload: { bookId: customBook.id, url: form.url.trim() } });
+    try {
+      const savedBook = editingCustomId
+        ? await updateBook(customBook.id, customBook)
+        : await createBook(customBook);
+      dispatch({ type: editingCustomId ? "UPDATE_CUSTOM_BOOK" : "ADD_CUSTOM_BOOK", payload: savedBook });
+      dispatch({ type: "SET_BOOK_URL", payload: { bookId: savedBook.id, url: savedBook.url || "" } });
+    } catch (error) {
+      window.alert(error instanceof Error ? error.message : "图书保存失败，请稍后重试");
+      return;
+    }
     setForm(emptyForm);
     setIsAdding(false);
     setEditingCustomId(null);
@@ -94,12 +103,15 @@ export default function ReadingListManager({ books }: ReadingListManagerProps) {
     setIsAdding(true);
   };
 
-  const saveBookUrl = (bookId: string) => {
+  const saveBookUrl = async (bookId: string) => {
     const value = urlDraft.trim();
-    if (value && !/^https?:\/\//i.test(value)) {
-      dispatch({ type: "SET_BOOK_URL", payload: { bookId, url: `https://${value}` } });
-    } else {
-      dispatch({ type: "SET_BOOK_URL", payload: { bookId, url: value } });
+    const url = value && !/^https?:\/\//i.test(value) ? `https://${value}` : value;
+    try {
+      await updateBook(bookId, { url: url || undefined });
+      dispatch({ type: "SET_BOOK_URL", payload: { bookId, url } });
+    } catch (error) {
+      window.alert(error instanceof Error ? error.message : "链接保存失败，请稍后重试");
+      return;
     }
     setUrlEditorBookId(null);
   };
@@ -181,7 +193,9 @@ export default function ReadingListManager({ books }: ReadingListManagerProps) {
                   )}
                   {isCustom && (
                     <button type="button" className={styles.deleteBtn} onClick={() => {
-                      if (window.confirm(`确定删除《${book.title}》吗？`)) dispatch({ type: "REMOVE_CUSTOM_BOOK", payload: book.id });
+                      if (window.confirm(`确定删除《${book.title}》吗？`)) {
+                        deleteBook(book.id).then(() => dispatch({ type: "REMOVE_CUSTOM_BOOK", payload: book.id })).catch((error) => window.alert(error instanceof Error ? error.message : "图书删除失败，请稍后重试"));
+                      }
                     }}>删除</button>
                   )}
                 </div>

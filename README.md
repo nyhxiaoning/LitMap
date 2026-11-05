@@ -98,6 +98,37 @@ npm run build
 npm run preview
 ```
 
+## Cloudflare Workers + D1
+
+完整的首次接入、部署和排错流程见 [Cloudflare D1 + Workers 部署手册](docs/cloudflare-d1-workers-deployment.md)。
+
+项目已包含 Cloudflare Worker API 和 D1 migration。前端部署到 Worker 后，会优先从 `/api/books` 读取 D1 数据；本地 `npm run dev` 没有 Worker API 时会自动回退到 `src/data/books.ts`。
+
+首次接入当前 D1 数据库：
+
+```bash
+# 生成当前 362 本图书的 D1 导入 SQL
+npm run db:seed
+
+# 应用表结构到远程 D1
+npm run db:migrate:remote
+
+# 将初始书目导入远程 D1
+npx wrangler d1 execute booksql --remote --file=db/seed.sql
+
+# 本地启动 Worker + Vite 构建产物
+npm run cf:dev
+
+# 部署 Worker 和 dist 静态资源
+npm run cf:deploy
+```
+
+部署后的公开读接口无需登录。新增、编辑、删除图书需要管理员密钥：在终端执行 `npx wrangler secret put ADMIN_TOKEN`，按提示输入一段仅管理员知道的随机密钥。管理页面首次保存时输入同一密钥；浏览器只在本次会话中保存它。未配置该密钥时，写接口返回 401。
+
+`wrangler.jsonc` 已配置 D1 binding `DB` 和静态资源 binding `ASSETS`，目标数据库名称为 `booksql`；`database_id` 已填入当前数据库 ID。
+
+管理后台的新增、编辑、删除和图书链接修改会写入 D1。当前项目没有登录系统，“我的书单”仍按浏览器保存；如果后续需要跨设备书单，再增加用户认证和用户表即可。
+
 ---
 ## ⚠️ 注意
 由于地图引擎的缘故，建议打开🪜使用
