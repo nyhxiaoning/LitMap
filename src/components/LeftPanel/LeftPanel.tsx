@@ -4,9 +4,11 @@ import { useAppContext } from "../../context/hooks";
 import { matchesTimeFilter } from "../../utils/filterUtils";
 import literaryGuide from "../../data/literaryGuide";
 import type { LiteraryContinent } from "../../data/literaryGuide";
-import { baseCity, REGION_COUNTRIES, REGION_NAMES } from "../../utils/regionUtils";
+import { literaryContinentNotes, literaryRegionInsights } from "../../data/literaryGuide";
+import { baseCity, getContinent, REGION_COUNTRIES, REGION_NAMES } from "../../utils/regionUtils";
 import { filterBySearch } from "../../utils/filterUtils";
 import styles from "./LeftPanel.module.css";
+import BookCover from "../BookCover/BookCover";
 
 // ---- Book filtering ----
 function filterByRegion(books: BookData[], rf: RegionFilter): BookData[] {
@@ -78,21 +80,39 @@ function SearchMode({ books }: { books: BookData[] }) {
 // ---- Book card ----
 const BookCard = memo(function BookCard({ book }: { book: BookData }) {
   const { state, dispatch } = useAppContext();
+  const isSaved = state.readingListBookIds.includes(book.id);
   return (
     <div className={`${styles.card} ${state.selectedBookId === book.id ? styles.active : ""}`}
       onClick={() => dispatch({ type: "SELECT_BOOK", payload: book.id })}>
       <div className={styles.rank}>#{book.rank}</div>
       <div className={styles.cardCover}>
-        <img src={book.coverUrl} alt={book.title} loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+        <BookCover book={book} />
       </div>
       <div className={styles.cardInfo}>
         <h4>{book.title}</h4>
         <span className={styles.author}>{book.author}</span>
+        <div className={styles.regionMeta}>
+          <button type="button" onClick={(event) => { event.stopPropagation(); dispatch({ type: "SET_REGION_FILTER", payload: { country: getContinent(book.country) } }); }}>{getContinent(book.country)}</button>
+          <span>·</span>
+          <button type="button" onClick={(event) => { event.stopPropagation(); dispatch({ type: "SET_REGION_FILTER", payload: { country: book.country } }); }}>{book.country}</button>
+        </div>
         <div className={styles.tags}>
           {book.tags.slice(0, 2).map(tag => <span key={tag} className={styles.tag}>{tag}</span>)}
           {book.isTrajectory && <span className={styles.trajTag}>↗ 流浪</span>}
         </div>
       </div>
+      <button
+        type="button"
+        className={`${styles.saveBtn} ${isSaved ? styles.saveBtnActive : ""}`}
+        onClick={(event) => {
+          event.stopPropagation();
+          dispatch({ type: "TOGGLE_READING_LIST_BOOK", payload: book.id });
+        }}
+        aria-label={`${isSaved ? "移出" : "加入"}我的书单：${book.title}`}
+        aria-pressed={isSaved}
+      >
+        {isSaved ? "♥" : "♡"}
+      </button>
     </div>
   );
 });
@@ -108,14 +128,15 @@ function BrowseMode({ books }: { books: BookData[] }) {
     return result;
   }, [books, state.timeFilter, rf]);
 
-  const level = rf.district ? "flat" : rf.cityBase ? "district" : rf.provinceKey ? "city" : REGION_NAMES.has(rf.country) ? "country" : "province";
+  // A direct country selection should stop at country level. Do not expose
+  // province/state grid groups in the literary navigation panel.
+  const level = rf.district ? "flat" : rf.cityBase ? "district" : rf.provinceKey ? "city" : REGION_NAMES.has(rf.country) ? "country" : "flat";
 
   const groups = useMemo(() => {
     const g = new Map<string, BookData[]>();
     for (const b of filtered) {
       let k: string;
       if (level === "country") k = b.country;
-      else if (level === "province") k = `${b.lat.toFixed(0)},${b.lng.toFixed(0)}`;
       else if (level === "city") k = baseCity(b.city);
       else if (level === "district") k = b.city;
       else k = b.id;
@@ -147,7 +168,7 @@ function BrowseMode({ books }: { books: BookData[] }) {
       <div className={styles.list}>
         {level !== "flat" && groups ? (
           Array.from(groups.entries()).map(([key, groupBooks]) => {
-            const label = level === "country" ? key : level === "province" ? (groupBooks[0].country + " · " + groupBooks.length + "部") : key;
+            const label = level === "country" ? key : key;
             return (
               <div key={key} className={styles.provinceGroup}>
                 <div className={styles.provinceHeader}>
@@ -206,8 +227,15 @@ function AreaMode({ books, label }: { books: BookData[]; label: string }) {
 }
 
 // ---- Literary guide overview mode ----
-function OverviewMode({ onRegionClick }: { onRegionClick: (rf: RegionFilter) => void }) {
+function OverviewMode({ books, onRegionClick }: { books: BookData[]; onRegionClick: (rf: RegionFilter) => void }) {
   const [expanded, setExpanded] = useState<Set<string>>(new Set(["欧洲"]));
+
+  const continentBookCount = (continentName: string) => books.filter((book) => {
+    const continent = getContinent(book.country);
+    return continentName === "美洲"
+      ? continent === "北美洲" || continent === "拉丁美洲"
+      : continent === continentName;
+  }).length;
 
   const toggle = (name: string) => {
     setExpanded(prev => {
@@ -221,7 +249,11 @@ function OverviewMode({ onRegionClick }: { onRegionClick: (rf: RegionFilter) => 
     <>
       <div className={styles.header}>
         <h2>世界文学导览</h2>
-        <span className={styles.count}>5 大洲 · 7 区域</span>
+        <span className={styles.count}>5 大洲 · {literaryGuide.reduce((total, continent) => total + continent.regions.length, 0)} 区域</span>
+      </div>
+      <div className={styles.guideIntro}>
+        <strong>从地图进入文学现场</strong>
+        <p>按大洲、区域与国家阅读作品，沿着主题、体裁和历史记忆，发现不同文学传统之间的回声。</p>
       </div>
       <div className={styles.list}>
         {literaryGuide.map((continent: LiteraryContinent) => (
@@ -230,31 +262,61 @@ function OverviewMode({ onRegionClick }: { onRegionClick: (rf: RegionFilter) => 
               <span className={styles.continentIcon}>{expanded.has(continent.name) ? "▼" : "▶"}</span>
               <span className={styles.continentName}>{continent.name}</span>
               <span className={styles.continentSub}>{continent.subtitle}</span>
+              <span className={styles.continentCount}>{continentBookCount(continent.name)} 部</span>
             </div>
-            {expanded.has(continent.name) && continent.regions.map(region => (
+            {expanded.has(continent.name) && <p className={styles.continentNote}>{literaryContinentNotes[continent.name]}</p>}
+            {expanded.has(continent.name) && continent.regions.flatMap(region => {
+              // Africa and Oceania are country-first in the guide: each country
+              // gets its own card instead of one merged continent card.
+              const countrySplitRegions = ["非洲", "大洋洲"].includes(region.mapRegion || "")
+                ? (REGION_COUNTRIES.get(region.mapRegion || "") || []).map((country) => ({
+                    ...region,
+                    name: country,
+                    countries: country,
+                    mapRegion: country,
+                  }))
+                : [region];
+
+              return countrySplitRegions.map((displayRegion) => (
               <div
-                key={region.name}
+                key={`${continent.name}-${displayRegion.name}`}
                 className={styles.regionCard}
                 role="button"
                 tabIndex={0}
-                aria-label={`查看 ${region.name} 文学`}
-                onClick={() => onRegionClick({ country: region.mapRegion || region.name })}
+                aria-label={`查看 ${displayRegion.name} 文学`}
+                onClick={() => onRegionClick({ country: displayRegion.mapRegion || displayRegion.name })}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();
-                    onRegionClick({ country: region.mapRegion || region.name });
+                    onRegionClick({ country: displayRegion.mapRegion || displayRegion.name });
                   }
                 }}
               >
+                {(() => {
+                  const insight = literaryRegionInsights[displayRegion.name] || literaryRegionInsights[region.name];
+                  const mapRegion = displayRegion.mapRegion || displayRegion.name;
+                  const regionCount = REGION_NAMES.has(mapRegion)
+                    ? books.filter((book) => (REGION_COUNTRIES.get(mapRegion) || []).includes(book.country)).length
+                    : books.filter((book) => book.country === mapRegion).length;
+                  return (
+                    <>
                 <div className={styles.regionName}>
-                  {region.name}
-                  <span className={styles.regionCountries}>{region.countries}</span>
+                  {displayRegion.name}
+                  <span className={styles.regionCountries}>{displayRegion.countries}</span>
+                  <span className={styles.regionBookCount}>{regionCount} 部</span>
                 </div>
-                <div className={styles.regionFeature}><span className={styles.regionLabel}>特点</span>{region.features}</div>
-                <div className={styles.regionWorks}><span className={styles.regionLabel}>代表作</span>{region.works}</div>
-                <div className={styles.regionQuote}>{region.quote}</div>
+                {insight && <p className={styles.regionContext}>{insight.context}</p>}
+                <div className={styles.regionFeature}><span className={styles.regionLabel}>特点</span>{displayRegion.features}</div>
+                <div className={styles.regionWorks}><span className={styles.regionLabel}>代表作</span>{displayRegion.works}</div>
+                {insight && <div className={styles.regionGenres}><span className={styles.regionLabel}>体裁</span>{insight.genres.map((genre) => <span key={genre} className={styles.genre}>{genre}</span>)}</div>}
+                {insight && <div className={styles.regionLens}><span className={styles.regionLabel}>阅读视角</span>{insight.lens}</div>}
+                <div className={styles.regionQuote}>{displayRegion.quote}</div>
+                    </>
+                  );
+                })()}
               </div>
-            ))}
+              ));
+            })}
           </div>
         ))}
       </div>
@@ -294,7 +356,7 @@ export default function LeftPanel({ books, areaBooks, areaLabel }: LeftPanelProp
         ) : state.regionFilter ? (
           <BrowseMode books={books} />
         ) : (
-          <OverviewMode onRegionClick={handleRegionClick} />
+          <OverviewMode books={books} onRegionClick={handleRegionClick} />
         )}
       </aside>
     </>

@@ -2,6 +2,8 @@ import { useEffect, useRef, useCallback } from "react";
 import type { BookData } from "../../types";
 import { useUIContext } from "../../context/hooks";
 import styles from "./CoverGallery.module.css";
+import BookCover from "../BookCover/BookCover";
+import { getContinent } from "../../utils/regionUtils";
 
 interface CoverGalleryProps {
   books: BookData[];
@@ -97,10 +99,11 @@ export default function CoverGallery({ books }: CoverGalleryProps) {
               aria-label={`${book.title} — ${book.author}`}
             >
               <div className={styles.coverWrapper}>
-                <img src={book.coverUrl} alt={book.title} loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+                <BookCover book={book} />
               </div>
               <span className={styles.bookTitle}>{book.title}</span>
               <span className={styles.bookAuthor}>{book.author}</span>
+              <span className={styles.bookLocation}>{getContinent(book.country)} · {book.country}</span>
             </div>
           ))}
         </div>

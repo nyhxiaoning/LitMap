@@ -26,6 +26,7 @@ export interface BookData {
   realViewName: string;
   realViewUrl: string;
   realViewQuote: string;
+  url?: string;
   path?: PathNode[];
 }
 
@@ -51,6 +52,12 @@ export interface AppState {
   searchQuery: string;
   areaBooks: BookData[] | null; // books in currently selected cluster/area
   areaLabel: string | null; // display label for the area
+  readingListBookIds: string[];
+  isReadingListOpen: boolean;
+  isReadingListManagerOpen: boolean;
+  customBooks: BookData[];
+  bookUrlOverrides: Record<string, string>;
+  bookOverrides: Record<string, Partial<BookData>>;
 }
 
 export type AppAction =
@@ -63,4 +70,12 @@ export type AppAction =
   | { type: "SET_REGION_FILTER"; payload: RegionFilter | null }
   | { type: "FLY_TO_REGION"; payload: string | null }
   | { type: "SET_SEARCH_QUERY"; payload: string }
-  | { type: "SET_AREA_BOOKS"; payload: { books: BookData[]; label: string } | null };
+  | { type: "SET_AREA_BOOKS"; payload: { books: BookData[]; label: string } | null }
+  | { type: "TOGGLE_READING_LIST_BOOK"; payload: string }
+  | { type: "TOGGLE_READING_LIST" }
+  | { type: "TOGGLE_READING_LIST_MANAGER" }
+  | { type: "ADD_CUSTOM_BOOK"; payload: BookData }
+  | { type: "REMOVE_CUSTOM_BOOK"; payload: string }
+  | { type: "SET_BOOK_URL"; payload: { bookId: string; url: string } }
+  | { type: "UPDATE_CUSTOM_BOOK"; payload: BookData }
+  | { type: "UPDATE_BOOK_OVERRIDE"; payload: { bookId: string; patch: Partial<BookData> } };

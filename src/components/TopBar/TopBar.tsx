@@ -1,8 +1,9 @@
-import { useFilterContext } from "@/context/hooks";
+import { useFilterContext, useUIContext } from "@/context/hooks";
 import styles from "./TopBar.module.css";
 
 export default function TopBar() {
   const { state, dispatch } = useFilterContext();
+  const { state: uiState } = useUIContext();
 
   return (
     <div className={`glass ${styles.topBar}`}>
@@ -45,8 +46,26 @@ export default function TopBar() {
         )}
       </div>
 
-      {/* Right: spacer for visual balance */}
-      <div className={styles.spacer} />
+      <div className={styles.actions}>
+        <button
+          type="button"
+          className={`${styles.listBtn} ${uiState.isReadingListOpen ? styles.listBtnActive : ""}`}
+          onClick={() => dispatch({ type: "TOGGLE_READING_LIST" })}
+          aria-expanded={uiState.isReadingListOpen}
+        >
+          <span aria-hidden="true">♡</span>
+          <span>我的书单</span>
+          <strong>{uiState.readingListBookIds.length}</strong>
+        </button>
+        <button
+          type="button"
+          className={styles.manageBtn}
+          onClick={() => dispatch({ type: "TOGGLE_READING_LIST_MANAGER" })}
+          aria-expanded={uiState.isReadingListManagerOpen}
+        >
+          管理
+        </button>
+      </div>
     </div>
   );
 }

@@ -20,6 +20,12 @@ export interface UIState {
   flyToRegion: string | null;
   areaBooks: import("../types").BookData[] | null;
   areaLabel: string | null;
+  readingListBookIds: string[];
+  isReadingListOpen: boolean;
+  isReadingListManagerOpen: boolean;
+  customBooks: import("../types").BookData[];
+  bookUrlOverrides: Record<string, string>;
+  bookOverrides: Record<string, Partial<import("../types").BookData>>;
 }
 
 export interface FilterContextValue {

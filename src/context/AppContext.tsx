@@ -1,5 +1,5 @@
-import { useReducer, useCallback, type ReactNode } from "react";
-import type { AppAction } from "../types";
+import { useEffect, useReducer, useCallback, type ReactNode } from "react";
+import type { AppAction, BookData } from "../types";
 import {
   FilterContext,
   UIContext,
@@ -8,6 +8,11 @@ import {
 } from "./contexts";
 
 // ---- Initial states ----
+
+const READING_LIST_STORAGE_KEY = "litmap-reading-list";
+const CUSTOM_BOOKS_STORAGE_KEY = "litmap-custom-books";
+const BOOK_URLS_STORAGE_KEY = "litmap-book-urls";
+const BOOK_OVERRIDES_STORAGE_KEY = "litmap-book-overrides";
 
 const initialFilterState: FilterState = {
   timeFilter: null,
@@ -24,7 +29,59 @@ const initialUIState: UIState = {
   flyToRegion: null,
   areaBooks: null,
   areaLabel: null,
+  readingListBookIds: readReadingList(),
+  isReadingListOpen: false,
+  isReadingListManagerOpen: false,
+  customBooks: readCustomBooks(),
+  bookUrlOverrides: readBookUrlOverrides(),
+  bookOverrides: readBookOverrides(),
 };
+
+function readReadingList(): string[] {
+  try {
+    const stored = window.localStorage.getItem(READING_LIST_STORAGE_KEY);
+    const parsed: unknown = stored ? JSON.parse(stored) : [];
+    return Array.isArray(parsed) && parsed.every((id): id is string => typeof id === "string")
+      ? parsed
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+function readCustomBooks(): BookData[] {
+  try {
+    const stored = window.localStorage.getItem(CUSTOM_BOOKS_STORAGE_KEY);
+    const parsed: unknown = stored ? JSON.parse(stored) : [];
+    return Array.isArray(parsed) ? parsed as BookData[] : [];
+  } catch {
+    return [];
+  }
+}
+
+function readBookUrlOverrides(): Record<string, string> {
+  try {
+    const stored = window.localStorage.getItem(BOOK_URLS_STORAGE_KEY);
+    const parsed: unknown = stored ? JSON.parse(stored) : {};
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+      ? parsed as Record<string, string>
+      : {};
+  } catch {
+    return {};
+  }
+}
+
+function readBookOverrides(): Record<string, Partial<BookData>> {
+  try {
+    const stored = window.localStorage.getItem(BOOK_OVERRIDES_STORAGE_KEY);
+    const parsed: unknown = stored ? JSON.parse(stored) : {};
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed)
+      ? parsed as Record<string, Partial<BookData>>
+      : {};
+  } catch {
+    return {};
+  }
+}
 
 // ---- Combined reducer (single dispatch, split state) ----
 // Keeps a single reducer so cross-slice logic (e.g. SELECT_BOOK opens drawer)
@@ -53,6 +110,8 @@ function reduceUI(state: UIState, action: AppAction): UIState {
         galleryBooks: null,
         areaBooks: null,
         areaLabel: null,
+        isReadingListOpen: false,
+        isReadingListManagerOpen: false,
       };
     case "TOGGLE_LEFT_PANEL":
       return { ...state, isLeftPanelOpen: !state.isLeftPanelOpen };
@@ -73,6 +132,48 @@ function reduceUI(state: UIState, action: AppAction): UIState {
         areaBooks: action.payload?.books ?? null,
         areaLabel: action.payload?.label ?? null,
       };
+    case "TOGGLE_READING_LIST_BOOK":
+      return {
+        ...state,
+        readingListBookIds: state.readingListBookIds.includes(action.payload)
+          ? state.readingListBookIds.filter((id) => id !== action.payload)
+          : [...state.readingListBookIds, action.payload],
+      };
+    case "TOGGLE_READING_LIST":
+      return { ...state, isReadingListOpen: !state.isReadingListOpen };
+    case "TOGGLE_READING_LIST_MANAGER":
+      return { ...state, isReadingListManagerOpen: !state.isReadingListManagerOpen };
+    case "ADD_CUSTOM_BOOK":
+      return { ...state, customBooks: [...state.customBooks, action.payload] };
+    case "REMOVE_CUSTOM_BOOK":
+      return {
+        ...state,
+        customBooks: state.customBooks.filter((book) => book.id !== action.payload),
+        readingListBookIds: state.readingListBookIds.filter((id) => id !== action.payload),
+      };
+    case "SET_BOOK_URL":
+      return {
+        ...state,
+        bookUrlOverrides: action.payload.url
+          ? { ...state.bookUrlOverrides, [action.payload.bookId]: action.payload.url }
+          : Object.fromEntries(Object.entries(state.bookUrlOverrides).filter(([id]) => id !== action.payload.bookId)),
+      };
+    case "UPDATE_CUSTOM_BOOK":
+      return {
+        ...state,
+        customBooks: state.customBooks.map((book) => book.id === action.payload.id ? action.payload : book),
+      };
+    case "UPDATE_BOOK_OVERRIDE":
+      return {
+        ...state,
+        bookOverrides: {
+          ...state.bookOverrides,
+          [action.payload.bookId]: {
+            ...state.bookOverrides[action.payload.bookId],
+            ...action.payload.patch,
+          },
+        },
+      };
     default:
       return state;
   }
@@ -83,6 +184,19 @@ function reduceUI(state: UIState, action: AppAction): UIState {
 export function AppProvider({ children }: { children: ReactNode }) {
   const [filterState, filterDispatch] = useReducer(reduceFilter, initialFilterState);
   const [uiState, uiDispatch] = useReducer(reduceUI, initialUIState);
+
+  useEffect(() => {
+    window.localStorage.setItem(READING_LIST_STORAGE_KEY, JSON.stringify(uiState.readingListBookIds));
+  }, [uiState.readingListBookIds]);
+  useEffect(() => {
+    window.localStorage.setItem(CUSTOM_BOOKS_STORAGE_KEY, JSON.stringify(uiState.customBooks));
+  }, [uiState.customBooks]);
+  useEffect(() => {
+    window.localStorage.setItem(BOOK_URLS_STORAGE_KEY, JSON.stringify(uiState.bookUrlOverrides));
+  }, [uiState.bookUrlOverrides]);
+  useEffect(() => {
+    window.localStorage.setItem(BOOK_OVERRIDES_STORAGE_KEY, JSON.stringify(uiState.bookOverrides));
+  }, [uiState.bookOverrides]);
 
   // Stable single dispatch that writes to both reducers
   const dispatch = useCallback((action: AppAction) => {

@@ -121,6 +121,23 @@
   transform: rotate(90deg);
 }
 
+.editBtn {
+  position: absolute;
+  top: 14px;
+  right: 56px;
+  min-width: 42px;
+  height: 30px;
+  padding: 0 9px;
+  border: 1px solid rgba(91, 140, 133, 0.16);
+  border-radius: 15px;
+  background: var(--glass-bg-light);
+  color: var(--color-accent);
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.editBtn:hover { background: var(--color-accent-glow); border-color: var(--color-accent); }
+
 .headerCover {
   width: 100px;
   height: 148px;
@@ -142,6 +159,27 @@
   object-fit: cover;
 }
 
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.editHint {
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: rgba(91, 140, 133, 0.07);
+  color: var(--color-accent);
+  font-size: 10px;
+  text-align: center;
+}
+
+.editForm label { display: flex; flex-direction: column; gap: 4px; color: var(--color-text-secondary); font-size: 10px; font-weight: 600; }
+.editForm input, .editForm textarea { width: 100%; padding: 8px 9px; border: 1px solid rgba(91, 140, 133, 0.14); border-radius: 7px; background: rgba(255,255,255,.72); color: var(--color-text); outline: 0; font: 12px/1.5 var(--font-sans); resize: vertical; }
+.editForm input:focus, .editForm textarea:focus { border-color: var(--color-accent); box-shadow: 0 0 0 2px var(--color-accent-glow); }
+
 .drawerHeader h2 {
   font-size: var(--text-xl);
   font-weight: 700;
@@ -158,6 +196,39 @@
   margin-bottom: 10px;
   font-style: italic;
 }
+
+.regionMeta { display: flex; align-items: center; justify-content: center; gap: 5px; margin-bottom: 8px; color: var(--color-text-tertiary); font-size: 10px; }
+.regionMeta button { border: 0; padding: 0; background: transparent; color: var(--color-accent); cursor: pointer; font-size: 10px; }
+.regionMeta button:first-child { color: #1670da; font-weight: 700; }
+.regionMeta button:hover { text-decoration: underline; }
+
+.saveBookBtn {
+  margin: 2px auto 10px;
+  padding: 6px 12px;
+  border: 1px solid rgba(197, 116, 120, 0.2);
+  border-radius: 14px;
+  background: rgba(197, 116, 120, 0.06);
+  color: #b45f65;
+  cursor: pointer;
+  font-size: 10px;
+  transition: all var(--transition-fast);
+}
+
+.saveBookBtn:hover,
+.saveBookBtnActive {
+  background: rgba(197, 116, 120, 0.14);
+  border-color: rgba(197, 116, 120, 0.35);
+}
+
+.bookUrl {
+  display: inline-block;
+  margin: 0 auto 10px;
+  color: #1670da;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.bookUrl:hover { text-decoration: underline; }
 
 .tags {
   display: flex;

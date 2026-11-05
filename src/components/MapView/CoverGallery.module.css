@@ -152,3 +152,12 @@
   text-align: center;
   transition: color var(--transition-fast);
 }
+
+.bookLocation {
+  color: var(--color-accent);
+  font-size: 9px;
+  max-width: 135px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -25,9 +25,60 @@
   justify-self: start;
 }
 
-.spacer {
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   justify-self: end;
 }
+
+.listBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(91, 140, 133, 0.1);
+  border-radius: 18px;
+  padding: 8px 12px;
+  background: rgba(248, 252, 251, 0.52);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font: 600 var(--text-xs) var(--font-sans);
+  transition: all var(--transition-fast);
+}
+
+.listBtn:hover,
+.listBtnActive {
+  color: var(--color-accent);
+  background: var(--color-accent-glow);
+  border-color: rgba(91, 140, 133, 0.22);
+  transform: translateY(-1px);
+}
+
+.listBtn > span:first-child {
+  color: var(--color-accent-warm);
+  font-size: 17px;
+  line-height: 1;
+}
+
+.listBtn strong {
+  min-width: 18px;
+  padding: 2px 5px;
+  border-radius: 8px;
+  background: rgba(91, 140, 133, 0.1);
+  font-size: 10px;
+  text-align: center;
+}
+
+.manageBtn {
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font: 600 var(--text-xs) var(--font-sans);
+  padding: 8px 7px;
+}
+
+.manageBtn:hover { color: var(--color-accent); }
 
 .logo {
   font-size: 1.25rem;
@@ -171,8 +222,8 @@
     justify-self: center;
   }
 
-  .spacer {
-    display: none;
+  .actions {
+    justify-self: center;
   }
 
   .logo {

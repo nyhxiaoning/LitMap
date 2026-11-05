@@ -1,0 +1,40 @@
+.desk { position: absolute; left: 50%; bottom: calc(var(--timeline-height) + 18px); z-index: 210; width: min(760px, calc(100vw - 40px)); transform: translateX(-50%); pointer-events: none; }
+.deskToggle, .deskPanel { pointer-events: auto; }
+.deskToggle { display: flex; align-items: center; gap: 9px; margin: 0 auto; padding: 10px 16px; border: 1px solid rgba(91, 140, 133, 0.12); border-radius: 20px; color: var(--color-text-secondary); cursor: pointer; font: 600 var(--text-sm) var(--font-sans); box-shadow: 0 8px 28px rgba(42, 72, 68, 0.12); transition: transform var(--transition-spring), color var(--transition-fast), box-shadow var(--transition-fast); }
+.deskToggle:hover, .deskToggle:focus-visible { color: var(--color-accent); transform: translateY(-2px); box-shadow: 0 12px 34px rgba(42, 72, 68, 0.17); }
+.toggleLamp { color: #d49a45; font-size: 18px; line-height: 1; }
+.bookCount { color: var(--color-accent); font-size: 10px; background: var(--color-accent-glow); padding: 3px 8px; border-radius: 10px; }
+.chevron { color: var(--color-text-tertiary); font-size: 13px; margin-left: 2px; }
+.deskPanel { display: none; position: absolute; left: 0; right: 0; bottom: 52px; overflow: hidden; padding: 20px 20px 14px; border-radius: 20px 20px 10px 10px; background: rgba(244, 249, 247, 0.92); box-shadow: 0 20px 60px rgba(31, 58, 54, 0.18), 0 0 0 1px rgba(91, 140, 133, 0.06); transform-origin: bottom center; }
+.open .deskPanel { display: block; animation: deskOpen 0.38s cubic-bezier(0.25, 1.1, 0.5, 1.05) both; }
+@keyframes deskOpen { from { opacity: 0; transform: translateY(20px) scale(0.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.deskHeader { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; margin: 0 4px 14px; }
+.eyebrow { color: var(--color-accent); font: 700 9px var(--font-mono); letter-spacing: 0.12em; margin-bottom: 5px; }
+.deskHeader h2 { color: var(--color-text-primary); font: 700 var(--text-lg) var(--font-serif); letter-spacing: 0.04em; }
+.deskHint { color: var(--color-text-tertiary); font-size: 10px; white-space: nowrap; }
+.bookRail { display: flex; align-items: flex-end; gap: 12px; overflow-x: auto; padding: 4px 4px 15px; scrollbar-width: thin; }
+.bookItem { position: relative; flex: 0 0 78px; display: flex; flex-direction: column; align-items: center; gap: 7px; z-index: 1; animation: bookRise 0.42s both; animation-delay: calc(var(--book-index) * 45ms); }
+@keyframes bookRise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+.bookItem.dim { --lamp-opacity: 0; }
+.bookItem.lit { --lamp-opacity: 1; }
+.lampGlow { position: absolute; z-index: -1; top: -20px; left: 50%; width: 86px; height: 126px; border-radius: 50%; background: radial-gradient(ellipse, rgba(246, 192, 96, 0.45), rgba(246, 192, 96, 0) 70%); opacity: var(--lamp-opacity); filter: blur(5px); pointer-events: none; transform: translateX(-50%); transition: opacity 0.35s ease; }
+.lit .lampGlow { animation: lampBreathe 2.8s ease-in-out infinite; }
+@keyframes lampBreathe { 0%, 100% { opacity: 0.72; transform: translateX(-50%) scale(0.96); } 50% { opacity: 1; transform: translateX(-50%) scale(1.05); } }
+.bookButton { display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.coverFrame { display: block; width: 58px; height: 84px; overflow: hidden; border-radius: 3px 5px 5px 3px; background: #dce7e3; box-shadow: 4px 4px 0 rgba(44, 74, 70, 0.13), 0 7px 15px rgba(31, 58, 54, 0.15); transform: rotate(calc((var(--book-index) - 3.5) * 0.7deg)); transition: filter var(--transition-spring), transform var(--transition-spring), box-shadow var(--transition-spring); }
+.dim .coverFrame { filter: saturate(0.72) brightness(0.78); }
+.lit .coverFrame { filter: saturate(1.05) brightness(1.08); }
+.bookButton:hover .coverFrame, .bookButton:focus-visible .coverFrame { transform: translateY(-6px) rotate(0deg) scale(1.06); box-shadow: 5px 10px 20px rgba(31, 58, 54, 0.22); }
+.coverFrame img { width: 100%; height: 100%; object-fit: cover; }
+.bookTitle, .bookAuthor { max-width: 78px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bookTitle { color: var(--color-text); font-size: 10px; font-weight: 600; }
+.bookAuthor { color: var(--color-text-tertiary); font-size: 9px; }
+.bookRegion { max-width: 78px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--color-accent); font-size: 8px; }
+.saveButton { border: 0; padding: 2px 4px; border-radius: 6px; background: transparent; color: var(--color-text-tertiary); cursor: pointer; font-size: 9px; }
+.saveButton:hover, .saveButtonActive { color: #b45f65; background: rgba(197, 116, 120, 0.1); }
+.lampButton { display: inline-flex; align-items: center; gap: 3px; padding: 4px 7px; border: 1px solid rgba(212, 154, 69, 0.22); border-radius: 9px; background: rgba(212, 154, 69, 0.08); color: #9b753f; cursor: pointer; font-size: 9px; transition: all var(--transition-fast); }
+.lampButton:hover, .lampButton[aria-pressed="true"] { background: rgba(244, 185, 84, 0.22); border-color: rgba(212, 154, 69, 0.45); color: #7e5d2c; box-shadow: 0 0 14px rgba(244, 185, 84, 0.24); }
+.lampIcon { font-size: 12px; line-height: 1; }
+.deskEdge { height: 8px; margin: 0 -20px -14px; background: linear-gradient(90deg, rgba(82, 118, 111, 0.16), rgba(224, 191, 132, 0.34), rgba(82, 118, 111, 0.16)); }
+@media (max-width: 768px) { .desk { width: calc(100vw - 24px); bottom: calc(var(--timeline-height) + 8px); } .deskPanel { padding: 16px 12px 10px; } .deskHeader { align-items: flex-start; flex-direction: column; gap: 4px; } .deskHint { white-space: normal; } }
+@media (prefers-reduced-motion: reduce) { .open .deskPanel, .bookItem, .lit .lampGlow { animation: none; } }

@@ -11,16 +11,17 @@ import {
 import L from "leaflet";
 import { matchesTimeFilter, matchesSearch, normalizeCity, buildCityIndex, ZOOM } from "../../utils/filterUtils";
 import { useAppContext } from "../../context/hooks";
-import books from "../../data/books";
 import type { BookData } from "../../types";
-import { EUROPE_REGIONS, europeRegion } from "../../utils/regionUtils";
+import { europeRegion, getContinent, REGION_COUNTRIES, REGION_NAMES } from "../../utils/regionUtils";
 import styles from "./MapView.module.css";
+import { getBookCoverFallbackDataUrl } from "../../utils/coverFallback";
 
 // ---- Boundary + flyTo Controller ----
-function MapController({ selectedBook, flyToRegion, searchQuery }: {
+function MapController({ selectedBook, flyToRegion, searchQuery, books }: {
   selectedBook: BookData | null;
   flyToRegion: string | null;
   searchQuery: string;
+  books: BookData[];
 }) {
   const map = useMap();
   const prevId = useRef<string | null | undefined>(undefined);
@@ -28,7 +29,7 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
   const searchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    map.setMinZoom(2);
+    map.setMinZoom(3.2);
     map.setMaxZoom(18);
     map.setMaxBounds([[-85, -180], [85, 180]]);
     // eslint-disable-next-line react-hooks/immutability -- Leaflet map is mutable by design, this is the only way to set maxBoundsViscosity
@@ -40,7 +41,7 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
   useEffect(() => {
     if (selectedBook && selectedBook.id !== prevId.current) {
       prevId.current = selectedBook.id;
-      map.flyTo([selectedBook.lat, selectedBook.lng], 8, {
+      map.flyTo([selectedBook.lat, selectedBook.lng], 9, {
         duration: 0.8, easeLinearity: 0.25,
       });
     }
@@ -63,13 +64,8 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
 
       // Determine which countries belong to this region
       let targetCountries: string[];
-      const er = europeRegion(flyToRegion);
-      if (er) {
-        targetCountries = Object.entries(EUROPE_REGIONS).filter(([, r]) => r === er).map(([c]) => c);
-      } else if (flyToRegion === "非洲") {
-        targetCountries = ["尼日利亚", "南非", "加纳"];
-      } else if (flyToRegion === "大洋洲") {
-        targetCountries = ["澳大利亚", "新西兰"];
+      if (REGION_NAMES.has(flyToRegion)) {
+        targetCountries = REGION_COUNTRIES.get(flyToRegion) || [];
       } else {
         targetCountries = [flyToRegion];
       }
@@ -82,10 +78,10 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
           [Math.min(...lats), Math.min(...lngs)],
           [Math.max(...lats), Math.max(...lngs)]
         );
-        map.flyToBounds(bounds.pad(0.3), { duration: 0.8, easeLinearity: 0.25 });
+        map.flyToBounds(bounds.pad(0.3), { duration: 0.8, easeLinearity: 0.25, maxZoom: 7.5 });
       }
     }
-  }, [flyToRegion, map]);
+  }, [flyToRegion, map, books]);
 
   // Fly to search results when query changes (debounced 300ms)
   useEffect(() => {
@@ -102,14 +98,14 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
           [Math.min(...lats), Math.min(...lngs)],
           [Math.max(...lats), Math.max(...lngs)]
         );
-        map.flyToBounds(bounds.pad(0.15), { duration: 0.6, easeLinearity: 0.25 });
+        map.flyToBounds(bounds.pad(0.15), { duration: 0.6, easeLinearity: 0.25, maxZoom: 8 });
       }
     }, 300);
 
     return () => {
       if (searchTimerRef.current) clearTimeout(searchTimerRef.current);
     };
-  }, [searchQuery, map]);
+  }, [searchQuery, map, books]);
 
   return null;
 }
@@ -118,10 +114,14 @@ function MapController({ selectedBook, flyToRegion, searchQuery }: {
 // Cached index for the full book list — stable across renders since the
 // source data never changes. Used by drill-down click handlers to
 // avoid rebuilding the full index on every click.
-let _fullCityIndex: Map<string, string> | null = null;
-function getFullCityIndex(): Map<string, string> {
-  if (!_fullCityIndex) _fullCityIndex = buildCityIndex(books);
-  return _fullCityIndex;
+function getFullCityIndex(books: BookData[]): Map<string, string> {
+  return buildCityIndex(books);
+}
+
+// These areas are navigated as continent → country → city → book.
+// They do not expose the intermediate 2° province/state grid used by Europe.
+function isCountryFirstNavigation(country: string): boolean {
+  return ["北美洲", "拉丁美洲", "非洲", "大洋洲"].includes(getContinent(country));
 }
 
 // ---- 6-level hierarchical clustering ----
@@ -144,7 +144,9 @@ function groupByZoom(bookList: BookData[], zoom: number): Map<string, BookData[]
     } else if (zoom < ZOOM.COUNTRY) {
       key = book.country || "";
     } else if (zoom < ZOOM.PROVINCE) {
-      key = `${book.country}｜${book.lat.toFixed(0)},${book.lng.toFixed(0)}`;
+      key = isCountryFirstNavigation(book.country)
+        ? (book.country || "")
+        : `${book.country}｜${book.lat.toFixed(0)},${book.lng.toFixed(0)}`;
     } else if (zoom < ZOOM.CITY) {
       key = `${book.country}｜${cityBase}`;
     } else if (zoom < ZOOM.DISTRICT) {
@@ -200,6 +202,7 @@ function sortWithSelectedFirst(books: BookData[], selectedBookId: string | null)
 function createBookIcon(books: BookData[], label: string, selectedBookId: string | null): L.DivIcon {
   const sorted = sortWithSelectedFirst(books, selectedBookId);
   const topBook = sorted[0];
+  const fallbackCover = getBookCoverFallbackDataUrl(topBook.title, topBook.color);
   const count = sorted.length;
 
   if (count === 1) {
@@ -217,8 +220,8 @@ function createBookIcon(books: BookData[], label: string, selectedBookId: string
           box-shadow:0 3px 14px rgba(91,140,133,0.2),0 0 0 1px rgba(91,140,133,0.06);
           border:2px solid #fafcfb;
           transition:filter 0.25s ease, box-shadow 0.25s ease;">
-          <img src="${topBook.coverUrl}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
-            onerror="this.style.display='none'" />
+          <img src="${topBook.coverUrl || fallbackCover}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
+            onerror="this.onerror=null;this.src='${fallbackCover}'" />
         </div>
         <div style="margin-top:4px;text-align:center;font-size:10px;font-weight:600;
           color:#1a2624;max-width:${size}px;overflow:hidden;text-overflow:ellipsis;
@@ -247,14 +250,14 @@ function createBookIcon(books: BookData[], label: string, selectedBookId: string
       <div style="position:absolute;top:0;left:4px;width:${imgW}px;height:${imgH}px;
         border-radius:4px;overflow:hidden;box-shadow:0 2px 10px rgba(91,140,133,0.2);
         border:2px solid #fafcfb;transform:rotate(-3deg);">
-        <img src="${topBook.coverUrl}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
-          onerror="this.style.display='none'" />
+        <img src="${topBook.coverUrl || fallbackCover}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
+          onerror="this.onerror=null;this.src='${fallbackCover}'" />
       </div>
       <div style="position:absolute;top:2px;left:0;width:${imgW}px;height:${imgH}px;
         border-radius:4px;overflow:hidden;box-shadow:0 2px 10px rgba(91,140,133,0.2);
         border:2px solid #fafcfb;transform:rotate(2deg);">
-        <img src="${topBook.coverUrl}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
-          onerror="this.style.display='none'" />
+        <img src="${topBook.coverUrl || fallbackCover}" alt="${topBook.title}" style="width:100%;height:100%;object-fit:cover;"
+          onerror="this.onerror=null;this.src='${fallbackCover}'" />
       </div>
       <span style="position:absolute;top:-5px;right:-2px;background:#5b8c85;color:white;
         font-size:11px;font-weight:700;padding:2px 7px;border-radius:10px;
@@ -276,8 +279,8 @@ function createBookIcon(books: BookData[], label: string, selectedBookId: string
 }
 
 // ---- Book Marker (with drill-down + area books in left panel + right drawer) ----
-const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabel, zoom, selectedBookId }: {
-  lat: number; lng: number; locationBooks: BookData[]; groupLabel: string; zoom: number; selectedBookId: string | null;
+const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabel, zoom, selectedBookId, books }: {
+  lat: number; lng: number; locationBooks: BookData[]; groupLabel: string; zoom: number; selectedBookId: string | null; books: BookData[];
 }) {
   const { dispatch } = useAppContext();
   const map = useMap();
@@ -311,16 +314,22 @@ const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabe
       const country = sorted[0].country;
       const er = europeRegion(country);
       const pk = `${sorted[0].lat.toFixed(0)},${sorted[0].lng.toFixed(0)}`;
-      const cb = getFullCityIndex().get(normalizeCity(sorted[0].city)) || normalizeCity(sorted[0].city);
+      const cb = getFullCityIndex(books).get(normalizeCity(sorted[0].city)) || normalizeCity(sorted[0].city);
 
       if (zoom < ZOOM.CONTINENT) {
         dispatch({ type: "SET_REGION_FILTER", payload: { country: er || country } });
       } else if (zoom < ZOOM.COUNTRY) {
         dispatch({ type: "SET_REGION_FILTER", payload: { country } });
       } else if (zoom < ZOOM.PROVINCE) {
-        dispatch({ type: "SET_REGION_FILTER", payload: { country, provinceKey: pk } });
+        dispatch({
+          type: "SET_REGION_FILTER",
+          payload: isCountryFirstNavigation(country) ? { country } : { country, provinceKey: pk },
+        });
       } else if (zoom < ZOOM.CITY) {
-        dispatch({ type: "SET_REGION_FILTER", payload: { country, provinceKey: pk, cityBase: cb } });
+        dispatch({
+          type: "SET_REGION_FILTER",
+          payload: isCountryFirstNavigation(country) ? { country, cityBase: cb } : { country, provinceKey: pk, cityBase: cb },
+        });
       } else {
         dispatch({ type: "SET_REGION_FILTER", payload: { country, provinceKey: pk, cityBase: cb, district: sorted[0].city } });
       }
@@ -328,7 +337,7 @@ const BookMarker = memo(function BookMarker({ lat, lng, locationBooks, groupLabe
       // Also show the area's books in the left panel and right drawer
       dispatch({ type: "SET_AREA_BOOKS", payload: { books: sorted, label: groupLabel } });
     }
-  }, [zoom, sorted, dispatch, map, groupLabel]);
+  }, [zoom, sorted, dispatch, map, groupLabel, books]);
 
   const handleKeyDown = useCallback((e: L.LeafletKeyboardEvent) => {
     if (e.originalEvent.key === "Enter" || e.originalEvent.key === " ") {
@@ -422,7 +431,7 @@ function ZoomTracker({ onChange }: { onChange: (z: number) => void }) {
 }
 
 // ---- Main MapView ----
-export default function MapView() {
+export default function MapView({ books }: { books: BookData[] }) {
   const { state } = useAppContext();
   const [mapZoom, setMapZoom] = useState(3);
 
@@ -431,7 +440,7 @@ export default function MapView() {
       matchesTimeFilter(b.sliderVal, b.tags, state.timeFilter) &&
       matchesSearch(b, state.searchQuery)
     );
-  }, [state.timeFilter, state.searchQuery]);
+  }, [books, state.timeFilter, state.searchQuery]);
 
   const locationGroups = useMemo(
     () => groupByZoom(filteredBooks, mapZoom),
@@ -446,7 +455,7 @@ export default function MapView() {
     <div className={styles.mapWrapper}>
       <MapContainer
         center={[30, 15]}
-        zoom={3}
+        zoom={4.2}
         className={styles.map}
         zoomControl={true}
         scrollWheelZoom={true}
@@ -460,7 +469,7 @@ export default function MapView() {
           keepBuffer={4}
         />
 
-        <MapController selectedBook={selectedBook} flyToRegion={state.flyToRegion} searchQuery={state.searchQuery} />
+        <MapController selectedBook={selectedBook} flyToRegion={state.flyToRegion} searchQuery={state.searchQuery} books={books} />
 
         {(() => {
           const cityIndex = buildCityIndex(filteredBooks);
@@ -476,6 +485,7 @@ export default function MapView() {
                 groupLabel={label}
                 zoom={mapZoom}
                 selectedBookId={state.selectedBookId}
+                books={books}
               />
             );
           });
